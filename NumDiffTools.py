@@ -264,7 +264,7 @@ def CalcAvgVerGrad(filename2, nt,nz,ny,nx,tracer1,DomVolume,hFacC, drF, rAC):
                         
           else :
 	    
-	    qsumDz =qsumDz +(hFacC[kk,jj,ii]*drF[kk]*rAC[jj,ii])*(((tracer1[tt,kk+2,jj,ii]-tracer1[tt,kk,jj,ii])/((hFacC[kk+1,jj,ii]*drF[kk+1])+(hFacC[kk,jj,ii]*drF[kk])))**2)
+	    qsumDz =qsumDz +(hFacC[kk,jj,ii]*drF[kk]*rAC[jj,ii])*(((tracer1[tt,kk+1,jj,ii]-tracer1[tt,kk,jj,ii])/((hFacC[kk+1,jj,ii]*drF[kk+1])+(hFacC[kk,jj,ii]*drF[kk])))**2)
                        
     qmeanDz[tt] = qsumDz/DomVolume
         
