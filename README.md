@@ -15,6 +15,6 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[NumDiffSensitivityTestnoTaveRun04.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NumDiffSensitivityTestnoTaveRun04.ipynb)
       
-* ##[GMREDIrun01bis-WhyNaNs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/GMREDIrun01bis-WhyNaNs.ipynb)
+* ##[GMREDIrun01bis-whyNaNs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/GMREDIrun01bis-whyNaNs.ipynb)
 
 * ##[GMREDIrun02.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/GMREDIrun02.ipynb)
