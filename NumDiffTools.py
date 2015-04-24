@@ -205,7 +205,7 @@ def CalcAvgHorGrad(filename2, nt,nz,ny,nx,tracer1,DomVolume,hFacC, drF, rAC):
         
     tracer2dx = tracer1[tt,:,:,2:nx]
     tracer0dx = tracer1[tt,:,:,0:nx-2]
-    tracerDerX = ((tracer2dx-tracer0dx)/(2.0*dxG[1:,1:nx-1]))**2
+    tracerDerX = ((tracer2dx-tracer0dx)/(2.0*dxG[:,1:nx-1]))**2 # changed dxG[1:,1:nx-1] for dxG[:,1:nx-1]- size conflict
         
     for kk in np.arange(nz):
       
@@ -226,7 +226,7 @@ def CalcAvgHorGrad(filename2, nt,nz,ny,nx,tracer1,DomVolume,hFacC, drF, rAC):
         
     tracer2dy = tracer1[tt,:,2:ny,:]
     tracer0dy = tracer1[tt,:,0:ny-2,:]
-    tracerDerY = ((tracer2dy-tracer0dy)/(2.0*dyG[1:ny-1,1:]))**2
+    tracerDerY = ((tracer2dy-tracer0dy)/(2.0*dyG[1:ny-1,:]))**2 # changed dyG[1:ny-1,1:] for dyG[1:ny-1,:]- size conflict
         
     for kk in np.arange(nz):
       
