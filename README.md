@@ -20,3 +20,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[GMREDIrun02.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/GMREDIrun02.ipynb)
 
 * ##[GMREDIHydRun12.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/GMREDIHydRun12.ipynb)
+
+* ##[GMREDIHydRun13.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/GMREDIHydRun13.ipynb)
