@@ -22,3 +22,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[GMREDIHydRun13.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/GMREDIHydRun13.ipynb)
 
 * ##[AdvectiveTransportsUniformKv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/AdvectiveTransportsUniformKv.ipynb)
+
+* ##[ALookAtEKE.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ALookAtEKE.ipynb)
