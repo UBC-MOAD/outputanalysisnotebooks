@@ -24,3 +24,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[AdvectiveTransportsUniformKv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/AdvectiveTransportsUniformKv.ipynb)
 
 * ##[ALookAtEKE.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ALookAtEKE.ipynb)
+
+* ##[2BarkleyCanyonsDownwelling.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/2BarkleyCanyonsDownwelling.ipynb)
