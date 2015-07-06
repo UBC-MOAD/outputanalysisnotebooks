@@ -28,3 +28,6 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[2BarkleyCanyonsDownwelling.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/2BarkleyCanyonsDownwelling.ipynb)
 
 * ##[2BarkleyCanyonsUpwelling.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/2BarkleyCanyonsUpwelling.ipynb)
+
+* ##[BottomBoundaryLayers.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/BottomBoundaryLayers.ipynb)
+
