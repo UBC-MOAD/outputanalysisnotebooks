@@ -33,3 +33,6 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[TransportThroughBoxes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TransportThroughBoxes.ipynb)
 
+* ##[DensityTracking3DKzDiff.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/DensityTracking3DKzDiff.ipynb)
+
+
