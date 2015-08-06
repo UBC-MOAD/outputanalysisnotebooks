@@ -38,3 +38,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[TotalTracerOnShelf.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerOnShelf.ipynb)
 
 * ##[TotalTracerOnShelfCases.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerOnShelfCases.ipynb)
+
+* ##[TotalTracerAlongShelfCases.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerAlongShelfCases.ipynb)
