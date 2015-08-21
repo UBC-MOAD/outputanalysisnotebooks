@@ -40,3 +40,7 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[TotalTracerOnShelfCases.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerOnShelfCases.ipynb)
 
 * ##[TotalTracerAlongShelfCases.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerAlongShelfCases.ipynb)
+
+* ##[FirstLookAtFluxOutput.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/FirstLookAtFluxOutput.ipynb)
+
+* ##[DiagnosticsFluxThroughBoxes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/DiagnosticsFluxThroughBoxes.ipynb)
