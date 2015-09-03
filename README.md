@@ -48,3 +48,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[FluxThroughShelfBreak.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/FluxThroughShelfBreak.ipynb)
 
 * ##[FluxThroughShelfBreakModule.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/FluxThroughShelfBreakModule.ipynb)
+
+* ##[FluxThroughShelfBreak_3DDiff.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/FluxThroughShelfBreak_3DDiff.ipynb)
