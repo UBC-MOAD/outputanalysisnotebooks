@@ -56,3 +56,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[TracerTransport_vs_WaterTransport.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TracerTransport_vs_WaterTransport.ipynb)
 
 * ##[MoviesFlowDescription.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MoviesFlowDescription.ipynb)
+
+* ##[MoviesTracerDescription.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MoviesTracerDescription.ipynb)
