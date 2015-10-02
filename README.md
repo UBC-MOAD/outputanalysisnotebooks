@@ -54,3 +54,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[AngleCorrectionFluxesAcrossSB.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/AngleCorrectionFluxesAcrossSB.ipynb)
 
 * ##[TracerTransport_vs_WaterTransport.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TracerTransport_vs_WaterTransport.ipynb)
+
+* ##[MoviesFlowDescription.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MoviesFlowDescription.ipynb)
