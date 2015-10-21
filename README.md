@@ -58,3 +58,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[MoviesFlowDescription.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MoviesFlowDescription.ipynb)
 
 * ##[MoviesTracerDescription.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MoviesTracerDescription.ipynb)
+
+* ##[MassConservationTracerExperiments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MassConservationTracerExperiments.ipynb)
