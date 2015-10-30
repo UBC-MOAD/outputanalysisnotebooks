@@ -60,3 +60,9 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[MoviesTracerDescription.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MoviesTracerDescription.ipynb)
 
 * ##[MassConservationTracerExperiments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/MassConservationTracerExperiments.ipynb)
+
+* ##[FluxThroughPeriodicBoundaries.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/FluxThroughPeriodicBoundaries.ipynb)
+
+* ##[FluxThroughOpenBoundaries.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/FluxThroughOpenBoundaries.ipynb)
+
+
