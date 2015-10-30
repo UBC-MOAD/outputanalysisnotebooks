@@ -3,3 +3,4 @@ syntax: glob
 *.mp4
 *.data
 *.meta
+*.ipynb_checkpoints
