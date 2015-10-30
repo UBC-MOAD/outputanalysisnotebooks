@@ -1,4 +1,5 @@
 syntax: glob
 
 *.mp4
-
+*.data
+*.meta
