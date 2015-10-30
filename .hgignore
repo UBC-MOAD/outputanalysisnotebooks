@@ -6,4 +6,6 @@ syntax: glob
 *.ipynb_checkpoints
 .nfs000000000aaa0d9400000335
 .png
-
+*.pdf
+*.eps
+*.png
