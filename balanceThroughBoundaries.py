@@ -73,8 +73,8 @@ def transportBdyNS(wallArea, maskC, maskVel, nt, yi, fld, vel, transType='w'):
   
   if transType == 'w':
     for tt in range(nt):
-      field = np.ma.array(vel[tt,:,yi,:],mask=maskVel[:,yi,:])
-      transportBdy[tt] = np.sum(wallArea[:,:]*field)
+      velo = np.ma.array(vel[tt,:,yi,:],mask=maskVel[:,yi,:])
+      transportBdy[tt] = np.sum(wallArea[:,:]*velo)
     return(transportBdy)
     
   elif transType == 'fn':
@@ -131,7 +131,7 @@ def transportBdyWE(wallArea, maskC,maskVel, nt, xi, fld, vel, transType='w'):
     return(transportBdy)
   
   else:
-    print('transType can only be w or f')
+    print('transType can only be w, fe or fw')
       
 #--------------------------------------------------------------------------------------------------    
 def balanceBdys(N,S,E,W,nt):
@@ -145,7 +145,7 @@ def balanceBdys(N,S,E,W,nt):
 def balancePeriodicBdys(E,W,nt):
   '''Calculate the balance of mass or volume through boundaries.
   '''
-  balance = - E + W
+  balance =  W - E
 
   return balance
 
@@ -264,13 +264,13 @@ def main():
   nz = 90
   nt = 19
   
-  stateFile1='/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run04/stateGlob.nc'
+  stateFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run05/stateGlob.nc'
   StateOut1 = Dataset(stateFile1)
 
-  gridFile='/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run04/gridGlob.nc'
+  gridFile='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run05/gridGlob.nc'
   GridOut = Dataset(gridFile)
   
-  ptracersFile1='/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run04/ptracersGlob.nc'
+  ptracersFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run05/ptracersGlob.nc'
   PtracersOut1 = Dataset(ptracersFile1)
   
   X = StateOut1.variables['X']
@@ -298,30 +298,30 @@ def main():
   #U,V = rout.unstagger(uu,vv)
 
   NArea = areaWall(hFacS,drF,dxG,360,'y')
-  NBWater = transportBdyNS(NArea, MaskC, MaskS, nt, 360, V, V, 'w')
-  NBTr1 = transportBdyNS(NArea, MaskC,MaskS, nt, 360, Tr1, V, 'fn')
+  NBWater = transportBdyNS(NArea, MaskC, MaskS, nt, 360, V, V,  transType='w')
+  NBTr1 = transportBdyNS(NArea, MaskC,MaskS, nt, 360, Tr1, V, transType='fn')
   
   SArea = areaWall(hFacS,drF,dxG,0,'y')
-  SBWater = transportBdyNS(SArea, MaskC,MaskS, nt, 0, V, V, 'w')
-  SBTr1 = transportBdyNS(SArea, MaskC,MaskS, nt, 0, Tr1, V, 'fs')
+  SBWater = transportBdyNS(SArea, MaskC,MaskS, nt, 0, V, V, transType='w')
+  SBTr1 = transportBdyNS(SArea, MaskC,MaskS, nt, 0, Tr1, V,transType= 'fs')
   
   WArea = areaWall(hFacW,drF,dyG,0,'x')
-  WBWater = transportBdyWE(WArea, MaskC, MaskW, nt, 0, U, U, 'w')
-  WBTr1 = transportBdyWE(WArea, MaskC,MaskW, nt, 0, Tr1, U, 'fw')
+  WBWater = transportBdyWE(WArea, MaskC, MaskW, nt, 0, U, U, transType='w')
+  WBTr1 = transportBdyWE(WArea, MaskC,MaskW, nt, 0, Tr1, U,transType= 'fw')
   
   EArea = areaWall(hFacW,drF,dyG,360,'x')
   EBWater = transportBdyWE(EArea, MaskC,MaskW, nt, 360, U, U, 'w')
   EBTr1 = transportBdyWE(EArea, MaskC,MaskW, nt, 360, Tr1, U, 'fe')
   
-  balanceWater = balanceBdys(NBWater,SBWater,EBWater,WBWater,nt)
-  balanceTr = balanceBdys(NBTr1,SBTr1,EBTr1,WBTr1,nt)
-  #balanceWater = balancePeriodicBdys(EBWater,WBWater,nt) # for run with walls use these two
-  #balanceTr = balancePeriodicBdys(EBTr1,WBTr1,nt)
+  #balanceWater = balanceBdys(NBWater,SBWater,EBWater,WBWater,nt)
+  #balanceTr = balanceBdys(NBTr1,SBTr1,EBTr1,WBTr1,nt)
+  balanceWater = balancePeriodicBdys(EBWater,WBWater,nt) # for run with walls use these two
+  balanceTr = balancePeriodicBdys(EBTr1,WBTr1,nt)
   
-  figname1 = '/ocean/kramosmu/Figures/MassBalance/transBdyWaterRun04CNTc.eps'
-  figname2 = '/ocean/kramosmu/Figures/MassBalance/transBdyTrRun04CNTc.eps'
-  figname3 = '/ocean/kramosmu/Figures/MassBalance/balanceWaterRun04CNTc.eps'
-  figname4 = '/ocean/kramosmu/Figures/MassBalance/balanceTrRun04CNTc.eps'
+  figname1 = '/ocean/kramosmu/Figures/MassBalance/transBdyWaterRun05NOGMREDIc.eps'
+  figname2 = '/ocean/kramosmu/Figures/MassBalance/transBdyTrRun05NOGMREDIc.eps'
+  figname3 = '/ocean/kramosmu/Figures/MassBalance/balanceWaterRun05NOGMREDIc.eps'
+  figname4 = '/ocean/kramosmu/Figures/MassBalance/balanceTrRun05NOGMREDIc.eps'
  
   plotTransBdyWater(NBWater,SBWater,EBWater,WBWater,figname1)
   plotTransBdyTr(NBTr1,SBTr1,EBTr1,WBTr1,figname2)
