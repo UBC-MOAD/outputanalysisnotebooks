@@ -54,7 +54,7 @@ def areaWall(hfac,dr,dx,jj,orient):
      
   else:
     print('Orient should be either y or x')
-   
+
 #--------------------------------------------------------------------------------------------------    
 def transportBdyNS(wallArea, maskC, maskVel, nt, yi, fld, vel, transType='w'):
   '''Calculate the transport [mol/s or m^3/s] through N or S boundary.
@@ -79,14 +79,16 @@ def transportBdyNS(wallArea, maskC, maskVel, nt, yi, fld, vel, transType='w'):
     
   elif transType == 'fn':
     for tt in range(nt):
-      field=np.ma.array(fld[tt,:,yi-1,:],mask=maskC[:,yi-1,:])
+      fldUnstag = (fld[tt,:,yi-1,:]+fld[tt,:,yi,:])/2
+      field=np.ma.array(fldUnstag,mask=maskVel[:,yi-1,:])
       velo=np.ma.array(vel[tt,:,yi,:],mask=maskVel[:,yi,:])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor 
     return(transportBdy)
     
   elif transType == 'fs':
     for tt in range(nt):
-      field=np.ma.array(fld[tt,:,yi,:],mask=maskC[:,yi,:])
+      fldUnstag = (fld[tt,:,yi-1,:]+fld[tt,:,yi,:])/2
+      field=np.ma.array(fldUnstag,mask=maskVel[:,yi,:])
       velo=np.ma.array(vel[tt,:,yi,:],mask=maskVel[:,yi,:])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor 
     return(transportBdy)
@@ -119,14 +121,16 @@ def transportBdyWE(wallArea, maskC,maskVel, nt, xi, fld, vel, transType='w'):
   elif transType == 'fe':
     for tt in range(nt):
       velo = np.ma.array(vel[tt,:,:,xi],mask=maskVel[:,:,xi])
-      field = np.ma.array(fld[tt,:,:,xi-1],mask=maskC[:,:,xi-1])
+      fldUnstag = (fld[tt,:,:,xi-1]+fld[tt,:,:,xi])/2
+      field = np.ma.array(fldUnstag,mask=maskVel[:,:,xi])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor 
     return(transportBdy)
   
   elif transType == 'fw':
     for tt in range(nt):
       velo = np.ma.array(vel[tt,:,:,xi],mask=maskVel[:,:,xi])
-      field = np.ma.array(fld[tt,:,:,xi],mask=maskC[:,:,xi])
+      fldUnstag = (fld[tt,:,:,xi-1]+fld[tt,:,:,xi])/2
+      field = np.ma.array(fldUnstag,mask=maskVel[:,:,xi])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor 
     return(transportBdy)
   
@@ -297,21 +301,21 @@ def main():
 
   #U,V = rout.unstagger(uu,vv)
 
-  NArea = areaWall(hFacS,drF,dxG,360,'y')
-  NBWater = transportBdyNS(NArea, MaskC, MaskS, nt, 360, V, V,  transType='w')
-  NBTr1 = transportBdyNS(NArea, MaskC,MaskS, nt, 360, Tr1, V, transType='fn')
+  NArea = areaWall(hFacS,drF,dxG,359,'y')
+  NBWater = transportBdyNS(NArea, MaskC, MaskS, nt, 359, V, V,  transType='w')
+  NBTr1 = transportBdyNS(NArea, MaskC,MaskS, nt, 359, Tr1, V, transType='fn')
   
-  SArea = areaWall(hFacS,drF,dxG,0,'y')
-  SBWater = transportBdyNS(SArea, MaskC,MaskS, nt, 0, V, V, transType='w')
-  SBTr1 = transportBdyNS(SArea, MaskC,MaskS, nt, 0, Tr1, V,transType= 'fs')
+  SArea = areaWall(hFacS,drF,dxG,2,'y')
+  SBWater = transportBdyNS(SArea, MaskC,MaskS, nt, 2, V, V, transType='w')
+  SBTr1 = transportBdyNS(SArea, MaskC,MaskS, nt, 2, Tr1, V,transType= 'fs')
   
-  WArea = areaWall(hFacW,drF,dyG,0,'x')
-  WBWater = transportBdyWE(WArea, MaskC, MaskW, nt, 0, U, U, transType='w')
-  WBTr1 = transportBdyWE(WArea, MaskC,MaskW, nt, 0, Tr1, U,transType= 'fw')
+  WArea = areaWall(hFacW,drF,dyG,2,'x')
+  WBWater = transportBdyWE(WArea, MaskC, MaskW, nt, 2, U, U, transType='w')
+  WBTr1 = transportBdyWE(WArea, MaskC,MaskW, nt, 2, Tr1, U,transType= 'fw')
   
-  EArea = areaWall(hFacW,drF,dyG,360,'x')
-  EBWater = transportBdyWE(EArea, MaskC,MaskW, nt, 360, U, U, 'w')
-  EBTr1 = transportBdyWE(EArea, MaskC,MaskW, nt, 360, Tr1, U, 'fe')
+  EArea = areaWall(hFacW,drF,dyG,359,'x')
+  EBWater = transportBdyWE(EArea, MaskC,MaskW, nt, 359, U, U, 'w')
+  EBTr1 = transportBdyWE(EArea, MaskC,MaskW, nt, 359, Tr1, U, 'fe')
   
   #balanceWater = balanceBdys(NBWater,SBWater,EBWater,WBWater,nt)
   #balanceTr = balanceBdys(NBTr1,SBTr1,EBTr1,WBTr1,nt)
