@@ -69,4 +69,6 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[FluxThroughOpenBoundaries.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/FluxThroughOpenBoundaries.ipynb)
 
+* ##[CrossShelfTransportComparisons.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/CrossShelfTransportComparisons.ipynb)
+
 
