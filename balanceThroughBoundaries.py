@@ -56,7 +56,7 @@ def areaWall(hfac,dr,dx,jj,orient):
     print('Orient should be either y or x')
 
 #--------------------------------------------------------------------------------------------------
-def transportBdyNS(wallArea, maskC, maskVel, nt, yi, fld, vel, transType='w'):
+def transportBdyNS(wallArea, maskC, nt, yi, fld, vel, transType='w'):
   '''Calculate the transport [mol/s or m^3/s] through N or S boundary.
   INPUT
   wallArea : 2D array with the area of the boundary. Output from areaWall.
@@ -64,7 +64,7 @@ def transportBdyNS(wallArea, maskC, maskVel, nt, yi, fld, vel, transType='w'):
   nt : number of snapshots or output time size.
   yi : boundary location index (0 for S and 359 for N)
   fld : 4D array with the scalar variable flowing through bdy. Mostly tracers.
-  vel : 4D array of normal-to-bdy component of velocity.
+  vel : 4D array of unstaggered normal-to-bdy component of velocity.
   transType : Character indicating whether the transport is of a scalar field (north or south) 'fn or fs' or water 'w'. Default is w.
   OUTPUT
   transportBdy : 1D array size nt with the transport through the bdy at every snapshot.
@@ -73,23 +73,22 @@ def transportBdyNS(wallArea, maskC, maskVel, nt, yi, fld, vel, transType='w'):
 
   if transType == 'w':
     for tt in range(nt):
-      velo = np.ma.array(vel[tt,:,yi,:],mask=maskVel[:,yi,:])
+      velo = np.ma.array(vel[tt,:,yi,:],mask=maskC[:,yi,:])
       transportBdy[tt] = np.sum(wallArea[:,:]*velo)
     return(transportBdy)
 
   elif transType == 'fn':
     for tt in range(nt):
-      fldUnstag = (fld[tt,:,yi-1,:]+fld[tt,:,yi,:])/2
-      field=np.ma.array(fldUnstag,mask=maskVel[:,yi-1,:])
-      velo=np.ma.array(vel[tt,:,yi,:],mask=maskVel[:,yi,:])
+      field=np.ma.array(fld[tt,:,yi,:],mask=maskC[:,yi,:])
+      velo=np.ma.array(vel[tt,:,yi,:],mask=maskC[:,yi,:])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor
     return(transportBdy)
 
   elif transType == 'fs':
     for tt in range(nt):
-      fldUnstag = (fld[tt,:,yi-1,:]+fld[tt,:,yi,:])/2
-      field=np.ma.array(fldUnstag,mask=maskVel[:,yi,:])
-      velo=np.ma.array(vel[tt,:,yi,:],mask=maskVel[:,yi,:])
+      
+      field=np.ma.array(fld[tt,:,yi,:],mask=maskC[:,yi,:])
+      velo=np.ma.array(vel[tt,:,yi,:],mask=maskC[:,yi,:])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor
     return(transportBdy)
 
@@ -97,7 +96,7 @@ def transportBdyNS(wallArea, maskC, maskVel, nt, yi, fld, vel, transType='w'):
     print('transType can only be w or f')
 
 #--------------------------------------------------------------------------------------------------
-def transportBdyWE(wallArea, maskC,maskVel, nt, xi, fld, vel, transType='w'):
+def transportBdyWE(wallArea, maskC, nt, xi, fld, vel, transType='w'):
   '''Calculate the transport [mol/s or m^3/s] through W or E boundary.
   INPUT
     wallArea : 2D array with the area of the boundary. Output from areaWall.
@@ -105,7 +104,7 @@ def transportBdyWE(wallArea, maskC,maskVel, nt, xi, fld, vel, transType='w'):
     nt : number of snapshots or output time size.
     xi : boundary location index (0 for W and 359 for E)
     fld : 4D array with the scalar variable flowing through bdy. Mostly tracers.
-    vel : 4D array of normal-to-bdy component of velocity.
+    vel : 4D array of unstaggered normal-to-bdy component of velocity.
     transType : Character indicating whether the transport is of a scalar field east 'fe', 'fw' scalar field west or water 'w'. Default is w.
   OUTPUT
     transportBdy : 1D array size nt with the transport through the bdy at every snapshot.
@@ -114,23 +113,21 @@ def transportBdyWE(wallArea, maskC,maskVel, nt, xi, fld, vel, transType='w'):
 
   if transType == 'w':
     for tt in range(nt):
-      velo=np.ma.array(vel[tt,:,:,xi],mask=maskVel[:,:,xi])
+      velo=np.ma.array(vel[tt,:,:,xi],mask=maskC[:,:,xi])
       transportBdy[tt] = np.sum(wallArea[:,:]*velo)
     return(transportBdy)
 
   elif transType == 'fe':
     for tt in range(nt):
-      velo = np.ma.array(vel[tt,:,:,xi],mask=maskVel[:,:,xi])
-      fldUnstag = (fld[tt,:,:,xi-1]+fld[tt,:,:,xi])/2
-      field = np.ma.array(fldUnstag,mask=maskVel[:,:,xi-1])
+      velo = np.ma.array(vel[tt,:,:,xi],mask=maskC[:,:,xi])
+      field = np.ma.array(fld[tt,:,:,xi],mask=maskC[:,:,xi])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor
     return(transportBdy)
 
   elif transType == 'fw':
     for tt in range(nt):
-      velo = np.ma.array(vel[tt,:,:,xi],mask=maskVel[:,:,xi])
-      fldUnstag = (fld[tt,:,:,xi-1]+fld[tt,:,:,xi])/2
-      field = np.ma.array(fldUnstag,mask=maskVel[:,:,xi])
+      velo = np.ma.array(vel[tt,:,:,xi],mask=maskC[:,:,xi])
+      field = np.ma.array(fld[tt,:,:,xi],mask=maskC[:,:,xi])
       transportBdy[tt] = np.sum(wallArea[:,:]*field*1000.0*velo) # 1000 is the conversion factor
     return(transportBdy)
 
@@ -268,13 +265,13 @@ def main():
   nz = 90
   nt = 19
 
-  stateFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run05/stateGlob.nc'
+  stateFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run04/stateGlob.nc'
   StateOut1 = Dataset(stateFile1)
 
-  gridFile='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run05/gridGlob.nc'
+  gridFile='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run04/gridGlob.nc'
   GridOut = Dataset(gridFile)
 
-  ptracersFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run05/ptracersGlob.nc'
+  ptracersFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run04/ptracersGlob.nc'
   PtracersOut1 = Dataset(ptracersFile1)
 
   X = StateOut1.variables['X']
@@ -296,36 +293,41 @@ def main():
   MaskW = rout.getMask(gridFile,'HFacW') # same for 3 runs
 
   Tr1 = rout.getField(ptracersFile1,'Tr1') # [Tr#Run#] = mol/L = mol/dm^3
-  U = rout.getField(stateFile1,'U')
-  V = rout.getField(stateFile1,'V')
+  uu = rout.getField(stateFile1,'U')
+  vv = rout.getField(stateFile1,'V')
 
-  #U,V = rout.unstagger(uu,vv)
+  U = (uu[:,:,:,:-1]+uu[:,:,:,1:])/2
+  V = (vv[:,:,:-1,:]+vv[:,:,1:,:])/2
+  
+  rout.unstagger(uu,vv)
 
-  NArea = areaWall(hFacS,drF,dxG,359,'y')
-  NBWater = transportBdyNS(NArea, MaskC, MaskS, nt, 359, V, V,  transType='w')
-  NBTr1 = transportBdyNS(NArea, MaskC,MaskS, nt, 359, Tr1, V, transType='fn')
+  NArea = areaWall(hFacC,drF,dxG,358,'y')
+  NBWater = transportBdyNS(NArea, MaskC, nt, 358, V, V,  transType='w')
+  NBTr1 = transportBdyNS(NArea, MaskC, nt, 358, Tr1, V, transType='fn')
 
-  SArea = areaWall(hFacS,drF,dxG,2,'y')
-  SBWater = transportBdyNS(SArea, MaskC,MaskS, nt, 2, V, V, transType='w')
-  SBTr1 = transportBdyNS(SArea, MaskC,MaskS, nt, 2, Tr1, V,transType= 'fs')
+  SArea = areaWall(hFacC,drF,dxG,1,'y')
+  SBWater = transportBdyNS(SArea, MaskC, nt, 1, V, V, transType='w')
+  SBTr1 = transportBdyNS(SArea, MaskC, nt, 1, Tr1, V,transType= 'fs')
 
-  WArea = areaWall(hFacW,drF,dyG,2,'x')
-  WBWater = transportBdyWE(WArea, MaskC, MaskW, nt, 2, U, U, transType='w')
-  WBTr1 = transportBdyWE(WArea, MaskC,MaskW, nt, 2, Tr1, U,transType= 'fw')
+  WArea = areaWall(hFacC,drF,dyG,0,'x')
+  WBWater = transportBdyWE(WArea, MaskC, nt, 0, U, U, transType='w')
+  WBTr1 = transportBdyWE(WArea, MaskC, nt, 0, Tr1, U,transType= 'fw')
 
-  EArea = areaWall(hFacW,drF,dyG,359,'x')
-  EBWater = transportBdyWE(EArea, MaskC,MaskW, nt, 359, U, U, 'w')
-  EBTr1 = transportBdyWE(EArea, MaskC,MaskW, nt, 359, Tr1, U, 'fe')
+  EArea = areaWall(hFacC,drF,dyG,359,'x')
+  EBWater = transportBdyWE(EArea, MaskC, nt, 359, U, U, 'w')
+  EBTr1 = transportBdyWE(EArea, MaskC, nt, 359, Tr1, U, 'fe')
 
-  #balanceWater = balanceBdys(NBWater,SBWater,EBWater,WBWater,nt)
-  #balanceTr = balanceBdys(NBTr1,SBTr1,EBTr1,WBTr1,nt)
-  balanceWater = balancePeriodicBdys(EBWater,WBWater,nt) # for run with walls use these two
-  balanceTr = balancePeriodicBdys(EBTr1,WBTr1,nt)
-
-  figname1 = '/ocean/kramosmu/Figures/MassBalance/transBdyWaterRun05NOGMREDIc.eps'
-  figname2 = '/ocean/kramosmu/Figures/MassBalance/transBdyTrRun05NOGMREDIc.eps'
-  figname3 = '/ocean/kramosmu/Figures/MassBalance/balanceWaterRun05NOGMREDIc.eps'
-  figname4 = '/ocean/kramosmu/Figures/MassBalance/balanceTrRun05NOGMREDIc.eps'
+  
+  #balanceWater = balancePeriodicBdys(EBWater,WBWater,nt)
+  #balanceTr =balancePeriodicBdys(EBTr1,WBTr1,nt)
+  
+  balanceWater = balanceBdys(NBWater,SBWater,EBWater,WBWater,nt)
+  balanceTr = balanceBdys(NBTr1,SBTr1,EBTr1,WBTr1,nt)
+  
+  figname1 = '/ocean/kramosmu/Figures/MassBalance/transBdyWaterRun04NOGMREDI.eps'
+  figname2 = '/ocean/kramosmu/Figures/MassBalance/transBdyTrRun04NOGMREDI.eps'
+  figname3 = '/ocean/kramosmu/Figures/MassBalance/balanceWaterRun04NOGMREDI.eps'
+  figname4 = '/ocean/kramosmu/Figures/MassBalance/balanceTrRun04NOGMREDI.eps'
 
   plotTransBdyWater(NBWater,SBWater,EBWater,WBWater,figname1)
   plotTransBdyTr(NBTr1,SBTr1,EBTr1,WBTr1,figname2)
