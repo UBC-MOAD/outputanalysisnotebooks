@@ -265,13 +265,13 @@ def main():
   nz = 90
   nt = 19
 
-  stateFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run04/stateGlob.nc'
+  stateFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run06/stateGlob.nc'
   StateOut1 = Dataset(stateFile1)
 
-  gridFile='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run04/gridGlob.nc'
+  gridFile='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run06/gridGlob.nc'
   GridOut = Dataset(gridFile)
 
-  ptracersFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run04/ptracersGlob.nc'
+  ptracersFile1='/ocean/kramosmu/MITgcm/TracerExperiments/NOGMREDI/run06/ptracersGlob.nc'
   PtracersOut1 = Dataset(ptracersFile1)
 
   X = StateOut1.variables['X']
@@ -301,13 +301,13 @@ def main():
   
   rout.unstagger(uu,vv)
 
-  NArea = areaWall(hFacC,drF,dxG,358,'y')
-  NBWater = transportBdyNS(NArea, MaskC, nt, 358, V, V,  transType='w')
-  NBTr1 = transportBdyNS(NArea, MaskC, nt, 358, Tr1, V, transType='fn')
+  NArea = areaWall(hFacC,drF,dxG,359,'y')
+  NBWater = transportBdyNS(NArea, MaskC, nt, 359, V, V,  transType='w')
+  NBTr1 = transportBdyNS(NArea, MaskC, nt, 359, Tr1, V, transType='fn')
 
-  SArea = areaWall(hFacC,drF,dxG,1,'y')
-  SBWater = transportBdyNS(SArea, MaskC, nt, 1, V, V, transType='w')
-  SBTr1 = transportBdyNS(SArea, MaskC, nt, 1, Tr1, V,transType= 'fs')
+  SArea = areaWall(hFacC,drF,dxG,227,'y') # Use index = 1 to calculate through Southern boundary
+  SBWater = transportBdyNS(SArea, MaskC, nt, 227, V, V, transType='w')
+  SBTr1 = transportBdyNS(SArea, MaskC, nt, 227, Tr1, V,transType= 'fs')
 
   WArea = areaWall(hFacC,drF,dyG,0,'x')
   WBWater = transportBdyWE(WArea, MaskC, nt, 0, U, U, transType='w')
@@ -324,10 +324,10 @@ def main():
   balanceWater = balanceBdys(NBWater,SBWater,EBWater,WBWater,nt)
   balanceTr = balanceBdys(NBTr1,SBTr1,EBTr1,WBTr1,nt)
   
-  figname1 = '/ocean/kramosmu/Figures/MassBalance/transBdyWaterRun04NOGMREDI.eps'
-  figname2 = '/ocean/kramosmu/Figures/MassBalance/transBdyTrRun04NOGMREDI.eps'
-  figname3 = '/ocean/kramosmu/Figures/MassBalance/balanceWaterRun04NOGMREDI.eps'
-  figname4 = '/ocean/kramosmu/Figures/MassBalance/balanceTrRun04NOGMREDI.eps'
+  figname1 = '/ocean/kramosmu/Figures/MassBalance/transBdyWaterRun06NOGMREDI_SB.eps'
+  figname2 = '/ocean/kramosmu/Figures/MassBalance/transBdyTrRun06NOGMREDI_SB.eps'
+  figname3 = '/ocean/kramosmu/Figures/MassBalance/balanceWaterRun06NOGMREDI_SB.eps'
+  figname4 = '/ocean/kramosmu/Figures/MassBalance/balanceTrRun06NOGMREDI_SB.eps'
 
   plotTransBdyWater(NBWater,SBWater,EBWater,WBWater,figname1)
   plotTransBdyTr(NBTr1,SBTr1,EBTr1,WBTr1,figname2)
