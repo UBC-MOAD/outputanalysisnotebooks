@@ -75,3 +75,5 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[CrossShelfTransports-CNTDIFF.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/CrossShelfTransports-CNTDIFF.ipynb)
 
+* ##[CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb)
+
