@@ -77,3 +77,4 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb)
 
+* ##[TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb)
