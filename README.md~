@@ -82,3 +82,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[ShelfBoxFluxes-3DDIFF.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ShelfBoxFluxes-3DDIFF.ipynb)
 
 * ##[VerticalFluxSurfaces.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticalFluxSurfaces.ipynb)
+
+* ##[TempSurfaces.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TempSurfaces.ipynb)
