@@ -88,3 +88,5 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[ConcetrationSurfaces.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationSurfaces.ipynb)
 
 * ##[ShelfBoxTransport-3DDIFF-CONT.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ShelfBoxTransport-3DDIFF-CONT.ipynb)
+
+* ##[VertTransportDomain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VertTransportDomain.ipynb)
