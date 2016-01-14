@@ -81,12 +81,14 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[ShelfBoxFluxes-3DDIFF.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ShelfBoxFluxes-3DDIFF.ipynb)
 
+* ##[ShelfBoxTransport-3DDIFF-CONT.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ShelfBoxTransport-3DDIFF-CONT.ipynb)
+
 * ##[VerticalFluxSurfaces.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticalFluxSurfaces.ipynb)
 
 * ##[TempSurfaces.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TempSurfaces.ipynb)
 
 * ##[ConcetrationSurfaces.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationSurfaces.ipynb)
 
-* ##[ShelfBoxTransport-3DDIFF-CONT.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ShelfBoxTransport-3DDIFF-CONT.ipynb)
-
 * ##[VertTransportDomain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VertTransportDomain.ipynb)
+
+* ##[ConcentrationGradientsDownstreamShelf.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationGradientsDownstreamShelf.ipynb)

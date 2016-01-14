@@ -92,3 +92,12 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[VertTransportDomain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VertTransportDomain.ipynb)
 
 * ##[ConcentrationGradientsDownstreamShelf.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationGradientsDownstreamShelf.ipynb)
+
+* ##[ConcentrationGradientsDownstreamShelfBARKLEY.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationGradientsDownstreamShelfBARKLEY.ipynb)
+
+* ##[TotalTracerOnShelfBarkleyProfiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerOnShelfBarkleyProfiles.ipynb)
+
+* ##[UpwellingDepthFromMaxValue.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/UpwellingDepthFromMaxValue.ipynb)
+
+
+ 
