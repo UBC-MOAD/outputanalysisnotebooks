@@ -97,6 +97,8 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[TotalTracerOnShelfBarkleyProfiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerOnShelfBarkleyProfiles.ipynb)
 
+* ##[TotalTracerOnShelfBarkleyProfilesNoCanyon.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/TotalTracerOnShelfBarkleyProfilesNoCanyon.ipynb)
+
 * ##[UpwellingDepthFromMaxValue.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/UpwellingDepthFromMaxValue.ipynb)
 
 
