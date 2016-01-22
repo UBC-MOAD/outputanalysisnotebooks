@@ -54,9 +54,9 @@ def main():
 
 
 
-  Tr1 = rout.getField(Ptracers1,'Tr01')
-  Tr2 = rout.getField(Ptracers1,'Tr02')
-  Tr3 = rout.getField(Ptracers1,'Tr03')
+  Tr1 = rout.getField(Ptracers1,'Tr1')
+  Tr2 = rout.getField(Ptracers1,'Tr2')
+  Tr3 = rout.getField(Ptracers1,'Tr3')
   
   print('Finished reading tracer fields')
   
@@ -83,23 +83,23 @@ def main():
   WatTr1CV = [WatTr1CV,WatTr2CV,WatTr3CV]
   
   for trstr,a,b,c,d,e, in zip(TracerList,IniList,MassList,WatList,MassCVList,WatTr1CV):
-    filename1 = ('results/iniProfiles/CNT%sini%s' % (run,trstr))
+    filename1 = ('results/iniProfiles/NOREDI%sini%s' % (run,trstr))
     mpt.dumpFiles(filename1,a)
     print(filename1)
     
-    filename2 = ('results/massShelf/CNT%smass%s' % (run,trstr))
+    filename2 = ('results/massShelf/NOREDI%smass%s' % (run,trstr))
     mpt.dumpFiles(filename2,b)
     print(filename2)
   
-    filename3 = ('results/volumeHCWShelf/CNT%swat30%s' % (run,trstr) )
+    filename3 = ('results/volumeHCWShelf/NOREDI%swat30%s' % (run,trstr) )
     mpt.dumpFiles(filename3,c)
     print(filename3)
   
-    filename4 = ('results/massCV/CNT%smass%s' % (run,trstr))
+    filename4 = ('results/massCV/NOREDI%smass%s' % (run,trstr))
     mpt.dumpFiles(filename4,d)
     print(filename4)
   
-    filename5 =  ('results/volumeHCWCV/CNT%swat30%s' % (run,trstr))
+    filename5 =  ('results/volumeHCWCV/NOREDI%swat30%s' % (run,trstr))
     mpt.dumpFiles(filename5,e)
     print(filename5)
   
