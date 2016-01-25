@@ -8,6 +8,8 @@ import numpy as np
 
 import os 
 
+import pandas as pd
+
 import pylab as pl
 
 import scipy.io
@@ -81,7 +83,7 @@ def main():
   (WatTr6, TrMassTr6) = mpt.howMuchWaterX(Tr6,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
   (WatTr7, TrMassTr7) = mpt.howMuchWaterX(Tr7,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
   (WatTr8, TrMassTr8) = mpt.howMuchWaterX(Tr8,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
-  print('Finished calculating mass on shlelf')
+  print('Finished calculating mass on shelf')
   
   (WatTr1CV, MassTr1CV) = mpt.howMuchWaterCV(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,49,309)
   (WatTr2CV, MassTr2CV) = mpt.howMuchWaterCV(Tr2,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,49,309)
@@ -101,27 +103,25 @@ def main():
   MassCVList = [MassTr1CV,MassTr2CV,MassTr3CV,MassTr4CV,MassTr5CV,MassTr6CV,MassTr7CV,MassTr8CV]
   WatTr1CV = [WatTr1CV,WatTr2CV,WatTr3CV,WatTr4CV,WatTr5CV,WatTr6CV,WatTr7CV,WatTr8CV]
   
+  day = [0., 0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.]
+ 
   for trstr,a,b,c,d,e, in zip(TracerList,IniList,MassList,WatList,MassCVList,WatTr1CV):
-    filename1 = ('results/iniProfiles/BAR%sini%s' % (run,trstr))
-    mpt.dumpFiles(filename1,a)
-    print(filename1)
     
-    filename2 = ('results/massShelf/BAR%smass%s' % (run,trstr))
-    mpt.dumpFiles(filename2,b)
+    raw_data = {'day':day, 'TronShelf': b, 'HCWonShelf': c, 'TronCV': d, 'HCWonCV': e}
+    df = pd.DataFrame(raw_data, columns = ['day', 'TronShelf', 'HCWonShelf', 'TronCV', 'HCWonCV'])
+    
+    filename1 = ('results/metricsDataFrames/BAR%s%s.csv' % (run,trstr))
+    df.to_csv(filename1)
+    
+    print(filename1)
+  
+    raw_data_ini = {'depthsRC':rc ,'IniProfile': a}
+    df2 = pd.DataFrame(raw_data_ini, columns = ['depthsRC', 'IniProfile'])
+    
+    filename2 = ('results/metricsDataFrames/BAR%sini%s.csv' % (run,trstr))
+    df2.to_csv(filename2)
+    
     print(filename2)
-  
-    filename3 = ('results/volumeHCWShelf/BAR%swat30%s' % (run,trstr) )
-    mpt.dumpFiles(filename3,c)
-    print(filename3)
-  
-    filename4 = ('results/massCV/BAR%smass%s' % (run,trstr))
-    mpt.dumpFiles(filename4,d)
-    print(filename4)
-  
-    filename5 =  ('results/volumeHCWCV/BAR%swat30%s' % (run,trstr))
-    mpt.dumpFiles(filename5,e)
-    print(filename5)
-  
   
   print('Done writing')
   

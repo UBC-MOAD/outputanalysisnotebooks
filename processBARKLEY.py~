@@ -8,6 +8,8 @@ import numpy as np
 
 import os 
 
+import pandas as pd
+
 import pylab as pl
 
 import scipy.io
@@ -101,72 +103,26 @@ def main():
   MassCVList = [MassTr1CV,MassTr2CV,MassTr3CV,MassTr4CV,MassTr5CV,MassTr6CV,MassTr7CV,MassTr8CV]
   WatTr1CV = [WatTr1CV,WatTr2CV,WatTr3CV,WatTr4CV,WatTr5CV,WatTr6CV,WatTr7CV,WatTr8CV]
   
+  day = [0., 0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.]
+ 
   for trstr,a,b,c,d,e, in zip(TracerList,IniList,MassList,WatList,MassCVList,WatTr1CV):
-    filename1 = ('results/iniProfiles/BAR%sini%s' % (run,trstr))
-    mpt.dumpFiles(filename1,a)
-    print(filename1)
     
-    filename2 = ('results/massShelf/BAR%smass%s' % (run,trstr))
-    mpt.dumpFiles(filename2,b)
+    raw_data = {'day':day, 'TronShelf': b, 'HCWonShelf': c, 'TronCV': d, 'HCWonCV': e}
+    df = pd.DataFrame(raw_data, columns = ['day', 'TronShelf', 'HCWonShelf', 'TronCV', 'HCWonCV'])
+    
+    filename1 = ('results/metricsDataFrames/BAR%s%s.csv' % (run,trstr))
+    df.to_csv(filename1)
+    
+    print(filename1)
+  
+    raw_data_ini = {'depthsRC':rc ,'IniProfile': a}
+    df2 = pd.DataFrame(raw_data_ini, columns = ['depthsRC', 'IniProfile'])
+    
+    filename2 = ('results/metricsDataFrames/BAR%sini%s.csv' % (run,trstr))
+    df2.to_csv(filename2)
+    
     print(filename2)
   
-    filename3 = ('results/volumeHCWShelf/BAR%swat30%s' % (run,trstr) )
-    mpt.dumpFiles(filename3,c)
-    print(filename3)
-  
-    filename4 = ('results/massCV/BAR%smass%s' % (run,trstr))
-    mpt.dumpFiles(filename4,d)
-    print(filename4)
-  
-    filename5 =  ('results/volumeHCWCV/BAR%swat30%s' % (run,trstr))
-    mpt.dumpFiles(filename5,e)
-    print(filename5)
-  
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr1',Tr1ini)
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr2',Tr2ini)
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr3',Tr3ini)
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr4',Tr4ini)
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr5',Tr5ini)
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr6',Tr6ini)
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr7',Tr7ini)
-  #mpt.dumpFiles('results/iniProfiles/BARrun02iniTr8',Tr8ini)
-  3DDIFF
-  
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr1',TrMassTr1)
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr2',TrMassTr2)
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr3',TrMassTr3)
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr4',TrMassTr4)
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr5',TrMassTr5)
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr6',TrMassTr6)
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr7',TrMassTr7)
-  #mpt.dumpFiles('results/massShelf/BARrun02massTr8',TrMassTr8)
-  
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr1',WatTr1)
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr2',WatTr2)
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr3',WatTr3)
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr4',WatTr4)
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr5',WatTr5)
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr6',WatTr6)
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr7',WatTr7)
-  #mpt.dumpFiles('results/volumeHCWShelf/BARrun02wat30Tr8',WatTr8)
-  
-  #mpt.dumpFiles('results/massCV/BARrun02massTr1',MassTr1CV)
-  #mpt.dumpFiles('results/massCV/BARrun02massTr2',MassTr2CV)
-  #mpt.dumpFiles('results/massCV/BARrun02massTr3',MassTr3CV)
-  #mpt.dumpFiles('results/massCV/BARrun02massTr4',MassTr4CV)
-  #mpt.dumpFiles('results/massCV/BARrun02massTr5',MassTr5CV)
-  #mpt.dumpFiles('results/massCV/BARrun02massTr6',MassTr6CV)
-  #mpt.dumpFiles('results/massCV/BARrun02massTr7',MassTr7CV)
-  #mpt.dumpFiles('results/massCV/BARrun02massTr8',MassTr8CV)
-  
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr1',WatTr1CV)
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr2',WatTr2CV)
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr3',WatTr3CV)
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr4',WatTr4CV)
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr5',WatTr5CV)
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr6',WatTr6CV)
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr7',WatTr7CV)
-  #mpt.dumpFiles('results/volumeHCWCV/BARrun02wat30Tr8',WatTr8CV)
   print('Done writing')
   
   

@@ -8,6 +8,8 @@ import numpy as np
 
 import os 
 
+import pandas as pd
+
 import pylab as pl
 
 import scipy.io
@@ -61,28 +63,42 @@ def main():
   
   
   (WatTr1, TrMassTr1) = mpt.howMuchWaterX(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
-  print('Finished calculating mass on shlelf')
+  print('Finished calculating mass on shelf')
   
   (WatTr1CV, MassTr1CV) = mpt.howMuchWaterCV(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,49,309)
   print('Finished calculating mass in control volume')
   
-  filename1 = ('results/iniProfiles/3DDIFF%siniTr1' % run)
-  mpt.dumpFiles(filename1,Tr1ini)
+  TracerList = ['Tr1']
   
-  filename2 = ('results/massShelf/3DDIFF%smassTr1' % run)
-  mpt.dumpFiles(filename2,TrMassTr1)
-  
-  filename3 = ('results/volumeHCWShelf/3DDIFF%swat30Tr1' % run) 
-  mpt.dumpFiles(filename3,WatTr1)
-  
-  filename4 = ('results/massCV/3DDIFF%smassTr1' % run)
-  mpt.dumpFiles(filename4,MassTr1CV)
-  
-  filename5 =  ('results/volumeHCWCV/3DDIFF%swat30Tr1' % run)
-  mpt.dumpFiles(filename5,WatTr1CV)
+  IniList = [Tr1ini]
+  MassList = [TrMassTr1]
+  WatList = [WatTr1]
+  MassCVList = [MassTr1CV]
+  WatTr1CV = [WatTr1CV]
+  day = [0., 0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.]
  
+  for trstr,a,b,c,d,e, in zip(TracerList,IniList,MassList,WatList,MassCVList,WatTr1CV):
+    
+    raw_data = {'day':day, 'TronShelf': b, 'HCWonShelf': c, 'TronCV': d, 'HCWonCV': e}
+    df = pd.DataFrame(raw_data, columns = ['day', 'TronShelf', 'HCWonShelf', 'TronCV', 'HCWonCV'])
+    
+    filename1 = ('results/metricsDataFrames/3DDIFF%s%s.csv' % (run,trstr))
+    df.to_csv(filename1)
+    
+    print(filename1)
+  
+    raw_data_ini = {'depthsRC':rc ,'IniProfile': a}
+    df2 = pd.DataFrame(raw_data_ini, columns = ['depthsRC', 'IniProfile'])
+    
+    filename2 = ('results/metricsDataFrames/3DDIFF%sini%s.csv' % (run,trstr))
+    df2.to_csv(filename2)
+    
+    print(filename2)
+  
   print('Done writing')
   
+  
+
   
   
 main()

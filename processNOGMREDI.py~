@@ -8,6 +8,8 @@ import numpy as np
 
 import os 
 
+import pandas as pd
+
 import pylab as pl
 
 import scipy.io
@@ -45,7 +47,7 @@ def main():
 
   drF = GridOut1.variables['drF'] # vertical distance between faces
   dxG = rout.getField(Grid1,'dxG')
-
+.
   MaskCan = rout.getMask(Grid1,'HFacC') 
   hFacCCan = rout.getField(Grid1,'HFacC') 
   rACan = rout.getField(Grid1,'rA') 
@@ -67,7 +69,7 @@ def main():
   (WatTr1, TrMassTr1) = mpt.howMuchWaterX(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
   (WatTr2, TrMassTr2) = mpt.howMuchWaterX(Tr2,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
   (WatTr3, TrMassTr3) = mpt.howMuchWaterX(Tr3,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
-  print('Finished calculating mass on shlelf')
+  print('Finished calculating mass on shelf')
   
   (WatTr1CV, MassTr1CV) = mpt.howMuchWaterCV(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,49,309)
   (WatTr2CV, MassTr2CV) = mpt.howMuchWaterCV(Tr2,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,49,309)
@@ -82,27 +84,25 @@ def main():
   MassCVList = [MassTr1CV,MassTr2CV,MassTr3CV]
   WatTr1CV = [WatTr1CV,WatTr2CV,WatTr3CV]
   
+  day = [0., 0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.]
+ 
   for trstr,a,b,c,d,e, in zip(TracerList,IniList,MassList,WatList,MassCVList,WatTr1CV):
-    filename1 = ('results/iniProfiles/NOREDI%sini%s' % (run,trstr))
-    mpt.dumpFiles(filename1,a)
-    print(filename1)
     
-    filename2 = ('results/massShelf/NOREDI%smass%s' % (run,trstr))
-    mpt.dumpFiles(filename2,b)
+    raw_data = {'day':day, 'TronShelf': b, 'HCWonShelf': c, 'TronCV': d, 'HCWonCV': e}
+    df = pd.DataFrame(raw_data, columns = ['day', 'TronShelf', 'HCWonShelf', 'TronCV', 'HCWonCV'])
+    
+    filename1 = ('results/metricsDataFrames/NOREDI%s%s.csv' % (run,trstr))
+    df.to_csv(filename1)
+    
+    print(filename1)
+  
+    raw_data_ini = {'depthsRC':rc ,'IniProfile': a}
+    df2 = pd.DataFrame(raw_data_ini, columns = ['depthsRC', 'IniProfile'])
+    
+    filename2 = ('results/metricsDataFrames/NOREDI%sini%s.csv' % (run,trstr))
+    df2.to_csv(filename2)
+    
     print(filename2)
-  
-    filename3 = ('results/volumeHCWShelf/NOREDI%swat30%s' % (run,trstr) )
-    mpt.dumpFiles(filename3,c)
-    print(filename3)
-  
-    filename4 = ('results/massCV/NOREDI%smass%s' % (run,trstr))
-    mpt.dumpFiles(filename4,d)
-    print(filename4)
-  
-    filename5 =  ('results/volumeHCWCV/NOREDI%swat30%s' % (run,trstr))
-    mpt.dumpFiles(filename5,e)
-    print(filename5)
-  
   
   print('Done writing')
   
