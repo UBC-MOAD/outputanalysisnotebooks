@@ -83,7 +83,7 @@ def main():
   (WatTr6, TrMassTr6) = mpt.howMuchWaterX(Tr6,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
   (WatTr7, TrMassTr7) = mpt.howMuchWaterX(Tr7,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
   (WatTr8, TrMassTr8) = mpt.howMuchWaterX(Tr8,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180) 
-  print('Finished calculating mass on shlelf')
+  print('Finished calculating mass on shelf')
   
   (WatTr1CV, MassTr1CV) = mpt.howMuchWaterCV(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,49,309)
   (WatTr2CV, MassTr2CV) = mpt.howMuchWaterCV(Tr2,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,49,309)
