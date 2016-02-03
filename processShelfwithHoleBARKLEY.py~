@@ -68,14 +68,14 @@ def main():
   
   
   
-  (WatTr1, TrMassTr1,WatHTr1,TrMassHTr1) = mpt.howMuchWaterShwHole(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr2, TrMassTr2,WatHTr2,TrMassHTr2) = mpt.howMuchWaterShwHole(Tr2,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr3, TrMassTr3,WatHTr3,TrMassHTr3) = mpt.howMuchWaterShwHole(Tr3,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr4, TrMassTr4,WatHTr4,TrMassHTr4) = mpt.howMuchWaterShwHole(Tr4,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr5, TrMassTr5,WatHTr5,TrMassHTr5) = mpt.howMuchWaterShwHole(Tr5,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr6, TrMassTr6,WatHTr6,TrMassHTr6) = mpt.howMuchWaterShwHole(Tr6,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr7, TrMassTr7,WatHTr7,TrMassHTr7) = mpt.howMuchWaterShwHole(Tr7,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr8, TrMassTr8,WatHTr8,TrMassHTr8) = mpt.howMuchWaterShwHole(Tr8,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr1, TrMassTr1,WatHTr1,TrMassHTr1) = mpt.howMuchWaterShwHole(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50,xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr2, TrMassTr2,WatHTr2,TrMassHTr2) = mpt.howMuchWaterShwHole(Tr2,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr3, TrMassTr3,WatHTr3,TrMassHTr3) = mpt.howMuchWaterShwHole(Tr3,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr4, TrMassTr4,WatHTr4,TrMassHTr4) = mpt.howMuchWaterShwHole(Tr4,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr5, TrMassTr5,WatHTr5,TrMassHTr5) = mpt.howMuchWaterShwHole(Tr5,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr6, TrMassTr6,WatHTr6,TrMassHTr6) = mpt.howMuchWaterShwHole(Tr6,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr7, TrMassTr7,WatHTr7,TrMassHTr7) = mpt.howMuchWaterShwHole(Tr7,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267) 
+  (WatTr8, TrMassTr8,WatHTr8,TrMassHTr8) = mpt.howMuchWaterShwHole(Tr8,MaskCan,30,rACan,hFacCCan,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267) 
   print('Finished calculating mass on shelf')
   
     
