@@ -58,9 +58,9 @@ def main():
 
 
 
-  Tr1 = rout.getField(Ptracers1,'Tr01')
-  Tr2 = rout.getField(Ptracers1,'Tr02')
-  Tr3 = rout.getField(Ptracers1,'Tr03')
+  Tr1 = rout.getField(Ptracers1,'Tr1')
+  Tr2 = rout.getField(Ptracers1,'Tr2')
+  Tr3 = rout.getField(Ptracers1,'Tr3')
   print('Finished reading tracer fields')
 
 
@@ -85,7 +85,7 @@ def main():
     raw_data = {'day':day, 'TronShelfwHole': a, 'HCWonShelfwHole': b, 'TronHole': c, 'HCWonHole': d}
     df = pd.DataFrame(raw_data, columns = ['day', 'TronShelfwHole', 'HCWonShelfwHole', 'TronHole', 'HCWonHole'])
 
-    filename1 = ('results/metricsDataFrames/BAR_hole_NoCMask_%s%s.csv' % (run,trstr))
+    filename1 = ('results/metricsDataFrames/CNT_hole_NoCMask_%s%s.csv' % (run,trstr))
     df.to_csv(filename1)
 
     print(filename1)

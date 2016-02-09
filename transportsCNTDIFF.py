@@ -108,8 +108,8 @@ def main():
     W_LID1 = np.sum(np.sum(W_LID1a,axis=2),axis=1)
     W_LID2 = np.sum(np.sum(W_LID2a,axis=2),axis=1)
   
-  
-    raw_data = {'day':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2}
+   
+    raw_data = {'day':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2, index=[0]}
     df = pd.DataFrame(raw_data, columns = ['day', 'CS1', 'CS2', 'CS3', 'CS3sb', 'CS4', 'CS5', 'AS1', 'AS2', 'LID1', 'LID2'])
     
     filename1 = ('results/metricsDataFrames/CNTDIFF_CSTRANS_%s%s.csv' % (run,trstr))
