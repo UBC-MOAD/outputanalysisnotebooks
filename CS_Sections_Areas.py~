@@ -101,7 +101,7 @@ def main():
   
   raw_data = {'CS1area': V_CS1, 'CS2area': V_CS2, 'CS3area': V_CS3, 'CS3sbarea': V_CS3sb, 'CS4area': V_CS4, 'CS5area': V_CS5, 'AS1area':U_AS1, 'AS2area': U_AS2,'LID1area': W_LID1, 'LID2area': W_LID2,'VolHole': VolHole,'VolShNoHole':VolShNoHole}
   
-  df = pd.DataFrame(raw_data, columns = ['CS1area', 'CS2area', 'CS3area', 'CS3sbarea', 'CS4area', 'CS5area', 'AS1area', 'AS2area', 'LID1area', 'LID2area','VolHole','VolShNoHole'])
+  df = pd.DataFrame(raw_data, columns = ['CS1area', 'CS2area', 'CS3area', 'CS3sbarea', 'CS4area', 'CS5area', 'AS1area', 'AS2area', 'LID1area', 'LID2area','VolHole','VolShNoHole'], index=[0])
     
   filename1 = ('results/metricsDataFrames/Canyon_AreasVolumes.csv')
   df.to_csv(filename1)
