@@ -137,7 +137,7 @@ for ii in tracers_3D:
     TrOnSh[:,kk] =  TrOnHole
     
     HWCsh = get_metrics('3DDIFF_hole_', ii, '1', fields[1] )
-    HWChole = get_metrics('3DDIFF_hole_', ii, '1', fields[1] )
+    HWChole = get_metrics('3DDIFF_hole_', ii, '1', fields[3] )
     
     HWC[:,kk] =  HWChole  
     
@@ -151,7 +151,7 @@ for ii in tracers_CNT03:
     TrOnSh[:,kk] = TrOnHole
     
     HWCsh = get_metrics('CNTDIFF_hole_',  '03', ii,fields[1] )
-    HWChole = get_metrics('CNTDIFF_hole_',  '03',ii,  fields[1] )
+    HWChole = get_metrics('CNTDIFF_hole_',  '03',ii,  fields[3] )
     
     HWC[:,kk] =  HWChole  
     
@@ -165,7 +165,7 @@ for ii in tracers_CNT09:
     TrOnSh[:,kk] = TrOnHole
     
     HWCsh = get_metrics('CNTDIFF_hole_',  '09',ii, fields[1] )
-    HWChole = get_metrics('CNTDIFF_hole_',  '09',ii, fields[1] )
+    HWChole = get_metrics('CNTDIFF_hole_',  '09',ii, fields[3] )
     
     HWC[:,kk] =  HWChole  
     
@@ -193,7 +193,7 @@ for ii in tracers_CNT02:
     TrOnSh[:,kk] =  TrOnHole
     
     HWCsh = get_metrics('CNTDIFF_hole_', '02',ii, fields[1] )
-    HWChole = get_metrics('CNTDIFF_hole_',  '02', ii,fields[1] )
+    HWChole = get_metrics('CNTDIFF_hole_',  '02', ii,fields[3] )
     HWC[:,kk] =  HWChole  
     
     kk=kk+1
@@ -206,7 +206,7 @@ for ii in tracers_CNT04:
     TrOnSh[:,kk] =  TrOnHole
     
     HWCsh = get_metrics('CNTDIFF_hole_',  '04',ii, fields[1] )
-    HWChole = get_metrics('CNTDIFF_hole_',  '04',ii, fields[1] )
+    HWChole = get_metrics('CNTDIFF_hole_',  '04',ii, fields[3] )
     HWC[:,kk] =  HWChole  
     
     kk=kk+1
@@ -219,7 +219,7 @@ for ii in tracers_CNT10:
     TrOnSh[:,kk] = TrOnHole
     
     HWCsh = get_metrics('CNTDIFF_hole_', '10',ii, fields[1] )
-    HWChole = get_metrics('CNTDIFF_hole_',  '10',ii, fields[1] )
+    HWChole = get_metrics('CNTDIFF_hole_',  '10',ii, fields[3] )
     
     HWC[:,kk] =  HWChole  
     
@@ -615,7 +615,7 @@ for ii in indexList:
     
 
     ax4 = plt.subplot(3,3,4)
-    plt.plot(Pev_can[ii] , np.mean(total[10:,ii]+total[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] , np.mean(total[10:,ii]+vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport  ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
     plt.title('Total transport through canyon box  ')
