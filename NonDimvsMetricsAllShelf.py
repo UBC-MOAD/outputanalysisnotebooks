@@ -1,4 +1,4 @@
-### Non dimensional parameters vs.  metrics Shelf box
+### Non dimensional parameters vs.  metrics
 
 
 
@@ -134,12 +134,12 @@ for ii in tracers_3D:
     TrOnShwHole = get_metrics('3DDIFF_hole_', ii, '1', fields[0] )
     TrOnHole = get_metrics('3DDIFF_hole_', ii, '1', fields[2] )
 
-    TrOnSh[:,kk] =  TrOnShwHole
+    TrOnSh[:,kk] =  TrOnHole + TrOnShwHole
 
     HWCsh = get_metrics('3DDIFF_hole_', ii, '1', fields[1] )
     HWChole = get_metrics('3DDIFF_hole_', ii, '1', fields[3] )
 
-    HWC[:,kk] =  HWCsh
+    HWC[:,kk] =  HWChole + HWCsh
 
     kk=kk+1
 
@@ -148,12 +148,12 @@ for ii in tracers_CNT03:
     TrOnShwHole = get_metrics('CNTDIFF_hole_',  '03',ii, fields[0] )
     TrOnHole = get_metrics('CNTDIFF_hole_', '03', ii, fields[2] )
 
-    TrOnSh[:,kk] = TrOnShwHole
+    TrOnSh[:,kk] = TrOnHole + TrOnShwHole
 
     HWCsh = get_metrics('CNTDIFF_hole_',  '03', ii,fields[1] )
     HWChole = get_metrics('CNTDIFF_hole_',  '03',ii,  fields[3] )
 
-    HWC[:,kk] =  HWCsh
+    HWC[:,kk] =  HWChole + HWCsh
 
     kk=kk+1
 
@@ -162,12 +162,12 @@ for ii in tracers_CNT09:
     TrOnShwHole = get_metrics('CNTDIFF_hole_',  '09',ii, fields[0] )
     TrOnHole = get_metrics('CNTDIFF_hole_','09',ii, fields[2] )
 
-    TrOnSh[:,kk] = TrOnShwHole
+    TrOnSh[:,kk] = TrOnHole + TrOnShwHole
 
     HWCsh = get_metrics('CNTDIFF_hole_',  '09',ii, fields[1] )
     HWChole = get_metrics('CNTDIFF_hole_',  '09',ii, fields[3] )
 
-    HWC[:,kk] =  HWCsh
+    HWC[:,kk] =  HWChole + HWCsh
 
     kk=kk+1
 
@@ -180,8 +180,8 @@ for ii in tracers_CNT07:
     HWCSh = get_metrics('CNTDIFF_hole_', '07', ii, fields[1] )
     HWCHole = get_metrics('CNTDIFF_hole_', '07', ii, fields[3] )
 
-    TrOnSh[:,kk] =  TrOnShwHole
-    HWC[:,kk] =  HWCsh
+    TrOnSh[:,kk] =  TrHole + TrOnShwHole
+    HWC[:,kk] =  HWCHole + HWCsh
 
     kk=kk+1
 
@@ -190,11 +190,11 @@ for ii in tracers_CNT02:
     TrOnShwHole = get_metrics('CNTDIFF_hole_',  '02',ii, fields[0] )
     TrOnHole = get_metrics('CNTDIFF_hole_',  '02',ii, fields[2] )
 
-    TrOnSh[:,kk] =  TrOnShwHole
+    TrOnSh[:,kk] =  TrOnHole + TrOnShwHole
 
     HWCsh = get_metrics('CNTDIFF_hole_', '02',ii, fields[1] )
     HWChole = get_metrics('CNTDIFF_hole_',  '02', ii,fields[3] )
-    HWC[:,kk] =  HWCsh
+    HWC[:,kk] =  HWChole + HWCsh
 
     kk=kk+1
 
@@ -203,11 +203,11 @@ for ii in tracers_CNT04:
     TrOnShwHole = get_metrics('CNTDIFF_hole_',  '04',ii, fields[0] )
     TrOnHole = get_metrics('CNTDIFF_hole_', '04',ii, fields[2] )
 
-    TrOnSh[:,kk] =  TrOnShwHole
+    TrOnSh[:,kk] =  TrOnHole + TrOnShwHole
 
     HWCsh = get_metrics('CNTDIFF_hole_',  '04',ii, fields[1] )
     HWChole = get_metrics('CNTDIFF_hole_',  '04',ii, fields[3] )
-    HWC[:,kk] =  HWCsh
+    HWC[:,kk] =  HWChole + HWCsh
 
     kk=kk+1
 
@@ -216,12 +216,12 @@ for ii in tracers_CNT10:
     TrOnShwHole = get_metrics('CNTDIFF_hole_', '10',ii, fields[0] )
     TrOnHole = get_metrics('CNTDIFF_hole_', '10',ii, fields[2] )
 
-    TrOnSh[:,kk] = TrOnShwHole
+    TrOnSh[:,kk] = TrOnHole + TrOnShwHole
 
     HWCsh = get_metrics('CNTDIFF_hole_', '10',ii, fields[1] )
     HWChole = get_metrics('CNTDIFF_hole_',  '10',ii, fields[3] )
 
-    HWC[:,kk] =  HWCsh
+    HWC[:,kk] =  HWChole + HWCsh
 
 
     kk=kk+1
@@ -567,16 +567,17 @@ HWCList = [HWC[:,0], HWC[:,1],HWC[:,2], HWC[:,3], HWC[:,4],HWC[:,5], HWC[:,6],HW
            HWC[:,13],HWC[:,14], HWC[:,15],HWC[:,16],HWC[:,17], HWC[:,18],HWC[:,19],HWC[:,20], HWC[:,21]]
 
 vertical = LID1+LID2
-total = CS1+CS2+CS3-AS1+AS2+CS4+CS5
+total = CS1+CS2+CS3sb+CS4+CS5
 
 verticala = LID1a+LID2a
-totala = CS1a+CS2a+CS3a-AS1a+AS2a+CS4a+CS5a
+totala = CS1a+CS2a+CS3sba+CS4a+CS5a
 
 verticald = LID1d+LID2d
-totald = CS1d+CS2d+CS3d-AS1d+AS2d+CS4d+CS5d
+totald = CS1d+CS2d+CS3sbd+CS4d+CS5d
 
 watVert = LID1A[0]*1000.0*wLID1 + LID2A[0]*1000.0*wLID2
-watTot  =-1000.0*AS1A[0]*wAS1 +1000.0*AS2A[0]*wAS2  + 1000.0*CS3A[0]*wCS3 + 1000.0*CS4A[0]*wCS4+1000.0*CS5A[0]*wCS5+1000.0*CS2A[0]*wCS2+1000.0*CS1A[0]*wCS1
+watTot  = (1000.0*CS1A[0]*wCS1+1000.0*CS2A[0]*wCS2+1000.0*CS3sbA[0]*wCS3sb+1000.0*CS4A[0]*wCS4+1000.0*CS5A[0]*wCS5)
+
 
 
 ## FIGURES ##
@@ -591,7 +592,7 @@ transEqIndex = [0,1,2,3,13,4,16,10,7,19]
 
 #-----------------------------------------------------------------------------------------------------------------------------
 
-## Pe_v Time-dependent phase
+## Pe_v Advective phase
 sns.set_context("talk", font_scale=0.9, rc={"lines.linewidth": 2.5})
 fig42=plt.figure(figsize=(15,12))
 
@@ -599,41 +600,48 @@ jj=0
 
 for ii in indexList:
     ax1 = plt.subplot(3,3,1)
-    plt.plot( Pev_can[ii] ,np.mean(TrOnSh[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot( Pev_can[ii] ,np.mean(TrOnSh[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean tr mass (Mol)')
     plt.xlabel('$Pe_{vCan}$')
-    plt.title(' Tracer in shelf box - Time-dependent phase ')
+    plt.title(' Tracer on shelf - Advective phase ')
     ax1.set_xscale("log", nonposy='clip')
 
     ax2 = plt.subplot(3,3,2)
-    plt.plot(Pev_out[ii] , np.nanmean(HWC[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_out[ii] , np.nanmean(HWC[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean volume ($m^3$)')
     plt.xlabel('$Pe_{vOut}$')
-    plt.title('HCW on shelf box  ')
+    plt.title('HCW on shelf  ')
     ax2.set_xscale("log", nonposy='clip')
 
 
     ax4 = plt.subplot(3,3,4)
-    plt.plot(Pev_can[ii] , np.mean(total[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] , np.mean(total[10:,ii]+vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport  ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
-    plt.title('Total transport through shelf box  ')
+    plt.title('Total transport through shelf-break  ')
     ax4.set_xscale("log", nonposy='clip')
 
 
     ax7 = plt.subplot(3,3,7)
-    plt.plot(Pev_can[ii] , np.mean(totala[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] , np.mean(vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
-    plt.title('Advective ')
+    plt.title('Vertical ')
     ax7.set_xscale("log", nonposy='clip')
 
     ax8 = plt.subplot(3,3,8)
-    plt.plot(Pev_can[ii] , np.mean(totald[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] , np.mean(verticala[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
-    plt.title('Diffusive')
+    plt.title('Advective, vertical')
     ax8.set_xscale("log", nonposy='clip')
+
+    ax9 = plt.subplot(3,3,9)
+    plt.plot(Pev_can[ii] ,np.mean(verticald[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport ($Mol/s$)')
+    plt.xlabel('$Pe_{vCan}$')
+    plt.title('Diffusive, vertical ')
+    ax9.set_xscale("log", nonposy='clip')
 
 
     jj = jj+1
@@ -641,17 +649,160 @@ for ii in indexList:
 for mm, ii in zip(transEqIndex,windexList):
 
     ax5 = plt.subplot(3,3,5)
-    plt.plot(Pev_can[mm] ,np.mean(watTot[:10,ii])*1000.0,marker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
-    plt.ylabel('Tracer transport ($m^3/s$)')
-    plt.xlabel('$Pe_{vCan}$')
-    plt.title('Water transport ')
-    ax5.set_xscale("log", nonposy='clip')
 
+    plt.plot(Pev_can[mm] , np.nanmean(watVert[10:,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
+    plt.ylabel('Transport ($m^3/s$)')
+    plt.xlabel('$Pe_{vCan}$')
+    plt.title('Vertical transport water  ')
+    ax5.set_xscale("log", nonposy='clip')
 
 plt.tight_layout()
 ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
 #ax2.legend(loc =0)
 
 plt.show()
-fig42.savefig('results/figures/PosterOSM16/PevAllMetricsTimeDepPhaseShelfBox.eps', format='eps', dpi=1000, bbox_inches='tight')
+fig42.savefig('results/figures/PosterOSM16/PevAllMetricsAdvectivePhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
+#-----------------------------------------------------------------------------------------------------------------------------
+## Pe_h Advective phase
+sns.set_context("talk", font_scale=0.9, rc={"lines.linewidth": 2.5})
+fig43=plt.figure(figsize=(15,12))
+
+jj=0
+
+for ii in indexList:
+    ax1 = plt.subplot(3,3,1)
+    plt.plot( Peh[ii] ,np.mean(TrOnSh[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Mean tr mass (Mol)')
+    plt.xlabel('$Pe_{h}$')
+    plt.title(' Tracer on shelf - Advective phase ')
+    ax1.set_xscale("log", nonposy='clip')
+
+    ax2 = plt.subplot(3,3,2)
+    plt.plot(Peh[ii] , np.nanmean(HWC[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Mean volume ($m^3$)')
+    plt.xlabel('$Pe_{h}$')
+    plt.title('HCW on shelf  ')
+    ax2.set_xscale("log", nonposy='clip')
+
+
+    ax4 = plt.subplot(3,3,4)
+    plt.plot(Peh[ii] , np.mean(total[10:,ii]+vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport  ($Mol/s$)')
+    plt.xlabel('$Pe_{h}$')
+    plt.title('Total transport   ')
+    ax4.set_xscale("log", nonposy='clip')
+
+
+    ax7 = plt.subplot(3,3,7)
+    plt.plot(Peh[ii] , np.mean(vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport ($Mol/s$)')
+    plt.xlabel('$Pe_{h}$')
+    plt.title('Vertical ')
+    ax7.set_xscale("log", nonposy='clip')
+
+    ax8 = plt.subplot(3,3,8)
+    plt.plot(Peh[ii] , np.mean(verticala[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport ($Mol/s$)')
+    plt.xlabel('$Pe_{h}$')
+    plt.title('Advective, vertical')
+    ax8.set_xscale("log", nonposy='clip')
+
+    ax9 = plt.subplot(3,3,9)
+    plt.plot(Peh[ii] ,np.mean(verticald[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport ($Mol/s$)')
+    plt.xlabel('$Pe_{h}$')
+    plt.title('Diffusive, vertical ')
+    ax9.set_xscale("log", nonposy='clip')
+
+
+    jj = jj+1
+
+for mm, ii in zip(transEqIndex,windexList):
+
+    ax5 = plt.subplot(3,3,5)
+
+    plt.plot(Peh[mm] , np.nanmean(watVert[10:,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
+    plt.ylabel('Transport ($m^3/s$)')
+    plt.xlabel('$Pe_{h}$')
+    plt.title('Vertical transport water  ')
+    ax5.set_xscale("log", nonposy='clip')
+
+plt.tight_layout()
+ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
+#ax2.legend(loc =0)
+
+plt.show()
+fig43.savefig('results/figures/PosterOSM16/PehAllMetricsAdvectivePhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
+#-----------------------------------------------------------------------------------------------------------------------------
+
+## Kappa Advective phase
+sns.set_context("talk", font_scale=0.9, rc={"lines.linewidth": 2.5})
+fig44=plt.figure(figsize=(15,12))
+
+jj=0
+
+for ii in indexList:
+    ax1 = plt.subplot(3,3,1)
+    plt.plot( K_can[ii] ,np.mean(TrOnSh[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Mean tr mass (Mol)')
+    plt.xlabel('$\kappa_{can}$')
+    plt.title(' Tracer on shelf - Advective phase ')
+    ax1.set_xscale("log", nonposy='clip')
+
+    ax2 = plt.subplot(3,3,2)
+    plt.plot(K_out[ii] , np.nanmean(HWC[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Mean volume ($m^3$)')
+    plt.xlabel('$\kappa_{out}$')
+    plt.title('HCW on shelf  ')
+    ax2.set_xscale("log", nonposy='clip')
+
+
+    ax4 = plt.subplot(3,3,4)
+    plt.plot(K_out[ii] , np.mean(total[10:,ii]+vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport  ($Mol/s$)')
+    plt.xlabel('$\kappa_{out}$')
+    plt.title('Total transport   ')
+    ax4.set_xscale("log", nonposy='clip')
+
+
+    ax7 = plt.subplot(3,3,7)
+    plt.plot(K_can[ii] , np.mean(vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport ($Mol/s$)')
+    plt.xlabel('$\kappa_{can}$')
+    plt.title('Vertical ')
+    ax7.set_xscale("log", nonposy='clip')
+
+    ax8 = plt.subplot(3,3,8)
+    plt.plot(K_can[ii] , np.mean(verticala[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport ($Mol/s$)')
+    plt.xlabel('$\kappa_{can}$')
+    plt.title('Advective, vertical')
+    ax8.set_xscale("log", nonposy='clip')
+
+    ax9 = plt.subplot(3,3,9)
+    plt.plot(K_can[ii] ,np.mean(verticald[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.ylabel('Tracer transport ($Mol/s$)')
+    plt.xlabel('$\kappa_{can}$')
+    plt.title('Diffusive, vertical ')
+    ax9.set_xscale("log", nonposy='clip')
+
+
+    jj = jj+1
+
+for mm, ii in zip(transEqIndex,windexList):
+
+    ax5 = plt.subplot(3,3,5)
+
+    plt.plot(K_can[mm] , np.nanmean(watVert[10:,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
+    plt.ylabel('Transport ($m^3/s$)')
+    plt.xlabel('$\kappa_{can}$')
+    plt.title('Vertical transport water  ')
+    ax5.set_xscale("log", nonposy='clip')
+
+plt.tight_layout()
+ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
+#ax2.legend(loc =0)
+
+plt.show()
+fig44.savefig('results/figures/PosterOSM16/KappaAllMetricsAdvectivePhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
 #-----------------------------------------------------------------------------------------------------------------------------
