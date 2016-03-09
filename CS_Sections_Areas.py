@@ -103,7 +103,7 @@ def main():
   
   df = pd.DataFrame(raw_data, columns = ['CS1area', 'CS2area', 'CS3area', 'CS3sbarea', 'CS4area', 'CS5area', 'AS1area', 'AS2area', 'LID1area', 'LID2area','VolHole','VolShNoHole'], index=[0])
     
-  filename1 = ('results/metricsDataFrames/Canyon_AreasVolumes.csv')
+  filename1 = ('results/metricsDataFrames/Canyon_AreasVolumes_NoC.csv')
   df.to_csv(filename1)
    
   print(filename1)
