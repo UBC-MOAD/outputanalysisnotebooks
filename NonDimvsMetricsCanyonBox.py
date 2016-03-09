@@ -75,7 +75,7 @@ nx = 360
 ny = 360
 nz = 90
 nt = 19 # t dimension size
-numTr = 22 # number of tracers in total (CNT =22, 3D = 4, total = 19)
+numTr = 24 # number of tracers in total (CNT =20, 3D = 4)
 
 rc = CGridOut.variables['RC']
 
@@ -89,10 +89,10 @@ labels = ['$K_v=10^{-7}$(out), $10^{-3}$(in), $K_i=1 m^2s^{-1}$','Kv=1E-7(out), 
           'Kv=1E-5(out), 1E-4(in), Ki=1','Kv=1E-5, Ki=1','Kv=1E-4, Ki=1','Kv=1E-3, Ki=1','Kv=3.8E-5, Ki=10',
           'Kv=2.8E-5, Ki=10','Kv=1.3E-5, Ki=10','Kv_noc=1E-5, Ki=1','Kv_noc=1E-4, Ki=1','Kv_noc=1E-3, Ki=1',
           'Kv=1E-5, Ki=10','Kv=1E-4, Ki=10','Kv=1E-3, Ki=10','Kv=1E-5, Ki=0.1','Kv=1E-4, Ki=0.1',
-          'Kv=1E-3, Ki=0.1','Kv=3.8E-5, Ki=1','Kv=2.8E-5, Ki=1','Kv=1.3E-5, Ki=1']
+          'Kv=1E-3, Ki=0.1','Kv=3.8E-5, Ki=1','Kv=2.8E-5, Ki=1','Kv=1.3E-5, Ki=1','Kv=1E-4, Ki=1, Kt=Ks','Kv=1E-3, Ki=1,Kt=Ks']
 
 wlabels = ['run04 - 3D','run05 - 3D','run06 - 3D','run07 - 3D','run02 - CNT','run03 - CNT','run04 - CNT',
-           'run07 - CNT','run09 - CNT','run10 - CNT']
+           'run07 - CNT','run09 - CNT','run10 - CNT','run11 - CNT','run12 - CNT']
 
 
 times = np.arange(0,nt,1)
@@ -119,6 +119,8 @@ tracers_CNT07 = ['1','2','3'] # tracer number , no canyon case
 tracers_CNT02 = ['1','2','3'] # tracer number , Kiso=0.1
 tracers_CNT04 = ['1','2','3'] # tracer number , Kiso=10
 tracers_CNT10 = ['1','2','3'] # tracer number , Kiso=1
+tracers_CNT11 = ['2'] # tracer number , Kiso=1, Ks=Kt=10^4
+tracers_CNT12 = ['3'] # tracer number , Kiso=1, Ks=Kt=10^3
 
 # LOAD TRACER ON SHELF DATA
 
@@ -220,6 +222,32 @@ for ii in tracers_CNT10:
 
     HWCsh = get_metrics('CNTDIFF_hole_', '10',ii, fields[1] )
     HWChole = get_metrics('CNTDIFF_hole_',  '10',ii, fields[3] )
+
+    HWC[:,kk] =  HWChole
+    kk=kk+1
+
+for ii in tracers_CNT11:
+
+    TrOnShwHole = get_metrics('CNTDIFF_hole_', '11',ii, fields[0] )
+    TrOnHole = get_metrics('CNTDIFF_hole_', '11',ii, fields[2] )
+
+    TrOnSh[:,kk] = TrOnHole
+
+    HWCsh = get_metrics('CNTDIFF_hole_', '11',ii, fields[1] )
+    HWChole = get_metrics('CNTDIFF_hole_',  '11',ii, fields[3] )
+
+    HWC[:,kk] =  HWChole
+    kk=kk+1
+
+for ii in tracers_CNT12:
+
+    TrOnShwHole = get_metrics('CNTDIFF_hole_', '12',ii, fields[0] )
+    TrOnHole = get_metrics('CNTDIFF_hole_', '12',ii, fields[2] )
+
+    TrOnSh[:,kk] = TrOnHole
+
+    HWCsh = get_metrics('CNTDIFF_hole_', '12',ii, fields[1] )
+    HWChole = get_metrics('CNTDIFF_hole_',  '12',ii, fields[3] )
 
     HWC[:,kk] =  HWChole
 
@@ -466,6 +494,64 @@ for ii in tracers_CNT10:
 
     kk=kk+1
 
+for ii in tracers_CNT11:
+
+    CS1a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[0] )
+    CS2a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[1] )
+    CS3a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[2] )
+    CS3sba[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[3] )
+    CS4a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[4] )
+    CS5a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[5] )
+    AS1a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[6] )
+    AS2a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[7] )
+    LID1a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[8] )
+    LID2a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '11', ii, fields[9] )
+
+    CS1d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11',ii,  fieldsDiff[0] )
+    CS2d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii, fieldsDiff[1] )
+    CS3d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii, fieldsDiff[2] )
+    CS3sbd[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii,  fieldsDiff[3] )
+    CS4d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii,  fieldsDiff[4] )
+    CS5d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii,  fieldsDiff[5] )
+    AS1d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii,  fieldsDiff[6] )
+    AS2d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii,  fieldsDiff[7] )
+    LID1d[:,kk] = (get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii, fieldsDiff[8] )
+                  +get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii, fieldsDiff[10] ))
+    LID2d[:,kk] = (get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii, fieldsDiff[9] )
+                  +get_metrics('CNTDIFF_CS_DIFFFLUX_', '11', ii, fieldsDiff[11] ))
+
+
+    kk=kk+1
+
+for ii in tracers_CNT12:
+
+    CS1a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[0] )
+    CS2a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[1] )
+    CS3a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[2] )
+    CS3sba[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[3] )
+    CS4a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[4] )
+    CS5a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[5] )
+    AS1a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[6] )
+    AS2a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[7] )
+    LID1a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[8] )
+    LID2a[:,kk] = get_metrics('CNTDIFF_CS_ADVFLUX_', '12', ii, fields[9] )
+
+    CS1d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12',ii,  fieldsDiff[0] )
+    CS2d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii, fieldsDiff[1] )
+    CS3d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii, fieldsDiff[2] )
+    CS3sbd[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii,  fieldsDiff[3] )
+    CS4d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii,  fieldsDiff[4] )
+    CS5d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii,  fieldsDiff[5] )
+    AS1d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii,  fieldsDiff[6] )
+    AS2d[:,kk] = get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii,  fieldsDiff[7] )
+    LID1d[:,kk] = (get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii, fieldsDiff[8] )
+                  +get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii, fieldsDiff[10] ))
+    LID2d[:,kk] = (get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii, fieldsDiff[9] )
+                  +get_metrics('CNTDIFF_CS_DIFFFLUX_', '12', ii, fieldsDiff[11] ))
+
+
+    kk=kk+1
+
 CS1 = CS1a +CS1d
 CS2 =  CS2a +CS2d
 CS3 = CS3a +CS3d
@@ -479,10 +565,10 @@ LID2 = LID2a +LID2d
 
 #  LOAD WATER TRANSPORT
 
-numWat = 10
+numWat = 12
 
 water_3D = ['04','05','06','07'] #run number
-water_CNT = ['02','03','04','07','09','10'] # run number , constant runs
+water_CNT = ['02','03','04','07','09','10','11','12'] # run number , constant runs
 
 wCS1 = np.zeros((nt-1,numWat))
 wCS2 = np.zeros((nt-1,numWat))
@@ -536,20 +622,20 @@ for ii in water_CNT:
 ### NON-DIMENSIONAL PARAMETERS
 kdout = np.array([1.E-7,1.E-7,1.E-5,1.E-5,
                1.E-5,1.E-4,1.E-3,(3.81)*1.E-5,(2.8)*1.E-5,(1.3)*1.E-5,1.E-5,1.E-4,1.E-3,1.E-5,1.E-4,1.E-3,
-               1.E-5,1.E-4,1.E-3,(3.81)*1.E-5,(2.8)*1.E-5,(1.3)*1.E-5])
+               1.E-5,1.E-4,1.E-3,(3.81)*1.E-5,(2.8)*1.E-5,(1.3)*1.E-5,1.E-4,1.E-3])
 
 kdcan = np.array([1.E-3,1.E-4,1.E-3,1.E-4,
                1.E-5,1.E-4,1.E-3,(3.81)*1.E-5,(2.8)*1.E-5,(1.3)*1.E-5,1.E-5,1.E-4,1.E-3,1.E-5,1.E-4,1.E-3,
-               1.E-5,1.E-4,1.E-3,(3.81)*1.E-5,(2.8)*1.E-5,(1.3)*1.E-5])
+               1.E-5,1.E-4,1.E-3,(3.81)*1.E-5,(2.8)*1.E-5,(1.3)*1.E-5,1.E-4,1.E-3])
 
-ki = np.array([1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,1.0,1.0,1.0,10.0,10.0,10.0,0.1,0.1,0.1,1.0,1.0,1.0])
+ki = np.array([1.0,1.0,1.0,1.0,1.0,1.0,1.0,10.0,10.0,10.0,1.0,1.0,1.0,10.0,10.0,10.0,0.1,0.1,0.1,1.0,1.0,1.0,1.0,1.0])
 
 Z = np.array([72.0,84.0,76.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,85.0,
-              85.0,85.0])
+              85.0,85.0,85.0,85.0])
 U = np.array([0.294,0.410,0.328,0.410,0.410,0.410,0.410,0.410,0.410,0.410,0.410,0.410,0.410,0.410,0.410,0.410,0.410,
-             0.410,0.410,0.410,0.410,0.410])
+             0.410,0.410,0.410,0.410,0.410,0.410,0.410])
 Om = np.array([0.0033,0.00526,0.0038,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,
-               0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055])
+               0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055,0.0055])
 
 L = 6400.0 # meters
 
@@ -562,9 +648,9 @@ K_can = (Z*Z*ki)/(L*L*kdcan)
 
 TrOnShList = [TrOnSh[:,0], TrOnSh[:,1],TrOnSh[:,2], TrOnSh[:,3], TrOnSh[:,4],TrOnSh[:,5], TrOnSh[:,6]
               ,TrOnSh[:,7],TrOnSh[:,8], TrOnSh[:,9],TrOnSh[:,13], TrOnSh[:,14], TrOnSh[:,15],TrOnSh[:,16],
-              TrOnSh[:,17], TrOnSh[:,18],TrOnSh[:,19],TrOnSh[:,20], TrOnSh[:,21]]
+              TrOnSh[:,17], TrOnSh[:,18],TrOnSh[:,19],TrOnSh[:,20], TrOnSh[:,21],TrOnSh[:,22],TrOnSh[:,23]]
 HWCList = [HWC[:,0], HWC[:,1],HWC[:,2], HWC[:,3], HWC[:,4],HWC[:,5], HWC[:,6],HWC[:,7],HWC[:,8], HWC[:,9],
-           HWC[:,13],HWC[:,14], HWC[:,15],HWC[:,16],HWC[:,17], HWC[:,18],HWC[:,19],HWC[:,20], HWC[:,21]]
+           HWC[:,13],HWC[:,14], HWC[:,15],HWC[:,16],HWC[:,17], HWC[:,18],HWC[:,19],HWC[:,20], HWC[:,21],HWC[:,22],HWC[:,23]]
 
 vertical = LID1+LID2
 total = AS1-AS2-CS3+CS3sb
@@ -583,12 +669,12 @@ watTot  = 1000.0*AS1A[0]*wAS1 -1000.0*AS2A[0]  - 1000.0*CS3A[0] + 1000.0*CS3sbA[
 ## FIGURES ##
 sns.set_palette( 'Set1',9)
 
-marker = ['s','s','s','s','o','o','o','*','*','*','d','d','d','^','^','^','>','>','>']
-wmarker = ['s','s','s','s','o','*','d','.','^','>']
+marker = ['s','s','s','s','o','o','o','*','*','*','d','d','d','^','^','^','>','>','>','h','.']
+wmarker = ['s','s','s','s','o','*','d','.','^','>','h','.']
 
-indexList = [0,1,2,3,4,5,6,7,8,9,13,14,15,16,17,18,19,20,21]
-windexList = [0,1,2,3,4,5,6,8,9]
-transEqIndex = [0,1,2,3,13,4,16,10,7,19]
+indexList = [0,1,2,3,4,5,6,7,8,9,13,14,15,16,17,18,19,20,21,22,23]
+windexList = [0,1,2,3,4,5,6,8,9,10,11]
+transEqIndex = [0,1,2,3,13,4,16,10,7,19,22,23]
 
 #-----------------------------------------------------------------------------------------------------------------------------
 
@@ -600,14 +686,14 @@ jj=0
 
 for ii in indexList:
     ax1 = plt.subplot(3,3,1)
-    plt.plot( Pev_can[ii] ,np.mean(TrOnSh[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot( Pev_can[ii] ,np.mean(TrOnSh[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean tr mass (Mol)')
     plt.xlabel('$Pe_{vCan}$')
-    plt.title(' Tracer in canyon box - Time-dependent phase ')
+    plt.title(' Tracer in canyon box - advective phase ')
     ax1.set_xscale("log", nonposy='clip')
 
     ax2 = plt.subplot(3,3,2)
-    plt.plot(Pev_out[ii] , np.nanmean(HWC[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_out[ii] , np.nanmean(HWC[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean volume ($m^3$)')
     plt.xlabel('$Pe_{vOut}$')
     plt.title('HCW on canyon box  ')
@@ -615,7 +701,7 @@ for ii in indexList:
 
 
     ax4 = plt.subplot(3,3,4)
-    plt.plot(Pev_can[ii] , np.mean(total[:10,ii]+vertical[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] , np.mean(total[10:,ii]+vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport  ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
     plt.title('Total transport through canyon box  ')
@@ -623,21 +709,21 @@ for ii in indexList:
 
 
     ax7 = plt.subplot(3,3,7)
-    plt.plot(Pev_can[ii] , np.mean(vertical[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] , np.mean(vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
     plt.title('Vertical ')
     ax7.set_xscale("log", nonposy='clip')
 
     ax8 = plt.subplot(3,3,8)
-    plt.plot(Pev_can[ii] , np.mean(verticala[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] , np.mean(verticala[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
     plt.title('Advective, vertical')
     ax8.set_xscale("log", nonposy='clip')
 
     ax9 = plt.subplot(3,3,9)
-    plt.plot(Pev_can[ii] ,np.mean(verticald[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Pev_can[ii] ,np.mean(verticald[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{vCan}$')
     plt.title('Diffusive, vertical ')
@@ -650,7 +736,7 @@ for mm, ii in zip(transEqIndex,windexList):
 
     ax5 = plt.subplot(3,3,5)
 
-    plt.plot(Pev_can[mm] , np.nanmean(watVert[:10,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
+    plt.plot(Pev_can[mm] , np.nanmean(watVert[10:,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
     plt.ylabel('Transport ($m^3/s$)')
     plt.xlabel('$Pe_{vCan}$')
     plt.title('Vertical transport water  ')
@@ -661,7 +747,7 @@ ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
 #ax2.legend(loc =0)
 
 plt.show()
-fig42.savefig('results/figures/PosterOSM16/PevAllMetricsTimeDepPhase.eps', format='eps', dpi=1000, bbox_inches='tight')
+fig42.savefig('results/figures/PevAllMetricsAdvPhase.eps', format='eps', dpi=1000, bbox_inches='tight')
 #-----------------------------------------------------------------------------------------------------------------------------
 ## Pe_h Time-dependent phase
 sns.set_context("talk", font_scale=0.9, rc={"lines.linewidth": 2.5})
@@ -671,14 +757,14 @@ jj=0
 
 for ii in indexList:
     ax1 = plt.subplot(3,3,1)
-    plt.plot( Peh[ii] ,np.mean(TrOnSh[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot( Peh[ii] ,np.mean(TrOnSh[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean tr mass (Mol)')
     plt.xlabel('$Pe_{h}$')
     plt.title(' Tracer in canyon box - Time-dependent phase ')
     ax1.set_xscale("log", nonposy='clip')
 
     ax2 = plt.subplot(3,3,2)
-    plt.plot(Peh[ii] , np.nanmean(HWC[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Peh[ii] , np.nanmean(HWC[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean volume ($m^3$)')
     plt.xlabel('$Pe_{h}$')
     plt.title('HCW on canyon box  ')
@@ -686,7 +772,7 @@ for ii in indexList:
 
 
     ax4 = plt.subplot(3,3,4)
-    plt.plot(Peh[ii] , np.mean(total[:10,ii]+vertical[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Peh[ii] , np.mean(total[10:,ii]+vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport  ($Mol/s$)')
     plt.xlabel('$Pe_{h}$')
     plt.title('Total transport through canyon box  ')
@@ -694,21 +780,21 @@ for ii in indexList:
 
 
     ax7 = plt.subplot(3,3,7)
-    plt.plot(Peh[ii] , np.mean(vertical[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Peh[ii] , np.mean(vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{h}$')
     plt.title('Vertical ')
     ax7.set_xscale("log", nonposy='clip')
 
     ax8 = plt.subplot(3,3,8)
-    plt.plot(Peh[ii] , np.mean(verticala[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Peh[ii] , np.mean(verticala[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{h}$')
     plt.title('Advective, vertical')
     ax8.set_xscale("log", nonposy='clip')
 
     ax9 = plt.subplot(3,3,9)
-    plt.plot(Peh[ii] ,np.mean(verticald[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(Peh[ii] ,np.mean(verticald[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$Pe_{h}$')
     plt.title('Diffusive, vertical ')
@@ -721,7 +807,7 @@ for mm, ii in zip(transEqIndex,windexList):
 
     ax5 = plt.subplot(3,3,5)
 
-    plt.plot(Peh[mm] , np.nanmean(watVert[:10,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
+    plt.plot(Peh[mm] , np.nanmean(watVert[10:,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
     plt.ylabel('Transport ($m^3/s$)')
     plt.xlabel('$Pe_{h}$')
     plt.title('Vertical transport water  ')
@@ -732,7 +818,7 @@ ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
 #ax2.legend(loc =0)
 
 plt.show()
-fig43.savefig('results/figures/PosterOSM16/PehAllMetricsTimeDepPhase.eps', format='eps', dpi=1000, bbox_inches='tight')
+fig43.savefig('results/figures/PehAllMetricsAdvPhase.eps', format='eps', dpi=1000, bbox_inches='tight')
 #-----------------------------------------------------------------------------------------------------------------------------
 
 ## Kappa Time-dependent phase
@@ -743,14 +829,14 @@ jj=0
 
 for ii in indexList:
     ax1 = plt.subplot(3,3,1)
-    plt.plot( K_can[ii] ,np.mean(TrOnSh[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot( K_can[ii] ,np.mean(TrOnSh[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean tr mass (Mol)')
     plt.xlabel('$\kappa_{can}$')
     plt.title(' Tracer in canyon box - Time-dependent phase ')
     ax1.set_xscale("log", nonposy='clip')
 
     ax2 = plt.subplot(3,3,2)
-    plt.plot(K_out[ii] , np.nanmean(HWC[:10,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(K_out[ii] , np.nanmean(HWC[10:,ii]),marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Mean volume ($m^3$)')
     plt.xlabel('$\kappa_{out}$')
     plt.title('HCW on canyon box  ')
@@ -758,7 +844,7 @@ for ii in indexList:
 
 
     ax4 = plt.subplot(3,3,4)
-    plt.plot(K_out[ii] , np.mean(total[:10,ii]+vertical[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(K_out[ii] , np.mean(total[10:,ii]+vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport  ($Mol/s$)')
     plt.xlabel('$\kappa_{out}$')
     plt.title('Total transport through canyon box  ')
@@ -766,21 +852,21 @@ for ii in indexList:
 
 
     ax7 = plt.subplot(3,3,7)
-    plt.plot(K_can[ii] , np.mean(vertical[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(K_can[ii] , np.mean(vertical[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$\kappa_{can}$')
     plt.title('Vertical ')
     ax7.set_xscale("log", nonposy='clip')
 
     ax8 = plt.subplot(3,3,8)
-    plt.plot(K_can[ii] , np.mean(verticala[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(K_can[ii] , np.mean(verticala[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$\kappa_{can}$')
     plt.title('Advective, vertical')
     ax8.set_xscale("log", nonposy='clip')
 
     ax9 = plt.subplot(3,3,9)
-    plt.plot(K_can[ii] ,np.mean(verticald[:10,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
+    plt.plot(K_can[ii] ,np.mean(verticald[10:,ii])*1000.0,marker[jj], markersize = 13,alpha = 0.8,label = labels[ii])
     plt.ylabel('Tracer transport ($Mol/s$)')
     plt.xlabel('$\kappa_{can}$')
     plt.title('Diffusive, vertical ')
@@ -793,7 +879,7 @@ for mm, ii in zip(transEqIndex,windexList):
 
     ax5 = plt.subplot(3,3,5)
 
-    plt.plot(K_can[mm] , np.nanmean(watVert[:10,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
+    plt.plot(K_can[mm] , np.nanmean(watVert[10:,ii]),wmarker[ii], markersize = 13,alpha = 0.8,label = wlabels[ii])
     plt.ylabel('Transport ($m^3/s$)')
     plt.xlabel('$\kappa_{can}$')
     plt.title('Vertical transport water  ')
@@ -804,5 +890,5 @@ ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
 #ax2.legend(loc =0)
 
 plt.show()
-fig44.savefig('results/figures/PosterOSM16/KappaAllMetricsTimeDepPhase.eps', format='eps', dpi=1000, bbox_inches='tight')
+fig44.savefig('results/figures/KappaAllMetricsAdvPhase.eps', format='eps', dpi=1000, bbox_inches='tight')
 #-----------------------------------------------------------------------------------------------------------------------------

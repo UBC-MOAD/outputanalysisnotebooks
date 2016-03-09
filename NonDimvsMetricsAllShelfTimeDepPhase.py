@@ -661,7 +661,7 @@ ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
 #ax2.legend(loc =0)
 
 plt.show()
-fig42.savefig('results/figures/PosterOSM16/PevAllMetricsTimeDepPhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
+#fig42.savefig('results/figures/PosterOSM16/PevAllMetricsTimeDepPhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
 #-----------------------------------------------------------------------------------------------------------------------------
 ## Pe_h Time-dependent phase
 sns.set_context("talk", font_scale=0.9, rc={"lines.linewidth": 2.5})
@@ -732,7 +732,7 @@ ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
 #ax2.legend(loc =0)
 
 plt.show()
-fig43.savefig('results/figures/PosterOSM16/PehAllMetricsTimeDepPhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
+#fig43.savefig('results/figures/PosterOSM16/PehAllMetricsTimeDepPhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
 #-----------------------------------------------------------------------------------------------------------------------------
 
 ## Kappa Time-dependent phase
@@ -804,5 +804,53 @@ ax2.legend(loc ='upper right', bbox_to_anchor=(2.1,1))
 #ax2.legend(loc =0)
 
 plt.show()
-fig44.savefig('results/figures/PosterOSM16/KappaAllMetricsTimeDepPhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
+#fig44.savefig('results/figures/PosterOSM16/KappaAllMetricsTimeDepPhaseAllShelf.eps', format='eps', dpi=1000, bbox_inches='tight')
 #-----------------------------------------------------------------------------------------------------------------------------
+## timeseries
+
+vertical = LID1+LID2
+totalShb = -AS1+AS2+CS1+CS2+CS3+CS4+CS5
+totalCb = AS1-AS2-CS3+CS3sb+LID1+LID2
+total = CS1+CS2+CS3sb+CS4+CS5+LID1+LID2
+
+verticala = LID1a+LID2a
+totala = CS1a+CS2a+CS3sba+CS4a+CS5a+LID1a+LID2a
+totalShba = -AS1a+AS2a+CS1a+CS2a+CS3a+CS4a+CS5a
+totalCba = AS1a-AS2a-CS3a+CS3sba+LID1a+LID2a
+
+verticald = LID1d+LID2d
+totald = CS1d+CS2d+CS3sbd+CS4d+CS5d+LID1d+LID2d
+totalShbd = -AS1d+AS2d+CS1d+CS2d+CS3d+CS4d+CS5d
+totalCbd = AS1d-AS2d-CS3d+CS3sbd+LID1d+LID2d
+
+times = np.arange(1,19,1)
+
+sns.set_context("poster", font_scale=0.9, rc={"lines.linewidth": 2.5})
+
+fig44=plt.figure(figsize=(10,6))
+
+jj=0
+ListComp = [2,4]
+
+
+ax4 = plt.subplot(1,1,1)
+#plt.plot( times/2.0,((totalShb[:,2]))*1000.0,'-o', markersize = 13,alpha = 0.8,label = 'Total 3D')
+plt.plot( times/2.0,((totalCb[:,2]-totalCb[:,4]))*1000.0,'-o', markersize = 13,alpha = 0.8,label = 'Total')
+plt.plot( times/2.0,((totalCba[:,2]-totalCba[:,4]))*1000.0,'-o', markersize = 13,alpha = 0.8,label = 'Advective')
+plt.plot( times/2.0,((totalCbd[:,2]-totalCbd[:,4]))*1000.0,'-o', markersize = 13,alpha = 0.8,label = 'Diffusive')
+
+#plt.plot( times/2.0,(totalShb[:,2]-totalShb[:,4])*1000.0,'-', markersize = 13,alpha = 0.8,label = 'Shelf')
+#plt.plot( times/2.0,(totalCb[:,2]-totalCb[:,4])*1000.0,'-', markersize = 13,alpha = 0.8,label = 'Over canyon')
+#plt.plot( times/2.0,((totalShba[:,2])-(totalShba[:,4]))*1000.0,'-o', markersize = 13,alpha = 0.8,label = 'Advective')
+#plt.plot( times/2.0,(totalShba[:,2]-totalShba[:,4])*1000.0,'-', markersize = 13,alpha = 0.8,label = 'Shelf adv')
+#plt.plot( times/2.0,(totalCba[:,2]-totalCba[:,4])*1000.0,'-', markersize = 13,alpha = 0.8,label = 'Over canyon adv')
+#plt.plot( times/2.0,((totalShbd[:,2])-(totalShbd[:,4]))*1000.0,'-o', markersize = 13,alpha = 0.8,label = 'Diffusive')
+#plt.plot( times/2.0,(totalShbd[:,2]-totalShbd[:,4])*1000.0,'-', markersize = 13,alpha = 0.8,label = 'Shelf dif')
+#plt.plot( times/2.0,(totalCbd[:,2]-totalCbd[:,4])*1000.0,'-', markersize = 13,alpha = 0.8,label = 'Over canyon dif')
+plt.axvline(x=5,color='0.6')
+plt.ylabel('Tracer transport difference (Mol/s)')
+plt.xlabel('Day')
+plt.legend(loc=0)
+
+plt.show()
+fig44.savefig('results/figures/PosterOSM16/TransportDifferenceCNT3DCanyonBox.eps', format='eps', dpi=1000, bbox_inches='tight')
