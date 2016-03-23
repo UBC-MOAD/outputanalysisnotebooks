@@ -111,8 +111,8 @@ yh1=227
 yh2=267
 g = 9.81 # ms^-2
 
-alpha = 1.7E-4/237 # 1/degC
-beta = 7.6E-4
+alpha = 2.0E-4 # 1/degC
+beta = 7.4E-4
   
 times = [0,6,10,14,18]
 

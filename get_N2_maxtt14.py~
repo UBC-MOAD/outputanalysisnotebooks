@@ -111,8 +111,8 @@ yh1=227
 yh2=267
 g = 9.81 # ms^-2
 
-alpha = 1.7E-4/237 # 1/degC
-beta = 7.6E-4
+alpha = 2.0E-4 # 1/degC
+beta = 7.4E-4
   
 times = [0,6,10,14,18]
 
@@ -124,10 +124,11 @@ for exp,runs in zip(expList,expNames):
     S = rout.getField(CState,'S')
     P = rout.getField(phiHyd,'phiHyd')
         
-    print(runs,'done reading')    
+        
     maskExp = mpt.maskExpand(MaskC,Temp)
     TempMask=np.ma.array(Temp,mask=maskExp)   
     SMask=np.ma.array(S,mask=maskExp)   
+    print(runs,'done reading')
     
     for yi,xi,sname in zip(ys,xs,stations): # station indices
         N2 = np.ma.empty((len(times),nz-2))
@@ -145,8 +146,7 @@ for exp,runs in zip(expList,expNames):
         
         raw_data = {'drC' : drC[2:-1],'N2_tt00': N2[0,:],'N2_tt06': N2[1,:],
                     'N2_tt10': N2[2,:],'N2_tt14': N2[3,:],'N2_tt18': N2[4,:]}
-        df = pd.DataFrame(raw_data, columns = ['drC', 'N2_tt00', 'N2_tt06', 'N2_tt10', 'N2_tt14'
-                                              , 'N2_tt18', ])
+        df = pd.DataFrame(raw_data, columns = ['drC', 'N2_tt00', 'N2_tt06', 'N2_tt10', 'N2_tt14', 'N2_tt18' ])
         filename1 = ('results/metricsDataFrames/N2_%s_%s.csv' % (runs,sname))
         df.to_csv(filename1)
         
