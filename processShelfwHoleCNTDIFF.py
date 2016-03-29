@@ -61,11 +61,6 @@ def main():
   Tr1 = rout.getField(Ptracers1,'Tr01')
   Tr2 = rout.getField(Ptracers1,'Tr02')
   Tr3 = rout.getField(Ptracers1,'Tr03')
-  Tr4 = rout.getField(Ptracers1,'Tr04')
-  Tr5 = rout.getField(Ptracers1,'Tr05')
-  Tr6 = rout.getField(Ptracers1,'Tr06')
-  Tr7 = rout.getField(Ptracers1,'Tr07')
-  Tr8 = rout.getField(Ptracers1,'Tr08')
   print('Finished reading tracer fields')
 
 
@@ -73,11 +68,6 @@ def main():
   (WatTr1, TrMassTr1,WatHTr1,TrMassHTr1) = mpt.howMuchWaterShwHole(Tr1,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
   (WatTr2, TrMassTr2,WatHTr2,TrMassHTr2) = mpt.howMuchWaterShwHole(Tr2,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
   (WatTr3, TrMassTr3,WatHTr3,TrMassHTr3) = mpt.howMuchWaterShwHole(Tr3,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
-  (WatTr4, TrMassTr4,WatHTr4,TrMassHTr4) = mpt.howMuchWaterShwHole(Tr4,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
-  (WatTr5, TrMassTr5,WatHTr5,TrMassHTr5) = mpt.howMuchWaterShwHole(Tr5,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
-  (WatTr6, TrMassTr6,WatHTr6,TrMassHTr6) = mpt.howMuchWaterShwHole(Tr6,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
-  (WatTr7, TrMassTr7,WatHTr7,TrMassHTr7) = mpt.howMuchWaterShwHole(Tr7,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
-  (WatTr8, TrMassTr8,WatHTr8,TrMassHTr8) = mpt.howMuchWaterShwHole(Tr8,MaskNoC,30,rACNoC,hFacCNoC,drFCan,227,30,180,50, xh1=120,xh2=240,yh1=227,yh2=267)
   print('Finished calculating mass on shelf')
 
 
