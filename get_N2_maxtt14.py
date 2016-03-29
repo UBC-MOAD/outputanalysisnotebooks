@@ -80,6 +80,7 @@ expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run02',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run11',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run12',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run14',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run16',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run04',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run05',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run06',
@@ -93,6 +94,7 @@ expNames = ['CNTDIFF_run02',
            'CNTDIFF_run11',
            'CNTDIFF_run12',
            'CNTDIFF_run14',
+           'CNTDIFF_run16',
            '3DDIFF_run04',
            '3DDIFF_run05',
            '3DDIFF_run06',
@@ -155,7 +157,7 @@ for exp,runs in zip(expList,expNames):
 # calculate average N2 between canyon head depth and shelf break during the middle of the advective phase (t=7days) 
 # at dmand save as pandas dataframe. For all runs
 
-Navg = np.zeros(12) # 11 experiments
+Navg = np.zeros(len(expNames)) # 11 experiments
 kk = 0
 
 for runs in expNames:
