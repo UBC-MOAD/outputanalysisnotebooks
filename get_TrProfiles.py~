@@ -153,27 +153,6 @@ for exp,runs,ii in zip(expList,expNames,range(len(TrList))):
         
         print(filename1)
         
-Navg = np.zeros(24) # 11 experiments
-kk = 0
 
-for exp,runs,ii in zip(expList,expNames,range(len(TrList))):
-    
-    
-    for trname in TrList[ii]:
-    
-      key = ['NTr_tt14']
-      sname = 'DnC'
-      filename1 = ('results/metricsDataFrames/N2Tr_%s_%s_%s.csv' % (trname,runs,sname))
-      print(filename1)
-      df = pd.read_csv(filename1)
-      col = df[key]   
-      Navg[kk] = np.max(np.sqrt(-col))
-      kk=kk+1
-        
-raw_data = {'tracerList':TrList,'N': Navg}
-df2 = pd.DataFrame(raw_data, columns = ['tracerList','N'])
-filename2 = ('results/metricsDataFrames/Ntr_t14max_%s.csv' %sname)
-df2.to_csv(filename2)
-   
         
 
