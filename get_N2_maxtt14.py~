@@ -83,6 +83,10 @@ expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run02',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run15',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run16',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run17',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run18',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run19',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run20',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run21',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run04',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run05',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run06',
@@ -99,6 +103,10 @@ expNames = ['CNTDIFF_run02',
            'CNTDIFF_run15',
            'CNTDIFF_run16',
            'CNTDIFF_run17',
+           'CNTDIFF_run18',
+           'CNTDIFF_run19',
+           'CNTDIFF_run20',
+           'CNTDIFF_run21',
            '3DDIFF_run04',
            '3DDIFF_run05',
            '3DDIFF_run06',
@@ -166,7 +174,7 @@ kk = 0
 
 for runs in expNames:
     
-    key = ['N2_tt14']
+    key = ['N2_tt10']
     sname = 'CM'
     filename1 = ('results/metricsDataFrames/N2_%s_%s.csv' % (runs,sname))
     print(filename1)
@@ -177,7 +185,7 @@ for runs in expNames:
         
 raw_data = {'expNames':expNames,'N': Navg}
 df2 = pd.DataFrame(raw_data, columns = ['expNames','N'])
-filename2 = ('results/metricsDataFrames/N_t14max_%s.csv' %sname)
+filename2 = ('results/metricsDataFrames/N_t10max_%s.csv' %sname)
 df2.to_csv(filename2)
         
         
