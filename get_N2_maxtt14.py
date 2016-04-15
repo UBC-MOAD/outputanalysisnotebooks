@@ -130,39 +130,39 @@ beta = 7.4E-4
   
 times = [0,6,10,14,18]
 
-#for exp,runs in zip(expList,expNames):
-    #print(runs)
-    #CState = ('%s/stateGlob.nc' %exp) 
+for exp,runs in zip(expList,expNames):
+    print(runs)
+    CState = ('%s/stateGlob.nc' %exp) 
         
-    #Temp = rout.getField(CState,'Temp')
-    #S = rout.getField(CState,'S')
-    #P = rout.getField(phiHyd,'phiHyd')
+    Temp = rout.getField(CState,'Temp')
+    S = rout.getField(CState,'S')
+    P = rout.getField(phiHyd,'phiHyd')
         
         
-    #maskExp = mpt.maskExpand(MaskC,Temp)
-    #TempMask=np.ma.array(Temp,mask=maskExp)   
-    #SMask=np.ma.array(S,mask=maskExp)   
-    #print(runs,'done reading')
+    maskExp = mpt.maskExpand(MaskC,Temp)
+    TempMask=np.ma.array(Temp,mask=maskExp)   
+    SMask=np.ma.array(S,mask=maskExp)   
+    print(runs,'done reading')
     
-    #for yi,xi,sname in zip(ys,xs,stations): # station indices
-        #N2 = np.ma.empty((len(times),nz-2))
-        #ii = 0
+    for yi,xi,sname in zip(ys,xs,stations): # station indices
+        N2 = np.ma.empty((len(times),nz-2))
+        ii = 0
         
-        #for tt in times:  
+        for tt in times:  
             
-            ##Linear eq. of state 
-            #rho = RhoRef*(np.ones(np.shape(RhoRef)) - alpha*(TempMask[tt,:,yi,xi]) + beta*(SMask[tt,:,yi,xi]))
-            ## N^2 for each station
+            #Linear eq. of state 
+            rho = RhoRef*(np.ones(np.shape(RhoRef)) - alpha*(TempMask[tt,:,yi,xi]) + beta*(SMask[tt,:,yi,xi]))
+            # N^2 for each station
+            N2[ii,:] = (-g/RhoRef[0])*((rho[2:] - rho[:-2])/(-drC[3:]-drC[2:-1]))
             #N2[ii,:] = (-g/RhoRef[0])*((rho[2:] - rho[:-2])/(-drC[3:]-drC[2:-1]))
-            ##N2[ii,:] = (-g/RhoRef[0])*((rho[2:] - rho[:-2])/(-drC[3:]-drC[2:-1]))
             
-            #ii = ii+1
+            ii = ii+1
         
-        #raw_data = {'drC' : drC[2:-1],'N2_tt00': N2[0,:],'N2_tt06': N2[1,:],
-                    #'N2_tt10': N2[2,:],'N2_tt14': N2[3,:],'N2_tt18': N2[4,:]}
-        #df = pd.DataFrame(raw_data, columns = ['drC', 'N2_tt00', 'N2_tt06', 'N2_tt10', 'N2_tt14', 'N2_tt18' ])
-        #filename1 = ('results/metricsDataFrames/N2_%s_%s.csv' % (runs,sname))
-        #df.to_csv(filename1)
+        raw_data = {'drC' : drC[2:-1],'N2_tt00': N2[0,:],'N2_tt06': N2[1,:],
+                    'N2_tt10': N2[2,:],'N2_tt14': N2[3,:],'N2_tt18': N2[4,:]}
+        df = pd.DataFrame(raw_data, columns = ['drC', 'N2_tt00', 'N2_tt06', 'N2_tt10', 'N2_tt14', 'N2_tt18' ])
+        filename1 = ('results/metricsDataFrames/N2_%s_%s.csv' % (runs,sname))
+        df.to_csv(filename1)
         
     
         

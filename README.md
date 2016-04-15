@@ -101,5 +101,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[UpwellingDepthFromMaxValue.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/UpwellingDepthFromMaxValue.ipynb)
 
+* ##[VerticallyIntegratedTracerAlongShelf.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedTracerAlongShelf.ipynb)
+
 
  

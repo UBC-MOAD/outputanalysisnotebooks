@@ -174,7 +174,7 @@ kk = 0
 
 for runs in expNames:
     
-    key = ['N2_tt10']
+    key = ['N2_tt14']
     sname = 'CM'
     filename1 = ('results/metricsDataFrames/N2_%s_%s.csv' % (runs,sname))
     print(filename1)
@@ -185,7 +185,7 @@ for runs in expNames:
         
 raw_data = {'expNames':expNames,'N': Navg}
 df2 = pd.DataFrame(raw_data, columns = ['expNames','N'])
-filename2 = ('results/metricsDataFrames/N_t10max_%s.csv' %sname)
+filename2 = ('results/metricsDataFrames/N_t14max_%s.csv' %sname)
 df2.to_csv(filename2)
         
         
