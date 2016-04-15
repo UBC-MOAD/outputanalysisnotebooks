@@ -80,12 +80,32 @@ expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run02',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run15',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run16',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run17',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run18',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run19',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run20',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run04',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run05',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run06',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run07']
            #'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run07']
-TrList = [['Tr1','Tr2','Tr3'], ['Tr1','Tr2','Tr3'], ['Tr1','Tr2','Tr3'], ['Tr1','Tr2','Tr3'], ['Tr1','Tr2','Tr3'], ['Tr1'],['Tr1'],['Tr1','Tr2','Tr3'],['Tr1','Tr2','Tr3'],['Tr1'],['Tr1'],['Tr1'],['Tr1']]
+TrList = [['Tr1'],#run02
+	  ['Tr1'],#run03
+	  ['Tr1'],#run04
+	  ['Tr1'],#run09
+	  ['Tr1'],#run10
+	  ['Tr2'],#run11
+	  ['Tr3'],#run12
+	  ['Tr1'],#run14
+	  ['Tr1'],#run15 
+	  ['Tr1'],#run16 
+	  ['Tr3'],#run17
+	  ['Tr1'],#run18
+	  ['Tr1'],#run19
+	  ['Tr2'],#run20
+	  ['Tr1'],#run04 3D
+	  ['Tr1'],#run05 3D
+	  ['Tr1'],#run06 3D
+	  ['Tr1']] #run07 3D
 
 expNames = ['CNTDIFF_run02',
            'CNTDIFF_run03',
@@ -98,6 +118,9 @@ expNames = ['CNTDIFF_run02',
            'CNTDIFF_run15',
            'CNTDIFF_run16',
            'CNTDIFF_run17',
+           'CNTDIFF_run18',
+           'CNTDIFF_run19',
+           'CNTDIFF_run20',
            '3DDIFF_run04',
            '3DDIFF_run05',
            '3DDIFF_run06',
