@@ -36,9 +36,7 @@ def main():
   
   Grid1, GridOut1, State1,StateOut1,Ptracers1, PtracersOut1 = mpt.getDatasets(expPath, run)
   FluxTR01 = ('%s/%s/FluxTR01Glob.nc' %(expPath, run))
-  FluxTR02 = ('%s/%s/FluxTR02Glob.nc' %(expPath, run))
-  FluxTR03 = ('%s/%s/FluxTR03Glob.nc' %(expPath, run))
- 
+  
   nx = 360
   ny = 360
   nz = 90
@@ -59,30 +57,32 @@ def main():
 
   #Transect definitions (indices x,y,z,t)
   
-  CS1 = [0,40,227,227,0,29,0,18]
-  CS2 = [40,120,227,227,0,29,0,18]
+  CS1 = [0,40,267,267,0,29,0,18]
+  CS2 = [40,120,267,267,0,29,0,18]
   CS3 = [120,240,267,267,0,29,0,18]
-  CS3sb = [120,240,227,227,0,29,0,18]
-  CS4 = [240,320,227,227,0,29,0,18]
-  CS5 = [320,359,227,227,0,29,0,18]
-  AS1 = [120,120,227,267,0,29,0,18]
-  AS2 = [240,240,227,267,0,29,0,18]
-  LID1 = [120,180,227,267,29,29,0,18]
-  LID2 = [180,240,227,267,29,29,0,18]
+  CS3sb = [120,240,267,267,0,29,0,18]
+  CS4 = [240,320,267,267,0,29,0,18]
+  CS5 = [320,359,267,267,0,29,0,18]
+  AS1 = [120,120,267,267,0,29,0,18]
+  AS2 = [240,240,267,267,0,29,0,18]
+  LID1 = [120,180,267,267,29,29,0,18]
+  LID2 = [180,240,267,267,29,29,0,18]
   
-  TracerList = ['Tr1','Tr2','Tr3']
+  TracerList = ['Tr1']
   day = [0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.] # Fluxes are calculated between two outputs
   
-  fluxfile = [FluxTR01,FluxTR02,FluxTR03]
-  fluxtr = ['1','2','3']
+  fluxfile = [FluxTR01]
+  fluxtr = ['1']
   
   for f,tr,trstr in zip (fluxfile,fluxtr,TracerList):
     
-    keyw = ('ADVrTr0%s' %tr)
-    keyv = ('ADVyTr0%s' %tr)
-    keyu = ('ADVxTr0%s' %tr)
+    keyw = ('DFrETr0%s' %tr)
+    keywimp = ('DFrITr0%s' %tr)
+    keyv = ('DFyETr0%s' %tr)
+    keyu = ('DFxETr0%s' %tr)
     
     W,V,U = mpt.get_TRAC(f, keyw ,keyv, keyu)
+    Wi,V,U = mpt.get_TRAC(f, keywimp ,keyv, keyu)
 
     #Get slices
     V_CS1a = mpt.slice_TRAC(V,CS1[0],CS1[1],CS1[2],CS1[3],CS1[4],CS1[5],CS1[6],CS1[7])
@@ -95,6 +95,8 @@ def main():
     U_AS2a = mpt.slice_TRAC(U,AS2[0],AS2[1],AS2[2],AS2[3],AS2[4],AS2[5],AS2[6],AS2[7])
     W_LID1a = mpt.slice_TRAC(W,LID1[0],LID1[1],LID1[2],LID1[3],LID1[4],LID1[5],LID1[6],LID1[7])
     W_LID2a = mpt.slice_TRAC(W,LID2[0],LID2[1],LID2[2],LID2[3],LID2[4],LID2[5],LID2[6],LID2[7])
+    W_LID1ai = mpt.slice_TRAC(Wi,LID1[0],LID1[1],LID1[2],LID1[3],LID1[4],LID1[5],LID1[6],LID1[7])
+    W_LID2ai = mpt.slice_TRAC(Wi,LID2[0],LID2[1],LID2[2],LID2[3],LID2[4],LID2[5],LID2[6],LID2[7])
   
     #add up
     V_CS1 = np.sum(np.sum(V_CS1a,axis=1),axis=1)
@@ -107,12 +109,14 @@ def main():
     U_AS2 = np.sum(np.sum(U_AS2a,axis=1),axis=1)
     W_LID1 = np.sum(np.sum(W_LID1a,axis=2),axis=1)
     W_LID2 = np.sum(np.sum(W_LID2a,axis=2),axis=1)
+    W_LID1i = np.sum(np.sum(W_LID1ai,axis=2),axis=1)
+    W_LID2i = np.sum(np.sum(W_LID2ai,axis=2),axis=1)
   
    
-    raw_data = {'day':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2}
-    df = pd.DataFrame(raw_data, columns = ['day', 'CS1', 'CS2', 'CS3', 'CS3sb', 'CS4', 'CS5', 'AS1', 'AS2', 'LID1', 'LID2'])
+    raw_data = {'day':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2,'LID1i': W_LID1i, 'LID2i': W_LID2i}
+    df = pd.DataFrame(raw_data, columns = ['day', 'CS1', 'CS2', 'CS3', 'CS3sb', 'CS4', 'CS5', 'AS1', 'AS2', 'LID1', 'LID2','LID1i', 'LID2i'])
     
-    filename1 = ('results/metricsDataFrames/CNTDIFF_CS_ADVFLUX_%s%s.csv' % (run,trstr))
+    filename1 = ('results/metricsDataFrames/3DDIFF_ShSplit_DIFFFLUX_%s%s.csv' % (run,trstr))
     df.to_csv(filename1)
     
     print(filename1)

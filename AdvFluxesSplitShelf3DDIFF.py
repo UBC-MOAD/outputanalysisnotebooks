@@ -36,9 +36,7 @@ def main():
   
   Grid1, GridOut1, State1,StateOut1,Ptracers1, PtracersOut1 = mpt.getDatasets(expPath, run)
   FluxTR01 = ('%s/%s/FluxTR01Glob.nc' %(expPath, run))
-  FluxTR02 = ('%s/%s/FluxTR02Glob.nc' %(expPath, run))
-  FluxTR03 = ('%s/%s/FluxTR03Glob.nc' %(expPath, run))
- 
+  
   nx = 360
   ny = 360
   nz = 90
@@ -59,22 +57,22 @@ def main():
 
   #Transect definitions (indices x,y,z,t)
   
-  CS1 = [0,40,227,227,0,29,0,18]
-  CS2 = [40,120,227,227,0,29,0,18]
+  CS1 = [0,40,267,267,0,29,0,18]
+  CS2 = [40,120,267,267,0,29,0,18]
   CS3 = [120,240,267,267,0,29,0,18]
-  CS3sb = [120,240,227,227,0,29,0,18]
-  CS4 = [240,320,227,227,0,29,0,18]
-  CS5 = [320,359,227,227,0,29,0,18]
-  AS1 = [120,120,227,267,0,29,0,18]
-  AS2 = [240,240,227,267,0,29,0,18]
-  LID1 = [120,180,227,267,29,29,0,18]
-  LID2 = [180,240,227,267,29,29,0,18]
+  CS3sb = [120,240,267,267,0,29,0,18]
+  CS4 = [240,320,267,267,0,29,0,18]
+  CS5 = [320,359,267,267,0,29,0,18]
+  AS1 = [120,120,267,267,0,29,0,18]
+  AS2 = [240,240,267,267,0,29,0,18]
+  LID1 = [120,180,267,267,29,29,0,18]
+  LID2 = [180,240,267,267,29,29,0,18]
   
-  TracerList = ['Tr1','Tr2','Tr3']
+  TracerList = ['Tr1']
   day = [0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.] # Fluxes are calculated between two outputs
   
-  fluxfile = [FluxTR01,FluxTR02,FluxTR03]
-  fluxtr = ['1','2','3']
+  fluxfile = [FluxTR01]
+  fluxtr = ['1']
   
   for f,tr,trstr in zip (fluxfile,fluxtr,TracerList):
     
@@ -112,7 +110,7 @@ def main():
     raw_data = {'day':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2}
     df = pd.DataFrame(raw_data, columns = ['day', 'CS1', 'CS2', 'CS3', 'CS3sb', 'CS4', 'CS5', 'AS1', 'AS2', 'LID1', 'LID2'])
     
-    filename1 = ('results/metricsDataFrames/CNTDIFF_CS_ADVFLUX_%s%s.csv' % (run,trstr))
+    filename1 = ('results/metricsDataFrames/3DDIFF_ShSplit_ADVFLUX_%s%s.csv' % (run,trstr))
     df.to_csv(filename1)
     
     print(filename1)
