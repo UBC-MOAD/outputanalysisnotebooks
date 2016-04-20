@@ -75,6 +75,7 @@ stations = ['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run02',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run03',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run04',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run07',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run09',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run10',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run11',
@@ -87,6 +88,13 @@ expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run02',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run19',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run20',
            '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run21',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run22',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run23',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run24',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run25',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run26',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run27',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run28',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run04',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run05',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run06',
@@ -95,6 +103,7 @@ expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run02',
 expNames = ['CNTDIFF_run02',
            'CNTDIFF_run03',
            'CNTDIFF_run04',
+           'CNTDIFF_run07',
            'CNTDIFF_run09',
            'CNTDIFF_run10',
            'CNTDIFF_run11',
@@ -107,6 +116,13 @@ expNames = ['CNTDIFF_run02',
            'CNTDIFF_run19',
            'CNTDIFF_run20',
            'CNTDIFF_run21',
+           'CNTDIFF_run22',
+           'CNTDIFF_run23',
+           'CNTDIFF_run24',
+           'CNTDIFF_run25',
+           'CNTDIFF_run26',
+           'CNTDIFF_run27',
+           'CNTDIFF_run28',
            '3DDIFF_run04',
            '3DDIFF_run05',
            '3DDIFF_run06',
@@ -128,7 +144,7 @@ g = 9.81 # ms^-2
 alpha = 2.0E-4 # 1/degC
 beta = 7.4E-4
   
-times = [0,6,10,14,18]
+times = [0,2,4,6,8,10,12,14,16,18]
 
 for exp,runs in zip(expList,expNames):
     print(runs)
@@ -158,9 +174,9 @@ for exp,runs in zip(expList,expNames):
             
             ii = ii+1
         
-        raw_data = {'drC' : drC[2:-1],'N2_tt00': N2[0,:],'N2_tt06': N2[1,:],
-                    'N2_tt10': N2[2,:],'N2_tt14': N2[3,:],'N2_tt18': N2[4,:]}
-        df = pd.DataFrame(raw_data, columns = ['drC', 'N2_tt00', 'N2_tt06', 'N2_tt10', 'N2_tt14', 'N2_tt18' ])
+        raw_data = {'drC' : drC[2:-1],'N2_tt00': N2[0,:],'N2_tt02': N2[1,:],'N2_tt04': N2[2,:],'N2_tt06': N2[3,:],
+                    'N2_tt08': N2[4,:],'N2_tt10': N2[5,:],'N2_tt12': N2[6,:],'N2_tt14': N2[7,:],'N2_tt16': N2[8,:],'N2_tt18': N2[9,:]}
+        df = pd.DataFrame(raw_data, columns = ['drC', 'N2_tt00', 'N2_tt02', 'N2_tt04', 'N2_tt06', 'N2_tt08','N2_tt10', 'N2_tt12', 'N2_tt14', 'N2_tt16','N2_tt18' ])
         filename1 = ('results/metricsDataFrames/N2_%s_%s.csv' % (runs,sname))
         df.to_csv(filename1)
         
@@ -174,7 +190,7 @@ kk = 0
 
 for runs in expNames:
     
-    key = ['N2_tt14']
+    key = ['N2_tt10']
     sname = 'CM'
     filename1 = ('results/metricsDataFrames/N2_%s_%s.csv' % (runs,sname))
     print(filename1)
@@ -185,7 +201,7 @@ for runs in expNames:
         
 raw_data = {'expNames':expNames,'N': Navg}
 df2 = pd.DataFrame(raw_data, columns = ['expNames','N'])
-filename2 = ('results/metricsDataFrames/N_t14max_%s.csv' %sname)
+filename2 = ('results/metricsDataFrames/N_t10max_%s.csv' %sname)
 df2.to_csv(filename2)
         
         
