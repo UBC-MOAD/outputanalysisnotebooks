@@ -105,5 +105,8 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb)
 
+* ##[VerticallyIntegratedTracerAlongShelf-CanyonEffect.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedTracerAlongShelf-CanyonEffect.ipynb)
+
+* ##[VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb)
 
  
