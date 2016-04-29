@@ -85,14 +85,21 @@ f_lont.shape
 #########
 n = np.arange(npart)
 colors = cm.rainbow(np.linspace(0, 1, len(n)))
-mlab.figure(size=(640, 800), bgcolor=(0.16, 0.28, 0.46))
+mlab.figure(size=(10, 10), bgcolor=(0.16, 0.28, 0.46))
+
+
 ##A color must be defined
-surf = mlab.surf(xc,yc,-bathy, color=(1,1,1), warp_scale=0.2) 
-surf.actor.actor.mapper.scalar_visibility = False
-surf.actor.enable_texture = True
-surf.actor.tcoord_generator_mode = 'plane'
+
+
+
+surf = mlab.mesh(xc,yc,-bathy*30.0, color=(250.0/255,235.0/255,215.0/255),scale_factor=0.1) 
+#surf.actor.actor.mapper.scalar_visibility = False
+#surf.actor.enable_texture = True
+#surf.actor.tcoord_generator_mode = 'plane'
 #mlab.show()
-#for N,c in zip(n,colors):
-#mlab.plot3d(f_lont[1:34,3],f_latt[1:34,3],f_dept[1:34,3])
+for N,c in zip(n,colors):
+  trajectory  = mlab.plot3d(f_lont[:34,2],f_latt[:34,2],f_dept[:34,2]*30.0,f_dept[:34,2],colormap='RdYlGn',tube_radius=None)
+ 
+mlab.colorbar(trajectory, title='Depth', orientation='vertical')
 
 mlab.show()
