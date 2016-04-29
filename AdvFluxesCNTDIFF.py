@@ -42,7 +42,7 @@ def main():
   nx = 360
   ny = 360
   nz = 90
-  nt = 19 # t dimension size 
+  
 
   rc = GridOut1.variables['RC']
   xc = rout.getField(Grid1, 'XC') # x coords tracer cells
@@ -55,24 +55,26 @@ def main():
   hFacCCan = rout.getField(Grid1,'HFacC') 
   rACan = rout.getField(Grid1,'rA') 
   drFCan=GridOut1.variables['drF']
+  time = StateOut1.variables['T']
+  nt = len(time)
   print('Finished reading grid variables')
 
   #Transect definitions (indices x,y,z,t)
   
-  CS1 = [0,40,227,227,0,29,0,18]
-  CS2 = [40,120,227,227,0,29,0,18]
-  CS3 = [120,240,267,267,0,29,0,18]
-  CS3sb = [120,240,227,227,0,29,0,18]
-  CS4 = [240,320,227,227,0,29,0,18]
-  CS5 = [320,359,227,227,0,29,0,18]
-  AS1 = [120,120,227,267,0,29,0,18]
-  AS2 = [240,240,227,267,0,29,0,18]
-  LID1 = [120,180,227,267,29,29,0,18]
-  LID2 = [180,240,227,267,29,29,0,18]
+  CS1 = [0,40,227,227,0,29,0,nt]
+  CS2 = [40,120,227,227,0,29,0,nt]
+  CS3 = [120,240,267,267,0,29,0,nt]
+  CS3sb = [120,240,227,227,0,29,0,nt]
+  CS4 = [240,320,227,227,0,29,0,nt]
+  CS5 = [320,359,227,227,0,29,0,nt]
+  AS1 = [120,120,227,267,0,29,0,nt]
+  AS2 = [240,240,227,267,0,29,0,nt]
+  LID1 = [120,180,227,267,29,29,0,nt]
+  LID2 = [180,240,227,267,29,29,0,nt]
   
   TracerList = ['Tr1','Tr2','Tr3']
-  day = [0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.] # Fluxes are calculated between two outputs
   
+   
   fluxfile = [FluxTR01,FluxTR02,FluxTR03]
   fluxtr = ['1','2','3']
   
@@ -83,7 +85,9 @@ def main():
     keyu = ('ADVxTr0%s' %tr)
     
     W,V,U = mpt.get_TRAC(f, keyw ,keyv, keyu)
-
+    print('Shape of W is:')
+    print(np.shape(W))
+    
     #Get slices
     V_CS1a = mpt.slice_TRAC(V,CS1[0],CS1[1],CS1[2],CS1[3],CS1[4],CS1[5],CS1[6],CS1[7])
     V_CS2a = mpt.slice_TRAC(V,CS2[0],CS2[1],CS2[2],CS2[3],CS2[4],CS2[5],CS2[6],CS2[7])
@@ -108,8 +112,13 @@ def main():
     W_LID1 = np.sum(np.sum(W_LID1a,axis=2),axis=1)
     W_LID2 = np.sum(np.sum(W_LID2a,axis=2),axis=1)
   
-   
-    raw_data = {'day':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2}
+    
+    day = np.linspace(time[0],time[-1],len(W_LID1))  
+
+    
+    print(np.shape(day), np.shape(W_LID1))
+    
+    raw_data = {'time':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2}
     df = pd.DataFrame(raw_data, columns = ['day', 'CS1', 'CS2', 'CS3', 'CS3sb', 'CS4', 'CS5', 'AS1', 'AS2', 'LID1', 'LID2'])
     
     filename1 = ('results/metricsDataFrames/CNTDIFF_CS_ADVFLUX_%s%s.csv' % (run,trstr))

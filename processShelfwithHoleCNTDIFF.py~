@@ -33,6 +33,7 @@ def main():
   
   expPath = sys.argv[1]
   run = sys.argv[2]
+  TrName = sys.argv[3]
   
   Grid1, GridOut1, State1,StateOut1,Ptracers1, PtracersOut1 = mpt.getDatasets(expPath, run)
   
@@ -56,27 +57,23 @@ def main():
 
 
 
-  Tr1 = rout.getField(Ptracers1,'Tr1')
-  Tr2 = rout.getField(Ptracers1,'Tr2')
-  Tr3 = rout.getField(Ptracers1,'Tr3')
+  Tr1 = rout.getField(Ptracers1,TrName)
   
   print('Finished reading tracer fields')
   
   
-  
   (WatTr1, TrMassTr1,WatHTr1,TrMassHTr1) = mpt.howMuchWaterShwHole(Tr1,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180,xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr2, TrMassTr2,WatHTr2,TrMassHTr2) = mpt.howMuchWaterShwHole(Tr2,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
-  (WatTr3, TrMassTr3,WatHTr3,TrMassHTr3) = mpt.howMuchWaterShwHole(Tr3,MaskCan,30,rACan,hFacCCan,drFCan,227,30,50,180, xh1=120,xh2=240,yh1=227,yh2=267) 
+   
   
   print('Finished calculating mass on shelf')
   
     
-  TracerList = ['Tr1','Tr2','Tr3']
+  TracerList = ['Tr1']
   
-  MassList = [TrMassTr1,TrMassTr2,TrMassTr3]
-  WatList = [WatTr1,WatTr2,WatTr3]
-  MassHoleList = [TrMassHTr1,TrMassHTr2,TrMassHTr3]
-  WatHoleList = [WatHTr1,WatHTr2,WatHTr3]
+  MassList = [TrMassTr1]
+  WatList = [WatTr1]
+  MassHoleList = [TrMassHTr1]
+  WatHoleList = [WatHTr1]
   
   day = [0., 0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.]
  
