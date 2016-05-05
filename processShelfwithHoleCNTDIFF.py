@@ -53,6 +53,7 @@ def main():
   hFacCCan = rout.getField(Grid1,'HFacC') 
   rACan = rout.getField(Grid1,'rA') 
   drFCan=GridOut1.variables['drF']
+  day = StateOut1.variables['T']
   print('Finished reading grid variables')
 
 
@@ -75,7 +76,7 @@ def main():
   MassHoleList = [TrMassHTr1]
   WatHoleList = [WatHTr1]
   
-  day = [0., 0.5, 1., 1.5, 2., 2.5, 3., 3.5, 4., 4.5, 5., 5.5,  6., 6.5,  7., 7.5,  8., 8.5,  9.]
+  
  
   for trstr,a,b,c,d in zip(TracerList,MassList,WatList,MassHoleList,WatHoleList):
     
