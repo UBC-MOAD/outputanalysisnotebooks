@@ -30,17 +30,18 @@ import matplotlib.cm as cm
 
 from matplotlib import animation
 
-lib_path = os.path.abspath('../../Building_canyon/BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
-#lib_path = os.path.abspath('../BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
+#lib_path = os.path.abspath('../../Building_canyon/BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
+lib_path = os.path.abspath('../BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
 
 sys.path.append(lib_path)
 
-import ReadOutTools_MITgcm as rout 
+import ReadOutTools_MITgcm as rout
 import MetricsPythonTools as mpt
 
 from mayavi import mlab
 #########
-CGrid ='/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run29/gridGlob_cropped.nc' 
+CGrid ='/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run29/gridGlob_cropped.nc'
+CGridOut = Dataset(CGrid )
 
 CGridOut=Dataset(CGrid)
 CState ='/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run29/stateGlob_cropped.nc' 
@@ -50,14 +51,14 @@ npart = 10
 nx = 360
 ny = 360
 nz = 90
-nt = 19 # t dimension size 
+nt = 19 # t dimension size
 
 rc = CGridOut.variables['RC']
 dxf = CGridOut.variables['dxF']
 xc = rout.getField(CGrid, 'XC') # x coords tracer cells
 yc = rout.getField(CGrid, 'YC') # y coords tracer cells
 
-rA = rout.getField(CGrid, 'rA') 
+rA = rout.getField(CGrid, 'rA')
 
 drF = CGridOut.variables['drF'] # vertical distance between faces
 drC = CGridOut.variables['drC'] # vertical distance between centers
@@ -66,11 +67,10 @@ hFacC = rout.getField(CGrid, 'HFacC')
 mask_NoC = rout.getMask(CGrid, 'HFacC')
 
 bathy = rout.getField(CGrid,'Depth')
-times = np.arange(0,nt,1)
 
 #########
 
-f = Dataset('/ocean/kramosmu/Ariane/TracerExperiments/CNTDIFF/run29_10part/ariane_trajectories_qualitative.nc','r');
+f = Dataset('/Users/Karina/Research/PhD/Tracers/Ariane/TracerExperiments/CNTDIFF/run29_10part/ariane_trajectories_qualitative.nc','r');
 
 f_lont=f.variables['traj_lon']
 f_latt=f.variables['traj_lat']
