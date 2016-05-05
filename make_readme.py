@@ -42,7 +42,7 @@ Descriptions under the links below are from the first cell of the notebooks
 """
     for fn in glob.glob('*.ipynb'):
         readme += '* ##[{fn}]({url}/{fn})  \n    \n'.format(fn=fn, url=url)
-        readme += notebook_description(fn)
+        #readme += notebook_description(fn)
     license = """
 ##License
 
