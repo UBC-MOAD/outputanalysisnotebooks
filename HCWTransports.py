@@ -34,6 +34,7 @@ def main():
   expPath = sys.argv[1]
   run = sys.argv[2]
   trac = sys.argv[3]
+  exp = sys.argv[4]
   
   Grid1, GridOut1, State1,StateOut1,Ptracers1, PtracersOut1 = mpt.getDatasets(expPath, run)
   
@@ -149,7 +150,11 @@ def main():
   raw_data = {'day':day, 'CS1': V_CS1, 'CS2': V_CS2, 'CS3': V_CS3, 'CS3sb': V_CS3sb, 'CS4': V_CS4, 'CS5': V_CS5, 'AS1':U_AS1, 'AS2': U_AS2, 'LID1': W_LID1, 'LID2': W_LID2}
   df = pd.DataFrame(raw_data, columns = ['day', 'CS1', 'CS2', 'CS3', 'CS3sb', 'CS4', 'CS5', 'AS1', 'AS2', 'LID1', 'LID2'])
     
-  filename1 = ('results/metricsDataFrames/CNTDIFF_HCWCSTRANS_%s.csv' % run)
+ 
+  filename1 = ('results/metricsDataFrames/%s_HCWCSTRANS_%s.csv' % (exp,run))
+  
+  
+  
   df.to_csv(filename1)
     
   print(filename1)
