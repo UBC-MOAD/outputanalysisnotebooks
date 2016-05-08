@@ -47,7 +47,8 @@ def main():
 
   drF = GridOut1.variables['drF'] # vertical distance between faces
   dxG = rout.getField(Grid1,'dxG')
-
+  dxF = rout.getField(Grid1,'dxF')
+  dyF = rout.getField(Grid1,'dyF')
   MaskCan = rout.getMask(Grid1,'HFacC')
   hFacCCan = rout.getField(Grid1,'HFacC')
   rACan = rout.getField(Grid1,'rA')
@@ -121,8 +122,8 @@ def main():
   V_CS4 = np.sum(np.sum(V_CS4a*V_CS4area,axis=1),axis=1)
   V_CS5 = np.sum(np.sum(V_CS5a*V_CS5area,axis=1),axis=1)
   V_CS3sb = np.sum(np.sum(V_CS3sba*V_CS3sbarea,axis=1),axis=1)
-  U_AS1 = np.sum(np.sum(U_AS1a*AS1area,axis=1),axis=1)
-  U_AS2 = np.sum(np.sum(U_AS2a*AS2area,axis=1),axis=1)
+  U_AS1 = np.sum(np.sum(U_AS1a*U_AS1area,axis=1),axis=1)
+  U_AS2 = np.sum(np.sum(U_AS2a*U_AS2area,axis=1),axis=1)
   W_LID1 = np.sum(np.sum(W_LID1a*W_LID1area,axis=2),axis=1)
   W_LID2 = np.sum(np.sum(W_LID2a*W_LID2area,axis=2),axis=1)
 
