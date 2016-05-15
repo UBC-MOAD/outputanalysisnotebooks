@@ -197,7 +197,16 @@ raw_data = {'time':time,
             'ConcArea19':CACanyon[:,10],
             'ConcArea20':CACanyon[:,11],
             'ConcArea21':CACanyon[:,12],
+            'ConcArea3D07':CACanyon[:,13],
+            'ConcArea3D06':CACanyon[:,14],
+            'ConcArea3D05':CACanyon[:,15],
+            'ConcArea3D04':CACanyon[:,16],
            }
+           
+           
+           
+           
+          
 df = pd.DataFrame(raw_data, columns = ['day', 
                                        'ConcArea02',
                                        'ConcArea03',
