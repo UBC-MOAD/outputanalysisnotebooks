@@ -197,10 +197,10 @@ raw_data = {'time':time,
             'ConcArea19':CACanyon[:,10],
             'ConcArea20':CACanyon[:,11],
             'ConcArea21':CACanyon[:,12],
-            'ConcArea3D07':CACanyon[:,13],
-            'ConcArea3D06':CACanyon[:,14],
-            'ConcArea3D05':CACanyon[:,15],
-            'ConcArea3D04':CACanyon[:,16],
+            'ConcArea3D04':CACanyon[:,13],
+            'ConcArea3D05':CACanyon[:,14],
+            'ConcArea3D06':CACanyon[:,15],
+            'ConcArea3D07':CACanyon[:,16],
            }
            
            
@@ -221,7 +221,11 @@ df = pd.DataFrame(raw_data, columns = ['day',
                                        'ConcArea19',
                                        'ConcArea20',
                                        'ConcArea21',
-                                       ])
+                                       'ConcArea3D04',
+				       'ConcArea3D05',
+				       'ConcArea3D06',
+				       'ConcArea3D07',                                       
+])
     
 filename1 = ('results/metricsDataFrames/bottomConcentrationAreaCanyonRuns.csv' )
 df.to_csv(filename1)
