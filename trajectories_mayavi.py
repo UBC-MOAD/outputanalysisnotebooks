@@ -7,11 +7,10 @@ from netCDF4 import Dataset
 import numpy as np
 
 # Bathymetry input
-grid =Dataset('/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run29/gridGlob_cropped.nc')
-
+grid=Dataset('/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run29/grid_few_vars.nc')
 xc = grid.variables['XC'][:,:] # x coords tracer cells
 yc = grid.variables['YC'][:,:] # y coords tracer cells
-bathy = grid.variables['Depth'][:,:]
+bathy = grid.variables['depths'][:,:]
 
 
 
