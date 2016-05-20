@@ -6,367 +6,391 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[2BarkleyCanyonsDownwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /2BarkleyCanyonsDownwelling.ipynb)  
+* ##[2BarkleyCanyonsDownwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//2BarkleyCanyonsDownwelling.ipynb)  
     
-* ##[Run08notave.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Run08notave.ipynb)  
+* ##[Run08notave.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Run08notave.ipynb)  
     
-* ##[TotalTracerOnShelfBARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfBARKLEY.ipynb)  
+* ##[TotalTracerOnShelfBARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfBARKLEY.ipynb)  
     
-* ##[FluxThroughBoundaries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FluxThroughBoundaries.ipynb)  
+* ##[FluxThroughBoundaries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughBoundaries.ipynb)  
     
-* ##[Plot_MetricsVsNonDim.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Plot_MetricsVsNonDim.ipynb)  
+* ##[Plot_MetricsVsNonDim.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_MetricsVsNonDim.ipynb)  
     
-* ##[GMREDIHydrun04and05-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIHydrun04and05-Copy1.ipynb)  
+* ##[GMREDIHydrun04and05-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIHydrun04and05-Copy1.ipynb)  
     
-* ##[TotalTSOnShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTSOnShelfCases.ipynb)  
+* ##[TotalTSOnShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTSOnShelfCases.ipynb)  
     
-* ##[HCW_CSTransport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /HCW_CSTransport.ipynb)  
+* ##[HCW_CSTransport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//HCW_CSTransport.ipynb)  
     
-* ##[Ariane_CNTrun29_10part.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Ariane_CNTrun29_10part.ipynb)  
+* ##[Ariane_CNTrun29_10part.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Ariane_CNTrun29_10part.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun05.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun05.ipynb)  
     
-* ##[FlowDescriptionCalculations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FlowDescriptionCalculations.ipynb)  
+* ##[FlowDescriptionCalculations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FlowDescriptionCalculations.ipynb)  
     
-* ##[TracerTransport_vs_WaterTransport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TracerTransport_vs_WaterTransport.ipynb)  
+* ##[TracerTransport_vs_WaterTransport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerTransport_vs_WaterTransport.ipynb)  
     
-* ##[EffectOfProfileOnNoCanyonCase.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /EffectOfProfileOnNoCanyonCase.ipynb)  
+* ##[ConcentrationOnShelfBottom-AllRuns-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-AllRuns-NoLid.ipynb)  
     
-* ##[CalcNumDiffMITgcmTemp.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CalcNumDiffMITgcmTemp.ipynb)  
+* ##[EffectOfProfileOnNoCanyonCase.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//EffectOfProfileOnNoCanyonCase.ipynb)  
     
-* ##[BottomBands.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBands.ipynb)  
+* ##[CalcNumDiffMITgcmTemp.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcmTemp.ipynb)  
     
-* ##[GMREDIHydRun11.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIHydRun11.ipynb)  
+* ##[BottomBands.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBands.ipynb)  
     
-* ##[MassConservationTracerExperiments.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MassConservationTracerExperiments.ipynb)  
+* ##[GMREDIHydRun11.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIHydRun11.ipynb)  
     
-* ##[VerticalVelocitiesComparisonNoCvsCNT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticalVelocitiesComparisonNoCvsCNT.ipynb)  
+* ##[MassConservationTracerExperiments.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MassConservationTracerExperiments.ipynb)  
     
-* ##[CSTransportPlots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CSTransportPlots.ipynb)  
+* ##[VerticalVelocitiesComparisonNoCvsCNT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalVelocitiesComparisonNoCvsCNT.ipynb)  
     
-* ##[DiffusiveTransportsUniformKv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /DiffusiveTransportsUniformKv.ipynb)  
+* ##[CSTransportPlots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CSTransportPlots.ipynb)  
     
-* ##[GMREDIrun01bis-whyNaNs.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIrun01bis-whyNaNs.ipynb)  
+* ##[DiffusiveTransportsUniformKv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DiffusiveTransportsUniformKv.ipynb)  
     
-* ##[VerticalVelocitiesComparison3DvsCNT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticalVelocitiesComparison3DvsCNT.ipynb)  
+* ##[GMREDIrun01bis-whyNaNs.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIrun01bis-whyNaNs.ipynb)  
     
-* ##[MoviesVorticityDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MoviesVorticityDescription.ipynb)  
+* ##[VerticalVelocitiesComparison3DvsCNT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalVelocitiesComparison3DvsCNT.ipynb)  
     
-* ##[Untitled.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Untitled.ipynb)  
+* ##[MoviesVorticityDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesVorticityDescription.ipynb)  
     
-* ##[DensityTracking3DKzDiff.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /DensityTracking3DKzDiff.ipynb)  
+* ##[Untitled.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Untitled.ipynb)  
     
-* ##[BottomBandsCompare705m-6TrLinProfilesRun04Run06.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare705m-6TrLinProfilesRun04Run06.ipynb)  
+* ##[DensityTracking3DKzDiff.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DensityTracking3DKzDiff.ipynb)  
     
-* ##[ShelfBoxTransport-3DDIFF-CONT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ShelfBoxTransport-3DDIFF-CONT.ipynb)  
+* ##[BottomBandsCompare705m-6TrLinProfilesRun04Run06.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare705m-6TrLinProfilesRun04Run06.ipynb)  
     
-* ##[TotalTracerOnShelfBARKLEY_Hole.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfBARKLEY_Hole.ipynb)  
+* ##[ShelfBoxTransport-3DDIFF-CONT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfBoxTransport-3DDIFF-CONT.ipynb)  
     
-* ##[VariableDiffusivityRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VariableDiffusivityRun01.ipynb)  
+* ##[TotalTracerOnShelfBARKLEY_Hole.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfBARKLEY_Hole.ipynb)  
     
-* ##[CrossShelfTransportGridComparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransportGridComparison.ipynb)  
+* ##[VariableDiffusivityRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VariableDiffusivityRun01.ipynb)  
     
-* ##[TracerProfileEvolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TracerProfileEvolution.ipynb)  
+* ##[CrossShelfTransportGridComparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransportGridComparison.ipynb)  
     
-* ##[TotalTracerOnShelfBarkleyProfilesNoCanyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfBarkleyProfilesNoCanyon.ipynb)  
+* ##[TracerProfileEvolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerProfileEvolution.ipynb)  
     
-* ##[MoviesPressureDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MoviesPressureDescription.ipynb)  
+* ##[TotalTracerOnShelfBarkleyProfilesNoCanyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfBarkleyProfilesNoCanyon.ipynb)  
     
-* ##[TotalTracerOnShelfBARKLEY_Hole_NoCMask.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfBARKLEY_Hole_NoCMask.ipynb)  
+* ##[ConcentrationOnShelfBottom-Contours-Kv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-Contours-Kv.ipynb)  
     
-* ##[BottomBandsCompare162m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare162m.ipynb)  
+* ##[MoviesPressureDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesPressureDescription.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun07_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun07_TandS.ipynb)  
+* ##[TotalTracerOnShelfBARKLEY_Hole_NoCMask.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfBARKLEY_Hole_NoCMask.ipynb)  
     
-* ##[MITgcm_NetCDFOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MITgcm_NetCDFOutput.ipynb)  
+* ##[BottomBandsCompare162m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare162m.ipynb)  
     
-* ##[MoviesFlowDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MoviesFlowDescription.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun07_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun07_TandS.ipynb)  
     
-* ##[MoviesTransportAlongShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MoviesTransportAlongShelf.ipynb)  
+* ##[MITgcm_NetCDFOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MITgcm_NetCDFOutput.ipynb)  
     
-* ##[Plot_N_NonDim_VsMetricsWholeShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Plot_N_NonDim_VsMetricsWholeShelf.ipynb)  
+* ##[MoviesFlowDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesFlowDescription.ipynb)  
     
-* ##[StratificationEvolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /StratificationEvolution.ipynb)  
+* ##[MoviesTransportAlongShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesTransportAlongShelf.ipynb)  
     
-* ##[FirstLookAtFluxOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FirstLookAtFluxOutput.ipynb)  
+* ##[Plot_N_NonDim_VsMetricsWholeShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_N_NonDim_VsMetricsWholeShelf.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun06.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun06.ipynb)  
+* ##[StratificationEvolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//StratificationEvolution.ipynb)  
     
-* ##[BottomBandsCompare705m-1TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare705m-1TrLinProfilesRun07Run08.ipynb)  
+* ##[FirstLookAtFluxOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FirstLookAtFluxOutput.ipynb)  
     
-* ##[CheckGMREDIruns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CheckGMREDIruns.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun06.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun06.ipynb)  
     
-* ##[CrossShelfTransports-NOGMREDI-BdyEffects.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransports-NOGMREDI-BdyEffects.ipynb)  
+* ##[BottomBandsCompare705m-1TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare705m-1TrLinProfilesRun07Run08.ipynb)  
     
-* ##[BottomBandsCompare315m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare315m-6TrLinProfilesRun01Run02.ipynb)  
+* ##[CheckGMREDIruns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CheckGMREDIruns.ipynb)  
     
-* ##[DiagnosticsFluxThroughBoxesNoCanyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /DiagnosticsFluxThroughBoxesNoCanyon.ipynb)  
+* ##[CrossShelfTransports-NOGMREDI-BdyEffects.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-NOGMREDI-BdyEffects.ipynb)  
     
-* ##[REDIHydVSNoREDIHyd.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /REDIHydVSNoREDIHyd.ipynb)  
+* ##[BottomBandsCompare315m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare315m-6TrLinProfilesRun01Run02.ipynb)  
     
-* ##[BottomBandsCompare162m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare162m-6TrLinProfilesRun01Run02.ipynb)  
+* ##[DiagnosticsFluxThroughBoxesNoCanyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DiagnosticsFluxThroughBoxesNoCanyon.ipynb)  
     
-* ##[MeridionalComparisonTracTransVel-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MeridionalComparisonTracTransVel-Copy1.ipynb)  
+* ##[REDIHydVSNoREDIHyd.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//REDIHydVSNoREDIHyd.ipynb)  
     
-* ##[ConcentrationSurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ConcentrationSurfaces.ipynb)  
+* ##[BottomBandsCompare162m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare162m-6TrLinProfilesRun01Run02.ipynb)  
     
-* ##[GMREDIHydRun12.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIHydRun12.ipynb)  
+* ##[Ariane_CNTrun03_372part-UpCanyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Ariane_CNTrun03_372part-UpCanyon.ipynb)  
     
-* ##[CalcNumDiffwrong.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CalcNumDiffwrong.ipynb)  
+* ##[MeridionalComparisonTracTransVel-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MeridionalComparisonTracTransVel-Copy1.ipynb)  
     
-* ##[VerticallyIntegratedTracerAlongShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticallyIntegratedTracerAlongShelf.ipynb)  
+* ##[ConcentrationSurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationSurfaces.ipynb)  
     
-* ##[FluxThroughShelfBreak.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FluxThroughShelfBreak.ipynb)  
+* ##[GMREDIHydRun12.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIHydRun12.ipynb)  
     
-* ##[BottomBandsCompare705m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare705m-6TrLinProfilesRun01Run02.ipynb)  
+* ##[CalcNumDiffwrong.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffwrong.ipynb)  
     
-* ##[FluxThroughPeriodicBoundaries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FluxThroughPeriodicBoundaries.ipynb)  
+* ##[VerticallyIntegratedTracerAlongShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun03.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun03.ipynb)  
+* ##[FluxThroughShelfBreak.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughShelfBreak.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun02_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun02_TandS.ipynb)  
+* ##[BottomBandsCompare705m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare705m-6TrLinProfilesRun01Run02.ipynb)  
     
-* ##[NonDimEstimationsBarkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NonDimEstimationsBarkley.ipynb)  
+* ##[Ariane_CNTrun03_372part.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Ariane_CNTrun03_372part.ipynb)  
     
-* ##[TotalTracerOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelf.ipynb)  
+* ##[FluxThroughPeriodicBoundaries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughPeriodicBoundaries.ipynb)  
     
-* ##[isopycnalSurfaces3DDIFFrun07.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /isopycnalSurfaces3DDIFFrun07.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun03.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun03.ipynb)  
     
-* ##[CalcNumDiffMITgcm.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CalcNumDiffMITgcm.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun02_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun02_TandS.ipynb)  
     
-* ##[NumDiffSensitivityTestGMREDIHydRun01_bis.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestGMREDIHydRun01_bis.ipynb)  
+* ##[NonDimEstimationsBarkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NonDimEstimationsBarkley.ipynb)  
     
-* ##[ConcentrationGradientsDownstreamShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ConcentrationGradientsDownstreamShelf.ipynb)  
+* ##[TotalTracerOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelf.ipynb)  
     
-* ##[CalcNumDiffMITgcmFunctions.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CalcNumDiffMITgcmFunctions.ipynb)  
+* ##[isopycnalSurfaces3DDIFFrun07.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfaces3DDIFFrun07.ipynb)  
     
-* ##[GMREDIrun02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIrun02.ipynb)  
+* ##[CalcNumDiffMITgcm.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcm.ipynb)  
     
-* ##[isopycnalSurfaces3DDIFFrun05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /isopycnalSurfaces3DDIFFrun05.ipynb)  
+* ##[NumDiffSensitivityTestGMREDIHydRun01_bis.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestGMREDIHydRun01_bis.ipynb)  
     
-* ##[isopycnalSurfaces3DDIFFrun04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /isopycnalSurfaces3DDIFFrun04.ipynb)  
+* ##[ConcentrationGradientsDownstreamShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelf.ipynb)  
     
-* ##[PlotIsosurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /PlotIsosurfaces.ipynb)  
+* ##[CalcNumDiffMITgcmFunctions.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcmFunctions.ipynb)  
     
-* ##[ShelfDefinition.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ShelfDefinition.ipynb)  
+* ##[GMREDIrun02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIrun02.ipynb)  
     
-* ##[TotalDensityOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalDensityOnShelf.ipynb)  
+* ##[isopycnalSurfaces3DDIFFrun05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfaces3DDIFFrun05.ipynb)  
     
-* ##[BottomBandsCompare315m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare315m.ipynb)  
+* ##[isopycnalSurfaces3DDIFFrun04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfaces3DDIFFrun04.ipynb)  
     
-* ##[ALookAtEKE.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ALookAtEKE.ipynb)  
+* ##[PlotIsosurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//PlotIsosurfaces.ipynb)  
     
-* ##[TempSurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TempSurfaces.ipynb)  
+* ##[ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb)  
     
-* ##[UpwellingDepthFromMaxValue.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /UpwellingDepthFromMaxValue.ipynb)  
+* ##[ShelfDefinition.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfDefinition.ipynb)  
     
-* ##[VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb)  
+* ##[TotalDensityOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalDensityOnShelf.ipynb)  
     
-* ##[BathymetryFigure.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BathymetryFigure.ipynb)  
+* ##[BottomBandsCompare315m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare315m.ipynb)  
     
-* ##[Shelf_slope_and_vertical_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Shelf_slope_and_vertical_transport.ipynb)  
+* ##[ALookAtEKE.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ALookAtEKE.ipynb)  
     
-* ##[Hyd_vs_NonHyd.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Hyd_vs_NonHyd.ipynb)  
+* ##[TempSurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TempSurfaces.ipynb)  
     
-* ##[CS_Figures_PosterOSM16_13Feb16.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CS_Figures_PosterOSM16_13Feb16.ipynb)  
+* ##[UpwellingDepthFromMaxValue.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//UpwellingDepthFromMaxValue.ipynb)  
     
-* ##[TotalTracerOnShelfBARKLEY_Hole-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfBARKLEY_Hole-Copy1.ipynb)  
+* ##[VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb)  
     
-* ##[CrossShelfFluxBoxes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfFluxBoxes.ipynb)  
+* ##[BathymetryFigure.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BathymetryFigure.ipynb)  
     
-* ##[TotalTracerOnShelfCases-TracerExpBadge.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfCases-TracerExpBadge.ipynb)  
+* ##[Shelf_slope_and_vertical_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Shelf_slope_and_vertical_transport.ipynb)  
     
-* ##[ConcentrationSurfaces3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ConcentrationSurfaces3DDIFF.ipynb)  
+* ##[ConcentrationOnShelfBottom-AllRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-AllRuns.ipynb)  
     
-* ##[VerticalVelocitiesComparisonCNTKiso.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticalVelocitiesComparisonCNTKiso.ipynb)  
+* ##[Hyd_vs_NonHyd.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Hyd_vs_NonHyd.ipynb)  
     
-* ##[BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb)  
+* ##[CS_Figures_PosterOSM16_13Feb16.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CS_Figures_PosterOSM16_13Feb16.ipynb)  
     
-* ##[CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb)  
+* ##[TotalTracerOnShelfBARKLEY_Hole-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfBARKLEY_Hole-Copy1.ipynb)  
     
-* ##[AdvectiveTransportsUniformKv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /AdvectiveTransportsUniformKv.ipynb)  
+* ##[CrossShelfFluxBoxes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfFluxBoxes.ipynb)  
     
-* ##[CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb)  
+* ##[TotalTracerOnShelfCases-TracerExpBadge.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfCases-TracerExpBadge.ipynb)  
     
-* ##[BottomBoundaryLayers.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBoundaryLayers.ipynb)  
+* ##[ConcentrationSurfaces3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationSurfaces3DDIFF.ipynb)  
     
-* ##[DiffusivityCalculationPlots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /DiffusivityCalculationPlots.ipynb)  
+* ##[VerticalVelocitiesComparisonCNTKiso.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalVelocitiesComparisonCNTKiso.ipynb)  
     
-* ##[CanyonBox_08Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CanyonBox_08Feb2016.ipynb)  
+* ##[BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb)  
     
-* ##[TotalTracerOnShelfCNTDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfCNTDIFF.ipynb)  
+* ##[CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb)  
     
-* ##[NoCanyonCase_Analysis.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NoCanyonCase_Analysis.ipynb)  
+* ##[AdvectiveTransportsUniformKv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//AdvectiveTransportsUniformKv.ipynb)  
     
-* ##[PlotNonDimVsMetricsCanyonBox.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /PlotNonDimVsMetricsCanyonBox.ipynb)  
+* ##[CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-NOGMREDI-DiscrepancyFix.ipynb)  
     
-* ##[ShelfBoxFluxes-3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ShelfBoxFluxes-3DDIFF.ipynb)  
+* ##[BottomBoundaryLayers.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBoundaryLayers.ipynb)  
     
-* ##[VerticalFluxSurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticalFluxSurfaces.ipynb)  
+* ##[DiffusivityCalculationPlots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DiffusivityCalculationPlots.ipynb)  
     
-* ##[CrossShelfTransports-3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransports-3DDIFF.ipynb)  
+* ##[CanyonBox_08Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CanyonBox_08Feb2016.ipynb)  
     
-* ##[GMREDINonHydrun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDINonHydrun01.ipynb)  
+* ##[TotalTracerOnShelfCNTDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfCNTDIFF.ipynb)  
     
-* ##[CrossShelfTransport_CanyonEffect_03Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransport_CanyonEffect_03Feb2016.ipynb)  
+* ##[NoCanyonCase_Analysis.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NoCanyonCase_Analysis.ipynb)  
     
-* ##[MoviesVerticalFlux.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MoviesVerticalFlux.ipynb)  
+* ##[PlotNonDimVsMetricsCanyonBox.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//PlotNonDimVsMetricsCanyonBox.ipynb)  
     
-* ##[FluxThroughOpenBoundaries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FluxThroughOpenBoundaries.ipynb)  
+* ##[ShelfBoxFluxes-3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfBoxFluxes-3DDIFF.ipynb)  
     
-* ##[MITgcm_NetCDFOutput_FollowTopBands.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MITgcm_NetCDFOutput_FollowTopBands.ipynb)  
+* ##[VerticalFluxSurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalFluxSurfaces.ipynb)  
     
-* ##[GMREDIHydrun04and05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIHydrun04and05.ipynb)  
+* ##[CrossShelfTransports-3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-3DDIFF.ipynb)  
     
-* ##[TracerGradientEvolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TracerGradientEvolution.ipynb)  
+* ##[GMREDINonHydrun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDINonHydrun01.ipynb)  
     
-* ##[TracerOnShelf_DiffEffect_04Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TracerOnShelf_DiffEffect_04Feb2016.ipynb)  
+* ##[CrossShelfTransport_CanyonEffect_03Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransport_CanyonEffect_03Feb2016.ipynb)  
     
-* ##[ConcentrationSurfacesPlotly.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ConcentrationSurfacesPlotly.ipynb)  
+* ##[MoviesVerticalFlux.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesVerticalFlux.ipynb)  
     
-* ##[FluxThroughShelfBreakModule.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FluxThroughShelfBreakModule.ipynb)  
+* ##[FluxThroughOpenBoundaries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughOpenBoundaries.ipynb)  
     
-* ##[CalcNumDiffMITgcmGlob.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CalcNumDiffMITgcmGlob.ipynb)  
+* ##[MITgcm_NetCDFOutput_FollowTopBands.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MITgcm_NetCDFOutput_FollowTopBands.ipynb)  
     
-* ##[ColorMaps_MITgcm.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ColorMaps_MITgcm.ipynb)  
+* ##[ConcentrationOnShelfBottom-Contours-Kv-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-Contours-Kv-NoLid.ipynb)  
     
-* ##[MoviesTracerDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MoviesTracerDescription.ipynb)  
+* ##[GMREDIHydrun04and05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIHydrun04and05.ipynb)  
     
-* ##[1BarkleyCanyon_KPP_GMREDI.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /1BarkleyCanyon_KPP_GMREDI.ipynb)  
+* ##[TracerGradientEvolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerGradientEvolution.ipynb)  
     
-* ##[FixWaterOnHole.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FixWaterOnHole.ipynb)  
+* ##[TracerOnShelf_DiffEffect_04Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerOnShelf_DiffEffect_04Feb2016.ipynb)  
     
-* ##[DiagnosticsFluxThroughBoxesNoCanyon-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /DiagnosticsFluxThroughBoxesNoCanyon-Copy1.ipynb)  
+* ##[ConcentrationSurfacesPlotly.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationSurfacesPlotly.ipynb)  
     
-* ##[TempAnimRun08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TempAnimRun08.ipynb)  
+* ##[FluxThroughShelfBreakModule.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughShelfBreakModule.ipynb)  
     
-* ##[ShelfBoxTransport-3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ShelfBoxTransport-3DDIFF.ipynb)  
+* ##[CalcNumDiffMITgcmGlob.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcmGlob.ipynb)  
     
-* ##[MoviesHorVelDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MoviesHorVelDescription.ipynb)  
+* ##[ColorMaps_MITgcm.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ColorMaps_MITgcm.ipynb)  
     
-* ##[CrossShelfTransportComparisons.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransportComparisons.ipynb)  
+* ##[MoviesTracerDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesTracerDescription.ipynb)  
     
-* ##[AnimMITgcm.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /AnimMITgcm.ipynb)  
+* ##[1BarkleyCanyon_KPP_GMREDI.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//1BarkleyCanyon_KPP_GMREDI.ipynb)  
     
-* ##[MeridionalComparisonTracTransVel.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MeridionalComparisonTracTransVel.ipynb)  
+* ##[FixWaterOnHole.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FixWaterOnHole.ipynb)  
     
-* ##[MITgcm_NetCDFOutput_YucatanUpw.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MITgcm_NetCDFOutput_YucatanUpw.ipynb)  
+* ##[DiagnosticsFluxThroughBoxesNoCanyon-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DiagnosticsFluxThroughBoxesNoCanyon-Copy1.ipynb)  
     
-* ##[TotalTracerOnShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfCases.ipynb)  
+* ##[TempAnimRun08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TempAnimRun08.ipynb)  
     
-* ##[MeridionalComparisonTracTransVel-Copy2.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /MeridionalComparisonTracTransVel-Copy2.ipynb)  
+* ##[ShelfBoxTransport-3DDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfBoxTransport-3DDIFF.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun04.ipynb)  
+* ##[MoviesHorVelDescription.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesHorVelDescription.ipynb)  
     
-* ##[SurfaceLayerAndCoastalUpwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /SurfaceLayerAndCoastalUpwelling.ipynb)  
+* ##[CrossShelfTransportComparisons.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransportComparisons.ipynb)  
     
-* ##[BottomBandsCompare705m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare705m.ipynb)  
+* ##[AnimMITgcm.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//AnimMITgcm.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun08_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun08_TandS.ipynb)  
+* ##[MeridionalComparisonTracTransVel.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MeridionalComparisonTracTransVel.ipynb)  
     
-* ##[BottomBandsCompare162m-6TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare162m-6TrLinProfilesRun07Run08.ipynb)  
+* ##[MITgcm_NetCDFOutput_YucatanUpw.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MITgcm_NetCDFOutput_YucatanUpw.ipynb)  
     
-* ##[Plot_N_NonDim_VsMetricsCanyonBox.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Plot_N_NonDim_VsMetricsCanyonBox.ipynb)  
+* ##[TotalTracerOnShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfCases.ipynb)  
     
-* ##[FirstLookAtZonalFluxOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FirstLookAtZonalFluxOutput.ipynb)  
+* ##[MeridionalComparisonTracTransVel-Copy2.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MeridionalComparisonTracTransVel-Copy2.ipynb)  
     
-* ##[ConcentrationOnShelfBottom.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ConcentrationOnShelfBottom.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun04.ipynb)  
     
-* ##[ShelfBoxFluxes-CNTDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ShelfBoxFluxes-CNTDIFF.ipynb)  
+* ##[SurfaceLayerAndCoastalUpwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//SurfaceLayerAndCoastalUpwelling.ipynb)  
     
-* ##[isopycnalSurfaces3DDIFFrun06.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /isopycnalSurfaces3DDIFFrun06.ipynb)  
+* ##[BottomBandsCompare705m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare705m.ipynb)  
     
-* ##[Jessicas_Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Jessicas_Run02.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun08_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun08_TandS.ipynb)  
     
-* ##[CalcNumDiffMITgcmRUN05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CalcNumDiffMITgcmRUN05.ipynb)  
+* ##[BottomBandsCompare162m-6TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare162m-6TrLinProfilesRun07Run08.ipynb)  
     
-* ##[VerticalVelocitiesComparisonCNTonly.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticalVelocitiesComparisonCNTonly.ipynb)  
+* ##[Plot_N_NonDim_VsMetricsCanyonBox.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_N_NonDim_VsMetricsCanyonBox.ipynb)  
     
-* ##[TotalTracerAlongShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerAlongShelfCases.ipynb)  
+* ##[MoviesTracerDescription-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MoviesTracerDescription-Copy1.ipynb)  
     
-* ##[CSVelPlots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CSVelPlots.ipynb)  
+* ##[FirstLookAtZonalFluxOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FirstLookAtZonalFluxOutput.ipynb)  
     
-* ##[Run15NaNs.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Run15NaNs.ipynb)  
+* ##[ConcentrationOnShelfBottom.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom.ipynb)  
     
-* ##[Exploring_Ariane_Output.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Exploring_Ariane_Output.ipynb)  
+* ##[ShelfBoxFluxes-CNTDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfBoxFluxes-CNTDIFF.ipynb)  
     
-* ##[TotalTracerOnShelfCases-TracerExpBadge-Depth195m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfCases-TracerExpBadge-Depth195m.ipynb)  
+* ##[isopycnalSurfaces3DDIFFrun06.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfaces3DDIFFrun06.ipynb)  
     
-* ##[CalcNumDiffMITgcmGlobVectorize.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CalcNumDiffMITgcmGlobVectorize.ipynb)  
+* ##[Jessicas_Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Jessicas_Run02.ipynb)  
     
-* ##[ShelfBox_08Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ShelfBox_08Feb2016.ipynb)  
+* ##[CalcNumDiffMITgcmRUN05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcmRUN05.ipynb)  
     
-* ##[NoCanyonCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NoCanyonCases.ipynb)  
+* ##[VerticalVelocitiesComparisonCNTonly.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalVelocitiesComparisonCNTonly.ipynb)  
     
-* ##[WriteTotalTrOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /WriteTotalTrOnShelf.ipynb)  
+* ##[TotalTracerAlongShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerAlongShelfCases.ipynb)  
     
-* ##[NumDiffSensitivityTestGMREDIHydRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestGMREDIHydRun01.ipynb)  
+* ##[CSVelPlots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CSVelPlots.ipynb)  
     
-* ##[DepthOfUpwellingArianePlan.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /DepthOfUpwellingArianePlan.ipynb)  
+* ##[Run15NaNs.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Run15NaNs.ipynb)  
     
-* ##[VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb)  
+* ##[Exploring_Ariane_Output.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Exploring_Ariane_Output.ipynb)  
     
-* ##[Plot_MetricsVsNonDim_WithStratFit.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Plot_MetricsVsNonDim_WithStratFit.ipynb)  
+* ##[TotalTracerOnShelfCases-TracerExpBadge-Depth195m.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfCases-TracerExpBadge-Depth195m.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun01.ipynb)  
+* ##[ConcentrationOnShelfBottom-Contours-BARKLEYprofiles-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-Contours-BARKLEYprofiles-NoLid.ipynb)  
     
-* ##[FluxThroughShelfBreakModule-BathyQuad.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FluxThroughShelfBreakModule-BathyQuad.ipynb)  
+* ##[CalcNumDiffMITgcmGlobVectorize.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcmGlobVectorize.ipynb)  
     
-* ##[VerticallyIntegratedTracerAlongShelf-CanyonEffect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VerticallyIntegratedTracerAlongShelf-CanyonEffect.ipynb)  
+* ##[ShelfBox_08Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfBox_08Feb2016.ipynb)  
     
-* ##[PlotNonDimVsMetricsShelfBox.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /PlotNonDimVsMetricsShelfBox.ipynb)  
+* ##[NoCanyonCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NoCanyonCases.ipynb)  
     
-* ##[CrossShelfTransports-CNTDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransports-CNTDIFF.ipynb)  
+* ##[WriteTotalTrOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//WriteTotalTrOnShelf.ipynb)  
     
-* ##[TracerOnShelfandHole_DiffEffect_08Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TracerOnShelfandHole_DiffEffect_08Feb2016.ipynb)  
+* ##[NumDiffSensitivityTestGMREDIHydRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestGMREDIHydRun01.ipynb)  
     
-* ##[TransportThroughBoxes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TransportThroughBoxes.ipynb)  
+* ##[DepthOfUpwellingArianePlan.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DepthOfUpwellingArianePlan.ipynb)  
     
-* ##[ShelfBoxFluxes-3DDIFF-AlongShore.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ShelfBoxFluxes-3DDIFF-AlongShore.ipynb)  
+* ##[VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb)  
     
-* ##[GetVelUpwellingCurrent.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GetVelUpwellingCurrent.ipynb)  
+* ##[Plot_MetricsVsNonDim_WithStratFit.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_MetricsVsNonDim_WithStratFit.ipynb)  
     
-* ##[isopycnalSurfacesCNT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /isopycnalSurfacesCNT.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun01.ipynb)  
     
-* ##[2BarkleyCanyonsUpwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /2BarkleyCanyonsUpwelling.ipynb)  
+* ##[FluxThroughShelfBreakModule-BathyQuad.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughShelfBreakModule-BathyQuad.ipynb)  
     
-* ##[JetHunt-Copy0.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /JetHunt-Copy0.ipynb)  
+* ##[VerticallyIntegratedTracerAlongShelf-CanyonEffect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf-CanyonEffect.ipynb)  
     
-* ##[FluxThroughShelfBreak_3DDiff.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /FluxThroughShelfBreak_3DDiff.ipynb)  
+* ##[PlotNonDimVsMetricsShelfBox.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//PlotNonDimVsMetricsShelfBox.ipynb)  
     
-* ##[NumDiffSensitivityTest.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTest.ipynb)  
+* ##[ConcentrationOnShelfBottom-Contours-BARKLEYprofiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-Contours-BARKLEYprofiles.ipynb)  
     
-* ##[HorizontalDiffusivitySensitivityRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /HorizontalDiffusivitySensitivityRun01.ipynb)  
+* ##[CrossShelfTransports-CNTDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-CNTDIFF.ipynb)  
     
-* ##[Jessicas_Run01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Jessicas_Run01.ipynb)  
+* ##[TracerOnShelfandHole_DiffEffect_08Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerOnShelfandHole_DiffEffect_08Feb2016.ipynb)  
     
-* ##[GMREDIHydRun13.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIHydRun13.ipynb)  
+* ##[TransportThroughBoxes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TransportThroughBoxes.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun09_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun09_TandS.ipynb)  
+* ##[ShelfBoxFluxes-3DDIFF-AlongShore.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfBoxFluxes-3DDIFF-AlongShore.ipynb)  
     
-* ##[TotalTracerOnShelfBarkleyProfiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfBarkleyProfiles.ipynb)  
+* ##[GetVelUpwellingCurrent.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GetVelUpwellingCurrent.ipynb)  
     
-* ##[TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb)  
+* ##[ConcentrationOnShelfBottom-Movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-Movie.ipynb)  
     
-* ##[CrossShelfTransport_DiffEffect_04Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /CrossShelfTransport_DiffEffect_04Feb2016.ipynb)  
+* ##[isopycnalSurfacesCNT.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfacesCNT.ipynb)  
     
-* ##[AngleCorrectionFluxesAcrossSB.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /AngleCorrectionFluxesAcrossSB.ipynb)  
+* ##[2BarkleyCanyonsUpwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//2BarkleyCanyonsUpwelling.ipynb)  
     
-* ##[BottomBandsCompare1000m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /BottomBandsCompare1000m-6TrLinProfilesRun01Run02.ipynb)  
+* ##[JetHunt-Copy0.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//JetHunt-Copy0.ipynb)  
     
-* ##[NumDiffSensitivityTestnoTaveRun02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /NumDiffSensitivityTestnoTaveRun02.ipynb)  
+* ##[FluxThroughShelfBreak_3DDiff.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughShelfBreak_3DDiff.ipynb)  
     
-* ##[DiagnosticsFluxThroughBoxes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /DiagnosticsFluxThroughBoxes.ipynb)  
+* ##[NumDiffSensitivityTest.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTest.ipynb)  
     
-* ##[VariableDiffKzRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /VariableDiffKzRun01.ipynb)  
+* ##[HorizontalDiffusivitySensitivityRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//HorizontalDiffusivitySensitivityRun01.ipynb)  
     
-* ##[GMREDIrun01-whyNaNs.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /GMREDIrun01-whyNaNs.ipynb)  
+* ##[Jessicas_Run01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Jessicas_Run01.ipynb)  
     
-* ##[Plot_MetricsVsNonDim_CanyonEffect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /Plot_MetricsVsNonDim_CanyonEffect.ipynb)  
+* ##[GMREDIHydRun13.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIHydRun13.ipynb)  
     
-* ##[ConcentrationGradientsDownstreamShelfBARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /ConcentrationGradientsDownstreamShelfBARKLEY.ipynb)  
+* ##[NumDiffSensitivityTestnoTaveRun09_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun09_TandS.ipynb)  
     
-* ##[JetHunt.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ /JetHunt.ipynb)  
+* ##[TotalTracerOnShelfBarkleyProfiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfBarkleyProfiles.ipynb)  
+    
+* ##[TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb)  
+    
+* ##[CrossShelfTransport_DiffEffect_04Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransport_DiffEffect_04Feb2016.ipynb)  
+    
+* ##[AngleCorrectionFluxesAcrossSB.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//AngleCorrectionFluxesAcrossSB.ipynb)  
+    
+* ##[BottomBandsCompare1000m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare1000m-6TrLinProfilesRun01Run02.ipynb)  
+    
+* ##[NumDiffSensitivityTestnoTaveRun02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun02.ipynb)  
+    
+* ##[DiagnosticsFluxThroughBoxes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DiagnosticsFluxThroughBoxes.ipynb)  
+    
+* ##[VariableDiffKzRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VariableDiffKzRun01.ipynb)  
+    
+* ##[GMREDIrun01-whyNaNs.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIrun01-whyNaNs.ipynb)  
+    
+* ##[ConcentrationOnShelfBottom-Contours-N-f.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-Contours-N-f.ipynb)  
+    
+* ##[Plot_MetricsVsNonDim_CanyonEffect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_MetricsVsNonDim_CanyonEffect.ipynb)  
+    
+* ##[ConcentrationGradientsDownstreamShelfBARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelfBARKLEY.ipynb)  
+    
+* ##[JetHunt.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//JetHunt.ipynb)  
     
 
 ##License

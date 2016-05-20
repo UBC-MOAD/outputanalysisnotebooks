@@ -33,10 +33,22 @@ def a_weight_mean(ConcArea,Area):
     awmean = sumNum/sumDen
     return awmean
 
-def ConcArea(Tr, hfac, ra):
+def mask2DCanyon(bathy, sbdepth=-152.5):
+    '''Mask out the canyon from the shelf.
+    bathy : depths 2D array from the grid file
+    sbdepth: shelf depth, always negative float 
+    Returns mask'''
+    
+    bathyMasked = np.ma.masked_less(-bathy, -152.5)
+    return(bathyMasked.mask)
+
+def ConcArea(Tr, hfac, ra, bathy, sbdepth=-152.5):
     '''Tr: tracer field (nt,nz,ny,nx)
        hfac: fraction of open cell at center (nz,ny,nx)
        ra: array of cell horizontal areas (ny,nx)
+       bathy : depths 2D array from the grid file (ny,nx)
+       sbdepth: shelf break depth (negative value)
+       
        RETURNS:
        ConcArea = concentration at cell closest to bottom times its area (nt,ny,nx)
        Conc = cocnetration near bottom (nt,ny,nx)'''
@@ -47,8 +59,9 @@ def ConcArea(Tr, hfac, ra):
     BottomInd = np.argmax(hfac[::-1,:,:]>0.0,axis=0) # start looking for first no-land cell from the bottom up.
     BottomInd = np.ones(np.shape(BottomInd))*89 - BottomInd # Get index of unreversed z axis
 
-    
+    print(np.shape(BottomInd))
     for tt in range(19):
+        #print(tt)
         for i in range(360):
             for j in range(360):
                 TrBottom = Tr[tt,BottomInd[i,j],i,j]
@@ -56,14 +69,29 @@ def ConcArea(Tr, hfac, ra):
                 Conc[tt,i,j] = TrBottom
                 Area[i,j] = ra[i,j]
     
+    print(np.shape(ConcArea))
+    
+    maskShelf2D = mask2DCanyon(bathy, sbdepth)
+    maskShelf = np.expand_dims(maskShelf2D,0) # expand along time dimension
+    maskShelf = maskShelf + np.zeros(Conc.shape)
+    
+    
 
-    return (ConcArea,Conc, Area)
+    #ConcAreaMasked = np.ma.masked_values(ConcDepths,-2.5)
+    #ConcDepths[np.where(np.ma.getmask(ConcDepthsMasked)==True)] = np.nan
 
+    return (np.ma.masked_array(ConcArea, mask=maskShelf),
+	    np.ma.masked_array(Conc, mask=maskShelf),
+	    np.ma.masked_array(Area, mask=maskShelf2D),
+	    )
 #---------------------------------------------------------------------------------------------------------- 
 
 
 NoCanyonGrid='/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run02/gridGlob.nc'
 NoCanyonGridOut = Dataset(NoCanyonGrid)
+
+CanyonGrid='/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01/gridGlob.nc'
+CanyonGridOut = Dataset(CanyonGrid)
 
 CanyonState='/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01/stateGlob.nc'
 CanyonStateOut = Dataset(CanyonState)
@@ -76,6 +104,12 @@ nz = 90
 hFacCNoC = rout.getField(NoCanyonGrid, 'HFacC')
 MaskCNoC = rout.getMask(NoCanyonGrid, 'HFacC')
 rANoC = rout.getField(NoCanyonGrid, 'rA')
+bathyNoC = rout.getField(NoCanyonGrid, 'Depth')
+
+hFacC = rout.getField(CanyonGrid, 'HFacC')
+MaskC = rout.getMask(CanyonGrid, 'HFacC')
+rA = rout.getField(CanyonGrid, 'rA')
+bathy = rout.getField(CanyonGrid, 'Depth')
 
 z = CanyonStateOut.variables['Z']
 time = CanyonStateOut.variables['T']
@@ -130,7 +164,7 @@ for tracerID in tracerListCanyon:
     
     Tr = rout.getField(ptracerCanyon, tracerID) 
     print(ptracerCanyon)
-    concArea,conc,area=ConcArea(Tr, hFacCNoC, rANoC)
+    concArea,conc,area=ConcArea(Tr, hFacC, rA, bathy)
     CACanyon[:,ii] = a_weight_mean(concArea,area)
     
     
@@ -173,7 +207,7 @@ for tracerID in tracerListFlat:
     
     Tr = rout.getField(ptracerFlat, tracerID) 
     print(ptracerFlat)
-    concArea,conc,area=ConcArea(Tr, hFacCNoC, rANoC)
+    concArea,conc,area=ConcArea(Tr, hFacCNoC, rANoC, bathyNoC)
     CAFlat[:,ii] = a_weight_mean(concArea,area)
     
     
