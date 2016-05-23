@@ -24,7 +24,7 @@ import re
 
 NBVIEWER = 'http://nbviewer.jupyter.org/urls'
 REPO = 'bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip'
-REPO_DIR = ' '
+REPO_DIR = ''
 TITLE_PATTERN = re.compile('#{1,6} ?')
 
 
