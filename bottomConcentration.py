@@ -23,6 +23,7 @@ sys.path.append(lib_path)
 
 import ReadOutTools_MITgcm as rout 
 
+import savitzky_golay as sg
 
 #--------------------- Functions------------------------------------------------------------------------------------- 
 def a_weight_mean(ConcArea,Area):
@@ -42,6 +43,7 @@ def mask2DCanyon(bathy, sbdepth=-152.5):
     bathyMasked = np.ma.masked_less(-bathy, -152.5)
     return(bathyMasked.mask)
 
+
 def ConcArea(Tr, hfac, ra, bathy, sbdepth=-152.5):
     '''Tr: tracer field (nt,nz,ny,nx)
        hfac: fraction of open cell at center (nz,ny,nx)
@@ -55,36 +57,36 @@ def ConcArea(Tr, hfac, ra, bathy, sbdepth=-152.5):
     
     ConcArea = np.empty((19,360,360))
     Conc = np.empty((19,360,360))
+    ConcFiltered = np.empty((19,360,360))
+    ConcAreaFiltered = np.empty((19,360,360))
     Area = np.empty((360,360))
     BottomInd = np.argmax(hfac[::-1,:,:]>0.0,axis=0) # start looking for first no-land cell from the bottom up.
     BottomInd = np.ones(np.shape(BottomInd))*89 - BottomInd # Get index of unreversed z axis
-
+    
     print(np.shape(BottomInd))
     for tt in range(19):
         #print(tt)
-        for i in range(360):
-            for j in range(360):
+        for j in range(360):
+            for i in range(360):
+                
                 TrBottom = Tr[tt,BottomInd[i,j],i,j]
                 ConcArea[tt,i,j] = TrBottom*ra[i,j]
                 Conc[tt,i,j] = TrBottom
                 Area[i,j] = ra[i,j]
-    
+                
+            # Filter step noise
+            ConcFiltered[tt,:,j] = sg.savitzky_golay(Conc[tt,:,j], 7,3) 
+            ConcAreaFiltered[tt,:,j] = sg.savitzky_golay(ConcArea[tt,:,j], 7,3)     
     print(np.shape(ConcArea))
     
     maskShelf2D = mask2DCanyon(bathy, sbdepth)
     maskShelf = np.expand_dims(maskShelf2D,0) # expand along time dimension
     maskShelf = maskShelf + np.zeros(Conc.shape)
     
-    
-
-    #ConcAreaMasked = np.ma.masked_values(ConcDepths,-2.5)
-    #ConcDepths[np.where(np.ma.getmask(ConcDepthsMasked)==True)] = np.nan
-
-    return (np.ma.masked_array(ConcArea, mask=maskShelf),
-	    np.ma.masked_array(Conc, mask=maskShelf), 
-	    np.ma.masked_array(Area, mask=maskShelf2D),
-	    )
-
+    return (np.ma.masked_array(ConcAreaFiltered, mask=maskShelf),
+            np.ma.masked_array(ConcFiltered, mask=maskShelf),
+            np.ma.masked_array(Area, mask=maskShelf2D),
+            )
 #---------------------------------------------------------------------------------------------------------- 
 
 
@@ -212,7 +214,7 @@ for ptracerFile, tracerID in zip(ptracerListCanyon, tracerListCanyon):
     
     Tr = rout.getField(ptracerFile, tracerID) 
     print(ptracerFile)
-    concArea,conc,area=ConcArea(Tr, hFacC, rA, bathy)
+    concArea, conc, area = ConcArea(Tr, hFacC, rA, bathy)
     CACanyon[:,ii] = a_weight_mean(concArea,area)
     
     
@@ -262,7 +264,7 @@ df = pd.DataFrame(raw_data, columns = ['day',
 				       'ConcArea3D07',                                       
 ])
     
-filename1 = ('results/metricsDataFrames/bottomConcentrationAreaCanyonRuns.csv' )
+filename1 = ('results/metricsDataFrames/bottomConcentrationAreaFiltCanyonRuns.csv' )
 df.to_csv(filename1)
     
 print(filename1)
@@ -280,7 +282,7 @@ for ptracerFile, tracerID in zip(ptracerListFlat, tracerListFlat):
     
     Tr = rout.getField(ptracerFile, tracerID) 
     print(ptracerFile)
-    concArea,conc,area=ConcArea(Tr, hFacCNoC, rANoC, bathyNoC)
+    concArea, conc, area = ConcArea(Tr, hFacCNoC, rANoC, bathyNoC)
     CAFlat[:,ii] = a_weight_mean(concArea,area)
     
     
@@ -311,7 +313,7 @@ dfFlat = pd.DataFrame(raw_data, columns = ['day',
                                        'ConcArea30',
                                        ])
     
-filename2 = ('results/metricsDataFrames/bottomConcentrationAreaFlatRuns.csv' )
+filename2 = ('results/metricsDataFrames/bottomConcentrationAreaFiltFlatRuns.csv' )
 dfFlat.to_csv(filename2)
     
 print(filename2)
