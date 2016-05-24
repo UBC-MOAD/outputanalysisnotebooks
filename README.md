@@ -150,6 +150,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[GMREDIrun02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIrun02.ipynb)  
     
+* ##[ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered.ipynb)  
+    
 * ##[isopycnalSurfaces3DDIFFrun05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfaces3DDIFFrun05.ipynb)  
     
 * ##[isopycnalSurfaces3DDIFFrun04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfaces3DDIFFrun04.ipynb)  
