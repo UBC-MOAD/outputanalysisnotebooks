@@ -26,6 +26,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[NumDiffSensitivityTestnoTaveRun05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun05.ipynb)  
     
+* ##[ConcentrationGradientsDownstreamShelfNandfVariations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelfNandfVariations.ipynb)  
+    
 * ##[FlowDescriptionCalculations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FlowDescriptionCalculations.ipynb)  
     
 * ##[TracerTransport_vs_WaterTransport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerTransport_vs_WaterTransport.ipynb)  
@@ -105,6 +107,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[BottomBandsCompare315m-6TrLinProfilesRun01Run02.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare315m-6TrLinProfilesRun01Run02.ipynb)  
     
 * ##[DiagnosticsFluxThroughBoxesNoCanyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DiagnosticsFluxThroughBoxesNoCanyon.ipynb)  
+    
+* ##[ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered-CoastalInt.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered-CoastalInt.ipynb)  
     
 * ##[REDIHydVSNoREDIHyd.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//REDIHydVSNoREDIHyd.ipynb)  
     
@@ -195,6 +199,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[VerticalVelocitiesComparisonCNTKiso.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalVelocitiesComparisonCNTKiso.ipynb)  
     
 * ##[BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb)  
+    
+* ##[ConcentrationGradientsDownstreamShelfKvVariations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelfKvVariations.ipynb)  
     
 * ##[CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb)  
     
