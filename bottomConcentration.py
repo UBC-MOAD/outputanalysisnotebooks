@@ -55,19 +55,19 @@ def ConcArea(Tr, hfac, ra, bathy, sbdepth=-152.5):
        ConcArea = concentration at cell closest to bottom times its area (nt,ny,nx)
        Conc = cocnetration near bottom (nt,ny,nx)'''
     
-    ConcArea = np.empty((19,360,360))
-    Conc = np.empty((19,360,360))
-    ConcFiltered = np.empty((19,360,360))
-    ConcAreaFiltered = np.empty((19,360,360))
-    Area = np.empty((360,360))
+    ConcArea = np.empty((nt,ny,nx-n0))
+    Conc = np.empty((nt,ny,nx-n0))
+    ConcFiltered = np.empty((nt,ny,nx-n0))
+    ConcAreaFiltered = np.empty((nt,ny,nx-n0))
+    Area = np.empty((ny,nx-n0))
     BottomInd = np.argmax(hfac[::-1,:,:]>0.0,axis=0) # start looking for first no-land cell from the bottom up.
     BottomInd = np.ones(np.shape(BottomInd))*89 - BottomInd # Get index of unreversed z axis
     
     print(np.shape(BottomInd))
-    for tt in range(19):
+    for tt in range(nt):
         #print(tt)
-        for j in range(360):
-            for i in range(360):
+        for j in range(nx-n0):
+            for i in range(ny):
                 
                 TrBottom = Tr[tt,BottomInd[i,j],i,j]
                 ConcArea[tt,i,j] = TrBottom*ra[i,j]
@@ -98,7 +98,7 @@ CanyonGridOut = Dataset(CanyonGrid)
 
 CanyonState='/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run03/stateGlob.nc'
 CanyonStateOut = Dataset(CanyonState)
-
+n0 = 100
 nx = 360
 ny = 360
 nz = 90
@@ -180,12 +180,6 @@ labelsListFlat = ['Base flat',
 ]
 
 
-
-
-
-
-
-
 tracerListCanyon = ['Tr1','Tr1','Tr1',
                     'Tr2','Tr3','Tr1',
                     'Tr1','Tr1','Tr3',
@@ -214,8 +208,8 @@ for ptracerFile, tracerID in zip(ptracerListCanyon, tracerListCanyon):
     
     Tr = rout.getField(ptracerFile, tracerID) 
     print(ptracerFile)
-    concArea, conc, area = ConcArea(Tr, hFacC, rA, bathy)
-    CACanyon[:,ii] = a_weight_mean(concArea,area)
+    concArea, conc, area = ConcArea(Tr[:,:,:,100:], hFacC[:,:,100:], rA[:,100:], bathy[:,100:])
+    CACanyon[:,ii] = a_weight_mean(concArea[:290,:],area[:290,:])
     
     
     ii = ii + 1
@@ -264,7 +258,7 @@ df = pd.DataFrame(raw_data, columns = ['day',
 				       'ConcArea3D07',                                       
 ])
     
-filename1 = ('results/metricsDataFrames/bottomConcentrationAreaFiltCanyonRuns.csv' )
+filename1 = ('results/metricsDataFrames/bottomConcentrationAreaFiltCanyonRuns_NoShallowDnStream.csv' )
 df.to_csv(filename1)
     
 print(filename1)
@@ -282,8 +276,8 @@ for ptracerFile, tracerID in zip(ptracerListFlat, tracerListFlat):
     
     Tr = rout.getField(ptracerFile, tracerID) 
     print(ptracerFile)
-    concArea, conc, area = ConcArea(Tr, hFacCNoC, rANoC, bathyNoC)
-    CAFlat[:,ii] = a_weight_mean(concArea,area)
+    concArea, conc, area = ConcArea(Tr[:,:,:,100:], hFacCNoC[:,:,100:], rANoC[:,100:], bathyNoC[:,100:])
+    CAFlat[:,ii] = a_weight_mean(concArea[:290,:],area[:290,:])
     
     
     
@@ -313,7 +307,7 @@ dfFlat = pd.DataFrame(raw_data, columns = ['day',
                                        'ConcArea30',
                                        ])
     
-filename2 = ('results/metricsDataFrames/bottomConcentrationAreaFiltFlatRuns.csv' )
+filename2 = ('results/metricsDataFrames/bottomConcentrationAreaFiltFlatRuns_NoShallowDnStream.csv' )
 dfFlat.to_csv(filename2)
     
 print(filename2)
