@@ -180,6 +180,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[BathymetryFigure.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BathymetryFigure.ipynb)  
     
+* ##[ContoursAllRunsBottomConcentration.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ContoursAllRunsBottomConcentration.ipynb)  
+    
 * ##[Shelf_slope_and_vertical_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Shelf_slope_and_vertical_transport.ipynb)  
     
 * ##[ConcentrationOnShelfBottom-AllRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationOnShelfBottom-AllRuns.ipynb)  
@@ -199,6 +201,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[VerticalVelocitiesComparisonCNTKiso.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalVelocitiesComparisonCNTKiso.ipynb)  
     
 * ##[BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb)  
+    
+* ##[VerticallyIntegratedTracerAlongShelf_BAC.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf_BAC.ipynb)  
     
 * ##[ConcentrationGradientsDownstreamShelfKvVariations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelfKvVariations.ipynb)  
     
@@ -242,9 +246,13 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[TracerGradientEvolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerGradientEvolution.ipynb)  
     
+* ##[VerticallyIntegratedTracerAlongShelf-Barkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf-Barkley.ipynb)  
+    
 * ##[TracerOnShelf_DiffEffect_04Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerOnShelf_DiffEffect_04Feb2016.ipynb)  
     
 * ##[ConcentrationSurfacesPlotly.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationSurfacesPlotly.ipynb)  
+    
+* ##[BottomConcentration3Dplots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomConcentration3Dplots.ipynb)  
     
 * ##[FluxThroughShelfBreakModule.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughShelfBreakModule.ipynb)  
     
@@ -327,6 +335,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[WriteTotalTrOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//WriteTotalTrOnShelf.ipynb)  
     
 * ##[NumDiffSensitivityTestGMREDIHydRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestGMREDIHydRun01.ipynb)  
+    
+* ##[VerticallyIntegratedTracerAlongShelf-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf-Copy1.ipynb)  
     
 * ##[DepthOfUpwellingArianePlan.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DepthOfUpwellingArianePlan.ipynb)  
     
