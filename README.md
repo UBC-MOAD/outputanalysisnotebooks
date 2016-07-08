@@ -86,6 +86,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[FirstLookAtFluxOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FirstLookAtFluxOutput.ipynb)  
     
+* ##[Ariane_CNTrun03_10part.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Ariane_CNTrun03_10part.ipynb)  
+    
 * ##[NumDiffSensitivityTestnoTaveRun06.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun06.ipynb)  
     
 * ##[BottomBandsCompare705m-1TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare705m-1TrLinProfilesRun07Run08.ipynb)  
@@ -145,6 +147,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[isopycnalSurfaces3DDIFFrun04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//isopycnalSurfaces3DDIFFrun04.ipynb)  
     
 * ##[PlotIsosurfaces.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//PlotIsosurfaces.ipynb)  
+    
+* ##[TracerCSTransports.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerCSTransports.ipynb)  
     
 * ##[ShelfDefinition.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfDefinition.ipynb)  
     
@@ -298,8 +302,6 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[NumDiffSensitivityTestGMREDIHydRun01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestGMREDIHydRun01.ipynb)  
     
-* ##[VerticallyIntegratedTracerAlongShelf-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticallyIntegratedTracerAlongShelf-Copy1.ipynb)  
-    
 * ##[DepthOfUpwellingArianePlan.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//DepthOfUpwellingArianePlan.ipynb)  
     
 * ##[Plot_MetricsVsNonDim_WithStratFit.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_MetricsVsNonDim_WithStratFit.ipynb)  
@@ -340,6 +342,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[TotalTracerOnShelfBarkleyProfiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfBarkleyProfiles.ipynb)  
     
+* ##[ExternalForcing_BodyForcing.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ExternalForcing_BodyForcing.ipynb)  
+    
 * ##[TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerOnShelfCasesMaskTrick-TracerExpBadge.ipynb)  
     
 * ##[CrossShelfTransport_DiffEffect_04Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransport_DiffEffect_04Feb2016.ipynb)  
@@ -357,6 +361,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[GMREDIrun01-whyNaNs.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIrun01-whyNaNs.ipynb)  
     
 * ##[Plot_MetricsVsNonDim_CanyonEffect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_MetricsVsNonDim_CanyonEffect.ipynb)  
+    
+* ##[WaterCSTransports.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//WaterCSTransports.ipynb)  
     
 * ##[ConcentrationGradientsDownstreamShelfBARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelfBARKLEY.ipynb)  
     
