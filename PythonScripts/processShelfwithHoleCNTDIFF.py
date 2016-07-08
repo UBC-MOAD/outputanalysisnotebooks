@@ -18,7 +18,7 @@ import scipy as spy
 
 import sys
 
-lib_path = os.path.abspath('../../Building_canyon/BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
+lib_path = os.path.abspath('../../../Building_canyon/BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
 sys.path.append(lib_path)
 
 import ReadOutTools_MITgcm as rout 
@@ -83,7 +83,7 @@ def main():
     raw_data = {'day':day, 'TronShelfwHole': a, 'HCWonShelfwHole': b, 'TronHole': c, 'HCWonHole': d}
     df = pd.DataFrame(raw_data, columns = ['day', 'TronShelfwHole', 'HCWonShelfwHole', 'TronHole', 'HCWonHole'])
     
-    filename1 = ('results/metricsDataFrames/CNTDIFF_hole_%s%s.csv' % (run,trstr))
+    filename1 = ('../results/metricsDataFrames/CNTDIFF_hole_%s%s.csv' % (run,trstr))
     df.to_csv(filename1)
     
     print(filename1)
