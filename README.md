@@ -294,6 +294,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[CalcNumDiffMITgcmGlobVectorize.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcmGlobVectorize.ipynb)  
     
+* ##[Ariane_CNTrun03_372particles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Ariane_CNTrun03_372particles.ipynb)  
+    
 * ##[ShelfBox_08Feb2016.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ShelfBox_08Feb2016.ipynb)  
     
 * ##[NoCanyonCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NoCanyonCases.ipynb)  
