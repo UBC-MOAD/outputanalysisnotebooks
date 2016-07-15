@@ -78,6 +78,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[NumDiffSensitivityTestnoTaveRun07_TandS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun07_TandS.ipynb)  
     
+* ##[VelocitiesDevelopedWhenChangingViscosityConfig.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VelocitiesDevelopedWhenChangingViscosityConfig.ipynb)  
+    
 * ##[MITgcm_NetCDFOutput.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MITgcm_NetCDFOutput.ipynb)  
     
 * ##[Plot_N_NonDim_VsMetricsWholeShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_N_NonDim_VsMetricsWholeShelf.ipynb)  
