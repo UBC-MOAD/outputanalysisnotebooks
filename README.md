@@ -258,6 +258,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[MeridionalComparisonTracTransVel-Copy2.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//MeridionalComparisonTracTransVel-Copy2.ipynb)  
     
+* ##[Effect_of_viscAz_in_tracers.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Effect_of_viscAz_in_tracers.ipynb)  
+    
 * ##[NumDiffSensitivityTestnoTaveRun04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun04.ipynb)  
     
 * ##[SurfaceLayerAndCoastalUpwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//SurfaceLayerAndCoastalUpwelling.ipynb)  
