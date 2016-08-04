@@ -8,9 +8,13 @@ Descriptions under the links below are from the first cell of the notebooks
 
 * ##[VerticallyIntegratedTracerAlongShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf.ipynb)  
     
+* ##[Idalia_upwelled_water_plot.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/Idalia_upwelled_water_plot.ipynb)  
+    
 * ##[VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf-CanyonEffectOnCoastalIntrusion.ipynb)  
     
 * ##[VerticallyIntegratedTracerAlongShelf_BAC.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf_BAC.ipynb)  
+    
+* ##[VerticallyIntegratedTracerAlongShelf_BAC_downstream_region.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf_BAC_downstream_region.ipynb)  
     
 * ##[VerticallyIntegratedTracerAlongShelf-Barkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf-Barkley.ipynb)  
     
