@@ -8,6 +8,8 @@ Descriptions under the links below are from the first cell of the notebooks
 
 * ##[ConcentrationOnShelfBottom-AllRuns-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns-NoLid.ipynb)  
     
+* ##[integrated_bottom_pool_change_diffusivity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_diffusivity.ipynb)  
+    
 * ##[ConcentrationOnShelfBottom-Contours-Kv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-Kv.ipynb)  
     
 * ##[integrated_bottom_pool_Anims.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_Anims.ipynb)  

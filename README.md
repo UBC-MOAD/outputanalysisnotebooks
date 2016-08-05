@@ -18,6 +18,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Plot_MetricsVsNonDim.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Plot_MetricsVsNonDim.ipynb)  
     
+* ##[VelocitiesDevelopedWhenChangingDiffusivityConfig.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VelocitiesDevelopedWhenChangingDiffusivityConfig.ipynb)  
+    
 * ##[GMREDIHydrun04and05-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//GMREDIHydrun04and05-Copy1.ipynb)  
     
 * ##[TotalTSOnShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTSOnShelfCases.ipynb)  
