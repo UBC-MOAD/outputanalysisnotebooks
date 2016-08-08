@@ -236,6 +236,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[CalcNumDiffMITgcmGlob.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CalcNumDiffMITgcmGlob.ipynb)  
     
+* ##[VelocitiesDevelopedWhenChangingNfConfig.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VelocitiesDevelopedWhenChangingNfConfig.ipynb)  
+    
 * ##[ColorMaps_MITgcm.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ColorMaps_MITgcm.ipynb)  
     
 * ##[1BarkleyCanyon_KPP_GMREDI.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//1BarkleyCanyon_KPP_GMREDI.ipynb)  
