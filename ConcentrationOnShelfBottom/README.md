@@ -28,6 +28,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[ConcentrationOnShelfBottom-AllRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns.ipynb)  
     
+* ##[integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb)  
+    
 * ##[ConcentrationOnShelfBottom-Contours-Kv-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-Kv-NoLid.ipynb)  
     
 * ##[ConcentrationOnShelfBottom.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom.ipynb)  
