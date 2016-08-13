@@ -38,6 +38,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[ConcentrationOnShelfBottom-Contours-BARKLEYprofiles-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-BARKLEYprofiles-NoLid.ipynb)  
     
+* ##[integrated_bottom_pool_change_viscosity_canyon_effect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_viscosity_canyon_effect.ipynb)  
+    
 * ##[ConcentrationOnShelfBottom-Contours-BARKLEYprofiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-BARKLEYprofiles.ipynb)  
     
 * ##[integrated_bottom_pool_change_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_viscosity.ipynb)  
