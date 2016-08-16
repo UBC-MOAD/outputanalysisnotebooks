@@ -14,6 +14,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[ConcentrationOnShelfBottom-Contours-Kv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-Kv.ipynb)  
     
+* ##[bottom_pool_area_and_integrated_concentration_diffusivity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_diffusivity.ipynb)  
+    
 * ##[integrated_bottom_pool_Anims.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_Anims.ipynb)  
     
 * ##[integrated_bottom_pool.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool.ipynb)  
@@ -27,6 +29,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb)  
     
 * ##[ConcentrationOnShelfBottom-AllRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns.ipynb)  
+    
+* ##[bottom_pool_area_and_integrated_concentration_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_viscosity.ipynb)  
     
 * ##[integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb)  
     
