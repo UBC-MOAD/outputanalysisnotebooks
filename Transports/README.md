@@ -6,9 +6,13 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[tracer_transports_base_case_canyon_effect_38.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_base_case_canyon_effect_38.ipynb)  
+    
 * ##[water_transports_diffusivity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_diffusivity.ipynb)  
     
 * ##[water_transports_Nf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_Nf.ipynb)  
+    
+* ##[tracer_transports_base_case-38.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_base_case-38.ipynb)  
     
 * ##[water_transports_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_viscosity.ipynb)  
     
