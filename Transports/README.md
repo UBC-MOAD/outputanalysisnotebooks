@@ -22,6 +22,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[water_transports_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_viscosity.ipynb)  
     
+* ##[Calculate_and_save_tracer_transports.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/Calculate_and_save_tracer_transports.ipynb)  
+    
 * ##[water_transports_base_case_canyon_effect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_base_case_canyon_effect.ipynb)  
     
 * ##[water_transports_base_case.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_base_case.ipynb)  
@@ -33,6 +35,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[tracer_transports_Nf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_Nf.ipynb)  
     
 * ##[water_transports_base_case_canyon_effect-38.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_base_case_canyon_effect-38.ipynb)  
+    
+* ##[Transport_plots_FDSE_poster.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/Transport_plots_FDSE_poster.ipynb)  
     
 
 ##License
