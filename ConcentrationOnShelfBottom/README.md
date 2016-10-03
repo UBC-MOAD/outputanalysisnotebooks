@@ -16,6 +16,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[bottom_pool_area_and_integrated_concentration_diffusivity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_diffusivity.ipynb)  
     
+* ##[bottom_pool_area_and_integrated_concentration_Nf_new_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_Nf_new_viscosity.ipynb)  
+    
 * ##[integrated_bottom_pool_Anims.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_Anims.ipynb)  
     
 * ##[integrated_bottom_pool.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool.ipynb)  
@@ -25,6 +27,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[integrated_bottom_pool_CS_AS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_CS_AS.ipynb)  
     
 * ##[ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered.ipynb)  
+    
+* ##[bottom_pool_area_and_integrated_concentration_diffusivity_new_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_diffusivity_new_viscosity.ipynb)  
     
 * ##[ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb)  
     
