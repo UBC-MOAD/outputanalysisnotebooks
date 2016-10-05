@@ -28,6 +28,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Ariane_CNTrun29_10part.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//Ariane_CNTrun29_10part.ipynb)  
     
+* ##[TracerMass_and_HCW_xarray_new_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerMass_and_HCW_xarray_new_viscosity.ipynb)  
+    
 * ##[NumDiffSensitivityTestnoTaveRun05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//NumDiffSensitivityTestnoTaveRun05.ipynb)  
     
 * ##[ConcentrationGradientsDownstreamShelfNandfVariations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelfNandfVariations.ipynb)  
@@ -323,6 +325,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[FluxThroughShelfBreakModule-BathyQuad.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//FluxThroughShelfBreakModule-BathyQuad.ipynb)  
     
 * ##[PlotNonDimVsMetricsShelfBox.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//PlotNonDimVsMetricsShelfBox.ipynb)  
+    
+* ##[TracerMass_and_HCW_xarray.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerMass_and_HCW_xarray.ipynb)  
     
 * ##[CrossShelfTransports-CNTDIFF.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-CNTDIFF.ipynb)  
     
