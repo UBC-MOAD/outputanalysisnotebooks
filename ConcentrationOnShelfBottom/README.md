@@ -28,6 +28,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns-NoLid-Filtered.ipynb)  
     
+* ##[calculate_and_save_BAC_metric.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/calculate_and_save_BAC_metric.ipynb)  
+    
 * ##[bottom_pool_area_and_integrated_concentration_diffusivity_new_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_diffusivity_new_viscosity.ipynb)  
     
 * ##[ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-N-f-NoLid.ipynb)  
@@ -35,6 +37,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[ConcentrationOnShelfBottom-AllRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns.ipynb)  
     
 * ##[bottom_pool_area_and_integrated_concentration_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_viscosity.ipynb)  
+    
+* ##[bottom_pool_area_and_integrated_concentration_only_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_only_viscosity.ipynb)  
     
 * ##[integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb)  
     
