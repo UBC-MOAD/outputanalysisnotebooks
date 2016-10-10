@@ -294,6 +294,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[VerticalVelocitiesComparisonCNTonly.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//VerticalVelocitiesComparisonCNTonly.ipynb)  
     
+* ##[TracerMass_metric_plots_new_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TracerMass_metric_plots_new_viscosity.ipynb)  
+    
 * ##[TotalTracerAlongShelfCases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//TotalTracerAlongShelfCases.ipynb)  
     
 * ##[CSVelPlots.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CSVelPlots.ipynb)  
