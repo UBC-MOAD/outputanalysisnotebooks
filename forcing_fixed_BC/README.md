@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[fixed_BCs_run03_vs_run04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forcing_fixed_BC/fixed_BCs_run03_vs_run04.ipynb)  
+    
 * ##[fixed_BCs_run04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forcing_fixed_BC/fixed_BCs_run04.ipynb)  
     
 * ##[fixed_BCs_run01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forcing_fixed_BC/fixed_BCs_run01.ipynb)  
