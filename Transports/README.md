@@ -40,6 +40,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[tracer_transports_Nf_new_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_Nf_new_viscosity.ipynb)  
     
+* ##[tracer_transports_diffusivity_viscosity_only.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_diffusivity_viscosity_only.ipynb)  
+    
 * ##[Transport_plots_FDSE_poster.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/Transport_plots_FDSE_poster.ipynb)  
     
 
