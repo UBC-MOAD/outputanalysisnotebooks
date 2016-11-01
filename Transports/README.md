@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[WaterTransportMetrics.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/WaterTransportMetrics.ipynb)  
+    
 * ##[tracer_transports_base_case_canyon_effect_38.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_base_case_canyon_effect_38.ipynb)  
     
 * ##[transport_cross_sections_figure.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/transport_cross_sections_figure.ipynb)  
@@ -15,6 +17,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[Calculate_and_save_water_transports.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/Calculate_and_save_water_transports.ipynb)  
     
 * ##[tracer_transports_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_viscosity.ipynb)  
+    
+* ##[TracerTransportMetrics.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/TracerTransportMetrics.ipynb)  
     
 * ##[tracer_transports_base_case-38.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_base_case-38.ipynb)  
     
