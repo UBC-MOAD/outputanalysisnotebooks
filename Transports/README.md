@@ -38,6 +38,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[tracer_transports_diffusivity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_diffusivity.ipynb)  
     
+* ##[maps_vertical_diffusive_flux_components.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/maps_vertical_diffusive_flux_components.ipynb)  
+    
 * ##[tracer_transports_Nf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_Nf.ipynb)  
     
 * ##[water_transports_base_case_canyon_effect-38.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_base_case_canyon_effect-38.ipynb)  
