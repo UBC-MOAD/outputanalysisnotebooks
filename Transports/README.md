@@ -24,6 +24,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[tracer_transports_diffusivity_new_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/tracer_transports_diffusivity_new_viscosity.ipynb)  
     
+* ##[maps_vertical_diffusive_flux_components_NOGMREDI.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/maps_vertical_diffusive_flux_components_NOGMREDI.ipynb)  
+    
 * ##[water_transports_viscosity_only.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_viscosity_only.ipynb)  
     
 * ##[water_transports_diffusivity_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Transports/water_transports_diffusivity_viscosity.ipynb)  
