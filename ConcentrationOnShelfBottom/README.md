@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[bottom_pool_area_and_integrated_concentration_EW_OBCS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_EW_OBCS.ipynb)  
+    
 * ##[ConcentrationOnShelfBottom-AllRuns-NoLid.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns-NoLid.ipynb)  
     
 * ##[integrated_bottom_pool_change_Nf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_Nf.ipynb)  
@@ -36,8 +38,6 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[ConcentrationOnShelfBottom-AllRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-AllRuns.ipynb)  
     
-* ##[bottom_pool_area_and_integrated_concentration_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_viscosity.ipynb)  
-    
 * ##[bottom_pool_area_and_integrated_concentration_only_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_only_viscosity.ipynb)  
     
 * ##[integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_diffusivity_canyon_effect.ipynb)  
@@ -53,8 +53,6 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[integrated_bottom_pool_change_viscosity_canyon_effect.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_viscosity_canyon_effect.ipynb)  
     
 * ##[ConcentrationOnShelfBottom-Contours-BARKLEYprofiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/ConcentrationOnShelfBottom-Contours-BARKLEYprofiles.ipynb)  
-    
-* ##[bottom_pool_area_and_integrated_concentration_Nf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/bottom_pool_area_and_integrated_concentration_Nf.ipynb)  
     
 * ##[integrated_bottom_pool_change_viscosity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/ConcentrationOnShelfBottom/integrated_bottom_pool_change_viscosity.ipynb)  
     
