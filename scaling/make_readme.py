@@ -24,7 +24,7 @@ import re
 
 NBVIEWER = 'http://nbviewer.jupyter.org/urls'
 REPO = 'bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip'
-REPO_DIR = 'PythonScripts/Paper1Figures'
+REPO_DIR = 'scaling'
 TITLE_PATTERN = re.compile('#{1,6} ?')
 
 
@@ -32,7 +32,7 @@ def main():
     url = os.path.join(NBVIEWER, REPO, REPO_DIR)
     readme = """\
 The Jupyter Notebooks in this directory are for development and testing of
-the results figures generation modules of the Salish Sea model nowcast system.
+the results figures generation modules of the Submarine Canyons group at UBC.
 
 The links below are to static renderings of the notebooks via
 [nbviewer.jupyter.org](http://nbviewer.jupyter.org/).
@@ -47,7 +47,7 @@ Descriptions under the links below are from the first cell of the notebooks
 ##License
 
 These notebooks and files are copyright 2013-{this_year}
-by the Salish Sea MEOPAR Project Contributors
+by the UBC Canyons Project Contributors
 and The University of British Columbia.
 
 They are licensed under the Apache License, Version 2.0.
