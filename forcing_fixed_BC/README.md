@@ -16,6 +16,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[fixed_BCs_run05.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forcing_fixed_BC/fixed_BCs_run05.ipynb)  
     
+* ##[alongshore_structure_upwelling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forcing_fixed_BC/alongshore_structure_upwelling.ipynb)  
+    
 * ##[visc3D_run01.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forcing_fixed_BC/visc3D_run01.ipynb)  
     
 * ##[fixed_BCs_run04.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forcing_fixed_BC/fixed_BCs_run04.ipynb)  

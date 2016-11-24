@@ -12,3 +12,4 @@ syntax: glob
 results/*
 *~
 *.pyc
+*.csv
