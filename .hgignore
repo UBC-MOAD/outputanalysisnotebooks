@@ -13,4 +13,4 @@ results/*
 *~
 *.pyc
 *.csv
-results/metricDataframes/*.csv
+results/metricsDataFrames/*.csv
