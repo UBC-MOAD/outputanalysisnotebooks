@@ -6,16 +6,20 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[SelectRunsUsingRestrictionsAH2010.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/SelectRunsUsingRestrictionsAH2010.ipynb)  
+    
 * ##[BottomBoundaryLayersOnShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/BottomBoundaryLayersOnShelf.ipynb)  
     
 * ##[ScaleStratification.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/ScaleStratification.ipynb)  
     
 * ##[ScaleStratification_Dn_and_UpSh.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/ScaleStratification_Dn_and_UpSh.ipynb)  
     
+* ##[Depth_of_upwelling_and_other_calculations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/Depth_of_upwelling_and_other_calculations.ipynb)  
+    
 
 ##License
 
-These notebooks and files are copyright 2013-2016
+These notebooks and files are copyright 2013-2017
 by the UBC Canyons Project Contributors
 and The University of British Columbia.
 
