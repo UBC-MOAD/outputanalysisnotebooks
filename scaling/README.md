@@ -16,6 +16,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Depth_of_upwelling_and_other_calculations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/Depth_of_upwelling_and_other_calculations.ipynb)  
     
+* ##[scale_stratification_within_canyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/scale_stratification_within_canyon.ipynb)  
+    
 
 ##License
 
