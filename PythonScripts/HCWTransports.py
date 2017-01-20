@@ -1,12 +1,7 @@
-from math import *
-
-from MITgcmutils import rdmds
 
 from netCDF4 import Dataset
 
 import numpy as np
-
-import os 
 
 import pandas as pd
 
@@ -18,12 +13,9 @@ import scipy as spy
 
 import sys
 
-lib_path = os.path.abspath('../../Building_canyon/BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
-sys.path.append(lib_path)
+import canyon_tools.readout_tools as rout 
 
-import ReadOutTools_MITgcm as rout 
-
-import MetricsPythonTools as mpt
+import canyon_tools.metrics_tools as mpt
 
 
 ### -----------------------------------------------------------------------------------------------------------------------------------
@@ -151,7 +143,7 @@ def main():
   df = pd.DataFrame(raw_data, columns = ['day', 'CS1', 'CS2', 'CS3', 'CS3sb', 'CS4', 'CS5', 'AS1', 'AS2', 'LID1', 'LID2'])
     
  
-  filename1 = ('results/metricsDataFrames/%s_HCWCSTRANS_%s.csv' % (exp,run))
+  filename1 = ('../results/metricsDataFrames/%s_%s_HCWCSTRANS.csv' % (exp,run))
   
   
   
