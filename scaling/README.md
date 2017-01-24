@@ -20,6 +20,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[scale_stratification_within_canyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/scale_stratification_within_canyon.ipynb)  
     
+* ##[Find_Z_from_BottomAvgConcentration.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/Find_Z_from_BottomAvgConcentration.ipynb)  
+    
 
 ##License
 
