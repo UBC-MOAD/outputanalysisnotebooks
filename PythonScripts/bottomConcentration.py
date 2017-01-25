@@ -1,29 +1,24 @@
 
 #KRM
-import numpy as np
-
-from math import *
-
-import scipy.io
-
-import scipy as spy
 
 from netCDF4 import Dataset
+
+import numpy as np
 
 import pandas as pd
 
 import pylab as pl
 
-import os 
+import scipy.io
+
+import scipy as spy
 
 import sys
 
-lib_path = os.path.abspath('../../Building_canyon/BuildCanyon/PythonModulesMITgcm') # Add absolute path to my python scripts
-sys.path.append(lib_path)
+import canyon_tools.readout_tools as rout 
 
-import ReadOutTools_MITgcm as rout 
+import canyon_tools.savitzky_golay as sg
 
-import savitzky_golay as sg
 
 #--------------------- Functions------------------------------------------------------------------------------------- 
 def a_weight_mean(ConcArea,Area):
