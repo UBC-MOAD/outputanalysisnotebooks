@@ -6,7 +6,7 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[boundary_layers_base_case.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Bottom_and_lateral_boundary_conditions/boundary_layers_base_case.ipynb)  
+* ##[boundary_layers_base_case.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Bottom_and_lateral_boundray_conditions/boundary_layers_base_case.ipynb)  
     
 
 ##License

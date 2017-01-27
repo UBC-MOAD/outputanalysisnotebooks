@@ -24,7 +24,7 @@ import re
 
 NBVIEWER = 'http://nbviewer.jupyter.org/urls'
 REPO = 'bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip'
-REPO_DIR = 'Bottom_and_lateral_boundary_conditions'
+REPO_DIR = 'Bottom_and_lateral_boundray_conditions'
 TITLE_PATTERN = re.compile('#{1,6} ?')
 
 
