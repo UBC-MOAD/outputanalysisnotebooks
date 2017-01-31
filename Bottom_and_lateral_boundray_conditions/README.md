@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[slip_and_no_slip_velocity.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Bottom_and_lateral_boundray_conditions/slip_and_no_slip_velocity.ipynb)  
+    
 * ##[boundary_layers_base_case.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/Bottom_and_lateral_boundray_conditions/boundary_layers_base_case.ipynb)  
     
 
