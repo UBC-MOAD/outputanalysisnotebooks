@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[scale_TrGradient_within_canyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/scale_TrGradient_within_canyon.ipynb)  
+    
 * ##[scale_HCW.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/scale_HCW.ipynb)  
     
 * ##[SelectRunsUsingRestrictionsAH2010.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/SelectRunsUsingRestrictionsAH2010.ipynb)  
