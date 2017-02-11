@@ -5,8 +5,6 @@ import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
 CGrid = '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
-phiHyd = '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run38/phiHydGlob.nc'
-pout = Dataset(phiHyd)
 CGridOut = Dataset(CGrid)
 
 # General input
@@ -113,15 +111,6 @@ expNames = ['CNTDIFF_run36',
            'LESS_BF_run03',
 ]
            
-nzlim = 30
-zfin = 30
-xi = 180
-yi = 50
-xh1=120
-xh2=240
-yh1=227
-yh2=267
-g = 9.81 # ms^-2
 
   
 times = [0,2,4,6,8,10,12,14,16,18]
