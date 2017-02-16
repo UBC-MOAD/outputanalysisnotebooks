@@ -16,13 +16,13 @@ def main():
   CNTDIFF_kv4NoC = run()
   CNTDIFF_kv3NoC= run()
   CNTDIFF_N63NoC = run()
-  CNTDIFF_N39NoC = run()
-  CNTDIFF_N30NoC = run()
+  #CNTDIFF_N39NoC = run()
+  #CNTDIFF_N30NoC = run()
   CNTDIFF_N74NoC = run()
   CNTDIFF_N45NoC = run()
   CNTDIFF_f100NoC = run()
   CNTDIFF_f76NoC = run()
-  CNTDIFF_f48NoC = run()
+  #CNTDIFF_f48NoC = run()
   CNTDIFF_f86NoC = run()
   CNTDIFF_f64NoC = run()
   DIFF3D_run04NoC = run()
@@ -37,13 +37,13 @@ def main():
 		  CNTDIFF_kv4NoC, 
 		  CNTDIFF_kv3NoC,
 		  CNTDIFF_N63NoC, 
-		  CNTDIFF_N39NoC,
-		  CNTDIFF_N30NoC,
+		  #CNTDIFF_N39NoC,
+		  #CNTDIFF_N30NoC,
 		  CNTDIFF_N74NoC,
 		  CNTDIFF_N45NoC,
 		  CNTDIFF_f100NoC,
 		  CNTDIFF_f76NoC,
-		  CNTDIFF_f48NoC,
+		  #CNTDIFF_f48NoC,
 		  CNTDIFF_f86NoC,
 		  CNTDIFF_f64NoC,
 		  DIFF3D_run04NoC,
@@ -58,13 +58,13 @@ def main():
 	      'CNTDIFF_run65',
 	      'CNTDIFF_run66',
 	      'CNTDIFF_run48',
-	      'CNTDIFF_run47',
-	      'CNTDIFF_run49',
+	      #'CNTDIFF_run47',
+	      #'CNTDIFF_run49',
 	      'CNTDIFF_run74',
 	      'CNTDIFF_run76',
 	      'CNTDIFF_run68',
 	      'CNTDIFF_run53',
-	      'CNTDIFF_run54',
+	      #'CNTDIFF_run54',
 	      'CNTDIFF_run70',
 	      'CNTDIFF_run72',
 	      'CNTDIFF_run42',
@@ -79,13 +79,13 @@ def main():
 	      'CNTDIFF',
 	      'CNTDIFF',
 	      'CNTDIFF',
+	      #'CNTDIFF',
+	      #'CNTDIFF',
 	      'CNTDIFF',
 	      'CNTDIFF',
 	      'CNTDIFF',
 	      'CNTDIFF',
-	      'CNTDIFF',
-	      'CNTDIFF',
-	      'CNTDIFF',
+	      #'CNTDIFF',
 	      'CNTDIFF',
 	      'CNTDIFF',
 	      'CNTDIFF',
@@ -100,13 +100,13 @@ def main():
 	      'run65',
 	      'run66',
 	      'run48',
-	      'run47',
-	      'run49',
+	      #'run47',
+	      #'run49',
 	      'run74',
 	      'run76',
 	      'run68',
 	      'run53',
-	      'run54',
+	      #'run54',
 	      'run70',
 	      'run72',
 	      'run42',
@@ -117,21 +117,21 @@ def main():
 	      'run02']
 
 
-  markersizes = [15,13,11,9,13,13,11,11,9,13,13,11,11,9,14,14,11,11,11,11]
-  markerstyles = ['o','o','o','o','d',"d","d",'d','d','p','p','p','p','p','^','^','^','^','*']
+  markersizes = [15,13,11,9,13,11,9,13,11,11,9,14,14,11,11,11,11]
+  markerstyles = ['o','o','o','o','d',"d","d",'p','p','p','p','^','^','^','^','*']
 
   exp_labelsNoC = ['$\kappa$=10$^{-7}$',
-		  '$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
+		  'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
 		  '$\kappa$=10$^{-4}$',
 		  '$\kappa$=10$^{-3}$',
 		  '$N_0$=6.3x10$^{-3}$',
-		  '$N_0$=3.9x10$^{-3}$',
-		  '$N_0$=3.0x10$^{-3}$',
+		  #'$N_0$=3.9x10$^{-3}$',
+		  #'$N_0$=3.0x10$^{-3}$',
 		  '$N_0$=7.4x10$^{-3}$',
 		  '$N_0$=4.5x10$^{-3}$',
 		  'f=1.0x$10^{-4}$',
 		  'f=7.68x10$^{-5}$',
-		  'f=4.84x10$^{-5}$',
+		  #'f=4.84x10$^{-5}$',
 		  'f=8.6x10$^{-5}$',
 		  'f=6.4x10$^{-5}$',
 		  '$\kappa_o$=10$^{-7}$',
@@ -147,13 +147,13 @@ def main():
 	      "tealish",
 	      "teal blue",# 
 	      "slate grey",
-	      "black",
-	      "grey",
+	      #"black",
+	      #"grey",
 	      'light grey',
 	      'steel',
 	      "navy blue",
 	      "blue",
-	      "cerulean",
+	      #"cerulean",
 	      "light blue",
 	      'sky blue',
 	      "deep rose",
@@ -165,26 +165,28 @@ def main():
 
 
   Nos = np.array([5.5E-3,5.5E-3,5.5E-3,5.5E-3,
-		    6.3E-3,3.9E-3,3.0E-3,7.4E-3,4.5E-3,
-		    5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,
+		    6.3E-3,#3.9E-3,3.0E-3,
+		    7.4E-3,4.5E-3,
+		    5.5E-3,5.5E-3,5.5E-3,5.5E-3,#5.5E-3,
 		    5.5E-3,5.5E-3,5.5E-3,5.5E-3,
 		    5.5E-3])
 
   fs = np.array([9.66E-5,9.66E-5,9.66E-5,9.66E-5,
-		  9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
-		  1.0E-4,7.68E-5,4.84E-5,8.6E-5,6.4E-5,
+		  9.66E-5,9.66E-5,9.66E-5,#9.66E-5,9.66E-5,
+		  1.0E-4,7.68E-5,#4.84E-5,
+		  8.6E-5,6.4E-5,
 		  9.66E-5,9.66E-5,9.66E-5,9.66E-5,
 		  9.66E-5])
 
   Us = np.array([0.34,0.34,0.34,0.34,
-		  0.34,0.34,0.34,0.34,0.34,
-		  0.34,0.34,0.34,0.34,0.34,
+		  0.34,0.34,0.34,#0.34,0.34,
+		  0.34,0.34,0.34,0.34,#0.34,
 		  0.34,0.34,0.34,0.34,
 		  0.25])
 
   KvsNoC = np.array([1E-7,1E-5,1E-4,1E-3,
-		    1E-5,1E-5,1E-5,1E-5,1E-5,
-		    1E-5,1E-5,1E-5,1E-5,1E-5,
+		    1E-5,1E-5,1E-5,#1E-5,1E-5,
+		    1E-5,1E-5,1E-5,1E-5,#1E-5,
 		    1E-7,1E-7,1E-5,1E-5,
 		    1E-5])
 
