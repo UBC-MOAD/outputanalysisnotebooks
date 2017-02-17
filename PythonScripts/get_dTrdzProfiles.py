@@ -29,7 +29,6 @@ rA = rout.getField(CGrid, 'rA')
 MaskExpand = np.expand_dims(MaskC,0) 
 maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))    
     
-Tp = pout.variables['T']
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
@@ -72,8 +71,8 @@ expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run07',
            '/ocean/kramosmu/MITgcm/TracerExperiments/FORCING_SPNDN/run01',
            '/ocean/kramosmu/MITgcm/TracerExperiments/EW_OBCS/run06',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LESS_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LESS_BF/run03',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
 ]
            
 expNames = ['CNTDIFF_run36',
@@ -110,8 +109,8 @@ expNames = ['CNTDIFF_run36',
            '3DDIFF_run07',
            'FORCING_SPNDN_run01',
            'EW_OBCS_run06',
-           'LESS_BF_run01',
-           'LESS_BF_run03',
+           #'LOW_BF_run01',
+           'LOWER_BF_run01',
 ]
            
 
@@ -127,13 +126,13 @@ for exp,runs in zip(expList,expNames):
     print(runs,'done reading')
     
     for yi,xi,sname in zip(ys,xs,stations): # station indices
-        dTrdz = np.ma.empty((len(times),nz))
+        dTrdz = np.ma.empty((len(times),nz-2))
         ii = 0
         
         for tt in times:  
              
              #tracer profile at station
-            profile = Tr1[tt,:,yi,xi])
+            profile = Tr1[tt,:,yi,xi]
             
             # dTr/dz for each station
             dTrdz[ii,:] = (profile[2:] - profile[:-2])/(-drC[3:]-drC[2:-1])

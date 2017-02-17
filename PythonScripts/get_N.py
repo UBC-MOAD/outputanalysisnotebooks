@@ -28,7 +28,7 @@ hFacC = rout.getField(CGrid, 'HFacC')
 MaskC = rout.getMask(CGrid, 'HFacC')
 rA = rout.getField(CGrid, 'rA')
 
-Tp = pout.variables['T']
+
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
