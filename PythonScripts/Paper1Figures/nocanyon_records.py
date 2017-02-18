@@ -53,10 +53,10 @@ def main():
 		  #LOW_BF_u20NoC,
 		  LOWER_BF_u25NoC]
 
-  expNamesNoC = ['CNTDIFF_run64',
+  expNamesNoC = ['CNTDIFF_run50',
 	      'CNTDIFF_run42',
-	      'CNTDIFF_run65',
-	      'CNTDIFF_run66',
+	      'CNTDIFF_run41',
+	      'CNTDIFF_run40',
 	      'CNTDIFF_run48',
 	      #'CNTDIFF_run47',
 	      #'CNTDIFF_run49',
@@ -95,10 +95,10 @@ def main():
 	      #'LOW_BF',
 	      'LOWER_BF']
 
-  runNumsNoC  = ['run64',
+  runNumsNoC  = ['run50',
 	      'run42',
-	      'run65',
-	      'run66',
+	      'run41',
+	      'run40',
 	      'run48',
 	      #'run47',
 	      #'run49',
