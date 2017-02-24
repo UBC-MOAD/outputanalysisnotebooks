@@ -16,6 +16,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[VerticallyIntegratedTracerAlongShelf_BAC_downstream_region.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf_BAC_downstream_region.ipynb)  
     
+* ##[VerticallyIntegratedTracerAlongShelf-NewRunsDrag.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf-NewRunsDrag.ipynb)  
+    
 * ##[VerticallyIntegratedTracerAlongShelf-Barkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf-Barkley.ipynb)  
     
 * ##[VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/VerticallyIntegratedQuantities/VerticallyIntegratedTracerAlongShelf-CoastalIntrusion.ipynb)  
@@ -25,7 +27,7 @@ Descriptions under the links below are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2016
+These notebooks and files are copyright 2013-2017
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
