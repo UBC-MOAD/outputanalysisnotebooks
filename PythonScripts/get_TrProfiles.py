@@ -29,7 +29,6 @@ rA = rout.getField(CGrid, 'rA')
 MaskExpand = np.expand_dims(MaskC,0) 
 maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))    
     
-Tp = pout.variables['T']
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
@@ -72,8 +71,8 @@ expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            '/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run07',
            '/ocean/kramosmu/MITgcm/TracerExperiments/FORCING_SPNDN/run01',
            '/ocean/kramosmu/MITgcm/TracerExperiments/EW_OBCS/run06',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LESS_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LESS_BF/run03',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
 ]
            
 expNames = ['CNTDIFF_run36',
@@ -110,8 +109,8 @@ expNames = ['CNTDIFF_run36',
            '3DDIFF_run07',
            'FORCING_SPNDN_run01',
            'EW_OBCS_run06',
-           'LESS_BF_run01',
-           'LESS_BF_run03',
+           'LOW_BF_run01',
+           'LOWER_BF_run01',
 ]
            
 
@@ -127,25 +126,23 @@ for exp,runs in zip(expList,expNames):
     print(runs,'done reading')
     
     for yi,xi,sname in zip(ys,xs,stations): # station indices
-        dTrdz = np.ma.empty((len(times),nz))
+        Tr_profile = np.ma.empty((len(times),nz))
         ii = 0
         
         for tt in times:  
              
              #tracer profile at station
-            profile = Tr1[tt,:,yi,xi])
             
-            # dTr/dz for each station
-            dTrdz[ii,:] = (profile[2:] - profile[:-2])/(-drC[3:]-drC[2:-1])
+            Tr_profile[ii,:] = profile = Tr1[tt,:,yi,xi]
             
             ii = ii+1
             
-        raw_data = {'drC' : drC[2:-1],'dTrdz_tt00': dTrdz[0,:],'dTrdz_tt02': dTrdz[1,:],'dTrdz_tt04': dTrdz[2,:],'dTrdz_tt06': dTrdz[3,:],
-                    'dTrdz_tt08': dTrdz[4,:],'dTrdz_tt10': dTrdz[5,:],'dTrdz_tt12': dTrdz[6,:],'dTrdz_tt14': dTrdz[7,:],'dTrdz_tt16': dTrdz[8,:],
-                    'dTrdz_tt18': dTrdz[9,:]}
-        df = pd.DataFrame(raw_data, columns = ['drC', 'dTrdz_tt00', 'dTrdz_tt02', 'dTrdz_tt04', 'dTrdz_tt06', 'dTrdz_tt08','dTrdz_tt10',    
-                                               'dTrdz_tt12','dTrdz_tt14', 'dTrdz_tt16','dTrdz_tt18' ])
-        filename1 = ('../results/metricsDataFrames/dTr1dz_%s_%s.csv' % (runs,sname))
+        raw_data = {'drC' : drC[:-1],'Tr_profile_tt00': Tr_profile[0,:],'Tr_profile_tt02': Tr_profile[1,:],'Tr_profile_tt04': Tr_profile[2,:],'Tr_profile_tt06': Tr_profile[3,:],
+                    'Tr_profile_tt08': Tr_profile[4,:],'Tr_profile_tt10': Tr_profile[5,:],'Tr_profile_tt12': Tr_profile[6,:],'Tr_profile_tt14': Tr_profile[7,:],'Tr_profile_tt16': Tr_profile[8,:],
+                    'Tr_profile_tt18': Tr_profile[9,:]}
+        df = pd.DataFrame(raw_data, columns = ['drC', 'Tr_profile_tt00', 'Tr_profile_tt02', 'Tr_profile_tt04', 'Tr_profile_tt06', 'Tr_profile_tt08','Tr_profile_tt10',    
+                                               'Tr_profile_tt12','Tr_profile_tt14', 'Tr_profile_tt16','Tr_profile_tt18' ])
+        filename1 = ('../results/metricsDataFrames/Tr1_profile_%s_%s.csv' % (runs,sname))
         df.to_csv(filename1)
         
     
