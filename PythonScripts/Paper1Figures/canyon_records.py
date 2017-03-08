@@ -23,10 +23,10 @@ def main():
     #CNTDIFF_f48 = run()
     CNTDIFF_f86 = run()
     CNTDIFF_f64 = run()
-    DIFF3D_run04 = run()
-    DIFF3D_run05 = run()
-    DIFF3D_run06 = run()
-    DIFF3D_run07 = run()
+    VISC3D_run01 = run()
+    VISC3D_run02 = run()
+    VISC3D_run03 = run()
+    VISC3D_run04 = run()
     LOW_BF_u26 = run()
     LOWER_BF_u32 = run()
  
@@ -44,10 +44,10 @@ def main():
                 #CNTDIFF_f48,
                 CNTDIFF_f86,
                 CNTDIFF_f64,
-                DIFF3D_run04,
-                DIFF3D_run05,
-                DIFF3D_run06,
-                DIFF3D_run07,
+                VISC3D_run01,
+                VISC3D_run02,
+                VISC3D_run03,
+                VISC3D_run04,
                 LOW_BF_u26,
                 LOWER_BF_u32]
 
@@ -65,10 +65,10 @@ def main():
                 #'CNTDIFF_run52',
                 'CNTDIFF_run69',
                 'CNTDIFF_run71',
-                '3DDIFF_run04',
-                '3DDIFF_run05',
-                '3DDIFF_run06',
-                '3DDIFF_run07',
+                '3DVISC_run01',
+                '3DVISC_run02',
+                '3DVISC_run03',
+                '3DVISC_run04',
                 'LOW_BF_run01',
                 'LOWER_BF_run01']
 
@@ -86,10 +86,10 @@ def main():
                 #'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
-                '3DDIFF',
-                '3DDIFF',
-                '3DDIFF',
-                '3DDIFF',
+                '3DVISC',
+                '3DVISC',
+                '3DVISC',
+                '3DVISC',
                 'LOW_BF',
                 'LOWER_BF']
 
@@ -107,10 +107,10 @@ def main():
                 #'run52',
                 'run69',
                 'run71',
+                'run01',
+                'run02',
+                'run03',
                 'run04',
-                'run05',
-                'run06',
-                'run07',
                 'run01',
                 'run01']
 

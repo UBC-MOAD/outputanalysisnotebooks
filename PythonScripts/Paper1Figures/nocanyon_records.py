@@ -22,10 +22,10 @@ def main():
   CNTDIFF_f76NoC = run()
   CNTDIFF_f86NoC = run()
   CNTDIFF_f64NoC = run()
-  DIFF3D_run04NoC = run()
-  DIFF3D_run05NoC = run()
-  DIFF3D_run06NoC = run()
-  DIFF3D_run07NoC = run()
+  VISC3D_run01NoC = run()
+  VISC3D_run02NoC = run()
+  VISC3D_run03NoC = run()
+  VISC3D_run04NoC = run()
   LOW_BF_u26NoC = run()
   LOWER_BF_u32NoC = run()
 
@@ -40,10 +40,10 @@ def main():
 		  CNTDIFF_f76NoC,
 		  CNTDIFF_f86NoC,
 		  CNTDIFF_f64NoC,
-		  DIFF3D_run04NoC,
-		  DIFF3D_run05NoC,
-		  DIFF3D_run06NoC,
-		  DIFF3D_run07NoC,
+		  VISC3D_run01NoC,
+		  VISC3D_run02NoC,
+		  VISC3D_run03NoC,
+		  VISC3D_run04NoC,
 		  LOW_BF_u26NoC,
 		  LOWER_BF_u32NoC]
 
