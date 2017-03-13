@@ -17,6 +17,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Fig_BottomConcBaseCase.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Fig_BottomConcBaseCase.ipynb)  
     
+* ##[fig_HCW_TrMass_CanNoC.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_HCW_TrMass_CanNoC.ipynb)  
+    
 * ##[fig_HCW_TrMass_alongshore.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_HCW_TrMass_alongshore.ipynb)  
     
 * ##[Fig_PoolTimeSeries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Fig_PoolTimeSeries.ipynb)  
@@ -26,6 +28,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[Fig_bathy.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Fig_bathy.ipynb)  
     
 * ##[Fig_PoolContours.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Fig_PoolContours.ipynb)  
+    
+* ##[fig_HCW_TrMass_DynVar_alongshore.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_HCW_TrMass_DynVar_alongshore.ipynb)  
     
 * ##[fig_Tr_evolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_Tr_evolution.ipynb)  
     
