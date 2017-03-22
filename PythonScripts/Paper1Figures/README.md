@@ -11,6 +11,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[fig_vertical_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_vertical_transport.ipynb)  
     
+* ##[fig_bathy.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_bathy.ipynb)  
+    
 * ##[fig_N_evolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_N_evolution.ipynb)  
     
 * ##[fig_scaling_estimates.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_scaling_estimates.ipynb)  
@@ -21,11 +23,11 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[fig_HCW_TrMass_alongshore.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_HCW_TrMass_alongshore.ipynb)  
     
+* ##[fig_CS_transport_sections.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_CS_transport_sections.ipynb)  
+    
 * ##[Fig_PoolTimeSeries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Fig_PoolTimeSeries.ipynb)  
     
 * ##[Figure1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Figure1.ipynb)  
-    
-* ##[Fig_bathy.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Fig_bathy.ipynb)  
     
 * ##[Fig_PoolContours.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Fig_PoolContours.ipynb)  
     
