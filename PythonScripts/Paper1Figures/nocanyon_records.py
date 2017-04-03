@@ -26,6 +26,7 @@ def main():
     VISC3D_run02NoC = run()
     VISC3D_run03NoC = run()
     VISC3D_run04NoC = run()
+    VISC3D_run05NoC = run()
     VISC3D_run06NoC = run()
     LOW_BF_u26NoC = run()
     LOWER_BF_u32NoC = run()
@@ -33,6 +34,7 @@ def main():
     LOWEST_BF_N45NoC = run()
     LOWEST_BF_N74NoC = run()
     LOWEST_BF_f70NoC = run()
+    LOWEST_BF_kv3NoC = run()
 
     recordsNoC =   [#CNTDIFF_kv7NoC,
                     CNTDIFF_baseNoC, 
@@ -55,7 +57,9 @@ def main():
                     LOWEST_BF_u13NoC,
                     LOWEST_BF_N45NoC,
                     LOWEST_BF_N74NoC,
-                    LOWEST_BF_f70NoC]
+                    LOWEST_BF_f70NoC,
+                    LOWEST_BF_kv3NoC,
+                    VISC3D_run05NoC]
 
     expNamesNoC =[#'CNTDIFF_run50',
                   'CNTDIFF_run42',
@@ -79,6 +83,8 @@ def main():
                   'LOWEST_BF_run04',
                   'LOWEST_BF_run06',
                   'LOWEST_BF_run08',
+                  'LOWEST_BF_run12',
+                  'CNTDIFF_run42',
                   ]
 
     expCodesNoC =[#'CNTDIFF',
@@ -102,7 +108,10 @@ def main():
                   'LOWEST_BF',
                   'LOWEST_BF',
                   'LOWEST_BF',
-                  'LOWEST_BF']
+                  'LOWEST_BF',
+                  'LOWEST_BF',
+                  'CNTDIFF',
+                  ]
 
     runNumsNoC  =[#'run50',
                   'run42',
@@ -125,12 +134,15 @@ def main():
                   'run02',
                   'run04',
                   'run06',
-                  'run08']
+                  'run08',
+                  'run12',
+                  'run42',
+    ]
 
 
  
-    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^','*','*','*','*','*','*']
+    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,11]
+    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^','*','*','*','*','*','*','*','^']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -156,7 +168,11 @@ def main():
                     'U=0.124 m/s',
                     '$N_0$=4.5x10$^{-3}$',
                     '$N_0$=7.4x10$^{-3}$',
-                    'f=7.0x$10^{-5}$',]
+                    'f=7.0x$10^{-5}$',
+                    '$\kappa$=10$^{-3}$',
+                    '$\kappa$=5
+        x$10$^{-3}$,$\kappa_o$=10$^{-5}$',
+                     ]
 
     colours = [ #"pine",
                 "emerald",#
@@ -178,11 +194,13 @@ def main():
                 "gold",
                 "tan",
                 "red",
-                "dark red",
-                "burgundy",
+                'dark red',
+                'burgundy',
                 'light grey',
                 'steel',
                 'cerulean',
+                'teal blue',
+                'orchid'
                 ]# 
 
 
@@ -192,7 +210,8 @@ def main():
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,#5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,
-                    4.5E-3,7.4E-3,5.5E-3])
+                    4.5E-3,7.4E-3,5.5E-3,5.5E-3,
+                    5.5E-3])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,#9.66E-5,9.66E-5,
@@ -200,21 +219,24 @@ def main():
                    8.6E-5,6.4E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,9.66E-5,7.0E-5])
+                   9.66E-5,9.66E-5,7.0E-5,9.66E-5,
+                   9.66E-5])
 
     Us = np.array([0.358,0.358,0.358,
                    0.358,0.358,0.358,#0.358,0.358,
                    0.358,0.358,0.358,0.358,#0.358,
                    0.358,0.358,0.358,0.358,0.358,
                    0.243,0.296,0.124,
-                   0.124,0.124,0.124])
+                   0.124,0.124,0.124,0.124,
+                   0.358])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
                     1E-3,1E-4,1E-3,1E-4,1E-2,
                     1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5])
+                    1E-5,1E-5,1E-5,1E-3,
+                    5E-3])
 
 
 

@@ -34,6 +34,8 @@ def main():
     LOWEST_BF_N45 = run()
     LOWEST_BF_N74 = run()
     LOWEST_BF_f70 = run()
+    VISC3D_run05 = run()
+    LOWEST_BF_kv3 = run()
  
  
  
@@ -61,7 +63,10 @@ def main():
                 LOWEST_BF_u13,
                 LOWEST_BF_N45,
                 LOWEST_BF_N74, 
-                LOWEST_BF_f70] 
+                LOWEST_BF_f70,
+                LOWEST_BF_kv3,
+                VISC3D_run05,
+    ] 
 
     expNames = [#'CNTDIFF_run43',
                 'CNTDIFF_run38',
@@ -87,7 +92,9 @@ def main():
                 'LOWEST_BF_run01',
                 'LOWEST_BF_run03',
                 'LOWEST_BF_run05',
-                'LOWEST_BF_run07']
+                'LOWEST_BF_run07',
+                'LOWEST_BF_run11',
+                '3DVISC_run05']
 
     expCodes = [#'CNTDIFF',
                 'CNTDIFF',
@@ -113,7 +120,9 @@ def main():
                 'LOWEST_BF',
                 'LOWEST_BF',
                 'LOWEST_BF',
-                'LOWEST_BF']
+                'LOWEST_BF',
+                'LOWEST_BF',
+                '3DVISC']
 
     runNums  = [#'run43',
                 'run38',
@@ -139,11 +148,13 @@ def main():
                 'run01',
                 'run03',
                 'run05',
-                'run07']
+                'run07',
+                'run11',
+                'run05']
 
 
-    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^','*','*','*','*','*','*']
+    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,11]
+    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^','*','*','*','*','*','*','*','^']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -169,7 +180,10 @@ def main():
                     'U=0.124 m/s',
                     '$N_0$=4.5x10$^{-3}$',
                     '$N_0$=7.4x10$^{-3}$',
-                    'f=7.0x$10^{-5}$',]
+                    'f=7.0x$10^{-5}$',
+                    '$\kappa$=10$^{-3}$',
+                    '$\kappa$=5x10$^{-3}$,$\kappa_o$=10$^{-5}$',
+                     ]
 
     colours = [ #"pine",
                 "emerald",#
@@ -191,11 +205,13 @@ def main():
                 "gold",
                 "tan",
                 "red",
-                "dark red",
-                "burgundy",
+                'dark red',
+                'burgundy',
                 'light grey',
                 'steel',
                 'cerulean',
+                'teal blue',
+                'orchid'
                 ]# 
 
 
@@ -205,7 +221,8 @@ def main():
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,#5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,
-                    4.5E-3,7.4E-3,5.5E-3])
+                    4.5E-3,7.4E-3,5.5E-3,5.5E-3,
+                    5.5E-3])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,#9.66E-5,9.66E-5,
@@ -213,21 +230,24 @@ def main():
                    8.6E-5,6.4E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,9.66E-5,7.0E-5])
+                   9.66E-5,9.66E-5,7.0E-5,9.66E-5,
+                   9.66E-5])
 
     Us = np.array([0.358,0.358,0.358,
                    0.358,0.358,0.358,#0.358,0.358,
                    0.358,0.358,0.358,0.358,#0.358,
                    0.358,0.358,0.358,0.358,0.358,
                    0.243,0.296,0.124,
-                   0.124,0.124,0.124])
+                   0.124,0.124,0.124,0.124,
+                   0.358])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
                     1E-3,1E-4,1E-3,1E-4,1E-2,
                     1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5])
+                    1E-5,1E-5,1E-5,1E-3,
+                    5E-3])
 
 
 
