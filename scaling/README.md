@@ -12,6 +12,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[scale_TrMassFlux.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/scale_TrMassFlux.ipynb)  
     
+* ##[check_advective_regime.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/check_advective_regime.ipynb)  
+    
 * ##[scale_HCW.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/scale_HCW.ipynb)  
     
 * ##[SelectRunsUsingRestrictionsAH2010.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/scaling/SelectRunsUsingRestrictionsAH2010.ipynb)  

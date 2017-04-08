@@ -192,6 +192,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBandsCompare315m-6TrLinProfilesRun07Run08.ipynb)  
     
+* ##[BottomBoundaryLayers_ViscosityValues.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//BottomBoundaryLayers_ViscosityValues.ipynb)  
+    
 * ##[ConcentrationGradientsDownstreamShelfKvVariations.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//ConcentrationGradientsDownstreamShelfKvVariations.ipynb)  
     
 * ##[CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip//CrossShelfTransports-NOGMREDI-ReproduceCrossShelf.ipynb)  
@@ -389,7 +391,7 @@ Descriptions under the links below are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2016
+These notebooks and files are copyright 2013-2017
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
