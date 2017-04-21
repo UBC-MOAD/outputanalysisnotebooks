@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Check_get_HCW_and_TrMass.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Check_get_HCW_and_TrMass.ipynb)  
+    
+* ##[get_HCW_and_TrMass.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/get_HCW_and_TrMass.ipynb)  
+    
 
 ##License
 
