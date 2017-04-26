@@ -35,6 +35,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[fig_Tr_evolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_Tr_evolution.ipynb)  
     
+* ##[fig_TrProfilesUpDnStr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_TrProfilesUpDnStr.ipynb)  
+    
 
 ##License
 
