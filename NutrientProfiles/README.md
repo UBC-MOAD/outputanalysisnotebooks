@@ -10,6 +10,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[NonDimEstimationsBarkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/NonDimEstimationsBarkley.ipynb)  
     
+* ##[SystematicProfile_3Terms.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile_3Terms.ipynb)  
+    
 
 ##License
 
