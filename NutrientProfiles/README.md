@@ -6,11 +6,13 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[SystematicProfile.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile.ipynb)  
-    
 * ##[NonDimEstimationsBarkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/NonDimEstimationsBarkley.ipynb)  
     
+* ##[SystematicProfile.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile.ipynb)  
+    
 * ##[SystematicProfile_3Terms.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile_3Terms.ipynb)  
+    
+* ##[SystematicProfile_regimes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile_regimes.ipynb)  
     
 
 ##License
