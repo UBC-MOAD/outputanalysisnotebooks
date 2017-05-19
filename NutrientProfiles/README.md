@@ -8,9 +8,15 @@ Descriptions under the links below are from the first cell of the notebooks
 
 * ##[NonDimEstimationsBarkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/NonDimEstimationsBarkley.ipynb)  
     
+* ##[Profile_construction_Tau_Z_space.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Profile_construction_Tau_Z_space.ipynb)  
+    
 * ##[SystematicProfile.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile.ipynb)  
     
 * ##[SystematicProfile_3Terms.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile_3Terms.ipynb)  
+    
+* ##[SystematicProfile_belly_regime.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile_belly_regime.ipynb)  
+    
+* ##[SystematicProfile_decreasing_regimes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile_decreasing_regimes.ipynb)  
     
 * ##[SystematicProfile_regimes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/SystematicProfile_regimes.ipynb)  
     
