@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[HCW_and_TracerMassOnShelf_ParabolicProfiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/HCW_and_TracerMassOnShelf_ParabolicProfiles.ipynb)  
+    
 * ##[CNTDIFF_7Tr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/CNTDIFF_7Tr.ipynb)  
     
 
