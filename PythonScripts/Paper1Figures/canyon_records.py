@@ -28,44 +28,41 @@ def main():
     VISC3D_run03 = run()
     VISC3D_run04 = run()
     VISC3D_run06 = run()
-    #LOW_BF_u26 = run()
+    LOW_BF_u26 = run()
     #LOWER_BF_u32 = run()
-    #LOWEST_BF_u13 = run()
-    #LOWEST_BF_N45 = run()
+    LOWEST_BF_u13 = run()
+    LOWEST_BF_N45 = run()
     #LOWEST_BF_N74 = run()
-    #LOWEST_BF_f70 = run()
-    #LOWEST_BF_kv3 = run()
+    LOWEST_BF_f70 = run()
+    LOWEST_BF_kv3 = run()
     VISC3D_run05 = run()
  
  
-    records =   [#CNTDIFF_kv7,
+    records =   [
                 CNTDIFF_base, 
 	            CNTDIFF_kv4, 
                 CNTDIFF_kv3,
                 CNTDIFF_N63, 
-                #CNTDIFF_N39,
-                #CNTDIFF_N30,
                 CNTDIFF_N74,
                 CNTDIFF_N45,
                 CNTDIFF_f100,
                 CNTDIFF_f76,
-                #CNTDIFF_f48,
                 CNTDIFF_f86,
                 CNTDIFF_f64,
                 VISC3D_run01,
                 VISC3D_run02,
                 VISC3D_run03,
                 VISC3D_run04,
+                VISC3D_run05,
                 VISC3D_run06,
                 #LOW_BF_u26,
                 #LOWER_BF_u32,
-                #LOWEST_BF_u13,
-                #LOWEST_BF_N45,
+                LOWEST_BF_u13,
+                LOWEST_BF_N45,
                 #LOWEST_BF_N74, 
-                #LOWEST_BF_f70,
-                #LOWEST_BF_kv3,
-                VISC3D_run05,
-    ] 
+                LOWEST_BF_f70,
+                LOWEST_BF_kv3,
+                ] 
 
     expNames = [#'CNTDIFF_run43',
                 'CNTDIFF_run38',
@@ -85,15 +82,16 @@ def main():
                 '3DVISC_run02',
                 '3DVISC_run03',
                 '3DVISC_run04',
+                '3DVISC_run05',
                 '3DVISC_run06',
                 #'LOW_BF_run01',
                 #'LOWER_BF_run01',
-                #'LOWEST_BF_run01',
-                #'LOWEST_BF_run03',
+                'LOWEST_BF_run01',
+                'LOWEST_BF_run03',
                 #'LOWEST_BF_run05',
-                #'LOWEST_BF_run07',
-                #'LOWEST_BF_run11',
-                '3DVISC_run05']
+                'LOWEST_BF_run07',
+                'LOWEST_BF_run11',
+                ]
 
     expCodes = [#'CNTDIFF',
                 'CNTDIFF',
@@ -114,14 +112,15 @@ def main():
                 '3DVISC',
                 '3DVISC',
                 '3DVISC',
-                #'LOW_BF',
-                #'LOWER_BF',
+                '3DVISC',
+                #'LOW_BF_7Tr',
+                #'LOWER_BF_7Tr',
+                'LOWEST_BF',
+                'LOWEST_BF',
                 #'LOWEST_BF',
-                #'LOWEST_BF',
-                #'LOWEST_BF',
-                #'LOWEST_BF',
-                #'LOWEST_BF',
-                '3DVISC']
+                'LOWEST_BF',
+                'LOWEST_BF',
+                ]
 
     runNums  = [#'run43',
                 'run38',
@@ -141,21 +140,22 @@ def main():
                 'run02',
                 'run03',
                 'run04',
+                'run05',
                 'run06',
                 #'run01',
                 #'run01',
-                #'run01',
-                #'run03',
+                'run01',
+                'run03',
                 #'run05',
-                #'run07',
-                #'run11',
-                'run05']
+                'run07',
+                'run11',
+                ]
 
 
-    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,#11,11,11,11,11,11,11,
+    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,#11,#11,11,
                    11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^',#'*','*','*','*','*','*','*',
-                    '^']
+    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*',#'*',#'*',#'*',
+                   ]
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -171,20 +171,49 @@ def main():
                     #'f=4.84x10$^{-5}$',
                     'f=8.6x10$^{-5}$',
                     'f=6.4x10$^{-5}$',
-                    '$\kappa$=10$^{-3}$,$\kappa_o$=10$^{-7}$',
-                    '$\kappa$=10$^{-4}$,$\kappa_o$=10$^{-7}$',
-                    '$\kappa$=10$^{-3}$,$\kappa_o$=10$^{-5}$',
-                    '$\kappa$=10$^{-4}$,$\kappa_o$=10$^{-5}$',
-                    '$\kappa$=10$^{-2}$,$\kappa_o$=10$^{-5}$',
+                    '$\kappa$=10$^{-3}$,$\kappa_{bg}$=10$^{-7}$',
+                    '$\kappa$=10$^{-4}$,$\kappa_{bg}$=10$^{-7}$',
+                    '$\kappa$=10$^{-3}$,$\kappa_{bg}$=10$^{-5}$',
+                    '$\kappa$=10$^{-4}$,$\kappa_{bg}$=10$^{-5}$',
+                    '$\kappa$=5x10$^{-3}$,$\kappa_{bg}$=10$^{-5}$',
+                    '$\kappa$=10$^{-2}$,$\kappa_{bg}$=10$^{-5}$',
                     #'U=0.243 m/s',
                     #'U=0.296 m/s',
-                    #'U=0.124 m/s',
-                    #'$N_0$=4.5x10$^{-3}$',
+                    'U=0.124 m/s',
+                    '$N_0$=4.5x10$^{-3}$',
                     #'$N_0$=7.4x10$^{-3}$',
-                    #'f=7.0x$10^{-5}$',
-                    #'$\kappa$=10$^{-3}$',
-                    '$\kappa$=5x10$^{-3}$,$\kappa_o$=10$^{-5}$',
-                     ]
+                    'f=7.0x$10^{-5}$',
+                    '$\kappa$=10$^{-3}$',
+                    ]
+    
+    
+    exp_labels2 = [  'base case',
+                    r'$\uparrow$ $\kappa_{bg}$',
+                    r'$\Uparrow$ $\kappa_{bg}$',
+                    r'$\uparrow$ $N_0$',
+                    #'$N_0$=3.9x10$^{-3}$',
+                    #'$N_0$=3.0x10$^{-3}$',
+                    r'$\Uparrow$ $N_0$',
+                    r'$\downarrow$ $N_0$',
+                    r'$\uparrow$ $f$',
+                    r'$\Downarrow$ $f$',
+                    #'f=4.84x10$^{-5}$',
+                    r'$\downarrow$ $f$',
+                    r'$\Downarrow \Downarrow$ $f$',
+                    r'$\Uparrow$ $\kappa_{can}$,$\downarrow$$\kappa_{bg}$',
+                    r'$\uparrow$ $\kappa_{can}$,$\downarrow$$\kappa_{bg}$',
+                    r'$\Uparrow$ $\kappa_{can}$',
+                    r'$\uparrow \uparrow$  $\kappa_{can}$',
+                    r'$\uparrow$ $\kappa_{can}$',
+                    r'$\Uparrow \Uparrow$  $\kappa_{can}$',
+                    #r'$\downarrow$ U',
+                    #'U=0.296 m/s',
+                    r'$\Downarrow$ U',
+                    r'$\Downarrow$ U, $\Downarrow$ $N_0$',
+                    #'$N_0$=7.4x10$^{-3}$',
+                    r'$\Downarrow$ U, $\Downarrow$ $f$',
+                    r'$\Downarrow$ U, $\Uparrow \kappa_{can}$',
+                    ]
 
     colours = [ #"pine",
                 "emerald",#
@@ -204,66 +233,98 @@ def main():
                 "cherry red",
                 "brown",
                 "gold",
+                'orchid',
                 "tan",
                 #"red",
                 #'dark red',
-                #'burgundy',
-                #'light grey',
+                'burgundy',
+                'light grey',
                 #'steel',
-                #'cerulean',
-                #'teal blue',
-                'orchid'
+                'cerulean',
+                'teal blue',
+                ]# 
+
+    colours2 = ["black",#
+                "nice blue",
+                "nice blue",# 
+                "nice blue",
+                'slate grey',
+                'steel grey',
+                "grey",        
+                "silver", 
+                "steel", 
+                "medium grey", 
+                "kelley green",
+                "boring green",
+                "kelley green",
+                "boring green",
+                "dark grass green",
+                'booger green',
+                #'steel',
+                #'dark red',
+                'slate grey',
+                'grey',
+                #'steel',
+                'grey',
+                'nice blue',
                 ]# 
 
 
     Nos = np.array([5.5E-3,5.5E-3,5.5E-3,
-                    6.3E-3,#3.9E-3,3.0E-3
+                    6.3E-3,
                     7.4E-3,4.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,#5.5E-3,
-                    5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,
-                    #5.5E-3,5.5E-3,5.5E-3,
-                    #4.5E-3,7.4E-3,5.5E-3,5.5E-3,
-                    5.5E-3])
+                    5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,#5.5E-3,#5.5E-3,
+                    4.5E-3,#7.4E-3,
+                    5.5E-3,5.5E-3,
+                    ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,#9.66E-5,9.66E-5,
                    1.0E-4,7.68E-5,#4.84E-5,
                    8.6E-5,6.4E-5,
-                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
-                   #9.66E-5,9.66E-5,9.66E-5,
-                   #9.66E-5,9.66E-5,7.0E-5,9.66E-5,
-                   9.66E-5])
+                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,#9.66E-5,#9.66E-5,
+                   9.66E-5,#9.66E-5,
+                   7.0E-5,9.66E-5,
+                   ])
 
     Us = np.array([0.358,0.358,0.358,
                    0.358,0.358,0.358,#0.358,0.358,
                    0.358,0.358,0.358,0.358,#0.358,
-                   0.358,0.358,0.358,0.358,0.358,
-                   #0.243,0.296,0.124,
-                   #0.124,0.124,0.124,0.124,
-                   0.358])
+                   0.358,0.358,0.358,0.358,0.358,0.358,
+                   #0.243,#0.296,
+                   0.124,
+                   0.124,#0.124,
+                   0.124,0.124,
+                   ])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
-                    1E-3,1E-4,1E-3,1E-4,1E-2,
-                    #1E-5,1E-5,1E-5,
-                    #1E-5,1E-5,1E-5,1E-3,
-                    5E-3])
+                    1E-3,1E-4,1E-3,1E-4,5E-3,1E-2,
+                    1E-5,#1E-5,#1E-5,
+                    1E-5,#1E-5,
+                    1E-5,1E-3,
+                    ])
 
 
 
 
     # Fill the fields of the records
-    for record,expName,expCode,runNum,No,fo,uo,kvo,col,explabel,marksize,markstyle in zip(records,expNames,
+    for record,expName,expCode,runNum,No,fo,uo,kvo,col,col2,lab2,explabel,marksize,markstyle in zip(records,expNames,
                                                                                            expCodes,runNums,
                                                                                            Nos,fs,Us,Kvs,
-                                                                                           colours,exp_labels,
+                                                                                           colours,colours2,exp_labels2,exp_labels,
                                                                                            markersizes,markerstyles):
         record.name = expName
         record.exp_code = expCode
         record.run_num = runNum
         record.label = explabel
         record.color = col
+        record.color2 = col2
+        record.label2 = lab2
         record.msize = marksize
         record.mstyle = markstyle
         record.N = No
