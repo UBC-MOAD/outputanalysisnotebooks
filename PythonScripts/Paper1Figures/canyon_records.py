@@ -247,7 +247,7 @@ def main():
     colours2 = ["black",#
                 "nice blue",
                 "nice blue",# 
-                "nice blue",
+                "silver",
                 'slate grey',
                 'steel grey',
                 "grey",        
