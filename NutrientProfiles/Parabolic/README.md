@@ -10,6 +10,12 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[CNTDIFF_7Tr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/CNTDIFF_7Tr.ipynb)  
     
+* ##[BARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/BARKLEY.ipynb)  
+    
+* ##[HCW_and_TracerMassOnShelf_BARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/HCW_and_TracerMassOnShelf_BARKLEY.ipynb)  
+    
+* ##[DnS_profiles_Barkley_and_Parabolic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/DnS_profiles_Barkley_and_Parabolic.ipynb)  
+    
 
 ##License
 

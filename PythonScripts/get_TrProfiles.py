@@ -34,8 +34,8 @@ bathy = rout.getField(CGrid, 'Depth')
 # STATIONS
 ys = [262,220,262,227,100,245,245,262,220]
 xs = [60,60,180,180,180,160,200,300,300]
-stations = ['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
-
+stations = ['DnC']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
+tracers = ['Tr1','Tr02','Tr03','Tr04','Tr05','Tr06','Tr07']
 #All experiments in CNT and 3D including no canyon one (run07)
 expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run37',
@@ -65,7 +65,7 @@ expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DVISC/run02',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DVISC/run03',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DVISC/run04',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/3DVISC/run05',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/3DVISC/run05',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DVISC/run06',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run04',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run05',
@@ -79,9 +79,11 @@ expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run03',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run05',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run07',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
-]
-           
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
+          # '/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
+           ]
+            
 expNames = [#'CNTDIFF_run36',
            #'CNTDIFF_run37',
            #'CNTDIFF_run38',
@@ -110,7 +112,7 @@ expNames = [#'CNTDIFF_run36',
            #'3DVISC_run02',
            #'3DVISC_run03',
            #'3DVISC_run04',
-           '3DVISC_run05',
+           #'3DVISC_run05',
            #'3DVISC_run06',
            #'3DDIFF_run04',
            #'3DDIFF_run05',
@@ -124,21 +126,26 @@ expNames = [#'CNTDIFF_run36',
            #'LOWEST_BF_run03',
            #'LOWEST_BF_run05',
            #'LOWEST_BF_run07',
-           'LOWEST_BF_run11']
+           #'LOWEST_BF_run11'
+#           'BARKLEY_run01',
+           'PARAB_run01',
+]
            
 
   
 times = [0,2,4,6,8,10,12,14,16,18]
 
+
 for exp,runs in zip(expList,expNames):
     print(runs)
     CSptracers = ('%s/ptracersGlob.nc' %exp) 
         
-    Tr1 = np.ma.masked_array(rout.getField(CSptracers,'Tr1'),mask=maskExp)
             
     print(runs,'done reading')
     
-    for yi,xi,sname in zip(ys,xs,stations): # station indices
+    for yi,xi,trac in zip(ys,xs,tracers): 
+        
+        Tr1 = np.ma.masked_array(rout.getField(CSptracers,trac),mask=maskExp)
         Tr_profile = np.ma.empty((len(times),nz))
         ii = 0
         
@@ -155,7 +162,7 @@ for exp,runs in zip(expList,expNames):
                     'Tr_profile_tt18': Tr_profile[9,:]}
         df = pd.DataFrame(raw_data, columns = ['drC', 'Tr_profile_tt00', 'Tr_profile_tt02', 'Tr_profile_tt04', 'Tr_profile_tt06', 'Tr_profile_tt08','Tr_profile_tt10',    
                                                'Tr_profile_tt12','Tr_profile_tt14', 'Tr_profile_tt16','Tr_profile_tt18' ])
-        filename1 = ('../results/metricsDataFrames/Tr1_profile_%s_%s.csv' % (runs,sname))
+        filename1 = ('../results/metricsDataFrames/%s_profile_%s_%s.csv' % (trac,runs,sname))
         df.to_csv(filename1)
         
     
