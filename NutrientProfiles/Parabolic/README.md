@@ -8,6 +8,8 @@ Descriptions under the links below are from the first cell of the notebooks
 
 * ##[HCW_and_TracerMassOnShelf_ParabolicProfiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/HCW_and_TracerMassOnShelf_ParabolicProfiles.ipynb)  
     
+* ##[How_far_from_real_profiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/How_far_from_real_profiles.ipynb)  
+    
 * ##[CNTDIFF_7Tr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/CNTDIFF_7Tr.ipynb)  
     
 * ##[BARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/BARKLEY.ipynb)  
