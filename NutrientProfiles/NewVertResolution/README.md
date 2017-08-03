@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Gradients_with_new_resolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/NewVertResolution/Gradients_with_new_resolution.ipynb)  
+    
 * ##[Change_vertical_resolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/NewVertResolution/Change_vertical_resolution.ipynb)  
     
 
