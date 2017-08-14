@@ -37,7 +37,11 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[fig_Tr_evolution.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_Tr_evolution.ipynb)  
     
+* ##[step_profile_tracer_flux_calc.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/step_profile_tracer_flux_calc.ipynb)  
+    
 * ##[fig_TrProfilesUpDnStr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_TrProfilesUpDnStr.ipynb)  
+    
+* ##[convince_me_about_transports.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/convince_me_about_transports.ipynb)  
     
 
 ##License
