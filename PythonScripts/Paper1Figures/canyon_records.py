@@ -29,10 +29,10 @@ def main():
     VISC3D_run04 = run()
     VISC3D_run06 = run()
     LOW_BF_u26 = run()
-    #LOWER_BF_u32 = run()
+    LOWER_BF_u32 = run()
     LOWEST_BF_u13 = run()
     LOWEST_BF_N45 = run()
-    #LOWEST_BF_N74 = run()
+    LOWEST_BF_N74 = run()
     LOWEST_BF_f70 = run()
     LOWEST_BF_kv3 = run()
     VISC3D_run05 = run()
@@ -55,11 +55,11 @@ def main():
                 VISC3D_run04,
                 VISC3D_run05,
                 VISC3D_run06,
-                #LOW_BF_u26,
-                #LOWER_BF_u32,
+                LOW_BF_u26,
+                LOWER_BF_u32,
                 LOWEST_BF_u13,
                 LOWEST_BF_N45,
-                #LOWEST_BF_N74, 
+                LOWEST_BF_N74, 
                 LOWEST_BF_f70,
                 LOWEST_BF_kv3,
                 ] 
@@ -84,11 +84,11 @@ def main():
                 '3DVISC_run04',
                 '3DVISC_run05',
                 '3DVISC_run06',
-                #'LOW_BF_run01',
-                #'LOWER_BF_run01',
+                'LOW_BF_run01',
+                'LOWER_BF_run01',
                 'LOWEST_BF_run01',
                 'LOWEST_BF_run03',
-                #'LOWEST_BF_run05',
+                'LOWEST_BF_run05',
                 'LOWEST_BF_run07',
                 'LOWEST_BF_run11',
                 ]
@@ -113,11 +113,11 @@ def main():
                 '3DVISC',
                 '3DVISC',
                 '3DVISC',
-                #'LOW_BF_7Tr',
-                #'LOWER_BF_7Tr',
+                'LOW_BF',
+                'LOWER_BF',
                 'LOWEST_BF',
                 'LOWEST_BF',
-                #'LOWEST_BF',
+                'LOWEST_BF',
                 'LOWEST_BF',
                 'LOWEST_BF',
                 ]
@@ -142,20 +142,19 @@ def main():
                 'run04',
                 'run05',
                 'run06',
-                #'run01',
-                #'run01',
+                'run01',
+                'run01',
                 'run01',
                 'run03',
-                #'run05',
+                'run05',
                 'run07',
                 'run11',
                 ]
 
 
-    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,#11,#11,11,
+    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
                    11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*',#'*',#'*',#'*',
-                   ]
+    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*','*','*','*']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -177,11 +176,11 @@ def main():
                     'higher $\kappa_{can}$',
                     'high2 $\kappa_{can}$',
                     'highest $\kappa_{can}$',
-                    #'U=0.243 m/s',
-                    #'U=0.296 m/s',
+                    'U=0.243 m/s',
+                    'U=0.296 m/s',
                     'lowest $U$',
                     'lowesr $U$, lowest $N$',
-                    #'$N_0$=7.4x10$^{-3}$',
+                    '$N_0$=7.4x10$^{-3}$',
                     'lowest $U$, lowest $f$',
                     'lowest $U$, highest $\kappa_{bg}$',
                     ]
@@ -206,11 +205,12 @@ def main():
                     r'$\uparrow \uparrow$  $\kappa_{can}$',
                     r'$\uparrow$ $\kappa_{can}$',
                     r'$\Uparrow \Uparrow$  $\kappa_{can}$',
-                    #r'$\downarrow$ U',
-                    #'U=0.296 m/s',
+                    r'$\downarrow$ U',
+                    'U=0.296 m/s',
                     r'$\Downarrow$ U',
-                    r'$\Downarrow$ U, $\Downarrow$ $N_0$',
-                    #'$N_0$=7.4x10$^{-3}$',
+                    r'$\Downarrow$ U', 
+                    r'\Downarrow$ $N_0$',
+                    r'$N_0$=7.4x10$^{-3}$',
                     r'$\Downarrow$ U, $\Downarrow$ $f$',
                     r'$\Downarrow$ U, $\Uparrow \kappa_{can}$',
                     ]
@@ -235,11 +235,11 @@ def main():
                 "gold",
                 'orchid',
                 "tan",
-                #"red",
-                #'dark red',
+                "red",
+                'dark red',
                 'burgundy',
                 'light grey',
-                #'steel',
+                'steel',
                 'cerulean',
                 'teal blue',
                 ]# 
@@ -260,11 +260,11 @@ def main():
                 "boring green",
                 "dark grass green",
                 'booger green',
-                #'steel',
-                #'dark red',
+                'steel',
+                'dark red',
                 'slate grey',
                 'grey',
-                #'steel',
+                'steel',
                 'grey',
                 'nice blue',
                 ]# 
@@ -275,8 +275,8 @@ def main():
                     7.4E-3,4.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,#5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,
-                    5.5E-3,#5.5E-3,#5.5E-3,
-                    4.5E-3,#7.4E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    4.5E-3,7.4E-3,
                     5.5E-3,5.5E-3,
                     ])
 
@@ -285,8 +285,8 @@ def main():
                    1.0E-4,7.68E-5,#4.84E-5,
                    8.6E-5,6.4E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,#9.66E-5,#9.66E-5,
-                   9.66E-5,#9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,
                    7.0E-5,9.66E-5,
                    ])
 
@@ -294,9 +294,9 @@ def main():
                    0.358,0.358,0.358,#0.358,0.358,
                    0.358,0.358,0.358,0.358,#0.358,
                    0.358,0.358,0.358,0.358,0.358,0.358,
-                   #0.243,#0.296,
+                   0.243,0.296,
                    0.124,
-                   0.124,#0.124,
+                   0.124,0.124,
                    0.124,0.124,
                    ])
 
@@ -304,8 +304,8 @@ def main():
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
                     1E-3,1E-4,1E-3,1E-4,5E-3,1E-2,
-                    1E-5,#1E-5,#1E-5,
-                    1E-5,#1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,
                     1E-5,1E-3,
                     ])
 
