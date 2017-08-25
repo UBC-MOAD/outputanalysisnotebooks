@@ -32,10 +32,13 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [262,220,262,227,100,245,245,262,220]
-xs = [60,60,180,180,180,160,200,300,300]
+ys = [245]#[262,220,262,227,100,245,245,262,220]
+xs = [200]#[60,60,180,180,180,160,200,300,300]
+
 stations = ['DnC']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
-tracers = ['Tr1','Tr02','Tr03','Tr04','Tr05','Tr06','Tr07']
+
+tracers = ['Tr1']
+
 #All experiments in CNT and 3D including no canyon one (run07)
 expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run37',
@@ -73,15 +76,15 @@ expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run07',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/FORCING_SPNDN/run01',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/EW_OBCS/run06',
-           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
-           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
-           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run01',
-           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run03',
-           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run05',
-           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run07',
-           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
-          # '/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run01',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run03',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run05',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run07',
+           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
+           # '/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
            ]
             
 expNames = [#'CNTDIFF_run36',
@@ -120,15 +123,15 @@ expNames = [#'CNTDIFF_run36',
            #'3DDIFF_run07',
            #'FORCING_SPNDN_run01',
            #'EW_OBCS_run06',
-           #'LOW_BF_run01',
-           #'LOWER_BF_run01',
-           #'LOWEST_BF_run01',
-           #'LOWEST_BF_run03',
-           #'LOWEST_BF_run05',
-           #'LOWEST_BF_run07',
-           #'LOWEST_BF_run11'
-#           'BARKLEY_run01',
-           'PARAB_run01',
+           'LOW_BF_run01',
+           'LOWER_BF_run01',
+           'LOWEST_BF_run01',
+           'LOWEST_BF_run03',
+           'LOWEST_BF_run05',
+           'LOWEST_BF_run07',
+           'LOWEST_BF_run11'
+#          # 'BARKLEY_run01',
+           #'PARAB_run01',
 ]
            
 
@@ -142,8 +145,8 @@ for exp,runs in zip(expList,expNames):
         
             
     print(runs,'done reading')
-    
-    for yi,xi,trac in zip(ys,xs,tracers): 
+    trac = 'Tr1'
+    for yi,xi,sname in zip(ys,xs,stations): 
         
         Tr1 = np.ma.masked_array(rout.getField(CSptracers,trac),mask=maskExp)
         Tr_profile = np.ma.empty((len(times),nz))
@@ -153,7 +156,7 @@ for exp,runs in zip(expList,expNames):
              
              #tracer profile at station
             
-            Tr_profile[ii,:] = profile = Tr1[tt,:,yi,xi]
+            Tr_profile[ii,:] = Tr1[tt,:,yi,xi]
             
             ii = ii+1
             

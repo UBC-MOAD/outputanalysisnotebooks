@@ -28,8 +28,8 @@ def main():
     VISC3D_run03 = run()
     VISC3D_run04 = run()
     VISC3D_run06 = run()
-    LOW_BF_u26 = run()
     LOWER_BF_u32 = run()
+    LOW_BF_u26 = run()
     LOWEST_BF_u13 = run()
     LOWEST_BF_N45 = run()
     LOWEST_BF_N74 = run()
@@ -55,8 +55,8 @@ def main():
                 VISC3D_run04,
                 VISC3D_run05,
                 VISC3D_run06,
-                LOW_BF_u26,
                 LOWER_BF_u32,
+                LOW_BF_u26,
                 LOWEST_BF_u13,
                 LOWEST_BF_N45,
                 LOWEST_BF_N74, 
@@ -84,8 +84,8 @@ def main():
                 '3DVISC_run04',
                 '3DVISC_run05',
                 '3DVISC_run06',
-                'LOW_BF_run01',
                 'LOWER_BF_run01',
+                'LOW_BF_run01',
                 'LOWEST_BF_run01',
                 'LOWEST_BF_run03',
                 'LOWEST_BF_run05',
@@ -113,8 +113,8 @@ def main():
                 '3DVISC',
                 '3DVISC',
                 '3DVISC',
-                'LOW_BF',
                 'LOWER_BF',
+                'LOW_BF',
                 'LOWEST_BF',
                 'LOWEST_BF',
                 'LOWEST_BF',
@@ -176,11 +176,11 @@ def main():
                     'higher $\kappa_{can}$',
                     'high2 $\kappa_{can}$',
                     'highest $\kappa_{can}$',
-                    'U=0.243 m/s',
-                    'U=0.296 m/s',
+                    'lower $U$',
+                    'low $U$',
                     'lowest $U$',
-                    'lowesr $U$, lowest $N$',
-                    '$N_0$=7.4x10$^{-3}$',
+                    'lowest $U$, lowest $N$',
+                    'lowest $U$, highest $N$',
                     'lowest $U$, lowest $f$',
                     'lowest $U$, highest $\kappa_{bg}$',
                     ]
@@ -206,11 +206,11 @@ def main():
                     r'$\uparrow$ $\kappa_{can}$',
                     r'$\Uparrow \Uparrow$  $\kappa_{can}$',
                     r'$\downarrow$ U',
-                    'U=0.296 m/s',
+                    r'$\downarrow \downarrow$ U',
                     r'$\Downarrow$ U',
                     r'$\Downarrow$ U', 
-                    r'\Downarrow$ $N_0$',
-                    r'$N_0$=7.4x10$^{-3}$',
+                    r'$\Downarrow$ U, $\Downarrow$ $N_0$',
+                    r'$\Downarrow$ U, $\Uparrow$ $N_0$',
                     r'$\Downarrow$ U, $\Downarrow$ $f$',
                     r'$\Downarrow$ U, $\Uparrow \kappa_{can}$',
                     ]
@@ -294,7 +294,7 @@ def main():
                    0.358,0.358,0.358,#0.358,0.358,
                    0.358,0.358,0.358,0.358,#0.358,
                    0.358,0.358,0.358,0.358,0.358,0.358,
-                   0.243,0.296,
+                   0.296,0.243,
                    0.124,
                    0.124,0.124,
                    0.124,0.124,

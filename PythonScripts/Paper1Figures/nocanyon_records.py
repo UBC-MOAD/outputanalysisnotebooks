@@ -28,8 +28,8 @@ def main():
     VISC3D_run04NoC = run()
     VISC3D_run05NoC = run()
     VISC3D_run06NoC = run()
-    LOW_BF_u26NoC = run()
     LOWER_BF_u32NoC = run()
+    LOW_BF_u26NoC = run()
     LOWEST_BF_u13NoC = run()
     LOWEST_BF_N45NoC = run()
     LOWEST_BF_N74NoC = run()
@@ -52,8 +52,8 @@ def main():
                     VISC3D_run04NoC,
                     VISC3D_run05NoC,
                     VISC3D_run06NoC,        
-                    LOW_BF_u26NoC,
                     LOWER_BF_u32NoC,
+                    LOW_BF_u26NoC,
                     LOWEST_BF_u13NoC,
                     LOWEST_BF_N45NoC,
                     LOWEST_BF_N74NoC,
@@ -77,8 +77,8 @@ def main():
                   'CNTDIFF_run42',
                   'CNTDIFF_run42',
                   'CNTDIFF_run42',
-                  'LOW_BF_run02',
                   'LOWER_BF_run02',
+                  'LOW_BF_run02',
                   'LOWEST_BF_run02',
                   'LOWEST_BF_run04',
                   'LOWEST_BF_run06',
@@ -102,8 +102,8 @@ def main():
                   'CNTDIFF',
                   'CNTDIFF',
                   'CNTDIFF',
-                  'LOW_BF',
                   'LOWER_BF',
+                  'LOW_BF',
                   'LOWEST_BF',
                   'LOWEST_BF',
                   'LOWEST_BF',
@@ -158,8 +158,8 @@ def main():
                     '$\kappa$=10$^{-4}$,$\kappa_{bg}$=10$^{-5}$',
                     '$\kappa$=5x10$^{-3}$,$\kappa_{bg}$=10$^{-5}$',
                     '$\kappa$=10$^{-2}$,$\kappa_{bg}$=10$^{-5}$',
-                    'U=0.243 m/s',
                     'U=0.296 m/s',
+                    'U=0.243 m/s',
                     'U=0.124 m/s',
                     '$N_0$=4.5x10$^{-3}$',
                     '$N_0$=7.4x10$^{-3}$',
@@ -217,7 +217,7 @@ def main():
                    0.358,0.358,0.358,
                    0.358,0.358,0.358,0.358,
                    0.358,0.358,0.358,0.358,0.358,0.358,
-                   0.243,0.296,
+                   0.296,0.243,
                    0.124,
                    0.124,0.124,
                    0.124,0.124,
