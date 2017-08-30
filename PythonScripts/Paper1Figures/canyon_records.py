@@ -245,27 +245,27 @@ def main():
                 ]# 
 
     colours2 = ["black",#
-                "nice blue",
+                "light blue",
                 "nice blue",# 
                 "silver",
                 'slate grey',
                 'steel grey',
                 "grey",        
-                "silver", 
+                "light grey", 
                 "steel", 
                 "medium grey", 
+                "sap green",
                 "kelley green",
-                "boring green",
-                "kelley green",
+                "booger green",
                 "boring green",
                 "dark grass green",
-                'booger green',
-                'steel',
+                'forest green',
                 'dark red',
-                'slate grey',
+                'red',
+                'light red',
                 'grey',
                 'steel',
-                'grey',
+                'light grey',
                 'nice blue',
                 ]# 
 
@@ -308,15 +308,24 @@ def main():
                     1E-5,1E-5,
                     1E-5,1E-3,
                     ])
+    Kbg = np.array([1E-5,1E-4,1E-3,
+                    1E-5,1E-5,1E-5,#1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,#1E-5,
+                    1E-7,1E-7,1E-5,1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,
+                    1E-5,1E-3,
+                    ])
 
 
 
 
     # Fill the fields of the records
-    for record,expName,expCode,runNum,No,fo,uo,kvo,col,col2,lab2,explabel,marksize,markstyle in zip(records,expNames,
+    for record,expName,expCode,runNum,No,fo,uo,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in zip(records,expNames,
                                                                                            expCodes,runNums,
-                                                                                           Nos,fs,Us,Kvs,
-                                                                                           colours,colours2,exp_labels2,exp_labels,
+                                                                                           Nos,fs,Us,Kvs,Kbg,
+                                                                                           colours,colours2,exp_labels2,
+                                                                                           exp_labels,
                                                                                            markersizes,markerstyles):
         record.name = expName
         record.exp_code = expCode
@@ -331,5 +340,6 @@ def main():
         record.f = fo
         record.u = uo
         record.kv = kvo
+        record.kbg = kbgo
 
     return(records)

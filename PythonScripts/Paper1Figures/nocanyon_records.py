@@ -184,9 +184,9 @@ def main():
                 "gold",
                 'orchid',
                 "tan",
-                "red",
-                'dark red',
-                'burgundy',
+                "dark red",
+                'red',
+                'light red',
                 'light grey',
                 'steel',
                 'cerulean',
@@ -232,13 +232,21 @@ def main():
                     1E-5,1E-3,
                     ])
 
+    Kbg = np.array([1E-5,1E-4,1E-3,
+                    1E-5,1E-5,1E-5,#1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,#1E-5,
+                    1E-7,1E-7,1E-5,1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,
+                    1E-5,1E-3,
+                    ])
 
 
 
 
     # Fill the fields of the records
-    for record,expName,expCode,runNum,No,fo,uo,kvo,col,explabel,marksize,markstyle in zip(
-        recordsNoC,expNamesNoC,expCodesNoC,runNumsNoC,Nos,fs,Us,Kvs,colours,exp_labels,markersizes,markerstyles):
+    for record,expName,expCode,runNum,No,fo,uo,kvo,kbgo,col,explabel,marksize,markstyle in zip(
+        recordsNoC,expNamesNoC,expCodesNoC,runNumsNoC,Nos,fs,Us,Kvs,Kbg,colours,exp_labels,markersizes,markerstyles):
         record.name = expName
         record.exp_code = expCode
         record.run_num = runNum
@@ -250,5 +258,6 @@ def main():
         record.f = fo
         record.u = uo
         record.kv = kvo
+        record.kbg = kbgo
 
     return(recordsNoC)
