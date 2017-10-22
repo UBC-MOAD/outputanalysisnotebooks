@@ -73,13 +73,14 @@ expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run07',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/FORCING_SPNDN/run01',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/EW_OBCS/run06',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run03',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run05',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run07',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run01',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run03',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run05',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run07',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
+           '/data/kramosmu/results/TracerExperiments/CNTDIFF_EXT_SHELF/run01',
 
 ]
            
@@ -119,13 +120,14 @@ expNames = [#'CNTDIFF_run36',
            #'3DDIFF_run07',
            #'FORCING_SPNDN_run01',
            #'EW_OBCS_run06',
-           'LOW_BF_run01',
-           'LOWER_BF_run01',
-           'LOWEST_BF_run01',
-           'LOWEST_BF_run03',
-           'LOWEST_BF_run05',
-           'LOWEST_BF_run07',
-           'LOWEST_BF_run11',
+           #'LOW_BF_run01',
+           #'LOWER_BF_run01',
+           #'LOWEST_BF_run01',
+           #'LOWEST_BF_run03',
+           #'LOWEST_BF_run05',
+           #'LOWEST_BF_run07',
+           #'LOWEST_BF_run11',
+           'CNTDIFF_Ext2x',
 ]
            
 
@@ -135,8 +137,8 @@ times = [0,2,4,6,8,10,12,14,16,18]
 for exp,runs in zip(expList,expNames):
     print(runs)
     CSptracers = ('%s/ptracersGlob.nc' %exp) 
-        
-    Tr1 = np.ma.masked_array(rout.getField(CSptracers,'Tr1'),mask=maskExp)
+    PTR = Dataset(CSptracers)     
+    Tr1 = np.ma.masked_array(PTR.variables['Tr1'][:,:,:,0:360],mask=maskExp)
             
     print(runs,'done reading')
     

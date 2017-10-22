@@ -81,15 +81,16 @@ expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            ##'/ocean/kramosmu/MITgcm/TracerExperiments/3DDIFF/run07',
            ##'/ocean/kramosmu/MITgcm/TracerExperiments/FORCING_SPNDN/run01',
            ##'/ocean/kramosmu/MITgcm/TracerExperiments/EW_OBCS/run06',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run03',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run05',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run07',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOW_BF/run01',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWER_BF/run01',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run01',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run03',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run05',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run07',
+           #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
+           '/data/kramosmu/results/TracerExperiments/CNTDIFF_EXT_SHELF/run01'
            ]
            
 expNames = [#'CNTDIFF_run36',
@@ -128,15 +129,16 @@ expNames = [#'CNTDIFF_run36',
            ##'3DDIFF_run07',
            ##'FORCING_SPNDN_run01',
            ##'EW_OBCS_run06',
-           'LOW_BF_run01',
-           'LOWER_BF_run01',
-           'LOWEST_BF_run01',
-           'LOWEST_BF_run03',
-           'LOWEST_BF_run05',
-           'LOWEST_BF_run07',
-           'LOWEST_BF_run11',
+           #'LOW_BF_run01',
+           #'LOWER_BF_run01',
+           #'LOWEST_BF_run01',
+           #'LOWEST_BF_run03',
+           #'LOWEST_BF_run05',
+           #'LOWEST_BF_run07',
+           #'LOWEST_BF_run11',
            #'BARKLEY_run01',
            #'PARAB_run01',
+           'CNTDIFF_Ext2x',
 ]
 
            
@@ -161,11 +163,11 @@ times = [0,2,4,6,8,10,12,14,16,18]
 
 for exp,runs in zip(expList,expNames):
     print(runs)
-    CState = ('%s/stateGlob.nc' %exp) 
-        
-    Temp = rout.getField(CState,'Temp')
-    S = rout.getField(CState,'S')
-    P = rout.getField(phiHyd,'phiHyd')
+    CState = Dataset('%s/stateGlob.nc' %exp) 
+    CPhi = Dataset('%s/phiHydGlob.nc' %exp)
+    Temp = CState.variables['Temp'][:,:,:,0:360]
+    S = CState.variables['S'][:,:,:,0:360]
+    P = CPhi.variables['phiHyd'][:,:,:,0:360]
         
     MaskExpand = np.expand_dims(MaskC,0) 
     maskExp = MaskExpand + np.zeros((Temp).shape)    
