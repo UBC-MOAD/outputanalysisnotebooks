@@ -9,6 +9,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Tr_N_evolution_profiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/Tr_N_evolution_profiles.ipynb)  
     
+* ##[HCW_flux_ext_shelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/HCW_flux_ext_shelf.ipynb)  
+    
 * ##[balance_water_on_shelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/balance_water_on_shelf.ipynb)  
     
 * ##[fig_CS_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/PythonScripts/Paper1Figures/fig_CS_transport.ipynb)  
