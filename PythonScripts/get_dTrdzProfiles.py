@@ -127,7 +127,7 @@ expNames = [#'CNTDIFF_run36',
            #'LOWEST_BF_run05',
            #'LOWEST_BF_run07',
            #'LOWEST_BF_run11',
-           'CNTDIFF_Ext2x',
+           'CNTDIFF_Ext2x_run01',
 ]
            
 

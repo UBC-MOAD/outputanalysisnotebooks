@@ -12,43 +12,43 @@ def main():
     CNTDIFF_Ext2x = run()  
    
  
-    records =   [CNTDIFF_Ext2x
+    records =   [CNTDIFF_Ext2x,CNTDIFF_Ext3x
                 ] 
 
-    expNames = ['CNTDIFF_Ext2x_run01'
+    expNames = ['CNTDIFF_Ext2x_run01','CNTDIFF_Ext3x_run01'
                 ]
 
-    expCodes = ['CNTDIFF_EXT_SHELF'
+    expCodes = ['CNTDIFF_EXT_SHELF','CNTDIFF_EXTx3_SHELF'
                ]
 
-    runNums  = ['run01'
+    runNums  = ['run01','run01'
                 ]
 
 
-    markersizes = [13]
-    markerstyles = ['o']
+    markersizes = [13,13]
+    markerstyles = ['o','o']
 
-    exp_labels = [ 'ext 2x',
+    exp_labels = [ 'ext 2x','ext 3x'
                  ]
     
     
-    exp_labels2 = [ 'ext 2x'
+    exp_labels2 = [ 'ext 2x', 'ext 3x'
                   ]
-    colours = ['kelley green'
+    colours = ['kelley green','green'
                ]# 
 
-    colours2 = ["kelley green"
+    colours2 = ["kelley green", 'green'
                ]# 
 
 
-    Nos = np.array([5.5E-3])
+    Nos = np.array([5.5E-3, 5.5E-3])
 
-    fs = np.array([9.66E-5])
+    fs = np.array([9.66E-5, 9.66E-5])
 
-    Us = np.array([0.358])
+    Us = np.array([0.370, 0.370])
 
-    Kvs = np.array([1E-5])
-    Kbg = np.array([1E-5])
+    Kvs = np.array([1E-5,1E-5])
+    Kbg = np.array([1E-5, 1E-5])
 
 
 

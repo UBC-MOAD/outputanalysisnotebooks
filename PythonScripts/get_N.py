@@ -90,7 +90,7 @@ expList = [#'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run36',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/LOWEST_BF/run11',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01',
            #'/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
-           '/data/kramosmu/results/TracerExperiments/CNTDIFF_EXT_SHELF/run01'
+           '/data/kramosmu/results/TracerExperiments/CNTDIFF_EXT_SHELF/run01',
            ]
            
 expNames = [#'CNTDIFF_run36',
@@ -138,7 +138,7 @@ expNames = [#'CNTDIFF_run36',
            #'LOWEST_BF_run11',
            #'BARKLEY_run01',
            #'PARAB_run01',
-           'CNTDIFF_Ext2x',
+           'CNTDIFF_Ext2x_run01',
 ]
 
            
