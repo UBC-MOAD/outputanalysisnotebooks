@@ -9,30 +9,30 @@ def main():
         pass
 
     #Define all runs, create empty run records
-    CNTDIFF_Ext2x = run()  
-   
+    CNTDIFF_run42 = run()  
+    CNTDIFF_run41 = run()
  
-    records =   [CNTDIFF_Ext2x,CNTDIFF_Ext3x]
+    records =   [CNTDIFF_run42,CNTDIFF_run41]
 
-    expNames = ['CNTDIFF_Ext2x_run02','CNTDIFF_Ext3x_run02'
+    expNames = ['CNTDIFF_run42','CNTDIFF_run41'
                 ]
 
-    expCodes = ['CNTDIFF_EXT_SHELF','CNTDIFF_EXTx3_SHELF'
+    expCodes = ['CNTDIFF_n','CNTDIFF_n'
                ]
 
     runNums  = [
-                'run02','run02'
+                'run42','run41'
                 ]
 
 
     markersizes = [13,13]
     markerstyles = ['o','o']
 
-    exp_labels = [ 'ext 2x','ext 2x'
+    exp_labels = [ 'base nc','1E-4 nc'
                  ]
     
     
-    exp_labels2 = [ 'ext 2x', 'ext 2x'
+    exp_labels2 = [  'base nc','1E-4 nc'
                   ]
     colours = ['kelley green', 'green'
                ]# 
@@ -47,8 +47,8 @@ def main():
 
     Us = np.array([0.370, 0.370])
 
-    Kvs = np.array([1E-5, 1E-5])
-    Kbg = np.array([1E-5, 1E-5])
+    Kvs = np.array([1E-5, 1E-4])
+    Kbg = np.array([1E-5, 1E-4])
 
 
 
