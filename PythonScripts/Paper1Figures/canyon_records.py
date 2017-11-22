@@ -9,18 +9,14 @@ def main():
         pass
 
     #Define all runs, create empty run records
-    #CNTDIFF_kv7 = run()  
     CNTDIFF_base = run()
     CNTDIFF_kv4 = run()
     CNTDIFF_kv3= run()
     CNTDIFF_N63 = run()
-    #CNTDIFF_N39 = run()
-    #CNTDIFF_N30 = run()
     CNTDIFF_N74 = run()
     CNTDIFF_N45 = run()
     CNTDIFF_f100 = run()
     CNTDIFF_f76 = run()
-    #CNTDIFF_f48 = run()
     CNTDIFF_f86 = run()
     CNTDIFF_f64 = run()
     VISC3D_run01 = run()
@@ -53,8 +49,8 @@ def main():
                 CNTDIFF_f64,
                 VISC3D_run01,
                 VISC3D_run02,
-                VISC3D_run03,
                 VISC3D_run04,
+                VISC3D_run03,
                 VISC3D_run05,
                 VISC3D_run06,
                 LOWER_BF_u32,
@@ -81,8 +77,8 @@ def main():
                 'CNTDIFF_run71',
                 '3DVISC_run01',
                 '3DVISC_run02',
-                '3DVISC_run03',
                 '3DVISC_run04',
+                '3DVISC_run03',
                 '3DVISC_run05',
                 '3DVISC_run06',
                 'LOWER_BF_run01',
@@ -127,24 +123,20 @@ def main():
             #    'CNTDIFF_EXTx3_SHELF',
                 ]
 
-    runNums  = [#'run43',
-                'run38',
+    runNums  = ['run38',
                 'run37',
                 'run36',
                 'run45',
-                #'run44',
-                #'run46',
                 'run73',
                 'run75',
                 'run67',
                 'run51',
-                #'run52',
                 'run69',
                 'run71',
                 'run01',
                 'run02',
-                'run03',
                 'run04',
+                'run03',
                 'run05',
                 'run06',
                 'run01',
@@ -173,14 +165,14 @@ def main():
                     'highest $N$',
                     'lower $N$',
                     'higher $f$',
-                    'low $f$',
-                    #'f=4.84x10$^{-5}$',
                     'lower $f$',
+                    #'f=4.84x10$^{-5}$',
+                    'low $f$',
                     'lowest $f$',
                     'high $\kappa_{can}$, lower $\kappa_{bg}$',
                     'higher $\kappa_{can}$, lower $\kappa_{bg}$',
-                    'high $\kappa_{can}$',
                     'higher $\kappa_{can}$',
+                    'high $\kappa_{can}$',
                     'high2 $\kappa_{can}$',
                     'highest $\kappa_{can}$',
                     'lower $U$',
@@ -210,8 +202,8 @@ def main():
                     r'$\Downarrow \Downarrow$ $f$',
                     r'$\Uparrow$ $\kappa_{can}$,$\downarrow$$\kappa_{bg}$',
                     r'$\uparrow$ $\kappa_{can}$,$\downarrow$$\kappa_{bg}$',
-                    r'$\Uparrow$ $\kappa_{can}$',
                     r'$\uparrow \uparrow$  $\kappa_{can}$',
+                    r'$\Uparrow$ $\kappa_{can}$',
                     r'$\uparrow$ $\kappa_{can}$',
                     r'$\Uparrow \Uparrow$  $\kappa_{can}$',
                     r'$\downarrow$ U',
@@ -263,16 +255,16 @@ def main():
                 "silver",
                 'slate grey',
                 'steel grey',
-                "grey",        
-                "light grey", 
-                "steel", 
-                "medium grey", 
+                "dark lavender", 
+                "pale purple",
+                "heather",
+                "baby purple", 
                 "sap green",
                 "kelley green",
-                "booger green",
+                "light olive green",
+                "moss",
                 "boring green",
                 "dark grass green",
-                'forest green',
                 'dark red',
                 'red',
                 'light red',
@@ -321,7 +313,7 @@ def main():
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
-                    1E-3,1E-4,1E-3,1E-4,5E-3,1E-2,
+                    1E-3,1E-4,1E-4,1E-3,5E-3,1E-2,
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,
                     1E-5,1E-3,
