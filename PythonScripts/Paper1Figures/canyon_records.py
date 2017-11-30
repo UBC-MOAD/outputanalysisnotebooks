@@ -92,6 +92,35 @@ def main():
             #    'CNTDIFF_Ext3x_run01',  
                 ]
 
+    paperNames = [
+                'Base',
+                'higher\_Kbg',
+                'highest\_Kbg',
+                'higher\_N',
+                'highest\_N',
+                'lower\_N',
+                'higher\_f',
+                'low\_f',
+                'lower\_f',
+                'lowest\_f',
+                'highestKc\_lowKbg',
+                'higherKc\_lowKbg',
+                'higher\_Kc',
+                'high\_Kc',
+                'high2\_Kc',
+                'highest\_Kc',
+                'low\_U',
+                'lower\_U',
+                'lowest\_U',
+                'lowestU\_lowestN',
+                'lowestU\_highestN',
+                'lowestU\_lowestf',
+                'lowestU\_highestKbg',
+            #    'CNTDIFF_Ext2x_run01',  
+            #    'CNTDIFF_Ext3x_run01',  
+                ]
+
+
     expCodes = [#'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
@@ -333,13 +362,14 @@ def main():
 
 
     # Fill the fields of the records
-    for record,expName,expCode,runNum,No,fo,uo,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in zip(records,expNames,
+    for record,expName,paperName,expCode,runNum,No,fo,uo,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in zip(records,expNames,paperNames,
                                                                                            expCodes,runNums,
                                                                                            Nos,fs,Us,Kvs,Kbg,
                                                                                            colours,colours2,exp_labels2,
                                                                                            exp_labels,
                                                                                            markersizes,markerstyles):
         record.name = expName
+        record.paperName = paperName        
         record.exp_code = expCode
         record.run_num = runNum
         record.label = explabel
