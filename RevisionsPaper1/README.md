@@ -3,6 +3,8 @@ The links below are to static renderings of the notebooks via
 [nbviewer.jupyter.org](http://nbviewer.jupyter.org/).
 * ##[Reviewer2.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/Reviewer2.ipynb)  
     
+* ##[DiffusionThroughKvInterface.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/DiffusionThroughKvInterface.ipynb)  
+    
 * ##[extended_domain_pool.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/extended_domain_pool.ipynb)  
     
 * ##[extended_shelf_comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/extended_shelf_comparison.ipynb)  
