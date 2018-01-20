@@ -4,12 +4,12 @@ import pandas as pd
 import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
-CGrid = '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
+CGrid = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
 CGridOut = Dataset(CGrid)
 
 # General input
 
-nx = 360
+nx = 616
 ny = 360
 nz = 90
 nt = 19 # t dimension size 
@@ -41,12 +41,13 @@ tracersBar = ['Tr01','Tr02','Tr03','Tr04','Tr05','Tr06','Tr07','Tr08']
 tracersPar = ['Tr1','Tr2','Tr3','Tr4','Tr5','Tr6','Tr7']
 
 
-expList = ['/ocean/kramosmu/MITgcm/TracerExperiments/BARKLEY/run01',
-           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
+expList = ['/data/kramosmu/results/TracerExperiments/BARKLEY/run01',
+#           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
            ]
             
 expNames = ['BARKLEY_run01',
-	    'PARAB_run01']
+	    #'PARAB_run01',
+	    ]
            
 times = [0,2,4,6,8,10,12,14,16,18]
 
