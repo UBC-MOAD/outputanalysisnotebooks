@@ -42,11 +42,11 @@ tracersPar = ['Tr1','Tr2','Tr3','Tr4','Tr5','Tr6','Tr7']
 
 
 expList = ['/data/kramosmu/results/TracerExperiments/BARKLEY/run01',
-#           '/ocean/kramosmu/MITgcm/TracerExperiments/CNTDIFF_LOW_SR_7Tr/run01',
+           '/data/kramosmu/results/TracerExperiments/CNTDIFF_7Tr/run01',
            ]
             
 expNames = ['BARKLEY_run01',
-	    #'PARAB_run01',
+	    'PARAB_run01',
 	    ]
            
 times = [0,2,4,6,8,10,12,14,16,18]

@@ -16,6 +16,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[01_curvature_dependence.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/01_curvature_dependence.ipynb)  
     
+* ##[scaling_comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/scaling_comparison.ipynb)  
+    
 * ##[HCW_and_TracerMassOnShelf_BARKLEY.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/HCW_and_TracerMassOnShelf_BARKLEY.ipynb)  
     
 * ##[DnS_profiles_Barkley_and_Parabolic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/NutrientProfiles/Parabolic/DnS_profiles_Barkley_and_Parabolic.ipynb)  
@@ -23,7 +25,7 @@ Descriptions under the links below are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2017
+These notebooks and files are copyright 2013-2018
 by The University of British Columbia.
 
 They are licensed under the Apache License, Version 2.0.
