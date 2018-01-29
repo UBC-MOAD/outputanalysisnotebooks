@@ -32,9 +32,7 @@ def main():
     LOWEST_BF_f70 = run()
     LOWEST_BF_kv3 = run()
     VISC3D_run05 = run()
-    #CNTDIFF_Ext2x = run()  
-    #CNTDIFF_Ext3x = run()  
- 
+  
  
     records =   [
                 CNTDIFF_base, 
@@ -60,9 +58,7 @@ def main():
                 LOWEST_BF_N74, 
                 LOWEST_BF_f70,
                 LOWEST_BF_kv3,
-           #     CNTDIFF_Ext2x,
-           #     CNTDIFF_Ext3x,
-                ] 
+               ] 
 
     expNames = [
                 'CNTDIFF_run38',
@@ -88,8 +84,6 @@ def main():
                 'LOWEST_BF_run05',
                 'LOWEST_BF_run07',
                 'LOWEST_BF_run11',
-            #    'CNTDIFF_Ext2x_run01',  
-            #    'CNTDIFF_Ext3x_run01',  
                 ]
 
     paperNames = [
@@ -116,23 +110,17 @@ def main():
                 'lowestU\_highestN',
                 'lowestU\_lowestf',
                 'lowestU\_highestKbg',
-            #    'CNTDIFF_Ext2x_run01',  
-            #    'CNTDIFF_Ext3x_run01',  
                 ]
 
 
-    expCodes = [#'CNTDIFF',
+    expCodes = ['CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
-                #'CNTDIFF',
-                #'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
-                'CNTDIFF',
-                #'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
                 '3DVISC',
@@ -148,8 +136,6 @@ def main():
                 'LOWEST_BF',
                 'LOWEST_BF',
                 'LOWEST_BF',
-             #   'CNTDIFF_EXT_SHELF',
-            #    'CNTDIFF_EXTx3_SHELF',
                 ]
 
     runNums  = ['run38',
@@ -175,14 +161,12 @@ def main():
                 'run05',
                 'run07',
                 'run11',
-            #    'run01',
-            #    'run01',
                 ]
 
 
     markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
-                   11]#,11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*','*','*','*']#,'o']
+                   11]
+    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*','*','*','*']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -211,8 +195,6 @@ def main():
                     'lowest $U$, highest $N$',
                     'lowest $U$, lowest $f$',
                     'lowest $U$, highest $\kappa_{bg}$',
-                    #'extended shelf 2x',
-                   # 'extended shelf 3x',
                     ]
     
     
@@ -220,13 +202,10 @@ def main():
                     r'$\uparrow$ $\kappa_{bg}$',
                     r'$\Uparrow$ $\kappa_{bg}$',
                     r'$\uparrow$ $N_0$',
-                    #'$N_0$=3.9x10$^{-3}$',
-                    #'$N_0$=3.0x10$^{-3}$',
                     r'$\Uparrow$ $N_0$',
                     r'$\downarrow$ $N_0$',
                     r'$\uparrow$ $f$',
                     r'$\Downarrow$ $f$',
-                    #'f=4.84x10$^{-5}$',
                     r'$\downarrow$ $f$',
                     r'$\Downarrow \Downarrow$ $f$',
                     r'$\Uparrow$ $\kappa_{can}$,$\downarrow$$\kappa_{bg}$',
@@ -243,8 +222,6 @@ def main():
                     r'$\Downarrow$ U, $\Uparrow$ $N_0$',
                     r'$\Downarrow$ U, $\Downarrow$ $f$',
                     r'$\Downarrow$ U, $\Uparrow \kappa_{can}$',
-                  #  '2x shelf',
-                  #  '3x shelf',
                     ]
 
     colours = [ #"pine",
@@ -274,8 +251,6 @@ def main():
                 'steel',
                 'cerulean',
                 'teal blue',
-              #  'yellow',
-              #  'gold',
                 ]# 
 
     colours2 = ["black",#
@@ -301,8 +276,6 @@ def main():
                 'steel',
                 'light grey',
                 'nice blue',
-              #  'yellow',
-              #  'gold',
                 ]# 
 
 
@@ -339,6 +312,30 @@ def main():
                    #0.370,#0.370,
                    ])
 
+    Us_model = np.array([0.360,
+                         0.357, 
+                         0.320,
+                         0.375,
+                         0.394,
+                         0.342,
+                         0.356,
+                         0.387,
+                         0.374,
+                         0.406,
+                         0.352,
+                         0.356,
+                         0.357,
+                         0.352,
+                         0.345,
+                         0.345,
+                         0.309,
+                         0.256,
+                         0.134,
+                         0.129,
+                         0.145,
+                         0.145,
+                         0.113])
+
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
@@ -362,11 +359,7 @@ def main():
 
 
     # Fill the fields of the records
-    for record,expName,paperName,expCode,runNum,No,fo,uo,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in zip(records,expNames,paperNames,
-                                                                                           expCodes,runNums,
-                                                                                           Nos,fs,Us,Kvs,Kbg,
-                                                                                           colours,colours2,exp_labels2,
-                                                                                           exp_labels,
+    for record,expName,paperName,expCode,runNum,No,fo,uo,um,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,
                                                                                            markersizes,markerstyles):
         record.name = expName
         record.paperName = paperName        
@@ -381,6 +374,7 @@ def main():
         record.N = No
         record.f = fo
         record.u = uo
+        record.u_mod = um
         record.kv = kvo
         record.kbg = kbgo
 
