@@ -350,6 +350,30 @@ def main():
                          0.145,
                          0.113])
 
+    Us_HA = np.array([0.364,   
+                      0.361,
+                      0.321 ,
+                      0.379 ,
+                      0.399 ,
+                      0.344 ,
+                      0.359 ,
+                      0.392 ,
+                      0.378 ,
+                      0.414 ,
+                      0.354 ,
+                      0.359 ,
+                      0.359 , 
+                      0.354 ,
+                      0.346 ,
+                      0.347 ,
+                      0.312 , 
+                      0.258 ,
+                      0.137 , 
+                      0.132 , 
+                      0.153 , 
+                      0.150 ,  
+                      0.114])
+
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
@@ -373,7 +397,7 @@ def main():
 
 
     # Fill the fields of the records
-    for record,expName,paperName,expCode,runNum,No,fo,uo,um,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,
+    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,
                                                                                            markersizes,markerstyles):
         record.name = expName
         record.paperName = paperName        
@@ -389,6 +413,7 @@ def main():
         record.f = fo
         record.u = uo
         record.u_mod = um
+        record.u_ha = uha
         record.kv = kvo
         record.kbg = kbgo
 
