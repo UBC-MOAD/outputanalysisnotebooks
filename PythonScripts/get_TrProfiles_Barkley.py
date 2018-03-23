@@ -4,7 +4,7 @@ import pandas as pd
 import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
-CGrid = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
+CGrid = '/data/kramosmu/results/TracerExperiments/BARKLEY_II/run01/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
 CGridOut = Dataset(CGrid)
 
 # General input
@@ -37,15 +37,15 @@ xs = 200 #[60,60,180,180,180,160,200,300,300]
 
 stations = 'DnC'#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 
-tracersBar = ['Tr01','Tr02','Tr03','Tr04','Tr05','Tr06','Tr07','Tr08']
+tracersBar = ['Tr01','Tr02','Tr03','Tr04','Tr05','Tr06','Tr07','Tr08','Tr09','Tr10']
 tracersPar = ['Tr1','Tr2','Tr3','Tr4','Tr5','Tr6','Tr7']
 
 
-expList = ['/data/kramosmu/results/TracerExperiments/BARKLEY/run01',
+expList = ['/data/kramosmu/results/TracerExperiments/BARKLEY_II/run01',
            '/data/kramosmu/results/TracerExperiments/CNTDIFF_7Tr/run01',
            ]
             
-expNames = ['BARKLEY_run01',
+expNames = ['BARKLEY_II_run01',
 	    'PARAB_run01',
 	    ]
            
