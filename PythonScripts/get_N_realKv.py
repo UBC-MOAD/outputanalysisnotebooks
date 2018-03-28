@@ -45,10 +45,13 @@ stations = [#'UpSh','UpSl','CH','CM','CO','UpC',
             ]
 
 #All experiments in CNT and 3D including no canyon one (run07)
-expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run01',
-           ]
+expList = [#'/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run01',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run03',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run04']
            
-expNames = ['3DVISC_REALISTIC_run01']
+expNames = [#'3DVISC_REALISTIC_run01'
+            '3DVISC_REALISTIC_run03',
+            '3DVISC_REALISTIC_run04']
 
            
 
