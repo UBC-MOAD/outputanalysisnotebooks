@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Ascension_Kv_from_png.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Ascension_Kv_from_png.ipynb)  
+    
 * ##[FirstLook_RealisticKv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/FirstLook_RealisticKv.ipynb)  
     
 
