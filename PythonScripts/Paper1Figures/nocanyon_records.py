@@ -35,9 +35,10 @@ def main():
     LOWEST_BF_N74NoC = run()
     LOWEST_BF_f70NoC = run()
     LOWEST_BF_kv3NoC = run()
-    #CNTDIFF_Ext2x_NoC = run()  
-    #CNTDIFF_Ext3x_NoC = run()  
-
+    REALKV_MTY_botNoC = run()
+    REALKV_MTY_rimNoC = run()
+    REALKV_EEL_rimNoC = run()
+  
 
     recordsNoC =   [CNTDIFF_baseNoC, 
                     CNTDIFF_kv4NoC, 
@@ -62,9 +63,9 @@ def main():
                     LOWEST_BF_N74NoC,
                     LOWEST_BF_f70NoC,
                     LOWEST_BF_kv3NoC,
-                    #CNTDIFF_Ext2x_NoC,
-                    #CNTDIFF_Ext3x_NoC,
-                    ]
+                    REALKV_MTY_botNoC,
+                    REALKV_MTY_rimNoC,
+                    REALKV_EEL_rimNoC]
 
     expNamesNoC =['CNTDIFF_run42',
                   'CNTDIFF_run41',
@@ -89,9 +90,10 @@ def main():
                   'LOWEST_BF_run06',
                   'LOWEST_BF_run08',
                   'LOWEST_BF_run12',
-                  #'CNTDIFF_Ext2x_run02',
-                #  'CNTDIFF_Ext3x_run02',
-                  ]
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                   ]
 
     expCodesNoC =['CNTDIFF',
                   'CNTDIFF',
@@ -116,8 +118,10 @@ def main():
                   'LOWEST_BF',
                   'LOWEST_BF',
                   'LOWEST_BF',
-                  #'CNTDIFF_EXT_SHELF',
-                #  'CNTDIFF_EXTx3_SHELF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  
                   ]
 
     runNumsNoC  =['run42',
@@ -143,15 +147,17 @@ def main():
                   'run06',
                   'run08',
                   'run12',
-                  #'run02',
-                  #'run02',
+                  'run42',
+                  'run42',
+                  'run42',
+                  
                   ]
 
 
  
     markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
-                   11]#,11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*','*','*','*']#'o']
+                   11,11,11,11]#,11]
+    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*','*','*','*','^','^','^']#'o']
 
     exp_labels = [  'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
                     '$\kappa$=10$^{-4}$',
@@ -176,7 +182,9 @@ def main():
                     '$N_0$=7.4x10$^{-3}$',
                     'f=7.0x$10^{-5}$',
                     '$\kappa$=10$^{-3}$',
-                    #'Ext shelf 2x',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
                     #'Ext shelf 3x',
                     ]
 
@@ -204,8 +212,9 @@ def main():
                 'steel',
                 'cerulean',
                 'teal blue',
-                #'yellow',
-                #'gold'
+                'yellow',
+                'gold',
+                'light brown',
                 ]# 
 
 
@@ -217,7 +226,8 @@ def main():
                     5.5E-3,5.5E-3,5.5E-3,
                     4.5E-3,7.4E-3,
                     5.5E-3,5.5E-3,
-                    #5.5E-3,#5.5E-3
+                    5.5E-3,5.5E-3,5.5E-3,
+
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
@@ -228,7 +238,7 @@ def main():
                    9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,
                    7.0E-5,9.66E-5,
-                   #9.66E-5,#9.66E-5
+                   9.66E-5,9.66E-5,9.66E-5,
                    ])
 
     Us = np.array([0.360,0.360,0.360,
@@ -239,7 +249,7 @@ def main():
                    0.134,
                    0.134,0.134,
                    0.134,0.134,
-                   #0.370,#0.370,
+                   0.370,0.370,0.370,
                    ])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
@@ -249,7 +259,7 @@ def main():
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,
                     1E-5,1E-3,
-                    #1E-5,#1E-5
+                    1E-5,1E-5,1E-5,
                     ])
 
     Kbg = np.array([1E-5,1E-4,1E-3,
@@ -259,7 +269,7 @@ def main():
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,
                     1E-5,1E-3,
-                    #1E-5,#1E-5,
+                    1E-5,1E-5,1E-5,
                     ])
 
 
