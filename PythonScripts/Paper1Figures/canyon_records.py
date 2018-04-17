@@ -202,8 +202,8 @@ def main():
 
     markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
                    11,11,11,11, 11,11,11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^',
-                    '^','*','*','*','*','*','*','*','^','o','*','*','*','*']
+    markerstyles = ['o','^','d','^','d','v','^','v','*','P','v','*','d','^','D',
+                    'p','v','*','*','d','P','D','p','D','d','^','v','*','P']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -309,34 +309,34 @@ def main():
                 ]# 
 
     colours2 = ["black",#
-                "light blue",
-                "nice blue",# 
                 "silver",
-                'slate grey',
-                'steel grey',
-                "dark lavender", 
-                "pale purple",
-                "heather",
-                "baby purple", 
-                "sap green",
-                "kelley green",
-                "light olive green",
-                "moss",
-                "boring green",
-                "dark grass green",
-                'dark red',
-                'red',
-                'light red',
-                'grey',
-                'steel',
-                'light grey',
-                'nice blue',
-                'olive',
-                'teal',
-                'light green',
-                'cherry',
-                'orange',
-                'yellow',
+                "slate grey",# 
+                "magenta",
+                'magenta',
+                'magenta',
+                "light eggplant", 
+                "light eggplant",
+                "light eggplant",
+                "light eggplant", 
+                "apple",
+                "apple",
+                "apple",
+                "apple",
+                "apple",
+                "apple",
+                'pale red',
+                'pale red',
+                'pale red',
+                'pastel orange',
+                'pastel orange',
+                'pastel orange',
+                'pastel orange',
+                'french blue',
+                'french blue',
+                'bright sky blue',
+                'bright sky blue',
+                'french blue',
+                'bright sky blue',
                 ]# 
 
 
