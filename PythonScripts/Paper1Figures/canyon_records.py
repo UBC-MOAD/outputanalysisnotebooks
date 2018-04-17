@@ -96,12 +96,12 @@ def main():
                 'LOWEST_BF_run05',
                 'LOWEST_BF_run07',
                 'LOWEST_BF_run11',
-                'REALKV_run01',
-                'REALKV_run02',
-                'REALKV_run03',
-                'REALKV_run04',
-                'REALKV_run05',
-                'REALKV_run06',
+                '3DVISC_REALISTIC_run01' ,
+                '3DVISC_REALISTIC_run02' ,
+                '3DVISC_REALISTIC_run03' ,
+                '3DVISC_REALISTIC_run04',
+                '3DVISC_REALISTIC_run05',
+                '3DVISC_REALISTIC_run06',
                 ]
 
     paperNames = [
@@ -332,11 +332,11 @@ def main():
                 'light grey',
                 'nice blue',
                 'olive',
-                'olive',
-                'olive',
-                'olive',
-                'olive',
-                'olive',
+                'teal',
+                'light green',
+                'cherry',
+                'orange',
+                'yellow',
                 ]# 
 
 
@@ -457,8 +457,8 @@ def main():
                     1E-5,1E-5,
                     1E-5,1E-3,
                     #1E-5,#1E-5,
-                    1E-2,1E-2,1E-2,
-                    1E-2,1E-2,1E-2,
+                    2.54E-3,9.40E-4,6.63E-4,
+                    8.25E-5,4.41E-3,4.73E-3,
                     ])
     Kbg = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
@@ -468,8 +468,8 @@ def main():
                     1E-5,1E-5,
                     1E-5,1E-3,
                     #1E-5, #1E-5
-                    1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5,
+                    1.32E-3,5.56E-5,4.37E-4,
+                    1.84E-5,5.55E-3,1.82E-3,
                     ])
 
 
