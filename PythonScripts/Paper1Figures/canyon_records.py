@@ -38,6 +38,10 @@ def main():
     REALKV_EEL_rim = run()
     REALKV_ASC_bot = run()
     REALKV_ASC_rim = run()
+    REALKV_e10 = run()
+    REALKV_e25 = run()
+    REALKV_e50 = run()
+    REALKV_e100 = run()
     
  
     records =   [
@@ -70,6 +74,10 @@ def main():
                 REALKV_EEL_rim,
                 REALKV_ASC_bot,
                 REALKV_ASC_rim,
+                REALKV_e10, 
+                REALKV_e25,
+                REALKV_e50, 
+                REALKV_e100,
                 ] 
 
     expNames = [
@@ -102,6 +110,10 @@ def main():
                 '3DVISC_REALISTIC_run04',
                 '3DVISC_REALISTIC_run05',
                 '3DVISC_REALISTIC_run06',
+                '3DVISC_REALISTIC_run07',
+                '3DVISC_REALISTIC_run08',
+                '3DVISC_REALISTIC_run09',
+                '3DVISC_REALISTIC_run10',
                 ]
 
     paperNames = [
@@ -134,6 +146,10 @@ def main():
                 'realKv_Eel_rim',
                 'realKv_Asc',
                 'realKv_Asc_rim',
+                'Kv_$\epsilon$10',
+                'Kv_$\epsilon$25',
+                'Kv_$\epsilon$50',
+                'Kv_$\epsilon$100',
                 ]
 
 
@@ -160,6 +176,10 @@ def main():
                 'LOWEST_BF',
                 'LOWEST_BF',
                 'LOWEST_BF',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
@@ -197,13 +217,17 @@ def main():
                 'run04',
                 'run05',
                 'run06',
+                'run07',
+                'run08',
+                'run09',
+                'run10',
                 ]
 
 
     markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
-                   11,11,11,11, 11,11,11]
+                   11,11,11,11,11,11,11,11,11,11,11]
     markerstyles = ['o','^','d','^','d','v','^','v','*','P','v','*','d','^','D',
-                    'p','v','*','*','d','P','D','p','D','d','^','v','*','P']
+                    'p','v','*','*','d','P','D','p','D','d','^','v','*','P','^','v','*','P']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -238,6 +262,10 @@ def main():
                     '$\kappa_{can}$ Eel, rim',
                     '$\kappa_{can}$ Asc, bottom',
                     '$\kappa_{can}$ Asc, rim',
+                    '$\kappa_{can}$, $\epsilon=10$',
+                    '$\kappa_{can}$, $\epsilon=25$',
+                    '$\kappa_{can}$, $\epsilon=50$',
+                    '$\kappa_{can}$, $\epsilon=100$',
                     ]
     
     
@@ -271,6 +299,10 @@ def main():
                     r'$\kappa_{can}$ Eel, rim',
                     r'$\kappa_{can}$ Asc, bottom',
                     r'$\kappa_{can}$ Asc, rim',
+                   '$\kappa_{can}$, $\epsilon=10$',
+                   '$\kappa_{can}$, $\epsilon=25$',
+                   '$\kappa_{can}$, $\epsilon=50$',
+                   '$\kappa_{can}$, $\epsilon=100$',
                     ]
 
     colours = [ #"pine",
@@ -306,24 +338,27 @@ def main():
                 'olive',
                 'olive',
                 'olive',
-                ]# 
+                'olive',
+                'olive',
+                'olive',
+                'olive']# 
 
-    colours2 = ["black",#
-                "silver",
-                "slate grey",# 
-                "magenta",
-                'magenta',
-                'magenta',
-                "light eggplant", 
-                "light eggplant",
-                "light eggplant",
-                "light eggplant", 
-                "apple",
-                "apple",
-                "apple",
-                "apple",
-                "apple",
-                "apple",
+    colours2 = ['black',#
+                'silver',
+                'slate grey',# 
+                'dull pink',
+                'dull pink',
+                'dull pink',
+                'light eggplant', 
+                'light eggplant',
+                'light eggplant',
+                'light eggplant', 
+                'kelly green',
+                'kelly green',
+                'kelly green',
+                'kelly green',
+                'kelly green',
+                'kelly green',
                 'pale red',
                 'pale red',
                 'pale red',
@@ -333,10 +368,14 @@ def main():
                 'pastel orange',
                 'french blue',
                 'french blue',
-                'bright sky blue',
-                'bright sky blue',
                 'french blue',
-                'bright sky blue',
+                'french blue',
+                'french blue',
+                'french blue',
+                'aquamarine',
+                'aquamarine',
+                'aquamarine',
+                'aquamarine',
                 ]# 
 
 
@@ -369,6 +408,10 @@ def main():
                     0.0055 ,
                     0.0055 ,
                     0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
@@ -382,6 +425,7 @@ def main():
                    #9.66E-5,9.66E-5
                    9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    ])
 
     Us = np.array([0.360,0.360,0.360,
@@ -395,6 +439,7 @@ def main():
                    #0.370,#0.370,
                    0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360,
+                   0.360, 0.360, 0.360, 0.360,
                    ])
 
     Us_model = np.array([0.360,
@@ -421,7 +466,8 @@ def main():
                          0.145,
                          0.113,
                          0.360,0.360,0.360,
-                         0.360,0.360,0.360])
+                         0.360,0.360,0.360,
+                         0.360,0.360,0.360,0.360])
 
     Us_HA = np.array([0.364,   
                       0.361,
@@ -447,7 +493,8 @@ def main():
                       0.150 ,  
                       0.114 ,
                       0.364,0.364,0.364,
-                      0.364,0.364,0.364])
+                      0.364,0.364,0.364,
+                      0.364,0.364,0.364, 0.364])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
@@ -459,7 +506,8 @@ def main():
                     #1E-5,#1E-5,
                     2.54E-3,9.40E-4,6.63E-4,
                     8.25E-5,4.41E-3,4.73E-3,
-                    ])
+                    5.01E-3,5.01E-3, 5.01E-3,5.01E-3,
+                   ])
     Kbg = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
@@ -470,6 +518,7 @@ def main():
                     #1E-5, #1E-5
                     1.11E-3,8.04E-5,3.79E-4,
                     1.04E-5,2.19E-3,1.70E-3,
+                    1E-5,1E-5,1.82E-5,1.19E-3, #  CHANGE !!!
                     ])
 
 
