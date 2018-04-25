@@ -35,7 +35,7 @@ def main():
     REALKV_MTY_bot = run()
     REALKV_EEL_bot = run()
     REALKV_MTY_rim = run()
-    REALKV_EEL_rim = run()
+    #REALKV_EEL_rim = run()
     REALKV_ASC_bot = run()
     REALKV_ASC_rim = run()
     REALKV_e10 = run()
@@ -75,7 +75,7 @@ def main():
                 REALKV_MTY_bot,
                 REALKV_EEL_bot,
                 REALKV_MTY_rim,
-                REALKV_EEL_rim,
+                #REALKV_EEL_rim,
                 REALKV_ASC_bot,
                 REALKV_ASC_rim,
                 REALKV_e10, 
@@ -115,7 +115,7 @@ def main():
                 '3DVISC_REALISTIC_run01' ,
                 '3DVISC_REALISTIC_run02' ,
                 '3DVISC_REALISTIC_run03' ,
-                '3DVISC_REALISTIC_run04',
+                #'3DVISC_REALISTIC_run04',
                 '3DVISC_REALISTIC_run05',
                 '3DVISC_REALISTIC_run06',
                 '3DVISC_REALISTIC_run07',
@@ -155,7 +155,7 @@ def main():
                 'realKv_Mty',
                 'realKv_Eel',
                 'realKv_Mty_rim',
-                'realKv_Eel_rim',
+                #'realKv_Eel_rim',
                 'realKv_Asc',
                 'realKv_Asc_rim',
                 'Kv_$\epsilon$10',
@@ -195,7 +195,7 @@ def main():
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
-                '3DVISC_REALISTIC',
+                #'3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
@@ -235,7 +235,7 @@ def main():
                 'run01',
                 'run02',
                 'run03',
-                'run04',
+                #'run04',
                 'run05',
                 'run06',
                 'run07',
@@ -249,10 +249,11 @@ def main():
                 ]
 
 
-    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
+    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,#11,
                    11,11,11,11,11,11,11,11,11,11,11,11,11,11,11]
     markerstyles = ['o','^','d','^','d','v','^','v','*','P','v','*','d','^','D',
-                    'p','v','*','*','d','P','D','p','D','d','^','v','*','P','^','v','*','P',
+                    'p','v','*','*','d','P','D','p','D','d',#'^',
+                    'v','*','P','^','v','*','P',
                     'd','D','o','p']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
@@ -285,7 +286,7 @@ def main():
                     '$\kappa_{can}$ Mty, bottom',
                     '$\kappa_{can}$ Eel, bottom',
                     '$\kappa_{can}$ Mty, rim',
-                    '$\kappa_{can}$ Eel, rim',
+                    #'$\kappa_{can}$ Eel, rim',
                     '$\kappa_{can}$ Asc, bottom',
                     '$\kappa_{can}$ Asc, rim',
                     '$\kappa_{can}$, $\epsilon=10$',
@@ -326,7 +327,7 @@ def main():
                     r'$\kappa_{can}$ Mty, bottom',
                     r'$\kappa_{can}$ Eel, bottom',
                     r'$\kappa_{can}$ Mty, rim',
-                    r'$\kappa_{can}$ Eel, rim',
+                    #r'$\kappa_{can}$ Eel, rim',
                     r'$\kappa_{can}$ Asc, bottom',
                     r'$\kappa_{can}$ Asc, rim',
                    '$\kappa_{can}$, $\epsilon=10$',
@@ -370,7 +371,7 @@ def main():
                 'olive',
                 'olive',
                 'olive',
-                'olive',
+               # 'olive',
                 'olive',
                 'olive',
                 'olive',
@@ -407,7 +408,7 @@ def main():
                 'french blue',
                 'french blue',
                 'french blue',
-                'french blue',
+                #'french blue',
                 'french blue',
                 'french blue',
                 'aquamarine',
@@ -445,7 +446,7 @@ def main():
                     0.0055 , 
                     0.0055 , 
                     0.0055 ,
-                    0.0055 ,
+                    #0.0055 ,
                     0.0055 ,
                     0.0055 ,
                     0.0055 ,
@@ -470,7 +471,7 @@ def main():
                    7.0E-5,9.66E-5,
                    #9.66E-5,9.66E-5
                    9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,#9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    ])
@@ -485,7 +486,7 @@ def main():
                    0.134,0.134,
                    #0.370,#0.370,
                    0.360, 0.360, 0.360,
-                   0.360, 0.360, 0.360,
+                   0.360, 0.360, #0.360,
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360, 0.360,
                    ])
@@ -514,7 +515,7 @@ def main():
                          0.145,
                          0.113,
                          0.360,0.360,0.360,
-                         0.360,0.360,0.360,
+                         0.360,0.360,#0.360,
                          0.360,0.360,0.360,0.360,
                          0.360,0.360,0.360,0.360])
 
@@ -542,7 +543,7 @@ def main():
                       0.150 ,  
                       0.114 ,
                       0.364,0.364,0.364,
-                      0.364,0.364,0.364,
+                      0.364,0.364,#0.364,
                       0.364,0.364,0.364, 0.364,
                       0.364,0.364,0.364, 0.364])
 
@@ -555,7 +556,8 @@ def main():
                     1E-5,1E-3,
                     #1E-5,#1E-5,
                     2.54E-3,9.40E-4,6.63E-4,
-                    8.25E-5,4.41E-3,4.73E-3,
+                    #8.25E-5,
+                    4.41E-3,4.73E-3,
                     5.01E-3,5.01E-3, 5.01E-3,5.01E-3,
                     5.01E-3,5.01E-3, 5.01E-3,1E-2, # !
                    ])
@@ -568,7 +570,8 @@ def main():
                     1E-5,1E-3,
                     #1E-5, #1E-5
                     1.11E-3,8.04E-5,3.79E-4,
-                    1.04E-5,2.19E-3,1.70E-3,
+                    #1.04E-5,
+                    2.19E-3,1.70E-3,
                     1E-5,1E-5,1.82E-5,1.19E-3, 
                     1E-5,4.96E-4,2.22E-3,1E-5, # !
                     ])
