@@ -50,7 +50,12 @@ def main():
     REALKV_e5step5E3 = run()
     REALKV_e5step1E3 = run()
     REALKV_step1E2 = run()
-    
+    REALKV_e25_kv1E3 = run()
+    REALKV_e100_kv1E3 = run()
+    REALKV_e25_kv5E3 = run()
+    REALKV_e100_kv5E3 = run()
+    REALKV_e05_kv8E3 = run()
+    REALKV_e05_kv1p2E2 = run()
  
     records =   [
                 CNTDIFF_base, 
@@ -93,7 +98,13 @@ def main():
                 REALKV_e5step1E2,
                 REALKV_e5step5E3,
                 REALKV_e5step1E3, 
-                REALKV_step1E2, 
+                REALKV_step1E2,
+                REALKV_e25_kv1E3,
+                REALKV_e100_kv1E3,
+                REALKV_e25_kv5E3,
+                REALKV_e100_kv5E3,
+                REALKV_e05_kv8E3,
+                REALKV_e05_kv1p2E2,
                 ] 
 
     expNames = [
@@ -138,6 +149,12 @@ def main():
                 '3DVISC_REALISTIC_run16',
                 '3DVISC_REALISTIC_run17',
                 '3DVISC_REALISTIC_run18',
+                '3DVISC_REALISTIC_run19',
+                '3DVISC_REALISTIC_run20',
+                '3DVISC_REALISTIC_run21',
+                '3DVISC_REALISTIC_run22',
+                '3DVISC_REALISTIC_run23',
+                '3DVISC_REALISTIC_run24',
                 ]
 
     paperNames = [
@@ -182,6 +199,12 @@ def main():
                 'Kv_$5\times10^{-3} \epsilon$5',
                 'Kv_$10^{-3} \epsilon$5',
                 'Kv_$10^{-2} step',
+                'Kv_$10^{-3} \epsilon$25',
+                'Kv_$10^{-3} \epsilon$100',
+                'Kv_$5$x$10^{-3} \epsilon$25',
+                'Kv_$5$x$10^{-3} \epsilon$100',
+                'Kv_$8$x$10^{-3} \epsilon$5',
+                'Kv_$1.2$x$10^{-2} \epsilon$5',
                 ]
 
 
@@ -212,6 +235,13 @@ def main():
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 #'3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
@@ -269,15 +299,25 @@ def main():
                 'run16',
                 'run17',
                 'run18',
+                'run19',
+                'run20',
+                'run21',
+                'run22',
+                'run23',
+                'run24',
                 ]
 
 
-    markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,#11,
-                   11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11]
-    markerstyles = ['o','^','d','^','d','v','^','v','*','P','v','*','d','^','D',
-                    'p','v','*','*','d','P','D','p','D','d',#'^',
-                    'v','*','P','^','v','*','P',
-                    'd','D','o','p','^','v','*','P']
+    markersizes = [13,11,9,13,11,9,13,13,11,9,
+                   14,14,11,11,11,11,11,11,11,11,
+                   11,11,11,11,11,11,11,11,11,11,
+                   11,11,11,11,11,11,11,11,11,11,
+                   11,11,11,11,11,11]
+    markerstyles = ['o','^','d','^','d','v','^','v','*','P',
+                    'v','*','d','^','D','p','v','*','*','d',
+                    'P','D','p','D','d','^',#'^',
+                    'v','*','P','^','v','*','P','d','D','o',
+                    'p','^','v','*','P','p','^','v','*','P']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -324,6 +364,12 @@ def main():
                     '$\kappa_{can}=5\times10^{-3}$, $\epsilon=5$',
                     '$\kappa_{can}=10^{-3}$, $\epsilon=5$',
                     '$\kappa_{can}=10^{-2}$, step',
+                    '$\kappa_{can}=1\times10^{-3}$, $\epsilon=25$',
+                    '$\kappa_{can}=1\times10^{-3}$, $\epsilon=100$',
+                    '$\kappa_{can}=5\times10^{-3}$, $\epsilon=25$',
+                    '$\kappa_{can}=5\times10^{-3}$, $\epsilon=100$',
+                    '$\kappa_{can}=8\times10^{-3}$, $\epsilon=5$',
+                    '$\kappa_{can}=1.2\times10^{-2}$, $\epsilon=5$',
                     ]
     
     
@@ -369,6 +415,12 @@ def main():
                    '$\kappa_{can}=5\times10^{-3}$, $\epsilon=5$',
                    '$\kappa_{can}=10^{-3}$, $\epsilon=5$',
                    '$\kappa_{can}=10^{-2}$, step',
+                   '$\kappa_{can}=1\times10^{-3}$, $\epsilon=25$',
+                   '$\kappa_{can}=1\times10^{-3}$, $\epsilon=100$',
+                   '$\kappa_{can}=5\times10^{-3}$, $\epsilon=25$',
+                   '$\kappa_{can}=5\times10^{-3}$, $\epsilon=100$',
+                   '$\kappa_{can}=8\times10^{-3}$, $\epsilon=5$',
+                   '$\kappa_{can}=1.2\times10^{-2}$, $\epsilon=5$',
                    ]
 
     colours = [ #"pine",
@@ -403,6 +455,12 @@ def main():
                 'olive',
                 'olive',
                # 'olive',
+                'olive',
+                'olive',
+                'olive',
+                'olive',
+                'olive',
+                'olive',
                 'olive',
                 'olive',
                 'olive',
@@ -458,6 +516,12 @@ def main():
                 'mustard yellow',
                 'mustard yellow',
                 'mustard yellow',
+                'mustard yellow',
+                'mustard yellow',
+                'mustard yellow',
+                'mustard yellow',
+                'mustard yellow',
+                'mustard yellow',
                 ]# 
 
 
@@ -502,6 +566,12 @@ def main():
                     0.0055 ,
                     0.0055 ,
                     0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
@@ -518,6 +588,8 @@ def main():
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,
                    ])
 
     Us = np.array([0.360,0.360,0.360,
@@ -534,6 +606,8 @@ def main():
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360, 0.360,
+                   0.360, 0.360, 0.360, 0.360,
+                   0.360, 0.360,
                    ])
 
     Us_model = np.array([0.360,
@@ -563,7 +637,9 @@ def main():
                          0.360,0.360,#0.360,
                          0.360,0.360,0.360,0.360,
                          0.360,0.360,0.360,0.360,
-                         0.360,0.360,0.360,0.360])
+                         0.360,0.360,0.360,0.360,
+                         0.360,0.360,0.360,0.360,
+                         0.360,0.360,])
 
     Us_HA = np.array([0.364,   
                       0.361,
@@ -592,7 +668,9 @@ def main():
                       0.364,0.364,#0.364,
                       0.364,0.364,0.364, 0.364,
                       0.364,0.364,0.364, 0.364,
-                      0.364,0.364,0.364, 0.364])
+                      0.364,0.364,0.364, 0.364,
+                      0.364,0.364,0.364, 0.364,
+                      0.364,0.364,])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
@@ -607,7 +685,9 @@ def main():
                     4.41E-3,4.73E-3,
                     5.01E-3,5.01E-3, 5.01E-3,5.01E-3,
                     5.01E-3,5.01E-3, 5.01E-3,1E-2,
-                    5.01E-3,5.01E-3, 5.01E-3,1E-2,# !
+                    5.01E-3,5.01E-3, 5.01E-3,1E-2,
+                    5.01E-3,5.01E-3, 5.01E-3,1E-2,
+                    5.01E-3,5.01E-3,# !
                    ])
     Kbg = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
@@ -622,7 +702,9 @@ def main():
                     2.19E-3,1.70E-3,
                     1E-5,1E-5,1.82E-5,1.19E-3, 
                     1E-5,4.96E-4,2.22E-3,1E-5, # !
+                    1E-5,4.96E-4,2.22E-3,1E-5,
                     1E-5,4.96E-4,2.22E-3,1E-5, # !
+                    1E-5,4.96E-4,# !
                     ])
 
 
