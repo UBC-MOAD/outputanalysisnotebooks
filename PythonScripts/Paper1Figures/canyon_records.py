@@ -56,7 +56,11 @@ def main():
     REALKV_e100_kv5E3 = run()
     REALKV_e05_kv8E3 = run()
     REALKV_e05_kv1p2E2 = run()
- 
+    REALKV_e05_kv2p5E3 = run()
+    REALKV_e05_kv5E4 = run()
+    REALKV_e05_kv1E2_nosmooth = run()
+  
+
     records =   [
                 CNTDIFF_base, 
 	            CNTDIFF_kv4, 
@@ -96,8 +100,8 @@ def main():
                 REALKV_e150, 
                 REALKV_e05,
                 REALKV_e5step1E2,
-                REALKV_e5step5E3,
-                REALKV_e5step1E3, 
+                REALKV_e5step1E3,
+                REALKV_e5step5E3, 
                 REALKV_step1E2,
                 REALKV_e25_kv1E3,
                 REALKV_e100_kv1E3,
@@ -105,6 +109,9 @@ def main():
                 REALKV_e100_kv5E3,
                 REALKV_e05_kv8E3,
                 REALKV_e05_kv1p2E2,
+                REALKV_e05_kv2p5E3,
+                REALKV_e05_kv5E4,
+                REALKV_e05_kv1E2_nosmooth,
                 ] 
 
     expNames = [
@@ -155,6 +162,9 @@ def main():
                 '3DVISC_REALISTIC_run22',
                 '3DVISC_REALISTIC_run23',
                 '3DVISC_REALISTIC_run24',
+                '3DVISC_REALISTIC_run25',
+                '3DVISC_REALISTIC_run26',
+                '3DVISC_REALISTIC_run27',
                 ]
 
     paperNames = [
@@ -196,8 +206,8 @@ def main():
                 'Kv_$\epsilon$150',
                 'Kv_$\epsilon$5',
                 'Kv_$10^{-2} \epsilon$5',
-                'Kv_$5\times10^{-3} \epsilon$5',
                 'Kv_$10^{-3} \epsilon$5',
+                'Kv_$5\times10^{-3} \epsilon$5',
                 'Kv_$10^{-2} step',
                 'Kv_$10^{-3} \epsilon$25',
                 'Kv_$10^{-3} \epsilon$100',
@@ -205,7 +215,10 @@ def main():
                 'Kv_$5$x$10^{-3} \epsilon$100',
                 'Kv_$8$x$10^{-3} \epsilon$5',
                 'Kv_$1.2$x$10^{-2} \epsilon$5',
-                ]
+                'Kv_$2.5$x$10^{-3} \epsilon$5',
+                'Kv_$5$x$10^{-4} \epsilon$5',
+                'Kv_$10^{-2} \epsilon$5, no smooth',
+                 ]
 
 
     expCodes = ['CNTDIFF',
@@ -235,6 +248,9 @@ def main():
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 #'3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
+                '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
@@ -305,6 +321,9 @@ def main():
                 'run22',
                 'run23',
                 'run24',
+                'run25',
+                'run26',
+                'run27',
                 ]
 
 
@@ -312,12 +331,12 @@ def main():
                    14,14,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
-                   11,11,11,11,11,11]
+                   11,11,11,11,11,11,11,11,11]
     markerstyles = ['o','^','d','^','d','v','^','v','*','P',
                     'v','*','d','^','D','p','v','*','*','d',
                     'P','D','p','D','d','^',#'^',
                     'v','*','P','^','v','*','P','d','D','o',
-                    'p','^','v','*','P','p','^','v','*','P']
+                    'p','^','v','*','P','p','^','v','*','P','D','d','^']
 
     exp_labels = [  #'$\kappa$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -370,8 +389,11 @@ def main():
                     '$\kappa_{can}=5\times10^{-3}$, $\epsilon=100$',
                     '$\kappa_{can}=8\times10^{-3}$, $\epsilon=5$',
                     '$\kappa_{can}=1.2\times10^{-2}$, $\epsilon=5$',
+                    '$\kappa_{can}=2.5\times10^{-3}$, $\epsilon=5$',
+                    '$\kappa_{can}=5\times10^{-4}$, $\epsilon=5$',
+                    '$\kappa_{can}=10^{-2}$, $\epsilon=5$, no smooth',
                     ]
-    
+
     
     exp_labels2 = [  'base case',
                     r'$\uparrow$ $\kappa_{bg}$',
@@ -421,6 +443,9 @@ def main():
                    '$\kappa_{can}=5\times10^{-3}$, $\epsilon=100$',
                    '$\kappa_{can}=8\times10^{-3}$, $\epsilon=5$',
                    '$\kappa_{can}=1.2\times10^{-2}$, $\epsilon=5$',
+                   '$\kappa_{can}=2.5\times10^{-3}$, $\epsilon=5$',
+                   '$\kappa_{can}=5\times10^{-4}$, $\epsilon=5$',
+                   '$\kappa_{can}=10^{-2}$, $\epsilon=5$, no smooth',
                    ]
 
     colours = [ #"pine",
@@ -473,7 +498,10 @@ def main():
                 'olive',
                 'olive',
                 'olive',
-                'olive',]# 
+                'olive',
+                'olive',
+                'olive',
+                'olive']# 
 
     colours2 = ['black',#
                 'silver',
@@ -512,6 +540,9 @@ def main():
                 'aquamarine',
                 'aquamarine',
                 'aquamarine',
+                'mustard yellow',
+                'mustard yellow',
+                'mustard yellow',
                 'mustard yellow',
                 'mustard yellow',
                 'mustard yellow',
@@ -572,6 +603,9 @@ def main():
                     0.0055 ,
                     0.0055 ,
                     0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
+                    0.0055 ,
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
@@ -589,6 +623,7 @@ def main():
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,
                    ])
 
@@ -607,6 +642,7 @@ def main():
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360, 0.360,
+                   0.360, 0.360, 0.360,
                    0.360, 0.360,
                    ])
 
@@ -639,6 +675,7 @@ def main():
                          0.360,0.360,0.360,0.360,
                          0.360,0.360,0.360,0.360,
                          0.360,0.360,0.360,0.360,
+                         0.360,0.360,0.360,
                          0.360,0.360,])
 
     Us_HA = np.array([0.364,   
@@ -670,6 +707,7 @@ def main():
                       0.364,0.364,0.364, 0.364,
                       0.364,0.364,0.364, 0.364,
                       0.364,0.364,0.364, 0.364,
+                      0.364,0.364, 0.364,
                       0.364,0.364,])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
@@ -687,6 +725,7 @@ def main():
                     5.01E-3,5.01E-3, 5.01E-3,1E-2,
                     5.01E-3,5.01E-3, 5.01E-3,1E-2,
                     5.01E-3,5.01E-3, 5.01E-3,1E-2,
+                    5.01E-3,5.01E-3,1E-2,
                     5.01E-3,5.01E-3,# !
                    ])
     Kbg = np.array([1E-5,1E-4,1E-3,
@@ -704,6 +743,7 @@ def main():
                     1E-5,4.96E-4,2.22E-3,1E-5, # !
                     1E-5,4.96E-4,2.22E-3,1E-5,
                     1E-5,4.96E-4,2.22E-3,1E-5, # !
+                    1E-5,4.96E-4,1E-5, # !
                     1E-5,4.96E-4,# !
                     ])
 
