@@ -36,17 +36,17 @@ ys = [262,220,262,227,100,245,245,262,220]
 xs = [60,60,180,180,180,160,200,300,300]
 stations = ['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 
-#All experiments in CNT and 3D including no canyon one (run07)
-expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run25',
-           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run26',           
+expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run23',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run24',
            '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run27',
            ]
-           
-expNames = ['3DVISC_REALISTIC_run25',
-            '3DVISC_REALISTIC_run26',	    
+
+expNames = ['3DVISC_REALISTIC_run23',
+            '3DVISC_REALISTIC_run24',
             '3DVISC_REALISTIC_run27',
-           ]
-             
+            ]
+
+
 times = [0,2,4,6,8,10,12,14,16,18]
 
 for exp,runs in zip(expList,expNames):
