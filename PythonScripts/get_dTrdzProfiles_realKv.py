@@ -36,14 +36,38 @@ ys = [262,220,262,227,100,245,245,262,220]
 xs = [60,60,180,180,180,160,200,300,300]
 stations = ['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 
-expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run23',
-           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run24',
-           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run27',
-           ]
-
-expNames = ['3DVISC_REALISTIC_run23',
-            '3DVISC_REALISTIC_run24',
-            '3DVISC_REALISTIC_run27',
+expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run07',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run11',           
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run08',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run09',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run12',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run10',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run13',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run17',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run21',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run22',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run25',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run16',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run19',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run20',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run26',
+	   ]
+           
+expNames = ['3DVISC_REALISTIC_run07',
+            '3DVISC_REALISTIC_run11',	    
+            '3DVISC_REALISTIC_run08',
+            '3DVISC_REALISTIC_run09',
+            '3DVISC_REALISTIC_run12',
+            '3DVISC_REALISTIC_run10',
+            '3DVISC_REALISTIC_run13',
+            '3DVISC_REALISTIC_run17',
+            '3DVISC_REALISTIC_run21',
+            '3DVISC_REALISTIC_run22',
+            '3DVISC_REALISTIC_run25',
+            '3DVISC_REALISTIC_run16',
+            '3DVISC_REALISTIC_run19',
+            '3DVISC_REALISTIC_run20',
+            '3DVISC_REALISTIC_run26',
             ]
 
 
