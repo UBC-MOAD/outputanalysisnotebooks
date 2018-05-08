@@ -18,6 +18,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Cross-shelf_density_maps.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Cross-shelf_density_maps.ipynb)  
     
+* ##[Cross-shelf_w_maps.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Cross-shelf_w_maps.ipynb)  
+    
 
 ##License
 
