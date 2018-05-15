@@ -32,9 +32,9 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [262,220,262,227,100,245,245,262,220]
-xs = [60,60,180,180,180,160,200,300,300]
-stations = ['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
+ys = [262,220,262,227,100,245,245,262,220,236]
+xs = [60,60,180,180,180,160,200,300,300, 213]
+stations = ['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl','UpW']
 
 
 expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run07',
