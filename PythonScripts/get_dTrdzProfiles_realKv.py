@@ -32,11 +32,16 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [262,220,262,227,100,245,245,262,220,236]
-xs = [60,60,180,180,180,160,200,300,300, 215]
-stations = ['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl','UpW']
+ys = [261]#262,220,262,227,100,245,245,262,220,236]
+xs = [200]#60,60,180,180,180,160,200,300,300, 215]
+stations = ['UwH']#['UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl','UpW']
 
-expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run07',
+expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run01',
+	   '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run02',
+	   '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run03',
+	   '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run05',
+	   '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run06',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run07',
            '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run11',           
            '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run08',
            '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run09',
@@ -51,9 +56,17 @@ expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run07',
            '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run19',
            '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run20',
            '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run26',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run24',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run27',
+           '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run23',
 	   ]
            
-expNames = ['3DVISC_REALISTIC_run07',
+expNames = ['3DVISC_REALISTIC_run01',
+	    '3DVISC_REALISTIC_run02',
+	    '3DVISC_REALISTIC_run03',
+	    '3DVISC_REALISTIC_run05',
+	    '3DVISC_REALISTIC_run06',
+            '3DVISC_REALISTIC_run07',
             '3DVISC_REALISTIC_run11',	    
             '3DVISC_REALISTIC_run08',
             '3DVISC_REALISTIC_run09',
@@ -68,7 +81,11 @@ expNames = ['3DVISC_REALISTIC_run07',
             '3DVISC_REALISTIC_run19',
             '3DVISC_REALISTIC_run20',
             '3DVISC_REALISTIC_run26',
+            '3DVISC_REALISTIC_run24',
+            '3DVISC_REALISTIC_run27',
+            '3DVISC_REALISTIC_run23',
             ]
+
 
 
 times = [0,2,4,6,8,10,12,14,16,18]

@@ -740,6 +740,7 @@ def main():
                     8E-3, 1.2E-2, 2.5E-3, 5E-4, 1E-2, 
                     0,
                     ])
+  
     Kbg = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
@@ -757,12 +758,23 @@ def main():
                     1E-5,
                     ])
 
-
+    epsilon = np.array([5,5,5,
+                        5,5,5,#5,5,
+                        5,5,5,5,#5,
+                        5,5,5,5,5,5,
+                        5,5,5,
+                        5,5,
+                        5,5,
+                        #5, 5
+                        5,5,5,
+                       #5,
+                        5,5,
+                        10,25,50,100,15,75,150,5,5, 5,5,5,25,100,25,100,5,5,5,5,5,5])
 
 
     # Fill the fields of the records
-    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,
-                                                                                           markersizes,markerstyles):
+    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,
+                                                                                           markersizes,markerstyles, epsilon):
         record.name = expName
         record.paperName = paperName        
         record.exp_code = expCode
@@ -780,5 +792,6 @@ def main():
         record.u_ha = uha
         record.kv = kvo
         record.kbg = kbgo
+        record.epsilon = eps
 
     return(records)
