@@ -32,9 +32,9 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [261]#262,220,262,227,100,245,245,262,220]
+ys = [267]#262,220,262,227,100,245,245,262,220]
 xs = [200]#60,60,180,180,180,160,200,300,300]
-stations = ['UwH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
+stations = ['UpH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 
 #All experiments in CNT and 3D including no canyon one (run07)
 expList = ['/data/kramosmu/results/TracerExperiments/CNTDIFF/run36',

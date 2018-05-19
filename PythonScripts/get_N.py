@@ -33,7 +33,7 @@ bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
 ys = [#262,220,262,227,100,245,
-      261,
+      267,
       #245,262,220,
       ]
 xs = [#60,60,180,180,180,160,
@@ -41,7 +41,7 @@ xs = [#60,60,180,180,180,160,
       #200,300,300,
       ]
 stations = [#'UpSh','UpSl','CH','CM','CO','UpC',
-            'UwH'#'DnC','DnSh','DnSl',
+            'UpH'#'DnC','DnSh','DnSl',
             ]
 
 #All experiments in CNT and 3D including no canyon one (run07)
