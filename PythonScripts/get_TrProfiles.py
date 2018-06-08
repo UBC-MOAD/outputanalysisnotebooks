@@ -32,10 +32,10 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [267]#[262,220,262,227,100,245,245,262,220]
+ys = [261]#[262,220,262,227,100,245,245,262,220]
 xs = [200]#[60,60,180,180,180,160,200,300,300]
 
-stations = ['UpH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
+stations = ['UwH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 
 tracers = ['Tr1']
 
@@ -54,6 +54,7 @@ expList = ['/data/kramosmu/results/TracerExperiments/CNTDIFF/run36',
            '/data/kramosmu/results/TracerExperiments/CNTDIFF/run73',
            '/data/kramosmu/results/TracerExperiments/CNTDIFF/run75',
            '/data/kramosmu/results/TracerExperiments/CNTDIFF/run76', 
+           '/data/kramosmu/results/TracerExperiments/CNTDIFF/run79',
            #'/data/kramosmu/results/TracerExperiments/FORCING_SPNDN/run01',
            #'/data/kramosmu/results/TracerExperiments/EW_OBCS/run06',
            '/data/kramosmu/results/TracerExperiments/LOW_BF/run01',
@@ -82,6 +83,7 @@ expNames = ['CNTDIFF_run36',
            'CNTDIFF_run73',
            'CNTDIFF_run75', 
            'CNTDIFF_run76',
+           'CNTDIFF_run79',
            #'FORCING_SPNDN_run01',
            #'EW_OBCS_run06',
            'LOW_BF_run01',

@@ -12,7 +12,11 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[FirstLook_EpsilonRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/FirstLook_EpsilonRuns.ipynb)  
     
+* ##[Scaling_paper1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Scaling_paper1.ipynb)  
+    
 * ##[paper1_scaling_with_realistic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/paper1_scaling_with_realistic.ipynb)  
+    
+* ##[Concentration_near_head.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Concentration_near_head.ipynb)  
     
 * ##[VerticalWaterFlux.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/VerticalWaterFlux.ipynb)  
     

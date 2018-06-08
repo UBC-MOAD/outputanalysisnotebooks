@@ -15,6 +15,7 @@ def main():
     CNTDIFF_N63 = run()
     CNTDIFF_N74 = run()
     CNTDIFF_N45 = run()
+    CNTDIFF_N50 = run()
     CNTDIFF_f100 = run()
     CNTDIFF_f76 = run()
     CNTDIFF_f86 = run()
@@ -69,6 +70,7 @@ def main():
                 CNTDIFF_N63, 
                 CNTDIFF_N74,
                 CNTDIFF_N45,
+                CNTDIFF_N50,
                 CNTDIFF_f100,
                 CNTDIFF_f76,
                 CNTDIFF_f86,
@@ -123,6 +125,7 @@ def main():
                 'CNTDIFF_run45',
                 'CNTDIFF_run73',
                 'CNTDIFF_run75',
+                'CNTDIFF_run79',
                 'CNTDIFF_run67',
                 'CNTDIFF_run51',
                 'CNTDIFF_run69',
@@ -177,6 +180,7 @@ def main():
                 'higher\_N',
                 'highest\_N',
                 'lower\_N',
+                'medium\_N',
                 'higher\_f',
                 'low\_f',
                 'lower\_f',
@@ -226,6 +230,7 @@ def main():
 
 
     expCodes = ['CNTDIFF',
+                'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
                 'CNTDIFF',
@@ -285,6 +290,7 @@ def main():
                 'run45',
                 'run73',
                 'run75',
+                'run79',
                 'run67',
                 'run51',
                 'run69',
@@ -333,12 +339,12 @@ def main():
                 ]
 
 
-    markersizes = [13,11,9,13,11,9,13,13,11,9,
+    markersizes = [13,11,9,13,11,9,13,13,11,9,11,
                    14,14,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11]
-    markerstyles = ['o','^','d','^','d','v','^','v','*','P',
+    markerstyles = ['o','^','d','^','d','v','P','^','v','*','P',
                     'v','*','d','^','D','p','v','*','*','d',
                     'P','D','p','D','d','^','v','*','v','*',
                     'D','o','d','P','p','^','^','^','^','^',
@@ -353,6 +359,7 @@ def main():
                     #'$N_0$=3.0x10$^{-3}$',
                     'highest $N$',
                     'lower $N$',
+                    'medium $N$',
                     'higher $f$',
                     'lower $f$',
                     #'f=4.84x10$^{-5}$',
@@ -407,6 +414,7 @@ def main():
                     r'$\Uparrow$ $\kappa_{bg}$',
                     r'$\uparrow$ $N_0$',
                     r'$\Uparrow$ $N_0$',
+                    r'$\Downarrow$ $N_0$',
                     r'$\downarrow$ $N_0$',
                     r'$\uparrow$ $f$',
                     r'$\Downarrow$ $f$',
@@ -448,11 +456,11 @@ def main():
                    '$\kappa_{can}=1\times10^{-3}$, $\epsilon=100$',
                    '$\kappa_{can}=5\times10^{-3}$, $\epsilon=25$',
                    '$\kappa_{can}=5\times10^{-3}$, $\epsilon=100$',
-                   '$\kappa_{can}=8\times10^{-3}$, $\epsilon=5$',
-                   '$\kappa_{can}=1.2\times10^{-2}$, $\epsilon=5$',
-                   '$\kappa_{can}=2.5\times10^{-3}$, $\epsilon=5$',
-                   '$\kappa_{can}=5\times10^{-4}$, $\epsilon=5$',
-                   '$\kappa_{can}=10^{-2}$, $\epsilon=5$',
+                   r'$\kappa_{can}=8\times10^{-3}$, $\epsilon=5$',
+                   r'$\kappa_{can}=1.2\times10^{-2}$, $\epsilon=5$',
+                   r'$\kappa_{can}=2.5\times10^{-3}$, $\epsilon=5$',
+                   r'$\kappa_{can}=5 \times 10^{-4}$, $\epsilon=5$',
+                   r'$\kappa_{can}=10^{-2}$',
                    r'$\Uparrow \Uparrow$  $\kappa_{can}$, correct z levs',
                    ]
 
@@ -465,6 +473,7 @@ def main():
                 #"grey",
                 'light grey',
                 'steel',
+                'grey',
                 "navy blue",
                 "blue",
                 #"sky blue",
@@ -515,6 +524,7 @@ def main():
     colours2 = ['black',#
                 'silver',
                 'slate grey',# 
+                'dull pink',
                 'dull pink',
                 'dull pink',
                 'dull pink',
@@ -571,7 +581,8 @@ def main():
                     0.0055 , 
                     0.0063 , 
                     0.0074 , 
-                    0.0046 , 
+                    0.0046 ,
+                    0.0050 ,
                     0.0055 , 
                     0.0055 , 
                     0.0055 , 
@@ -620,7 +631,7 @@ def main():
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,9.66E-5,9.66E-5,#9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    1.0E-4,7.68E-5,#4.84E-5,
                    8.6E-5,6.4E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
@@ -639,7 +650,7 @@ def main():
                    ])
 
     Us = np.array([0.360,0.360,0.360,
-                   0.360,0.360,0.360,#0.358,0.358,
+                   0.360,0.360,0.360,0.360,
                    0.360,0.360,0.360,0.360,#0.358,
                    0.360,0.360,0.360,0.360,0.360,0.360,
                    0.309,0.256,
@@ -664,6 +675,7 @@ def main():
                          0.394,
                          0.342,
                          0.356,
+                         0.360,
                          0.387,
                          0.374,
                          0.406,
@@ -696,6 +708,7 @@ def main():
                       0.399 ,
                       0.344 ,
                       0.359 ,
+                      0.359 ,
                       0.392 ,
                       0.378 ,
                       0.414 ,
@@ -722,7 +735,7 @@ def main():
                       0.364,0.364,0.364,])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
-                    1E-5,1E-5,1E-5,#1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
                     1E-3,1E-4,1E-4,1E-3,5E-3,1E-2,
                     1E-5,1E-5,1E-5,
@@ -742,7 +755,7 @@ def main():
                     ])
   
     Kbg = np.array([1E-5,1E-4,1E-3,
-                    1E-5,1E-5,1E-5,#1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
                     1E-7,1E-7,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
@@ -759,7 +772,7 @@ def main():
                     ])
 
     epsilon = np.array([5,5,5,
-                        5,5,5,#5,5,
+                        5,5,5,5,
                         5,5,5,5,#5,
                         5,5,5,5,5,5,
                         5,5,5,

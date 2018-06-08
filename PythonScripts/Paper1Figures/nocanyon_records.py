@@ -17,7 +17,8 @@ def main():
     CNTDIFF_kv3NoC= run()
     CNTDIFF_N63NoC = run()
     CNTDIFF_N74NoC = run()
-    CNTDIFF_N45NoC = run()     
+    CNTDIFF_N45NoC = run() 
+    CNTDIFF_N50NoC = run() 
     CNTDIFF_f100NoC = run()
     CNTDIFF_f76NoC = run()
     CNTDIFF_f86NoC = run()
@@ -36,8 +37,33 @@ def main():
     LOWEST_BF_f70NoC = run()
     LOWEST_BF_kv3NoC = run()
     REALKV_MTY_botNoC = run()
+    REALKV_EEL_botNoC = run()
     REALKV_MTY_rimNoC = run()
-    REALKV_EEL_rimNoC = run()
+    #REALKV_EEL_rimNoC = run()
+    REALKV_ASC_botNoC = run()
+    REALKV_ASC_rimNoC = run()
+    REALKV_e10NoC = run()
+    REALKV_e25NoC = run()
+    REALKV_e50NoC = run()
+    REALKV_e100NoC = run()
+    REALKV_e05NoC = run()
+    REALKV_e15NoC = run()
+    REALKV_e75NoC = run()
+    REALKV_e150NoC = run()
+    REALKV_e5step1E2NoC = run()
+    REALKV_e5step5E3NoC = run()
+    REALKV_e5step1E3NoC = run()
+    REALKV_step1E2NoC = run()
+    REALKV_e25_kv1E3NoC = run()
+    REALKV_e100_kv1E3NoC = run()
+    REALKV_e25_kv5E3NoC = run()
+    REALKV_e100_kv5E3NoC = run()
+    REALKV_e05_kv8E3NoC = run()
+    REALKV_e05_kv1p2E2NoC = run()
+    REALKV_e05_kv2p5E3NoC = run()
+    REALKV_e05_kv5E4NoC = run()
+    REALKV_e05_kv1E2_nosmoothNoC = run()
+    REALKV_kv1E2_correctZNoC = run()
   
 
     recordsNoC =   [CNTDIFF_baseNoC, 
@@ -46,6 +72,7 @@ def main():
                     CNTDIFF_N63NoC, 
                     CNTDIFF_N74NoC,
                     CNTDIFF_N45NoC,
+                    CNTDIFF_N50NoC,
                     CNTDIFF_f100NoC,
                     CNTDIFF_f76NoC,
                     CNTDIFF_f86NoC,
@@ -64,8 +91,33 @@ def main():
                     LOWEST_BF_f70NoC,
                     LOWEST_BF_kv3NoC,
                     REALKV_MTY_botNoC,
+                    REALKV_EEL_botNoC,
                     REALKV_MTY_rimNoC,
-                    REALKV_EEL_rimNoC]
+                    #REALKV_EEL_rimNoC,
+                    REALKV_ASC_botNoC,
+                    REALKV_ASC_rimNoC,
+                    REALKV_e10NoC, 
+                    REALKV_e25NoC,
+                    REALKV_e50NoC, 
+                    REALKV_e100NoC,
+                    REALKV_e15NoC, 
+                    REALKV_e75NoC,
+                    REALKV_e150NoC, 
+                    REALKV_e05NoC,
+                    REALKV_e5step1E2NoC,
+                    REALKV_e5step1E3NoC,
+                    REALKV_e5step5E3NoC, 
+                    REALKV_step1E2NoC,
+                    REALKV_e25_kv1E3NoC,
+                    REALKV_e100_kv1E3NoC,
+                    REALKV_e25_kv5E3NoC,
+                    REALKV_e100_kv5E3NoC,
+                    REALKV_e05_kv8E3NoC,
+                    REALKV_e05_kv1p2E2NoC,
+                    REALKV_e05_kv2p5E3NoC,
+                    REALKV_e05_kv5E4NoC,
+                    REALKV_e05_kv1E2_nosmoothNoC,
+                    REALKV_kv1E2_correctZNoC]
 
     expNamesNoC =['CNTDIFF_run42',
                   'CNTDIFF_run41',
@@ -73,6 +125,7 @@ def main():
                   'CNTDIFF_run48',
                   'CNTDIFF_run74',
                   'CNTDIFF_run76',
+                  'CNTDIFF_run80',
                   'CNTDIFF_run68',
                   'CNTDIFF_run53',
                   'CNTDIFF_run70',
@@ -93,9 +146,37 @@ def main():
                   'CNTDIFF_run42',
                   'CNTDIFF_run42',
                   'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
+                  'CNTDIFF_run42',
                    ]
 
     expCodesNoC =['CNTDIFF',
+                  'CNTDIFF',
                   'CNTDIFF',
                   'CNTDIFF',
                   'CNTDIFF',
@@ -121,6 +202,33 @@ def main():
                   'CNTDIFF',
                   'CNTDIFF',
                   'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
+                  'CNTDIFF',
                   
                   ]
 
@@ -130,6 +238,7 @@ def main():
                   'run48',
                   'run74',
                   'run76',
+                  'run80',
                   'run68',
                   'run53',
                   'run70',
@@ -150,14 +259,45 @@ def main():
                   'run42',
                   'run42',
                   'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
+                  'run42',
                   
                   ]
 
 
  
     markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
-                   11,11,11,11]#,11]
-    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', '^','*','*','*','*','*','*','*','^','^','^']#'o']
+                   11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,
+                   11,11,11,11,11,11,11,11,11]#,11]
+    markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', 
+                    '^','*','*','*','*','*','*','*','^','^','^','^','^','^','^',
+                    '^','^','^','^','^','^','^','^',
+                   '^','^','^','^','^','^','^','^','^','^','^','^','^','^','^']#'o']
 
     exp_labels = [  'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
                     '$\kappa$=10$^{-4}$',
@@ -165,6 +305,7 @@ def main():
                     '$N_0$=6.3x10$^{-3}$',
                     '$N_0$=7.4x10$^{-3}$',
                     '$N_0$=4.5x10$^{-3}$',
+                    '$N_0$=5.0x10$^{-3}$',
                     'f=1.0x$10^{-4}$',
                     'f=7.68x10$^{-5}$',
                     'f=8.6x10$^{-5}$',
@@ -185,7 +326,33 @@ def main():
                     '$\kappa$=10$^{-5}$',
                     '$\kappa$=10$^{-5}$',
                     '$\kappa$=10$^{-5}$',
-                    #'Ext shelf 3x',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
+                    '$\kappa$=10$^{-5}$',
                     ]
 
 
@@ -195,6 +362,7 @@ def main():
                 'slate grey',
                 'light grey',
                 'steel',
+                'grey',
                 "navy blue",
                 "blue",
                 "light blue",
@@ -215,23 +383,61 @@ def main():
                 'yellow',
                 'gold',
                 'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                'yellow',
+                'gold',
+                'light brown',
+                
                 ]# 
 
 
     Nos = np.array([5.5E-3,5.5E-3,5.5E-3,
                     6.3E-3,
-                    7.4E-3,4.5E-3,
+                    7.4E-3,4.5E-3,5.0E-3,
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,
                     4.5E-3,7.4E-3,
                     5.5E-3,5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,
+
 
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    1.0E-4,7.68E-5,
                    8.6E-5,6.4E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,9.66E-5,
@@ -239,10 +445,19 @@ def main():
                    9.66E-5,9.66E-5,
                    7.0E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,
                    ])
 
     Us = np.array([0.360,0.360,0.360,
-                   0.360,0.360,0.360,#0.358,0.358,
+                   0.360,0.360,0.360,0.360,#0.358,0.358,
                    0.360,0.360,0.360,0.360,#0.358,
                    0.360,0.360,0.360,0.360,0.360,0.360,
                    0.309,0.256,
@@ -250,25 +465,51 @@ def main():
                    0.134,0.134,
                    0.134,0.134,
                    0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,
                    ])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
-                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,
                     1E-3,1E-4,1E-3,1E-4,5E-3,1E-2,
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,
                     1E-5,1E-3,
                     1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
                     ])
 
     Kbg = np.array([1E-5,1E-4,1E-3,
-                    1E-5,1E-5,1E-5,#1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,#1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,#1E-5,
                     1E-7,1E-7,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,
                     1E-5,1E-3,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
                     ])
 
