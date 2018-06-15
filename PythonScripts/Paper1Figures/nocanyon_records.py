@@ -64,6 +64,7 @@ def main():
     REALKV_e05_kv5E4NoC = run()
     REALKV_e05_kv1E2_nosmoothNoC = run()
     REALKV_kv1E2_correctZNoC = run()
+    CNTDIFF_N47NoC = run() 
   
 
     recordsNoC =   [CNTDIFF_baseNoC, 
@@ -117,7 +118,8 @@ def main():
                     REALKV_e05_kv2p5E3NoC,
                     REALKV_e05_kv5E4NoC,
                     REALKV_e05_kv1E2_nosmoothNoC,
-                    REALKV_kv1E2_correctZNoC]
+                    REALKV_kv1E2_correctZNoC,
+                    CNTDIFF_N47NoC] 
 
     expNamesNoC =['CNTDIFF_run42',
                   'CNTDIFF_run41',
@@ -170,9 +172,7 @@ def main():
                   'CNTDIFF_run42',
                   'CNTDIFF_run42',
                   'CNTDIFF_run42',
-                  'CNTDIFF_run42',
-                  'CNTDIFF_run42',
-                  'CNTDIFF_run42',
+                  'CNTDIFF_run82',
                    ]
 
     expCodesNoC =['CNTDIFF',
@@ -199,6 +199,7 @@ def main():
                   'LOWEST_BF',
                   'LOWEST_BF',
                   'LOWEST_BF',
+                  'CNTDIFF',
                   'CNTDIFF',
                   'CNTDIFF',
                   'CNTDIFF',
@@ -283,21 +284,18 @@ def main():
                   'run42',
                   'run42',
                   'run42',
-                  'run42',
-                  'run42',
-                  'run42',
-                  
+                  'run82',
                   ]
 
 
  
     markersizes = [13,11,9,13,11,9,13,13,11,9,14,14,11,11,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,
-                   11,11,11,11,11,11,11,11,11]#,11]
+                   11,11,11,11,11,11,11,11,11,11]
     markerstyles = ['o','o','o','d','d','d','p','p','p','p','^','^','^','^','^', 
                     '^','*','*','*','*','*','*','*','^','^','^','^','^','^','^',
                     '^','^','^','^','^','^','^','^',
-                   '^','^','^','^','^','^','^','^','^','^','^','^','^','^','^']#'o']
+                   '^','^','^','^','^','^','^','^','^','^','^','^','^','^','^','*']#'o']
 
     exp_labels = [  'base',#'$N_0$=5.5x10$^{-3}$,$\kappa$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
                     '$\kappa$=10$^{-4}$',
@@ -353,6 +351,7 @@ def main():
                     '$\kappa$=10$^{-5}$',
                     '$\kappa$=10$^{-5}$',
                     '$\kappa$=10$^{-5}$',
+                    '$N$=4.7$^{-3}$',
                     ]
 
 
@@ -410,7 +409,7 @@ def main():
                 'yellow',
                 'gold',
                 'light brown',
-                
+                'dull pink',
                 ]# 
 
 
@@ -431,7 +430,7 @@ def main():
                     5.5E-3,5.5E-3,5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,
                     5.5E-3,5.5E-3,5.5E-3,
-                    5.5E-3,5.5E-3,5.5E-3,
+                    5.5E-3,5.5E-3,5.5E-3,4.7E-3,
 
 
                     ])
@@ -453,7 +452,7 @@ def main():
                    9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    ])
 
     Us = np.array([0.360,0.360,0.360,
@@ -473,7 +472,7 @@ def main():
                    0.370,0.370,0.370,
                    0.370,0.370,0.370,
                    0.370,0.370,0.370,
-                   0.370,0.370,0.370,
+                   0.370,0.370,0.370,0.370,
                    ])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
@@ -492,7 +491,7 @@ def main():
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,
                     ])
 
     Kbg = np.array([1E-5,1E-4,1E-3,
@@ -510,7 +509,7 @@ def main():
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5,
                     ])
 
 

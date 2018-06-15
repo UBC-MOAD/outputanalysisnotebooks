@@ -61,6 +61,7 @@ def main():
     REALKV_e05_kv5E4 = run()
     REALKV_e05_kv1E2_nosmooth = run()
     REALKV_kv1E2_correctZ = run()
+    CNTDIFF_N47 = run()
   
 
     records =   [
@@ -116,6 +117,7 @@ def main():
                 REALKV_e05_kv5E4,
                 REALKV_e05_kv1E2_nosmooth,
                 REALKV_kv1E2_correctZ,
+                CNTDIFF_N47,
                 ] 
 
     expNames = [
@@ -171,6 +173,7 @@ def main():
                 '3DVISC_REALISTIC_run26',
                 '3DVISC_REALISTIC_run27',
                 '3DVISC_REALISTIC_run28',
+                'CNTDIFF_run81',
                 ]
 
     paperNames = [
@@ -226,6 +229,7 @@ def main():
                 'Kv_$5$x$10^{-4} \epsilon$5',
                 'Kv_$10^{-2} \epsilon$5, no smooth',
                 'highest\_Kc, correct Z levs',
+                'N_47',
                  ]
 
 
@@ -281,7 +285,7 @@ def main():
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
-                '3DVISC_REALISTIC',
+                'CNTDIFF',
                 ]
 
     runNums  = ['run38',
@@ -336,6 +340,7 @@ def main():
                 'run26',
                 'run27',
                 'run28',
+                'run81',
                 ]
 
 
@@ -343,12 +348,12 @@ def main():
                    14,14,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
-                   11,11,11,11,11,11,11,11,11,11]
+                   11,11,11,11,11,11,11,11,11,11,11]
     markerstyles = ['o','^','d','^','d','v','P','^','v','*','P',
                     'v','*','d','^','D','p','v','*','*','d',
                     'P','D','p','D','d','^','v','*','v','*',
                     'D','o','d','P','p','^','^','^','^','^',
-                    '*','o','*','o','^','^','^','^','^','.',]
+                    '*','o','*','o','^','^','^','^','^','.','*']
 
     exp_labels = [  #'$\K$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\K$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -400,12 +405,13 @@ def main():
                     r'$\K_{can}=1\times10^{-3}$, $\epsilon=100$',
                     r'$\K_{can}=5\times10^{-3}$, $\epsilon=25$',
                     r'$\K_{can}=5\times10^{-3}$, $\epsilon=100$',
-                    r'$\K_{can}=8\times10^{-3}$, $\epsilon=5$',
-                    r'$\K_{can}=1.2\times10^{-2}$, $\epsilon=5$',
-                    r'$\K_{can}=2.5\times10^{-3}$, $\epsilon=5$',
-                    r'$\K_{can}=5\times10^{-4}$, $\epsilon=5$',
-                    r'$\K_{can}=10^{-2}$, $\epsilon=5$',
-                    r'highest $\K_{can}$, correct z levs',
+                    r'$K_{can}=8\times10^{-3}$, $\epsilon=5$',
+                    r'$K_{can}=1.2\times10^{-2}$, $\epsilon=5$',
+                    r'$K_{can}=2.5\times10^{-3}$, $\epsilon=5$',
+                    r'$K_{can}=5\times10^{-4}$, $\epsilon=5$',
+                    r'$K_{can}=10^{-2}$, $\epsilon=5$',
+                    r'highest $K_{can}$, correct z levs',
+                    r'higher $N$',
                     ]
 
     
@@ -414,18 +420,18 @@ def main():
                     r'$\uparrow \uparrow$ $K_{bg}$',
                     r'$\uparrow$ $N_0$',
                     r'$\uparrow \uparrow$ $N_0$',
-                    r'$\downarrow \downarrow$ $N_0$',
+                    r'$\Downarrow$ $N_0$',
                     r'$\downarrow$ $N_0$',
                     r'$\uparrow f$',
                     r'$\downarrow \downarrow$ $f$',
                     r'$\downarrow f$',
                     r'$\Downarrow f$',
-                    r'$\Uparrow$ $K_{can}$,$\downarrow$$K_{bg}$',
+                    r'$\uparrow \uparrow K_{can}$,$\downarrow K_{bg}$',
                     r'$\uparrow$ $K_{can}$,$\downarrow$$K_{bg}$',
-                    r'$\uparrow \uparrow$  $\K_{can}$',
+                    r'$\uparrow \uparrow$  $K_{can}$',
                     r'$\Uparrow$ $K_{can}$',
                     r'$\uparrow$ $K_{can}$',
-                    r'$\Uparrow \Uparrow$  $\K_{can}$',
+                    r'$\Uparrow \Uparrow$  $K_{can}$',
                     r'$\downarrow$ U',
                     r'$\downarrow \downarrow$ U',
                     r'$\Downarrow$ U',
@@ -461,6 +467,7 @@ def main():
                     r'$\uparrow K_{can}$',
                     r'$\Uparrow \Uparrow K_{can}$',
                     r'$\Uparrow \Uparrow$  $K_{can}$, correct z levs',
+                    r'$\downarrow \downarrow N_0$',
                    ]
 
     colours = [ 'black',#
@@ -474,7 +481,7 @@ def main():
                 'light eggplant',
                 'light eggplant',
                 'light eggplant', 
-                'kelly green',
+                'cerulean',
                 'kelly green',
                 'kelly green',
                 'kelly green',
@@ -515,6 +522,7 @@ def main():
                 'pistachio',
                 'kelly green',
                 'kelly green',
+                'dull pink',
                 ]# 
 
     colours2 = ['black',#
@@ -528,7 +536,7 @@ def main():
                 'light eggplant',
                 'light eggplant',
                 'light eggplant', 
-                'kelly green',
+                'cerulean',
                 'kelly green',
                 'kelly green',
                 'kelly green',
@@ -569,6 +577,7 @@ def main():
                 'pistachio',
                 'cool green',
                 'cool green',
+                'dull pink',
                 ]# 
 
 
@@ -624,6 +633,7 @@ def main():
                     0.0055 ,
                     0.0055 ,
                     0.0055 ,
+                    0.0047 ,
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
@@ -642,7 +652,7 @@ def main():
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,9.66E-5,9.66E-5,
+                   9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    ])
 
     Us = np.array([0.360,0.360,0.360,
@@ -661,74 +671,114 @@ def main():
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360,
-                   0.360, 0.360,0.360,
+                   0.360, 0.360,0.360,0.360,
                    ])
 
-    Us_model = np.array([0.360,
-                         0.357, 
-                         0.320,
-                         0.375,
-                         0.394,
-                         0.342,
-                         0.356,
-                         0.360,
-                         0.387,
-                         0.374,
-                         0.406,
-                         0.352,
-                         0.356,
-                         0.357,
-                         0.352,
-                         0.345,
-                         0.345,
-                         0.309,
-                         0.256,
-                         0.134,
-                         0.129,
-                         0.145,
-                         0.145,
-                         0.113,
-                         0.360,0.360,0.360,
-                         0.360,0.360,#0.360,
-                         0.360,0.360,0.360,0.360,
-                         0.360,0.360,0.360,0.360,
-                         0.360,0.360,0.360,0.360,
-                         0.360,0.360,0.360,0.360,
-                         0.360,0.360,0.360,
-                         0.360,0.360,0.360,])
+    Us_model = np.array([0.365 ,
+                        0.362 ,
+                        0.320 ,
+                        0.379 ,
+                        0.397 ,
+                        0.346 ,
+                        0.354 ,
+                        0.361 ,
+                        0.392 ,
+                        0.379 ,
+                        0.414 ,
+                        0.356 ,
+                        0.361 ,
+                        0.360 ,
+                        0.356 ,
+                        0.349 ,
+                        0.351 ,
+                        0.313 ,
+                        0.258 ,
+                        0.141 ,
+                        0.134 ,
+                        0.151 ,
+                        0.155 ,
+                        0.118 ,
+                        0.342 ,
+                        0.357 ,
+                        0.356 ,
+                        0.353 ,
+                        0.353 ,
+                        0.347 ,
+                        0.341 ,
+                        0.338 ,
+                        0.338 ,
+                        0.345 ,
+                        0.337 ,
+                        0.337 ,
+                        0.355 ,
+                        0.354 ,
+                        0.356 ,
+                        0.349 ,
+                        0.351 ,
+                        0.356 ,
+                        0.357 ,
+                        0.346 ,
+                        0.345 ,
+                        0.349 ,
+                        0.352 ,
+                        0.351 ,
+                        0.358 ,
+                        0.351 ,
+                        0.351 ,
+                        0.348 ,]) # Check Incoming_U_all_runs.ipynb for source
 
-    Us_HA = np.array([0.364,   
-                      0.361,
-                      0.321 ,
-                      0.379 ,
-                      0.399 ,
-                      0.344 ,
-                      0.359 ,
-                      0.359 ,
-                      0.392 ,
-                      0.378 ,
-                      0.414 ,
-                      0.354 ,
-                      0.359 ,
-                      0.359 , 
-                      0.354 ,
-                      0.346 ,
-                      0.347 ,
-                      0.312 , 
-                      0.258 ,
-                      0.137 , 
-                      0.132 , 
-                      0.153 , 
-                      0.150 ,  
-                      0.114 ,
-                      0.364,0.364,0.364,
-                      0.364,0.364,#0.364,
-                      0.364,0.364,0.364, 0.364,
-                      0.364,0.364,0.364, 0.364,
-                      0.364,0.364,0.364, 0.364,
-                      0.364,0.364,0.364, 0.364,
-                      0.364,0.364, 0.364,
-                      0.364,0.364,0.364,])
+    Us_HA =   np.array([0.370 ,
+                        0.367 ,
+                        0.325 ,
+                        0.387 ,
+                        0.405 ,
+                        0.348 ,
+                        0.357 ,
+                        0.366 ,
+                        0.398 ,
+                        0.384 ,
+                        0.421 ,
+                        0.360 ,
+                        0.365 ,
+                        0.365 ,
+                        0.360 ,
+                        0.352 ,
+                        0.353 ,
+                        0.317 ,
+                        0.262 ,
+                        0.145 ,
+                        0.137 ,
+                        0.155 ,
+                        0.159 ,
+                        0.119 ,
+                        0.346 ,
+                        0.362 ,
+                        0.360 ,
+                        0.358 ,
+                        0.357 ,
+                        0.350 ,
+                        0.344 ,
+                        0.341 ,
+                        0.341 ,
+                        0.348 ,
+                        0.339 ,
+                        0.340 ,
+                        0.358 ,
+                        0.358 ,
+                        0.360 ,
+                        0.352 ,
+                        0.353 ,
+                        0.361 ,
+                        0.361 ,
+                        0.349 ,
+                        0.349 ,
+                        0.352 ,
+                        0.355 ,
+                        0.355 ,
+                        0.363 ,
+                        0.353 ,
+                        0.353 ,
+                        0.350 ])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,1E-5,
@@ -747,7 +797,7 @@ def main():
                     0,
                     1E-3, 1E-3, 5E-3, 5E-3, 
                     8E-3, 1.2E-2, 2.5E-3, 5E-4, 1E-2, 
-                    0,
+                    0,1E-5,
                     ])
   
     Kbg = np.array([1E-5,1E-4,1E-3,
@@ -764,7 +814,7 @@ def main():
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
-                    1E-5,
+                    1E-5,1E-5,
                     ])
 
     epsilon = np.array([5,5,5,
@@ -778,7 +828,7 @@ def main():
                         50,50,50,
                        #10,
                         50,50,
-                        10,25,50,100,15,75,150,5,5, 5,5,5,25,100,25,100,5,5,5,5,5,5])
+                        10,25,50,100,15,75,150,5,5, 5,5,5,25,100,25,100,5,5,5,5,5,5,5])
 
 
     # Fill the fields of the records
