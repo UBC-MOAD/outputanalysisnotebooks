@@ -10,7 +10,11 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[FirstLook_RealisticKv.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/FirstLook_RealisticKv.ipynb)  
     
+* ##[Stratification_UwH.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Stratification_UwH.ipynb)  
+    
 * ##[FirstLook_EpsilonRuns.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/FirstLook_EpsilonRuns.ipynb)  
+    
+* ##[FirstLook_EpsilonRuns-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/FirstLook_EpsilonRuns-Copy1.ipynb)  
     
 * ##[Scaling_paper1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Scaling_paper1.ipynb)  
     
@@ -21,6 +25,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[VerticalWaterFlux.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/VerticalWaterFlux.ipynb)  
     
 * ##[Ascension_Kv_from_png.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Ascension_Kv_from_png.ipynb)  
+    
+* ##[FirstLook_EpsilonRuns-Copy2.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/FirstLook_EpsilonRuns-Copy2.ipynb)  
     
 * ##[Cross-shelf_density_maps.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Cross-shelf_density_maps.ipynb)  
     
