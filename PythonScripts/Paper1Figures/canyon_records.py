@@ -829,11 +829,11 @@ def main():
                        #10,
                         50,50,
                         10,25,50,100,15,75,150,5,5, 5,5,5,25,100,25,100,5,5,5,5,5,5,5])
-
+    
+    #BAC_array = np.array([]) # See notebook pool_figure_paper1.ipynb
 
     # Fill the fields of the records
-    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,
-                                                                                           markersizes,markerstyles, epsilon):
+    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps, bac in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,                                                                                                                            markersizes,markerstyles, epsilon):
         record.name = expName
         record.paperName = paperName        
         record.exp_code = expCode
@@ -852,5 +852,6 @@ def main():
         record.kv = kvo
         record.kbg = kbgo
         record.epsilon = eps
+        #record.BAC = bac
 
     return(records)
