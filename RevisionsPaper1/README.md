@@ -9,10 +9,12 @@ The links below are to static renderings of the notebooks via
     
 * ##[extended_shelf_comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/extended_shelf_comparison.ipynb)  
     
+* ##[DiffusionThroughKvInterface_scaling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/DiffusionThroughKvInterface_scaling.ipynb)  
+    
 
 ##License
 
-These notebooks and files are copyright 2013-2017
+These notebooks and files are copyright 2013-2018
 by the UBC Canyons Contributors
 and The University of British Columbia.
 
