@@ -20,6 +20,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[paper1_scaling_with_realistic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/paper1_scaling_with_realistic.ipynb)  
     
+* ##[scaling_tracer_flux_paper1_clean.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/scaling_tracer_flux_paper1_clean.ipynb)  
+    
 * ##[Concentration_near_head.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Concentration_near_head.ipynb)  
     
 * ##[VerticalWaterFlux.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/VerticalWaterFlux.ipynb)  
