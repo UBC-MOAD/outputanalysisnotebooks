@@ -9,6 +9,8 @@ The links below are to static renderings of the notebooks via
     
 * ##[extended_shelf_comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/extended_shelf_comparison.ipynb)  
     
+* ##[Heaviside_Kv_profiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/Heaviside_Kv_profiles.ipynb)  
+    
 * ##[1D_diffusion_model_scaling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/1D_diffusion_model_scaling.ipynb)  
     
 * ##[DiffusionThroughKvInterface_scaling.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/DiffusionThroughKvInterface_scaling.ipynb)  
