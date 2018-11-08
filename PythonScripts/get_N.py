@@ -4,8 +4,11 @@ import pandas as pd
 import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
-CGrid = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
-phiHyd = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/phiHydGlob.nc'
+#CGrid = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # 
+#phiHyd = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/phiHydGlob.nc'
+
+CGrid = '/data/kramosmu/results/TracerExperiments/LONGER_CNY/run01/gridGlob.nc' # 
+phiHyd = '/data/kramosmu/results/TracerExperiments/LONGER_CNY/run01/phiHydGlob.nc'
 pout = Dataset(phiHyd)
 CGridOut = Dataset(CGrid)
 
@@ -33,22 +36,24 @@ bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
 ys = [#262,220,262,227,100,245,
-      245,#261,
+      288,
       #245,262,220,
-      ]
+      ] # 288 for longer canyon 
 xs = [#60,60,180,180,180,160,
-      200,#200,
+      200,
       #200,300,300,
       ]
 stations = [#'UpSh','UpSl','CH','CM','CO','UpC',
-            'DnC',#'UwH'#'DnC','DnSh','DnSl',
+            'UwH'#'DnC','DnSh','DnSl',
             ]
 
 #All experiments in CNT and 3D including no canyon one (run07)
-expList = ['/data/kramosmu/results/TracerExperiments/CNTDIFF/run79',
-           ]
+expList = ['/data/kramosmu/results/TracerExperiments/LONGER_CNY/run01',
+           '/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWEST_U/run01']
            
-expNames = ['CNTDIFF_run79']
+           
+expNames = ['LONGER_CNY_run01',
+	    'LONGER_CNY_LOWEST_U_run01']
 
            
 

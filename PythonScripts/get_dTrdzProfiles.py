@@ -4,7 +4,7 @@ import pandas as pd
 import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
-CGrid = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
+CGrid = '/data/kramosmu/results/TracerExperiments/LONGER_CNY/run01/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
 CGridOut = Dataset(CGrid)
 
 # General input
@@ -32,68 +32,18 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [261]#262,220,262,227,100,245,245,262,220]
+ys = [288]#262,220,262,227,100,245,245,262,220] # 288 for long cny
 xs = [200]#60,60,180,180,180,160,200,300,300]
 stations = ['UwH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 
-#All experiments in CNT and 3D including no canyon one (run07)
-expList = [#'/data/kramosmu/results/TracerExperiments/CNTDIFF/run36',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run37',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run38',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run45',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run51',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run67',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run68',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run69',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run70',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run71',
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run72', 
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run73',
-           '/data/kramosmu/results/TracerExperiments/CNTDIFF/run81',
-           '/data/kramosmu/results/TracerExperiments/CNTDIFF/run82', 
-           #'/data/kramosmu/results/TracerExperiments/CNTDIFF/run79',
-           ##'/data/kramosmu/results/TracerExperiments/FORCING_SPNDN/run01',
-           ##'/data/kramosmu/results/TracerExperiments/EW_OBCS/run06',
-           #'/data/kramosmu/results/TracerExperiments/LOW_BF/run01',
-           #'/data/kramosmu/results/TracerExperiments/LOWER_BF/run01',
-           #'/data/kramosmu/results/TracerExperiments/LOWEST_BF/run01',
-           #'/data/kramosmu/results/TracerExperiments/LOWEST_BF/run03',
-           #'/data/kramosmu/results/TracerExperiments/LOWEST_BF/run05',
-           #'/data/kramosmu/results/TracerExperiments/LOWEST_BF/run07',
-           #'/data/kramosmu/results/TracerExperiments/LOWEST_BF/run11',
-           ##'/data/kramosmu/results/TracerExperiments/CNTDIFF_EXT_SHELF/run01',
-
-]
+expList = ['/data/kramosmu/results/TracerExperiments/LONGER_CNY/run01',
+           '/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWEST_U/run01']
            
-expNames = [#'CNTDIFF_run36',
-           #'CNTDIFF_run37',
-           #'CNTDIFF_run38',
-           #'CNTDIFF_run45',
-           #'CNTDIFF_run51',
-           #'CNTDIFF_run67',
-           #'CNTDIFF_run68',
-           #'CNTDIFF_run69',
-           #'CNTDIFF_run70',
-           #'CNTDIFF_run71', 
-           #'CNTDIFF_run72',
-           #'CNTDIFF_run73',
-           'CNTDIFF_run81', 
-           'CNTDIFF_run82',
-           #'CNTDIFF_run79',
-           ##'FORCING_SPNDN_run01',
-           ##'EW_OBCS_run06',
-           #'LOW_BF_run01',
-           #'LOWER_BF_run01',
-           #'LOWEST_BF_run01',
-           #'LOWEST_BF_run03',
-           #'LOWEST_BF_run05',
-           #'LOWEST_BF_run07',
-           #'LOWEST_BF_run11',
-           ##'CNTDIFF_Ext2x_run01',
-]
            
+expNames = ['LONGER_CNY_run01',
+	    'LONGER_CNY_LOWEST_U_run01']
 
-  
+             
 times = [0,2,4,6,8,10,12,14,16,18]
 
 for exp,runs in zip(expList,expNames):

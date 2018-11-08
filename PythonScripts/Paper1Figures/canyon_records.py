@@ -63,6 +63,7 @@ def main():
     REALKV_kv1E2_correctZ = run()
     CNTDIFF_N47 = run()
     LONGER_CNY_run01 = run()
+    LONGER_CNY_LOWEST_U_run01 = run()
   
 
     records =   [
@@ -120,6 +121,7 @@ def main():
                 REALKV_kv1E2_correctZ,
                 CNTDIFF_N47,
                 LONGER_CNY_run01,
+                LONGER_CNY_LOWEST_U_run01,
                 ] 
 
     expNames = [
@@ -177,6 +179,7 @@ def main():
                 '3DVISC_REALISTIC_run28',
                 'CNTDIFF_run81',
                 'LONGER_CNY_run01',
+                'LONGER_CNY_LOWEST_U_run01',
                 ]
 
     paperNames = [
@@ -234,6 +237,7 @@ def main():
                 'highest\_Kc, correct Z levs',
                 'N_47',
                 'long_01',
+                'long_slow_01',
                  ]
 
 
@@ -291,6 +295,7 @@ def main():
                 '3DVISC_REALISTIC',
                 'CNTDIFF',
                 'LONGER_CNY',
+                'LONGER_CNY_LOWEST_U',
                 ]
 
     runNums  = ['run38',
@@ -347,6 +352,7 @@ def main():
                 'run28',
                 'run81',
                 'run01',
+                'run01',
                 ]
 
 
@@ -354,12 +360,12 @@ def main():
                    14,14,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
                    11,11,11,11,11,11,11,11,11,11,
-                   11,11,11,11,11,11,11,11,11,11,11,11]
+                   11,11,11,11,11,11,11,11,11,11,11,11,11]
     markerstyles = ['o','^','d','^','d','v','P','^','v','*','P',
                     'v','*','d','^','D','p','v','*','*','d',
                     'P','D','p','D','d','^','v','*','v','*',
                     'D','o','d','P','p','^','^','^','^','^',
-                    '*','o','*','o','^','^','^','^','^','.','*','o']
+                    '*','o','*','o','^','^','^','^','^','.','*','o','o']
 
     exp_labels = [  #'$\K$=10$^{-7}$',
                     'base',#'$N_0$=5.5x10$^{-3}$,$\K$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
@@ -419,6 +425,7 @@ def main():
                     r'highest $K_{can}$, correct z levs',
                     r'higher $N$',
                     r'long base',
+                    r'long, lowest u',
                     ]
 
     
@@ -476,7 +483,7 @@ def main():
                     r'$\Uparrow \Uparrow$  $K_{can}$, correct z levs',
                     r'$\downarrow \downarrow N_0$',
                     r'long base',
-                   ]
+                    r'long, lowest u']
 
     colours = [ 'black',#
                 'silver',
@@ -531,7 +538,8 @@ def main():
                 'kelly green',
                 'kelly green',
                 'dull pink',
-                'brown',
+                'muddy brown',
+                'light brown',
                 ]# 
 
     colours2 = ['black',#
@@ -587,7 +595,8 @@ def main():
                 'cool green',
                 'cool green',
                 'dull pink',
-                'brown',
+                'muddy brown',
+                'light brown',
                 ]# 
 
 
@@ -645,6 +654,7 @@ def main():
                     0.0055 ,
                     0.0047 ,
                     0.0055 ,
+                    0.0055 ,
                     ])
 
     fs = np.array([9.66E-5,9.66E-5,9.66E-5,
@@ -664,7 +674,7 @@ def main():
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,
                    9.66E-5,9.66E-5,9.66E-5,9.66E-5,
-                   9.66E-5,
+                   9.66E-5,9.66E-5,
                    ])
 
     Us = np.array([0.360,0.360,0.360,
@@ -684,7 +694,7 @@ def main():
                    0.360, 0.360, 0.360, 0.360,
                    0.360, 0.360, 0.360,
                    0.360, 0.360,0.360,0.360,
-                   0.360,
+                   0.360, 0.134,
                    ])
 
     Us_model = np.array([0.365 ,
@@ -739,7 +749,8 @@ def main():
                         0.351 ,
                         0.351 ,
                         0.348 ,
-                        0.344]) # Check Incoming_U_all_runs.ipynb for source
+                        0.344,
+                        0.129]) # Check Incoming_U_all_runs.ipynb for source
 
     Us_HA =   np.array([0.370 ,
                         0.367 ,
@@ -793,7 +804,8 @@ def main():
                         0.353 ,
                         0.353 ,
                         0.350 ,
-                        0.350])
+                        0.350, 
+                        0.132])
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,1E-5,
@@ -812,7 +824,7 @@ def main():
                     0,
                     1E-3, 1E-3, 5E-3, 5E-3, 
                     8E-3, 1.2E-2, 2.5E-3, 5E-4, 1E-2, 
-                    0,1E-5,1E-5,
+                    0,1E-5,1E-5,1E-5
                     ])
   
     Kbg = np.array([1E-5,1E-4,1E-3,
@@ -829,7 +841,7 @@ def main():
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5,
+                    1E-5,1E-5,1E-5,1E-5
                     ])
 
     epsilon = np.array([5,5,5,
@@ -843,12 +855,33 @@ def main():
                         10,10,10,
                        #10,
                         10,10,
-                        10,25,50,100,15,75,150,5,5, 5,5,5,25,100,25,100,5,5,5,5,5,5,5,5])
+                        10,25,50,100,15,75,150,5,5, 5,5,5,25,100,25,100,5,5,5,5,5,5,5,5,5])
+    
+    Hhs = np.array([97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,
+                    97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,
+                    97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,
+                    97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,
+                    97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5,97.5, 
+                    97.5, 97.5,46.5,46.5]) 
+    
+    Hrs = np.array([108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
+                   108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
+                   108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
+                   108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
+                   108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
+                   108.1, 108.1, 69.1, 69.1])
+    
+    Ls = np.array([6400.5, 6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,
+                   6400.5, 6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,
+                   6400.5, 6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,
+                   6400.5, 6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,
+                   6400.5, 6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,6400.5,
+                   6400.5, 6400.5,12800,12800]) 
     
     #BAC_array = np.array([]) # See notebook pool_figure_paper1.ipynb
 
     # Fill the fields of the records
-    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,                                                                                                                            markersizes,markerstyles, epsilon):
+    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps, Hh, Hr, L in    zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,                                                                                                                            markersizes,markerstyles, epsilon, Hhs,Hrs,Ls):
         record.name = expName
         record.paperName = paperName        
         record.exp_code = expCode
@@ -867,6 +900,9 @@ def main():
         record.kv = kvo
         record.kbg = kbgo
         record.epsilon = eps
+        record.L = L
+        record.Hh = Hh
+        record.Hr = Hr
         #record.BAC = bac
 
     return(records)
