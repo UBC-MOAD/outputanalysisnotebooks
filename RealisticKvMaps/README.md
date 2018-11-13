@@ -18,6 +18,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[FirstLook_EpsilonRuns-Copy1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/FirstLook_EpsilonRuns-Copy1.ipynb)  
     
+* ##[geometric_dimensions_longer_canyon.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/geometric_dimensions_longer_canyon.ipynb)  
+    
 * ##[Scaling_paper1.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/Scaling_paper1.ipynb)  
     
 * ##[paper1_scaling_with_realistic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RealisticKvMaps/paper1_scaling_with_realistic.ipynb)  

@@ -4,7 +4,7 @@ import pandas as pd
 import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
-CGrid = '/data/kramosmu/results/TracerExperiments/LONGER_CNY/run01/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
+CGrid = '/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWER_U/run01/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
 CGridOut = Dataset(CGrid)
 
 # General input
@@ -40,12 +40,14 @@ stations = ['UwH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 tracers = ['Tr1']
 
 #All experiments in CNT and 3D including no canyon one (run07)
-expList = ['/data/kramosmu/results/TracerExperiments/LONGER_CNY/run01',
-           '/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWEST_U/run01']
+expList = ['/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWER_U/run01',
+           '/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWER_U/run02',
+           ]
            
            
-expNames = ['LONGER_CNY_run01',
-	    'LONGER_CNY_LOWEST_U_run01']
+expNames = ['LONGER_CNY_LOWER_U_run01',
+            'LONGER_CNY_LOWER_U_run02',
+	    ]
 
            
 
