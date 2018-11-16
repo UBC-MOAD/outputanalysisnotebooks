@@ -36,7 +36,6 @@ def main():
     REALKV_MTY_bot = run()
     REALKV_EEL_bot = run()
     REALKV_MTY_rim = run()
-    #REALKV_EEL_rim = run()
     REALKV_ASC_bot = run()
     REALKV_ASC_rim = run()
     REALKV_e10 = run()
@@ -97,7 +96,6 @@ def main():
                 REALKV_MTY_bot,
                 REALKV_EEL_bot,
                 REALKV_MTY_rim,
-                #REALKV_EEL_rim,
                 REALKV_ASC_bot,
                 REALKV_ASC_rim,
                 REALKV_e10, 
@@ -160,7 +158,6 @@ def main():
                 '3DVISC_REALISTIC_run01' ,
                 '3DVISC_REALISTIC_run02' ,
                 '3DVISC_REALISTIC_run03' ,
-                #'3DVISC_REALISTIC_run04',
                 '3DVISC_REALISTIC_run05',
                 '3DVISC_REALISTIC_run06',
                 '3DVISC_REALISTIC_run07',
@@ -222,7 +219,6 @@ def main():
                 'realKv_Mty',
                 'realKv_Eel',
                 'realKv_Mty_rim',
-                #'realKv_Eel_rim',
                 'realKv_Asc',
                 'realKv_Asc_rim',
                 'Kv_$\epsilon$10',
@@ -284,7 +280,6 @@ def main():
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
-                #'3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
                 '3DVISC_REALISTIC',
@@ -345,7 +340,6 @@ def main():
                 'run01',
                 'run02',
                 'run03',
-                #'run04',
                 'run05',
                 'run06',
                 'run07',
@@ -393,19 +387,15 @@ def main():
                     '*','o','*','o','^','^','^','^','^','.',
                     '*','o','o','o','o','o','o','o']
 
-    exp_labels = [  #'$\K$=10$^{-7}$',
-                    'base',#'$N_0$=5.5x10$^{-3}$,$\K$=10$^{-5}$,f=9.66x10$^{-5}$,U=0.34 m/s',
+    exp_labels = [  'base',
                     'higher $\K_{bg}$',
                     'highest $\K_{bg}$',
                     'higher $N$',
-                    #'$N_0$=3.9x10$^{-3}$',
-                    #'$N_0$=3.0x10$^{-3}$',
                     'highest $N$',
                     'lower $N$',
                     'medium $N$',
                     'higher $f$',
                     'lower $f$',
-                    #'f=4.84x10$^{-5}$',
                     'low $f$',
                     'lowest $f$',
                     'high $\K_{can}$, lower $\K_{bg}$',
@@ -424,7 +414,6 @@ def main():
                     '$\K_{can}$ Mty, bottom',
                     '$\K_{can}$ Eel, bottom',
                     '$\K_{can}$ Mty, rim',
-                    #'$\K_{can}$ Eel, rim',
                     r'$\K_{can}$ Asc, bottom',
                     r'$\K_{can}$ Asc, rim',
                     r'$\K_{can}=10^{-2}$, $\epsilon=10$',
@@ -486,7 +475,6 @@ def main():
                     r'$K_{can}$ Monterey (bot)',
                     r'$K_{can}$ Eel (bot)',
                     r'$K_{can}$ Monterey',
-                    #r'$K_{can}$ Eel, rim',
                     r'$K_{can}$ Ascension (bot)',
                     r'$K_{can}$ Ascension',
                     r'$\Uparrow \Uparrow K_{can}$, $\epsilon 10$',
@@ -546,7 +534,6 @@ def main():
                 'cerulean',
                 'cerulean',
                 'cerulean',
-                # 'cerulean',
                 'cerulean',
                 'cerulean',
                 'kelly green',
@@ -607,7 +594,6 @@ def main():
                 'cerulean',
                 'cerulean',
                 'cerulean',
-                # 'cerulean',
                 'cerulean',
                 'cerulean',
                 'cool green',
@@ -667,7 +653,6 @@ def main():
                     0.0055 , 
                     0.0055 , 
                     0.0055 ,
-                    #0.0055 ,
                     0.0055 ,
                     0.0055 ,
                     0.0055 ,
@@ -943,14 +928,12 @@ def main():
 
     Kvs = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5,1E-5,#1E-5,
+                    1E-5,1E-5,1E-5,1E-5,
                     1E-3,1E-4,1E-4,1E-3,5E-3,1E-2,
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,
                     1E-5,1E-3,
-                    #1E-5,#1E-5,
                     9.1E-3,1.22E-3,8.11E-3,
-                    #8.25E-5,
                     1.5E-3, 1.54E-3,
                     1E-2, 1E-2, 1E-2, 1E-2, 1E-2, 1E-2, 1E-2, 
                     0, 0,
@@ -963,14 +946,12 @@ def main():
   
     Kbg = np.array([1E-5,1E-4,1E-3,
                     1E-5,1E-5,1E-5,1E-5,
-                    1E-5,1E-5,1E-5,1E-5,#1E-5,
+                    1E-5,1E-5,1E-5,1E-5,
                     1E-7,1E-7,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,
                     1E-5,1E-5,
                     1E-5,1E-3,
-                    #1E-5, #1E-5
                     6.84E-4,8.52E-5,2.83E-4,
-                    #1.04E-5,
                     6.53E-4,4.26E-4,
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
                     1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,1E-5,
@@ -980,14 +961,12 @@ def main():
 
     epsilon = np.array([5,5,5,
                         5,5,5,5,
-                        5,5,5,5,#5,
+                        5,5,5,5,
                         5,5,5,5,5,5,
                         5,5,5,
                         5,5,
                         5,5,
-                        #5, 5
                         10,10,10,
-                       #10,
                         10,10,
                         10,25,50,100,15,75,150,5,5, 5,5,5,25,100,25,100,5,5,5,5,5,5,5,5,5,5,5,5,5])
     
@@ -1012,28 +991,28 @@ def main():
                    8332.6, 8332.6,8332.6,8332.6,8332.6,8332.6,8332.6,8332.6,8332.6,8332.6,
                    8332.6, 8332.6,16592.7,16592.7, 12407.7, 12407.7,16592.7,16592.7]) 
     
-    Rs = np.array([5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,
-                  5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,
-                  5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,
-                  5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,
-                  5000,5000,5000,5000,5000,5000,5000,5000,5000,5000,
-                  5000, 5000, 5000, 5000, 5000, 5000,5000,5000])
+    Rs = np.array([6700,6700,6700,6700,6700,6700,6700,6700,6700,6700,
+                  6700,6700,6700,6700,6700,6700,6700,6700,6700,6700,
+                  6700,6700,6700,6700,6700,6700,6700,6700,6700,6700,
+                  6700,6700,6700,6700,6700,6700,6700,6700,6700,6700,
+                  6700,6700,6700,6700,6700,6700,6700,6700,6700,6700,
+                  6700, 6700, 6700, 6700, 6700, 6700,6700,6700])
     
-    Wms = np.array([24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,
+    Wsbs = np.array([24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,
                     24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,
                     24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,
                     24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,
                     24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,24432.4,
                     24432.4,24432.4,28079.4,28079.4,26473.2,26473.2,28079.4,28079.4])
     
-    Ws = np.array([11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,
+    Wisos = np.array([11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,
                   11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,
                   11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,
                   11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,
                   11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,11258.4,
                   11258.4,11258.4,12310.3,12310.3,11956.6,11956.6,12310.3,12310.3])
     
-    Wrims = np.array([20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,
+    Ws = np.array([20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,
                      20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,
                      20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,
                      20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,20266.0,
@@ -1043,7 +1022,7 @@ def main():
     #BAC_array = np.array([]) # See notebook pool_figure_paper1.ipynb
 
     # Fill the fields of the records
-    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps, Hh, Hr, L ,R, Wm, W, Wrim in zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,                                                                                                                            markersizes,markerstyles, epsilon, Hhs,Hrs,Ls, Rs, Wms, Ws, Wrims):
+    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps, Hh, Hr, L ,R, Wsb, Wiso, W in zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,                                                                                                                            markersizes,markerstyles, epsilon, Hhs,Hrs,Ls, Rs, Wsbs, Wisos, Ws):
         record.name = expName
         record.paperName = paperName        
         record.exp_code = expCode
@@ -1066,9 +1045,9 @@ def main():
         record.Hh = Hh
         record.Hr = Hr
         record.R = R
-        record.Wm = Wm
+        record.Wsb = Wsb
         record.W = W
-        record.Wrim = Wrim
+        record.Wiso = Wiso
         #record.BAC = bac
 
     return(records)

@@ -5,6 +5,8 @@ The links below are to static renderings of the notebooks via
     
 * ##[DiffusionThroughKvInterface.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/DiffusionThroughKvInterface.ipynb)  
     
+* ##[CanyonCriticality.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/CanyonCriticality.ipynb)  
+    
 * ##[extended_domain_pool.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/extended_domain_pool.ipynb)  
     
 * ##[extended_shelf_comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/extended_shelf_comparison.ipynb)  

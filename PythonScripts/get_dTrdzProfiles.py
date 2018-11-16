@@ -4,7 +4,7 @@ import pandas as pd
 import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
-CGrid = '/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWER_U/run01/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
+CGrid = '/data/kramosmu/results/TracerExperiments/LONGER_CNY2_LOWER_U/run01/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
 CGridOut = Dataset(CGrid)
 
 # General input
@@ -32,17 +32,15 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [288]#262,220,262,227,100,245,245,262,220] # 275, 1.5x canyon, 288 for long cny
+ys = [275]#262,220,262,227,100,245,245,262,220] # 288 for long cny
 xs = [200]#60,60,180,180,180,160,200,300,300]
 stations = ['UwH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 
-expList = ['/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWER_U/run01',
-           '/data/kramosmu/results/TracerExperiments/LONGER_CNY_LOWER_U/run02',
+expList = ['/data/kramosmu/results/TracerExperiments/LONGER_CNY2_LOWER_U/run01',
            ]
            
            
-expNames = ['LONGER_CNY_LOWER_U_run01',
-            'LONGER_CNY_LOWER_U_run02',
+expNames = ['LONGER_CNY2_LOWER_Urun01',
 	   ]
 
              
