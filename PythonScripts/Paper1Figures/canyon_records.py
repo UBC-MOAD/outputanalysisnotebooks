@@ -860,9 +860,9 @@ def main():
                         0.351 ,
                         0.351 ,
                         0.348 ,
-                        0.344,
+                        0.328,
                         0.129,
-                        0.354, 
+                        0.353, 
                         0.246,
                         0.238,
                         0.262]) # Check Incoming_U_all_runs.ipynb for source
@@ -976,7 +976,13 @@ def main():
                     99.7,99.7,99.7,99.7,99.7,99.7,99.7,99.7,99.7,99.7,
                     99.7,99.7,99.7,99.7,99.7,99.7,99.7,99.7,99.7,99.7, 
                     99.7, 99.7,52.3,52.3,77.4,77.4,52.3,52.3]) 
-    
+    Hinds = np.array([20,20,20,20,20,20,20,20,20,20,
+                      20,20,20,20,20,20,20,20,20,20,
+                      20,20,20,20,20,20,20,20,20,20,
+                      20,20,20,20,20,20,20,20,20,20,
+                      20,20,20,20,20,20,20,20,20,20,
+                      20,20,10,10,14,14,10,10])
+            
     Hrs = np.array([108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
                    108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
                    108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1, 108.1,
@@ -1022,7 +1028,7 @@ def main():
     #BAC_array = np.array([]) # See notebook pool_figure_paper1.ipynb
 
     # Fill the fields of the records
-    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps, Hh, Hr, L ,R, Wsb, Wiso, W in zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,                                                                                                                            markersizes,markerstyles, epsilon, Hhs,Hrs,Ls, Rs, Wsbs, Wisos, Ws):
+    for record,expName,paperName,expCode,runNum,No,fo,uo,um,uha,kvo,kbgo,col,col2,lab2,explabel,marksize,markstyle, eps, Hh, Hr, L ,R, Wsb, Wiso, W, Hind in zip(records,expNames,paperNames,expCodes,runNums,Nos,fs,Us,Us_model,Us_HA,Kvs,Kbg,colours,colours2,exp_labels2,exp_labels,                                                                                                                            markersizes,markerstyles, epsilon, Hhs,Hrs,Ls, Rs, Wsbs, Wisos, Ws, Hinds):
         record.name = expName
         record.paperName = paperName        
         record.exp_code = expCode
@@ -1048,6 +1054,7 @@ def main():
         record.Wsb = Wsb
         record.W = W
         record.Wiso = Wiso
+        record.Hind = Hind
         #record.BAC = bac
 
     return(records)
