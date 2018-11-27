@@ -7,8 +7,8 @@ import canyon_tools.readout_tools as rout
 #CGrid = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/gridGlob.nc' # 
 #phiHyd = '/data/kramosmu/results/TracerExperiments/CNTDIFF/run38/phiHydGlob.nc'
 
-CGrid = '/data/kramosmu/results/TracerExperiments/NARROW_CNY/run01/gridGlob.nc' # 
-phiHyd = '/data/kramosmu/results/TracerExperiments/NARROW_CNY/run01/phiHydGlob.nc'
+CGrid = '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run29/gridGlob.nc' # 
+phiHyd = '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run29/phiHydGlob.nc'
 pout = Dataset(phiHyd)
 CGridOut = Dataset(CGrid)
 
@@ -36,9 +36,9 @@ bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
 ys = [#262,220,262,227,100,245,
-      261,
+      275,
       #245,262,220,
-      ] # 288 for longer canyon 
+      ] # 288, 275 for longer canyons 
 xs = [#60,60,180,180,180,160,
       200,
       #200,300,300,
@@ -48,11 +48,11 @@ stations = [#'UpSh','UpSl','CH','CM','CO','UpC',
             ]
 
 #All experiments in CNT and 3D including no canyon one (run07)
-expList = ['/data/kramosmu/results/TracerExperiments/NARROW_CNY/run01',
+expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run29',
            ]
            
            
-expNames = ['NARROW_CNY_run01',
+expNames = ['3DVISC_REALISTIC_run29',
 	    ]
 
            

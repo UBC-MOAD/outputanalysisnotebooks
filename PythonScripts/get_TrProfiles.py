@@ -4,7 +4,7 @@ import pandas as pd
 import canyon_tools.readout_tools as rout
 #from MITgcmutils import rdmds # cant make it work
 
-CGrid = '/data/kramosmu/results/TracerExperiments/NARROW_CNY/run01/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
+CGrid = '/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run29/gridGlob.nc' # Smallest volume grid, closed bdy, no canyon.
 CGridOut = Dataset(CGrid)
 
 # General input
@@ -32,7 +32,7 @@ maskExp = MaskExpand + np.zeros((nt,nz,ny,nx))
 bathy = rout.getField(CGrid, 'Depth')
 
 # STATIONS
-ys = [261]#[262,220,262,227,100,245,245,262,220] #288 for longer canyon
+ys = [275]#[262,220,262,227,100,245,245,262,220] #288 for longer canyon
 xs = [200]#[60,60,180,180,180,160,200,300,300]
 
 stations = ['UwH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
@@ -40,9 +40,9 @@ stations = ['UwH']#'UpSh','UpSl','CH','CM','CO','UpC','DnC','DnSh','DnSl']
 tracers = ['Tr1']
 
 #All experiments in CNT and 3D including no canyon one (run07)
-expList = ['/data/kramosmu/results/TracerExperiments/NARROW_CNY/run01',
+expList = ['/data/kramosmu/results/TracerExperiments/3DVISC_REALISTIC/run29',
            ]
-expNames = ['NARROW_CNY_run01']
+expNames = ['3DVISC_REALISTIC_run29']
 
            
 
