@@ -3,6 +3,8 @@ The links below are to static renderings of the notebooks via
 [nbviewer.jupyter.org](http://nbviewer.jupyter.org/).
 * ##[Reviewer2.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/Reviewer2.ipynb)  
     
+* ##[NitrateSupplyCalculation.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/NitrateSupplyCalculation.ipynb)  
+    
 * ##[DiffusionThroughKvInterface.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/DiffusionThroughKvInterface.ipynb)  
     
 * ##[CanyonCriticality.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/RevisionsPaper1/CanyonCriticality.ipynb)  
