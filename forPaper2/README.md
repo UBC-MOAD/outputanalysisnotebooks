@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions under the links below are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[cross_shelf_transport_ARGO.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport_ARGO.ipynb)  
+    
 * ##[cross_shelf_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport.ipynb)  
     
 * ##[near_surface_anomalies.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/near_surface_anomalies.ipynb)  
@@ -17,6 +19,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[Surface_8Tr_Ast03_vs_Bar03.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Surface_8Tr_Ast03_vs_Bar03.ipynb)  
     
 * ##[TrackUpwelledWater.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/TrackUpwelledWater.ipynb)  
+    
+* ##[Circulation_Astoria_Barkley_f1E-4.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_f1E-4.ipynb)  
     
 
 ##License
