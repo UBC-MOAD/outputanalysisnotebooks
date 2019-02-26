@@ -24,6 +24,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Circulation_Astoria_Barkley_f1E-4.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_f1E-4.ipynb)  
     
+* ##[Circulation_Astoria_Barkley_realN.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_realN.ipynb)  
+    
 
 ##License
 
