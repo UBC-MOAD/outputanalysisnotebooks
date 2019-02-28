@@ -20,6 +20,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[TrackUpwelledWater.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/TrackUpwelledWater.ipynb)  
     
+* ##[cross_shelf_transport-Barkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport-Barkley.ipynb)  
+    
 * ##[Comparison_NonHydrostatic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Comparison_NonHydrostatic.ipynb)  
     
 * ##[Circulation_Astoria_Barkley_f1E-4.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_f1E-4.ipynb)  
