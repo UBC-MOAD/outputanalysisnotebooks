@@ -10,6 +10,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[cross_shelf_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport.ipynb)  
     
+* ##[balance_water_on_shelf_Ast.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/balance_water_on_shelf_Ast.ipynb)  
+    
 * ##[near_surface_anomalies.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/near_surface_anomalies.ipynb)  
     
 * ##[Pool_HCW_8Tr_Ast03_vs_Bar03.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Pool_HCW_8Tr_Ast03_vs_Bar03.ipynb)  
@@ -25,6 +27,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[Comparison_NonHydrostatic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Comparison_NonHydrostatic.ipynb)  
     
 * ##[Circulation_Astoria_Barkley_f1E-4.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_f1E-4.ipynb)  
+    
+* ##[balance_water_on_shelf_Bar.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/balance_water_on_shelf_Bar.ipynb)  
     
 * ##[Circulation_Astoria_Barkley_realN.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_realN.ipynb)  
     
