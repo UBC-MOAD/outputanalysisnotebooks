@@ -36,6 +36,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Circulation_Astoria_Barkley_realN.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_realN.ipynb)  
     
+* ##[cross_shelf_transport-Comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport-Comparison.ipynb)  
+    
 
 ##License
 
