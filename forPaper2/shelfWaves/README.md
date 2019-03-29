@@ -8,6 +8,8 @@ Descriptions under the links below are from the first cell of the notebooks
 
 * ##[02b_prepareInput_Astoria-ARGO.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/shelfWaves/02b_prepareInput_Astoria-ARGO.ipynb)  
     
+* ##[wave_cross_sections.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/shelfWaves/wave_cross_sections.ipynb)  
+    
 * ##[01_dippingToes.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/shelfWaves/01_dippingToes.ipynb)  
     
 * ##[02a_prepareInput_Astoria.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/shelfWaves/02a_prepareInput_Astoria.ipynb)  
