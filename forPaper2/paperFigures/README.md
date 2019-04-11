@@ -8,6 +8,10 @@ Descriptions under the links below are from the first cell of the notebooks
 
 * ##[fig_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_transport.ipynb)  
     
+* ##[fig_pool_and_profiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_and_profiles.ipynb)  
+    
+* ##[fig_pool_ts.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_ts.ipynb)  
+    
 * ##[circulation.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/circulation.ipynb)  
     
 
