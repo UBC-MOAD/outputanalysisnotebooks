@@ -22,13 +22,19 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[HCW_comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/HCW_comparison.ipynb)  
     
+* ##[upwelled_tracer_Astoria.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/upwelled_tracer_Astoria.ipynb)  
+    
 * ##[Surface_8Tr_Ast03_vs_Bar03.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Surface_8Tr_Ast03_vs_Bar03.ipynb)  
     
 * ##[TrackUpwelledWater.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/TrackUpwelledWater.ipynb)  
     
+* ##[get_incoming_U.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/get_incoming_U.ipynb)  
+    
 * ##[cross_shelf_transport-Barkley.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport-Barkley.ipynb)  
     
 * ##[Comparison_NonHydrostatic.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Comparison_NonHydrostatic.ipynb)  
+    
+* ##[MOCSY_for_Karina.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/MOCSY_for_Karina.ipynb)  
     
 * ##[cross_shelf_transport_PATHWAYS.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport_PATHWAYS.ipynb)  
     
@@ -45,6 +51,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[Circulation_Astoria_Barkley_realN.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_realN.ipynb)  
     
 * ##[cross_shelf_transport-Comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport-Comparison.ipynb)  
+    
+* ##[MOCSY_pool_and_shelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/MOCSY_pool_and_shelf.ipynb)  
     
 
 ##License

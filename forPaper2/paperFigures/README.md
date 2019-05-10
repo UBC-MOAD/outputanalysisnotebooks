@@ -12,6 +12,12 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[fig_pool_ts.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_ts.ipynb)  
     
+* ##[Barkley_1997.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Barkley_1997.ipynb)  
+    
+* ##[Scaling figure.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Scaling figure.ipynb)  
+    
+* ##[fig_upwelled_tracer.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_upwelled_tracer.ipynb)  
+    
 * ##[circulation.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/circulation.ipynb)  
     
 
