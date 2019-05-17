@@ -52,6 +52,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[cross_shelf_transport-Comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport-Comparison.ipynb)  
     
+* ##[Upwelling_no_canyon_cases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Upwelling_no_canyon_cases.ipynb)  
+    
 * ##[MOCSY_pool_and_shelf.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/MOCSY_pool_and_shelf.ipynb)  
     
 
