@@ -48,6 +48,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[balance_water_on_shelf_Ast_ARGO.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/balance_water_on_shelf_Ast_ARGO.ipynb)  
     
+* ##[transport_algorithm_HCW.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/transport_algorithm_HCW.ipynb)  
+    
 * ##[Circulation_Astoria_Barkley_realN.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_realN.ipynb)  
     
 * ##[cross_shelf_transport-Comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport-Comparison.ipynb)  
