@@ -52,6 +52,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[Circulation_Astoria_Barkley_realN.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_realN.ipynb)  
     
+* ##[transport_algorithm_HCW_Astoria.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/transport_algorithm_HCW_Astoria.ipynb)  
+    
 * ##[cross_shelf_transport-Comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/cross_shelf_transport-Comparison.ipynb)  
     
 * ##[Upwelling_no_canyon_cases.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Upwelling_no_canyon_cases.ipynb)  
