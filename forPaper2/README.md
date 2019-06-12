@@ -22,6 +22,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[HCW_comparison.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/HCW_comparison.ipynb)  
     
+* ##[transport_algorithm_Phi_PhiTr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/transport_algorithm_Phi_PhiTr.ipynb)  
+    
 * ##[upwelled_tracer_Astoria.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/upwelled_tracer_Astoria.ipynb)  
     
 * ##[Surface_8Tr_Ast03_vs_Bar03.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Surface_8Tr_Ast03_vs_Bar03.ipynb)  
@@ -47,8 +49,6 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[Pool_HCW_10Tr_ARGO_vs_PATH.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Pool_HCW_10Tr_ARGO_vs_PATH.ipynb)  
     
 * ##[balance_water_on_shelf_Ast_ARGO.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/balance_water_on_shelf_Ast_ARGO.ipynb)  
-    
-* ##[transport_algorithm_HCW.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/transport_algorithm_HCW.ipynb)  
     
 * ##[Circulation_Astoria_Barkley_realN.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/Circulation_Astoria_Barkley_realN.ipynb)  
     
