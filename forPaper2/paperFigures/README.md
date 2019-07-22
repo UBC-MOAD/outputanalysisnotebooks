@@ -8,13 +8,25 @@ Descriptions under the links below are from the first cell of the notebooks
 
 * ##[fig_transport.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_transport.ipynb)  
     
+* ##[oxygen_pool_frames_and_movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/oxygen_pool_frames_and_movie.ipynb)  
+    
 * ##[fig_pool_and_profiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_and_profiles.ipynb)  
+    
+* ##[fig_bathy.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_bathy.ipynb)  
     
 * ##[fig_pool_ts.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_ts.ipynb)  
     
+* ##[scaling_pool_phiTr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/scaling_pool_phiTr.ipynb)  
+    
+* ##[Scaling_figure_transpAlg.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Scaling_figure_transpAlg.ipynb)  
+    
 * ##[Barkley_1997.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Barkley_1997.ipynb)  
     
-* ##[Scaling figure.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Scaling figure.ipynb)  
+* ##[pool_frames_and_movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/pool_frames_and_movie.ipynb)  
+    
+* ##[fig_Phi_PhiTr_timeseries.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_Phi_PhiTr_timeseries.ipynb)  
+    
+* ##[Scaling_figure.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Scaling_figure.ipynb)  
     
 * ##[fig_upwelled_tracer.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_upwelled_tracer.ipynb)  
     
