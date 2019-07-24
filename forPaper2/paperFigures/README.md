@@ -10,6 +10,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[oxygen_pool_frames_and_movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/oxygen_pool_frames_and_movie.ipynb)  
     
+* ##[density_pool_frames_and_movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/density_pool_frames_and_movie.ipynb)  
+    
 * ##[fig_pool_and_profiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_and_profiles.ipynb)  
     
 * ##[fig_bathy.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_bathy.ipynb)  
