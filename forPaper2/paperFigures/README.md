@@ -12,6 +12,8 @@ Descriptions under the links below are from the first cell of the notebooks
     
 * ##[density_pool_frames_and_movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/density_pool_frames_and_movie.ipynb)  
     
+* ##[Methane_pool_frames_and_movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Methane_pool_frames_and_movie.ipynb)  
+    
 * ##[fig_pool_and_profiles.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_and_profiles.ipynb)  
     
 * ##[fig_bathy.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_bathy.ipynb)  
@@ -19,6 +21,8 @@ Descriptions under the links below are from the first cell of the notebooks
 * ##[fig_pool_ts.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/fig_pool_ts.ipynb)  
     
 * ##[scaling_pool_phiTr.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/scaling_pool_phiTr.ipynb)  
+    
+* ##[DIC_pool_frames_and_movie.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/DIC_pool_frames_and_movie.ipynb)  
     
 * ##[Scaling_figure_transpAlg.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip/forPaper2/paperFigures/Scaling_figure_transpAlg.ipynb)  
     
