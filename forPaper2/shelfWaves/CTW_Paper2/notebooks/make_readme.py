@@ -24,7 +24,7 @@ import re
 
 NBVIEWER = 'http://nbviewer.jupyter.org/urls'
 REPO = 'bitbucket.org/canyonsubc/outputanalysisnotebooks/raw/tip'
-REPO_DIR = 'forPaper2/shelfWaves/CTW_Paper2'
+REPO_DIR = 'forPaper2/shelfWaves/CTW_Paper2/notebooks'
 TITLE_PATTERN = re.compile('#{1,6} ?')
 
 
