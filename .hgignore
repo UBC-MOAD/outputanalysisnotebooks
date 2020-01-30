@@ -16,3 +16,5 @@ results/*
 results/metricsDataFrames/*.csv
 *.mat
 *.DS_Store
+*.nc
+*.dat
