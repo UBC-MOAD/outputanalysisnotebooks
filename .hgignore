@@ -14,3 +14,5 @@ results/*
 *.pyc
 *.csv
 results/metricsDataFrames/*.csv
+*.mat
+*.DS_Store
